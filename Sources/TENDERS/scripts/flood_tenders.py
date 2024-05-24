@@ -5,7 +5,7 @@ import dateutil.parser
 import glob
 
 # input_df - after the scraper code is run
-data_path = os.getcwd() + '/Sources/TENDERS/data/monthly_tenders/'
+data_path = os.getcwd() + '/Sources/TENDERS/data/monthly_tenders/recents'
 
 # Identify flood related tenders using keywords
 def populate_keyword_dict(keyword_list): 

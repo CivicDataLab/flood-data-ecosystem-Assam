@@ -5,7 +5,7 @@ import geopandas as gpd
 data_path = os.getcwd()+'/Sources/TENDERS/data/'
 assam_rc_gdf = gpd.read_file(os.getcwd()+'/Maps/Assam_Revenue_Circles/assam_revenue_circle_nov2022.shp')
 
-flood_tenders_geotagged_df = pd.read_csv(data_path + 'floodtenders_RCgeotagged_manual.csv')
+flood_tenders_geotagged_df = pd.read_csv(data_path + 'floodtenders_RCgeotagged.csv')
 flood_tenders_geotagged_df = flood_tenders_geotagged_df.merge(assam_rc_gdf,
                                  left_on = ['DISTRICT_FINALISED', 'REVENUE_CIRCLE_FINALISED'],
                                  right_on = ['district_3', 'revenue_ci'],
