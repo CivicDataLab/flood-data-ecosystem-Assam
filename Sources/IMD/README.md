@@ -10,4 +10,5 @@ Aggregate rainfall data from IMD (Indian Meteorological Department) for each rev
 
 -   `scripts` : Contains the scripts used to obtain the data
     -   `main.py`: Downloads the RAINFALL data for Assam.
+    -   `utils.py`: Removes unnecessary columns from data.
 -   `data`: Contains datasets generated using the scripts
