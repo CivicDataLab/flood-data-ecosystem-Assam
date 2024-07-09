@@ -1,26 +1,53 @@
-import pandas as pd
 import os
+
 import geopandas as gpd
-path = os.getcwd()+'/Sources/FFS'
+import pandas as pd
 
-ffs_df = pd.read_csv(path+'/data/scraped_data.csv')
-ffs_df['year_month'] = ffs_df.Date.str[:4] + '_' + ffs_df.Date.str[5:7]
+path = os.getcwd()
 
-assam_stations = gpd.read_file(path+'/data/state_stations.geojson')
-assam_rc = gpd.read_file('Maps/Geojson/assam_revenue_circle_nov2022.geojson')
+ffs_df = pd.read_csv(path + "/Sources/FFS/data/scraped_data.csv")
+ffs_df["year_month"] = ffs_df.Date.str[:4] + "_" + ffs_df.Date.str[5:7]
 
-result = gpd.sjoin(assam_stations[['stationCode','geometry']], assam_rc[['object_id','revenue_ci','geometry']])
+stations_file = gpd.read_file(path + "/Sources/FFS/data/state_stations.geojson")
+state_shpfile = gpd.read_file("Maps/Geojson/assam_revenue_circle_nov2022.geojson")
+
+result = gpd.sjoin(
+    stations_file[["stationCode", "geometry"]],
+    state_shpfile[["objectid", "sdtname", "geometry"]],
+)
 
 # DAILY RIVER LEVELS
-grouped_df = ffs_df.groupby(['stationCode','Date']).agg({'dataValue': ['mean', 'min', 'max']}) 
+grouped_df = ffs_df.groupby(["stationCode", "Date"]).agg(
+    {"dataValue": ["mean", "min", "max"]}
+)
 grouped_df = grouped_df.reset_index()
-grouped_df.columns = ['stationCode', 'Date', 'riverlevel_mean', 'riverlevel_min', 'riverlevel_max']
-grouped_df = grouped_df.merge(result[['stationCode','object_id','revenue_ci']], on='stationCode')
-grouped_df.to_csv(path+'/data/variables/riverlevel_daily.csv', index=False, mode='a')
+grouped_df.columns = [
+    "stationCode",
+    "Date",
+    "riverlevel_mean",
+    "riverlevel_min",
+    "riverlevel_max",
+]
+grouped_df = grouped_df.merge(
+    result[["stationCode", "objectid", "sdtname"]], on="stationCode"
+)
+grouped_df.to_csv(
+    path + "/Sources/FFS/data/variables/riverlevel_daily.csv", index=False, mode="a"
+)
 
 # MONTHLY RIVER LEVELS - MASTER
-grouped_df = ffs_df.merge(result[['stationCode','object_id','revenue_ci']], on='stationCode')
-grouped_df = grouped_df.groupby(['object_id','year_month']).agg({'dataValue': ['mean', 'min', 'max']}) 
+grouped_df = ffs_df.merge(
+    result[["stationCode", "objectid", "sdtname"]], on="stationCode"
+)
+grouped_df = grouped_df.groupby(["objectid", "year_month"]).agg(
+    {"dataValue": ["mean", "min", "max"]}
+)
 grouped_df = grouped_df.reset_index()
-grouped_df.columns = ['object_id', 'timeperiod', 'riverlevel_mean', 'riverlevel_min', 'riverlevel_max']
-grouped_df.to_csv(os.getcwd() + '/Sources/master/riverlevel.csv', index=False, mode='a')
+grouped_df.columns = [
+    "objectid",
+    "timeperiod",
+    "riverlevel_mean",
+    "riverlevel_min",
+    "riverlevel_max",
+]
+grouped_df.to_csv(path + "/Sources/master/riverlevel.csv", index=False, mode="a")
