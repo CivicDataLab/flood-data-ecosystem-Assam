@@ -4,9 +4,13 @@
 Waterlevel_assam_stations.csv
 MissionAntyodaya2020_Assam.xlsx
 *.zip
+scraped_data.csv
+
 #Don't ignore zip files in Map
 !Maps/*.zip
-#Keys
+
+#Env Files / Secret Keys
+*.env
 ee-idsdrr-d856f70748a7.json
 
 # Byte-compiled / optimized / DLL files
