@@ -9,36 +9,46 @@ gdal.DontUseExceptions()
 path = os.getcwd() + "/Sources/BHUVAN/"
 
 date_strings = [
-    "2022_18_08_18"
-]  # ["cuml_2021"]  # Sample date for assam - "2023_07_07_18"
+    "2024_04_07_18",
+    "2024_03-04_07_06",
+    "2024_03_07_06",
+    "2024_01_07_18",
+    "2024_26_06_11",
+    "2024_20_06_06",
+    "2024_17_06_18",
+    "2024_12_06_18",
+    "2024_08_06_06",
+    "2024_07_06_11",
+    "2024_06_06_11",
+    "2024_03_06_18",
+    "2024_03_06_06",
+    "2024_02_06_11",
+    "2024_02_06_18",
+    "2024_31_05_18",
+]  # Sample date for assam - "2023_07_07_18"
 
 # Specify the state information to scrape data for.
-state_info = {"state": "Odisha", "code": "od"}
+# state_info = {"state": "Assam", "code": "as"}
 
 
 for dates in date_strings:
 
     # Define your input and output paths
-    input_xml_path = path + f"{state_info['state']}/data/inundation.xml"
-    output_tiff_path = path + f"{state_info['state']}/data/tiffs/{dates}.tif"
+    input_xml_path = path + "/data/inundation.xml"
+    output_tiff_path = path + f"/data/tiffs/{dates}.tif"
 
-    layer_hp = "fld_cuml_2021_hp"
-    layer_assam = "flood%3Aas_2023_07_07_18"
-    layer_od = "flood%3Aod_2022_18_08_18"
-    state_code = "hp"  # fld_cuml_2021_hp #flood%3Aas_2023_07_07_18
+    layer_as = "flood%3Aas_2023_07_07_18"
     bbox_as = "89.6922970,23.990548,96.0205936,28.1690311"
-    bbox_hp = "75.289307,30.353916,79.562988,33.321349"
-    bbox_od = "81.388586,17.810312,87.485805,22.567593"
-    url_hp = "https://bhuvan-ras2.nrsc.gov.in/mapcache"
-    url_as = "https://bhuvan-gp1.nrsc.gov.in/bhuvan/wms"  # flood%3Aod_2022_18_08_18
+    url_cached = "https://bhuvan-ras2.nrsc.gov.in/mapcache"
+    url_as = "https://bhuvan-gp1.nrsc.gov.in/bhuvan/wms"
 
     # Download the WMS(Web Map Sevice) layer and save as XML.
     command = [
         "gdal_translate",
         "-of",
         "WMS",
-        f"WMS:{url_as}?&LAYERS={layer_od}&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A4326&BBOX={bbox_od}",
-        f"{path}{state_info['state']}/data/inundation.xml",
+        f"WMS:{url_as}?&LAYERS={layer_as}&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A4326&BBOX={bbox_as}",
+        f"{path}/data/inundation.xml",
     ]
     subprocess.run(command)
 

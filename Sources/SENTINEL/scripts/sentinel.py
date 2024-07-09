@@ -1,198 +1,198 @@
 import os
-import sys
-import time
+from datetime import datetime, timedelta
 
 import ee
 import geemap
 import geopandas as gpd
-import pandas as pd
 import rasterio
-import rasterstats
+from utils import maskS2clouds, zonal_stats_choropleths
 
-service_account = " idsdrr@ee-idsdrr.iam.gserviceaccount.com"
+cwd = os.getcwd()
+
+# Initialize Google Earth Engine.
+service_account = "<service_account>"  # Add service account.
 credentials = ee.ServiceAccountCredentials(
-    service_account, "Sources/SENTINEL/ee-idsdrr-d856f70748a7.json"
+    service_account,
+    f"{cwd}/<secret.env>",  # Add json with service account credentials.
 )
 ee.Initialize(credentials)
 
-if len(sys.argv) < 3:
-    print("Please provide an input argument.")
-else:
-    date_start = sys.argv[1]
-    date_end = sys.argv[2]
-    print("Date End:", date_end)
 
-cwd = os.getcwd()
-assam_rc_gdf = gpd.read_file(
-    cwd + "/Maps/Assam_Revenue_Circles/assam_revenue_circle_nov2022.shp"
-)
-assam_dist_gdf = gpd.read_file(cwd + "/Maps/assam_district_35.geojson")
+def sentinel(context) -> None:
+    """
+    Downloads and processes Sentinel-2 imagery for a specified region and time period.
+
+    Args:
+        context (dict): Dictionary containing the following keys:
+            - "state_name" (str): Name of the state ("Assam", "Odisha", or "Himachal Pradesh").
+            - "date_from" (str): Start date in the format "YYYY-MM-DD".
+            - "date_to" (str): End date in the format "YYYY-MM-DD".
+            - "admin_bdry1" (str): Path to the state boundary shapefile.
+            - "admin_bdry2" (str): Path to the administrative boundary shapefile.
+
+    Raises:
+        ValueError: If an invalid state name is provided or if the conversion of the shapefile to an Earth Engine object fails.
+        Exception: If the download of images or the conversion of shapefiles fails.
+
+    Returns:
+        None
+    """
+    date_from = context.get("date_from", "")
+    date_to = context.get("date_to", "")
+    state_name = context.get("state_name", "")
+    admin_bdry1 = context.get("admin_bdry1", "")
+    admin_bdry2 = context.get("admin_bdry2", "")
+    date_start = datetime.strptime(date_from, "%Y-%m-%d").replace(day=1)
+    date_end = datetime.strptime(date_to, "%Y-%m-%d")
+    while date_start < date_end:
+        # Calculate the first day of the next month (date_end)
+        next_month = date_start + timedelta(days=32)
+        date_end_current = next_month.replace(day=1)
+        # Convert the first day of the next month to a formatted date string
+        date_end_str = date_end_current.strftime("%Y-%m-%d")
+        date_start_str = date_start.strftime("%Y-%m-%d")
+
+        print("Downloading data for {} - {}".format(date_start_str, date_end_str))
+
+        if state_name.lower() == "assam":
+            rc_shp_path = admin_bdry2
+            rc_gdf = gpd.read_file(rc_shp_path)
+            object_id = "object_id"
+            state_boundary = admin_bdry1
+        elif state_name.lower() == "odisha":
+            rc_shp_path = admin_bdry2
+            rc_gdf = gpd.read_file(rc_shp_path)
+            object_id = "id"
+            state_boundary = admin_bdry1
+        elif state_name.lower() == "himachal pradesh":
+            rc_shp_path = admin_bdry2
+            rc_gdf = gpd.read_file(rc_shp_path)
+            object_id = "TEHSIL"
+            state_boundary = admin_bdry1
+        else:
+            raise ValueError("Invalid State.")
+        # assam_rcs = ee.FeatureCollection("projects/ee-idsdrr/assets/assam_rc_180")
+
+        try:
+            state_boundary = geemap.geojson_to_ee(state_boundary)
+            if state_boundary is None:
+                raise ValueError(
+                    "Conversion of shapefile to Earth Engine object failed."
+                )
+            geometry = state_boundary.geometry()
+        except Exception as e:
+            print(f"Error converting shapefile: {e}")
+
+        # Get GEE Image Collection
+        sentinel = ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED")
+        # Filter the image collection
+        sentinel_filtered = (
+            sentinel.filter(ee.Filter.date(date_start_str, date_end_str))
+            .filter(ee.Filter.bounds(geometry))
+            .filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", 20))
+        )  # Filter for images that have less then 20% cloud coverage.
+
+        # Apply cloud mask
+        sentinel_filtered_cloud_masked = sentinel_filtered.map(maskS2clouds)
+        # Choose median image
+        sentinel_median = sentinel_filtered_cloud_masked.median()
+
+        ndvi = sentinel_median.normalizedDifference(["B8", "B4"]).rename("ndvi")
+        ndbi = sentinel_median.normalizedDifference(["B11", "B8"]).rename("ndbi")
+
+        print("-------NDVI Image-------------")
+        path = cwd + "/Sources/SENTINEL/data/NDVI/tifs"
+        # Check if the directory exists
+        if not os.path.exists(path):
+            # Create the directory if it doesn't exist
+            os.makedirs(path)
+
+        geemap.ee_export_image(
+            ndvi,
+            filename=path + "/ndvi_{}.tif".format(date_start_str),
+            scale=250,
+            region=geometry,
+            file_per_band=True,
+        )
+
+        print("-------NDBI Image-------------")
+        path = cwd + "/Sources/SENTINEL/data/NDBI/tifs"
+        # Check if the directory exists
+        if not os.path.exists(path):
+            # Create the directory if it doesn't exist
+            os.makedirs(path)
+
+        geemap.ee_export_image(
+            ndbi,
+            filename=path + "/ndbi_{}.tif".format(date_start_str),
+            scale=250,
+            region=geometry,
+            file_per_band=True,
+        )
+
+        try:
+            ndvi_raster = rasterio.open(
+                cwd
+                + "/Sources/SENTINEL/data/NDVI/tifs"
+                + f"/ndvi_{date_start_str}.ndvi.tif"
+            )
+            ndbi_raster = rasterio.open(
+                cwd
+                + "/Sources/SENTINEL/data/NDBI/tifs"
+                + f"/ndbi_{date_start_str}.ndbi.tif"
+            )
+        except Exception as e:
+            print(f"Download failed for month: {date_start_str}", e)
+            date_start = date_end_current
+            continue
+
+        print("-------NDVI Stats-------------")
+        ndvi_rc_df, ndvi_rc_gdf = zonal_stats_choropleths(
+            rc_gdf, object_id, ndvi_raster
+        )
+        ndvi_rc_df.head()
+
+        path = cwd + "/Sources/SENTINEL/data/variables/NDVI"
+        # Check if the directory exists
+        if not os.path.exists(path):
+            # Create the directory if it doesn't exist
+            os.makedirs(path)
+
+        ndvi_rc_df.to_csv(path + "/ndvi_rc_{}.csv".format(date_start_str), index=False)
+        print("File saved to:", path + f"/ndvi_subdis_{date_start_str}.csv")
+
+        print("-------NDBI Stats-------------")
+        ndbi_rc_df, ndbi_rc_gdf = zonal_stats_choropleths(
+            rc_gdf, object_id, ndbi_raster
+        )
+
+        path = cwd + "/Sources/SENTINEL/data/variables/NDBI"
+        # Check if the directory exists
+        if not os.path.exists(path):
+            # Create the directory if it doesn't exist
+            os.makedirs(path)
+
+        ndbi_rc_df.to_csv(path + "/ndbi_rc_{}.csv".format(date_start_str), index=False)
+        print("File saved to:", path + f"/ndbi_subdis_{date_start_str}.csv")
+        date_start = date_end_current
 
 
-# Function for Zonal Stats
-def zonal_stats_choropleths(
-    gdf,
-    gdf_unique_id,
-    raster,
-    stats_list=["mean", "count"],
-):
-    mean_dicts = rasterstats.zonal_stats(
-        gdf.to_crs(raster.crs),
-        raster.read(1),
-        affine=raster.transform,
-        stats=stats_list,
-        nodata=raster.nodata,
-        geojson_out=True,
+if __name__ == "__main__":
+    """
+    Args:
+        context (dict): Dictionary containing the following keys:
+            - "state_name" (str): Name of the state ("Assam", "Odisha", or "Himachal Pradesh").
+            - "date_from" (str): Start date in the format "YYYY-MM-DD".
+            - "date_to" (str): End date in the format "YYYY-MM-DD".
+            - "admin_bdry1" (str): Path to the state boundary shapefile.
+            - "admin_bdry2" (str): Path to the administrative boundary shapefile.
+    """
+    sentinel(
+        context={
+            "state_name": "Assam",
+            "date_from": "<start_date>",
+            "date_to": "<end_date>",
+            "admin_bdry1": "<state_boundary_path>",
+            "admin_bdry2": "<boundary_path>",
+        },
     )
-    dfs = []
-    for rc in mean_dicts:
-        dfs.append(pd.DataFrame([rc["properties"]]))
-
-    zonal_stats_df = pd.concat(dfs).reset_index(drop=True)
-
-    zonal_stats_gdf = pd.merge(
-        gdf, zonal_stats_df[stats_list + [gdf_unique_id]], on=gdf_unique_id
-    )
-
-    zonal_stats_gdf = gpd.GeoDataFrame(zonal_stats_gdf)
-
-    return zonal_stats_df, zonal_stats_gdf
-
-
-# clip_image function clips the satellite image to our given area of interest
-def clip_image(aoi):
-    def call_image(image):
-        return image.clip(aoi)
-
-    return call_image
-
-
-# Function to mask clouds
-def maskS2clouds(image):
-    qa = image.select("QA60")
-
-    # Bits 10 and 11 are clouds and cirrus, respectively.
-    cloudBitMask = 1 << 10
-    cirrusBitMask = 1 << 11
-
-    # Both flags should be set to zero, indicating clear conditions.
-    mask = qa.bitwiseAnd(cloudBitMask).eq(0)
-    mask = mask.bitwiseAnd(cirrusBitMask).eq(0)
-
-    return image.updateMask(mask).divide(10000)
-
-
-# assam_rcs = ee.FeatureCollection("projects/ee-idsdrr/assets/assam_rc_180")
-# geometry = assam_rcs.geometry()
-state_boundary = cwd + "/Maps/AssamState.geojson"
-state_boundary = geemap.geojson_to_ee(state_boundary)
-geometry = state_boundary.geometry()
-
-# Get GEE Image Collection
-sentinel = ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED")
-print(sentinel)
-
-# Filter the image collection
-sentinel_filtered = (
-    sentinel.filter(ee.Filter.date(date_start, date_end))
-    .filter(ee.Filter.bounds(geometry))
-    .filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", 20))
-)  # Filter for images that have less then 20% cloud coverage.
-
-# Apply cloud mask
-sentinel_filtered_cloud_masked = sentinel_filtered.map(maskS2clouds)
-
-# Choose median image
-sentinel_median = sentinel_filtered_cloud_masked.median()
-
-ndvi = sentinel_median.normalizedDifference(["B8", "B4"]).rename("ndvi")
-ndbi = sentinel_median.normalizedDifference(["B11", "B8"]).rename("ndbi")
-
-
-print("-------NDVI Image-------------")
-
-path = cwd + "/Sources/SENTINEL/assam/data/NDVI/tifs/"
-geemap.ee_export_image(
-    ndvi,
-    filename=path + "ndvi_{}.tif".format(date_end),
-    scale=250,
-    region=geometry,
-    file_per_band=True,
-)
-
-print("-------NDBI Image-------------")
-path = cwd + "/Sources/SENTINEL/assam/data/NDBI/tifs/"
-geemap.ee_export_image(
-    ndbi,
-    filename=path + "ndbi_{}.tif".format(date_end),
-    scale=250,
-    region=geometry,
-    file_per_band=True,
-)
-
-print("-------NDVI Stats-------------")
-# # geemap.zonal_statistics(ndvi,
-# #                         assam_rcs,
-# #                         cwd+'/Sources/SENTINEL/data/ndvi_{}.csv'.format(date_end),
-# #                         statistics_type='MEAN',
-# #                         scale=1000)
-ndvi_raster = rasterio.open(
-    cwd + "/Sources/SENTINEL/assam/data/NDVI/tifs/ndvi_{}.ndvi.tif".format(date_end)
-)
-
-ndvi_rc_df, ndvi_rc_gdf = zonal_stats_choropleths(
-    assam_rc_gdf, "object_id", ndvi_raster
-)
-
-# ndvi_dist_df, ndvi_dist_gdf = zonal_stats_choropleths(assam_dist_gdf, 'assam_dist',
-#                                                 ndvi_raster)
-
-ndvi_rc_df = ndvi_rc_df[["object_id", "mean"]]
-ndvi_rc_df = ndvi_rc_df.replace(columns={"mean": "mean_ndvi"})
-ndvi_rc_df.to_csv(
-    cwd + "/Sources/SENTINEL/assam/data/NDVI/csvs/mean_ndvi_{}.csv".format(date_end),
-    index=False,
-)
-ndvi_rc_gdf.to_file(
-    cwd
-    + "/Sources/SENTINEL/assam/data/NDVI/geojsons/ndvi_rc_{}.geojson".format(date_end)
-)
-
-
-# ndvi_dist_df.to_csv(cwd+'/Sources/SENTINEL/data/NDVI/csvs/ndvi_dist_{}.csv'.format(date_end),
-# index=False)
-# ndvi_dist_gdf.to_file(cwd+'/Sources/SENTINEL/data/NDVI/geojsons/ndvi_dist_{}.geojson'.format(date_end))
-
-
-print("-------NDBI Stats-------------")
-# geemap.zonal_statistics(ndbi,
-#                         assam_rcs,
-#                         cwd+'/Sources/SENTINEL/data/ndbi_{}.csv'.format(date_end),
-#                         statistics_type='MEAN',
-#                         scale=1000)
-
-ndbi_raster = rasterio.open(
-    cwd + "/Sources/SENTINEL/assam/data/NDBI/tifs/ndbi_{}.ndbi.tif".format(date_end)
-)
-ndbi_rc_df, ndbi_rc_gdf = zonal_stats_choropleths(
-    assam_rc_gdf, "object_id", ndbi_raster
-)
-
-# ndbi_dist_df, ndbi_dist_gdf = zonal_stats_choropleths(assam_dist_gdf, 'assam_dist',
-#                                                 ndbi_raster)
-
-ndbi_rc_df = ndbi_rc_df[["object_id", "mean"]]
-ndbi_rc_df = ndbi_rc_df.replace(columns={"mean": "mean_ndbi"})
-ndbi_rc_df.to_csv(
-    cwd + "/Sources/SENTINEL/assam/data/NDBI/csvs/ndbi_rc_{}.csv".format(date_end),
-    index=False,
-)
-ndbi_rc_gdf.to_file(
-    cwd
-    + "/Sources/SENTINEL/assam/data/NDBI/geojsons/mean_ndbi_{}.geojson".format(date_end)
-)
-
-
-# ndbi_dist_df.to_csv(cwd+'/Sources/SENTINEL/data/NDBI/csvs/ndbi_dist_{}.csv'.format(date_end),
-#               index=False)
-# ndbi_dist_gdf.to_file(cwd+'/Sources/SENTINEL/data/NDBI/geojsons/ndbi_dist_{}.geojson'.format(date_end))
