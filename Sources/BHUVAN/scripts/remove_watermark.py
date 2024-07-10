@@ -4,16 +4,13 @@ import os
 import rasterio
 from rasterio.crs import CRS
 
-# Specify the state information to scrape data for.
-state_info = {"state": "Himachal Pradesh", "code": "hp"}
-
-path = os.getcwd() + f"/Sources/BHUVAN/{state_info['state']}"
+path = os.getcwd() + "/Sources/BHUVAN"
 print("Base path: ", path)
 files = glob.glob(path + "/data/tiffs/*.tif")
-print("Files with watermark: ", files)
+print("Files with watermark: ", len(files))
 
 wm_removed_files = glob.glob(path + "/data/tiffs/removed_watermarks/*.tif")
-print(wm_removed_files)
+print("Files without watermark: ", len(wm_removed_files))
 
 dates_watermark_removed = []
 
