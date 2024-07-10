@@ -4,11 +4,11 @@ import subprocess
 from datetime import date, timedelta
 
 cwd = os.getcwd()
-print(cwd)
-path = os.getcwd() + "/Sources/BHUVAN/assam/"
+# print(cwd)
+path = os.getcwd() + "/Sources/BHUVAN/"
 script_path = cwd + "/Sources/BHUVAN/scripts/transformer.py"
 print(path)
-for year in range(2023, 2024):
+for year in [2024]:
     print(year)
     year = str(year)
     for month in [
@@ -36,7 +36,7 @@ for year in range(2023, 2024):
         # )
         files = files1 + files2
         if len(files) == 0:
-            # print(f"No files for the month {month}")
+            print(f"No files for the month {month}")
             continue
         else:
             print("Number of images:", len(files))

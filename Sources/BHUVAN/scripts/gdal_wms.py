@@ -52,9 +52,9 @@ for dates in date_strings:
     ]
     subprocess.run(command)
 
-    # Specify the target resolution in the X and Y directions
-    target_resolution_x = 0.0001716660336923202072
-    target_resolution_y = -0.0001716684356881450775
+    # Specify the target resolution in the X and Y directions (50 meters)
+    target_resolution_x = 0.00044915  # 0.0008983  # 0.0001716660336923202072
+    target_resolution_y = -0.00044915  # -0.0008983  # -0.0001716684356881450775
 
     # Perform the warp operation using gdal.Warp()
     print("Warping Started")
@@ -64,8 +64,8 @@ for dates in date_strings:
         output_tiff_path,
         input_xml_path,
         format="GTiff",
-        xRes=0.0001716660336923202072,
-        yRes=-0.0001716684356881450775,
+        xRes=target_resolution_x,
+        yRes=target_resolution_y,
         creationOptions=["COMPRESS=DEFLATE", "TILED=YES"],
         callback=gdal.TermProgress,
     )

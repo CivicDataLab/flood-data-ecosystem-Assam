@@ -15,10 +15,10 @@ else:
     print(sys.argv)
     year = str(sys.argv[1])
     month = str(sys.argv[2])
-    print("Month: ", year + month)
+    # print("Month: ", year + month)
 
 tic = time.perf_counter()
-path = os.getcwd() + "/Sources/BHUVAN/assam/"
+path = os.getcwd() + "/Sources/BHUVAN/"
 assam_rc_gdf = gpd.read_file(
     os.getcwd() + "/Maps/Assam_Revenue_Circles/assam_revenue_circle_nov2022.shp"
 )
