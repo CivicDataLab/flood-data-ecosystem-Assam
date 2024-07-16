@@ -1,6 +1,7 @@
 #Large files
 *.nc
 *.tif
+*.grd
 Waterlevel_assam_stations.csv
 MissionAntyodaya2020_Assam.xlsx
 *.zip
