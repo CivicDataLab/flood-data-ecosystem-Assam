@@ -43,7 +43,8 @@ def flood_filter(row):
 csvs = glob.glob(data_path+'*.csv')
 
 for csv in csvs:
-    filename  = csv.split('/')[-1]
+    filename  = csv.split(r'/')[-1]
+    filename  = re.split(r'\\',csv)[-1]
     input_df = pd.read_csv(csv)
     
     # De-Duplication (Change the logic once the time of scraping is added in the input_df)

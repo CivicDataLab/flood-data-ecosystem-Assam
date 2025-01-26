@@ -1,0 +1,1806 @@
+{
+    "cwcDetails": {
+        "riversAtWarningLevel": "",
+        "riversAtDangerLevel": "",
+        "riversAtFloodLevel": ""
+    },
+    "affectedDistricts": {
+        "total": 8,
+        "districts": "Dibrugarh, Dima-Hasao, Kokrajhar, Biswanath, Dhubri, Bongaigaon, Lakhimpur, Karimganj",
+        "districtCodes": "11, 12, 23, 06, 10, 08, 24, 22"
+    },
+    "affectedRevenueCircles": {
+        "total": 12,
+        "districts": [
+            {
+                "district": "Biswanath",
+                "districtCode": "06",
+                "total": 1,
+                "details": "Halem"
+            },
+            {
+                "district": "Bongaigaon",
+                "districtCode": "08",
+                "total": 1,
+                "details": "Srijangram"
+            },
+            {
+                "district": "Dhubri",
+                "districtCode": "10",
+                "total": 2,
+                "details": "Chapar, Athani"
+            },
+            {
+                "district": "Dibrugarh",
+                "districtCode": "11",
+                "total": 1,
+                "details": "Chabua"
+            },
+            {
+                "district": "Dima-Hasao",
+                "districtCode": "12",
+                "total": 1,
+                "details": "Haflong"
+            },
+            {
+                "district": "Karimganj",
+                "districtCode": "22",
+                "total": 1,
+                "details": "Patherkandi"
+            },
+            {
+                "district": "Kokrajhar",
+                "districtCode": "23",
+                "total": 4,
+                "details": "Kokrajhar, Gossaigaon, Dotma, Bagribari"
+            },
+            {
+                "district": "Lakhimpur",
+                "districtCode": "24",
+                "total": 1,
+                "details": "Narayanpur"
+            }
+        ]
+    },
+    "affectedVillages": [
+        {
+            "total": 1,
+            "district": "Dibrugarh",
+            "districtCode": "11",
+            "details": "(Chabua | 1)"
+        },
+        {
+            "total": 0,
+            "district": "Dima-Hasao",
+            "districtCode": "12",
+            "details": "(Haflong | 0)"
+        },
+        {
+            "total": 91,
+            "district": "Kokrajhar",
+            "districtCode": "23",
+            "details": "(Kokrajhar | 6), (Gossaigaon | 3), (Dotma | 12), (Bagribari | 70)"
+        },
+        {
+            "total": 3,
+            "district": "Biswanath",
+            "districtCode": "06",
+            "details": "(Halem | 3)"
+        },
+        {
+            "total": 63,
+            "district": "Dhubri",
+            "districtCode": "10",
+            "details": "(Chapar | 26), (Athani | 37)"
+        },
+        {
+            "total": 2,
+            "district": "Bongaigaon",
+            "districtCode": "08",
+            "details": "(Srijangram | 2)"
+        },
+        {
+            "total": 1,
+            "district": "Lakhimpur",
+            "districtCode": "24",
+            "details": "(Narayanpur | 1)"
+        },
+        {
+            "total": 0,
+            "district": "Karimganj",
+            "districtCode": "22",
+            "details": "(Patherkandi | 0)"
+        }
+    ],
+    "affectedPopulation": [
+        {
+            "total": 2,
+            "totalMale": 1,
+            "totalFemale": 1,
+            "totalChildren": 0,
+            "totalCropArea": 19.5,
+            "district": "Biswanath",
+            "districtCode": "06",
+            "details": "(Halem | Population Affected: 2 | Crop Area: 19.5)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 35,
+            "district": "Bongaigaon",
+            "districtCode": "08",
+            "details": "(Srijangram | Population Affected: 0 | Crop Area: 35)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 1289.62,
+            "district": "Dhubri",
+            "districtCode": "10",
+            "details": "(Chapar | Population Affected: 0 | Crop Area: 712), (Athani | Population Affected: 0 | Crop Area: 577.62)"
+        },
+        {
+            "total": 3857,
+            "totalMale": 1567,
+            "totalFemale": 1240,
+            "totalChildren": 1050,
+            "totalCropArea": 0,
+            "district": "Dibrugarh",
+            "districtCode": "11",
+            "details": "(Chabua | Population Affected: 3857 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Dima-Hasao",
+            "districtCode": "12",
+            "details": "(Haflong | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Karimganj",
+            "districtCode": "22",
+            "details": "(Patherkandi | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 5137,
+            "totalMale": 2952,
+            "totalFemale": 1568,
+            "totalChildren": 617,
+            "totalCropArea": 480.14,
+            "district": "Kokrajhar",
+            "districtCode": "23",
+            "details": "(Kokrajhar | Population Affected: 0 | Crop Area: 6), (Gossaigaon | Population Affected: 0 | Crop Area: 4), (Dotma | Population Affected: 0 | Crop Area: 15.600000000000001), (Bagribari | Population Affected: 5137 | Crop Area: 454.53999999999996)"
+        },
+        {
+            "total": 18,
+            "totalMale": 7,
+            "totalFemale": 6,
+            "totalChildren": 5,
+            "totalCropArea": 0,
+            "district": "Lakhimpur",
+            "districtCode": "24",
+            "details": "(Narayanpur | Population Affected: 18 | Crop Area: 0)"
+        }
+    ],
+    "reliefCampsAndCenters": [
+        {
+            "total": 0,
+            "district": "Biswanath",
+            "reliefCamps": "(Halem | 0)",
+            "reliefCenters": "(Halem | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Bongaigaon",
+            "reliefCamps": "(Srijangram | 0)",
+            "reliefCenters": "(Srijangram | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Dhubri",
+            "reliefCamps": "(Chapar | 0), (Athani | 0)",
+            "reliefCenters": "(Chapar | 0), (Athani | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 1,
+            "district": "Dibrugarh",
+            "reliefCamps": "(Chabua | 0)",
+            "reliefCenters": "(Chabua | 1)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 1
+        },
+        {
+            "total": 0,
+            "district": "Dima-Hasao",
+            "reliefCamps": "(Haflong | 0)",
+            "reliefCenters": "(Haflong | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Karimganj",
+            "reliefCamps": "(Patherkandi | 0)",
+            "reliefCenters": "(Patherkandi | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Kokrajhar",
+            "reliefCamps": "(Kokrajhar | 0), (Gossaigaon | 0), (Dotma | 0), (Bagribari | 0)",
+            "reliefCenters": "(Kokrajhar | 0), (Gossaigaon | 0), (Dotma | 0), (Bagribari | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Lakhimpur",
+            "reliefCamps": "(Narayanpur | 0)",
+            "reliefCenters": "(Narayanpur | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        }
+    ],
+    "campInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Biswanath",
+            "details": "(Halem | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Bongaigaon",
+            "details": "(Srijangram | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Dhubri",
+            "details": "(Chapar | 0), (Athani | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Dibrugarh",
+            "details": "(Chabua | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Dima-Hasao",
+            "details": "(Haflong | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Karimganj",
+            "details": "(Patherkandi | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Kokrajhar",
+            "details": "(Kokrajhar | 0), (Gossaigaon | 0), (Dotma | 0), (Bagribari | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Lakhimpur",
+            "details": "(Narayanpur | 0)"
+        }
+    ],
+    "nonCampInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Biswanath",
+            "details": "(Halem | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Bongaigaon",
+            "details": "(Srijangram | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Dhubri",
+            "details": "(Chapar | 0), (Athani | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Dibrugarh",
+            "details": "(Chabua | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Dima-Hasao",
+            "details": "(Haflong | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Karimganj",
+            "details": "(Patherkandi | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Kokrajhar",
+            "details": "(Kokrajhar | 0), (Gossaigaon | 0), (Dotma | 0), (Bagribari | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Lakhimpur",
+            "details": "(Narayanpur | 0)"
+        }
+    ],
+    "hllDetails": {
+        "confirmed": [
+            {
+                "district": "Dibrugarh",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Chabua | 0)"
+            },
+            {
+                "district": "Dima-Hasao",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 1,
+                "totalMale": 1,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Haflong | 1)"
+            },
+            {
+                "district": "Kokrajhar",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Kokrajhar | 0), (Gossaigaon | 0), (Dotma | 0), (Bagribari | 0)"
+            },
+            {
+                "district": "Biswanath",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Halem | 0)"
+            },
+            {
+                "district": "Dhubri",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Chapar | 0), (Athani | 0)"
+            },
+            {
+                "district": "Bongaigaon",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Srijangram | 0)"
+            },
+            {
+                "district": "Lakhimpur",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 1,
+                "totalMale": 0,
+                "totalFemale": 1,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Narayanpur | 1)"
+            },
+            {
+                "district": "Karimganj",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Patherkandi | 0)"
+            }
+        ],
+        "missing": [
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Chabua | 0)"
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Haflong | 0)"
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Kokrajhar | 0), (Gossaigaon | 0), (Dotma | 0), (Bagribari | 0)"
+            },
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Halem | 0)"
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Chapar | 0), (Athani | 0)"
+            },
+            {
+                "district": "Bongaigaon",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Srijangram | 0)"
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Narayanpur | 0)"
+            },
+            {
+                "district": "Karimganj",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Patherkandi | 0)"
+            }
+        ]
+    },
+    "livestocksDetails": {
+        "affected": [
+            {
+                "district": "Biswanath",
+                "noLaBig": 341,
+                "noLaSmall": 142,
+                "noLaPoultry": 0,
+                "total": 483
+            },
+            {
+                "district": "Bongaigaon",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dhubri",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dibrugarh",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dima-Hasao",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karimganj",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Lakhimpur",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            }
+        ],
+        "washedAway": [
+            {
+                "district": "Biswanath",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Bongaigaon",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dhubri",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dibrugarh",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dima-Hasao",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karimganj",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Lakhimpur",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            }
+        ]
+    },
+    "houseDamagedDetails": {
+        "damage": [
+            {
+                "district": "Dibrugarh",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Dima-Hasao",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Biswanath",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Dhubri",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Bongaigaon",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Lakhimpur",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Karimganj",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            }
+        ],
+        "otherDamage": [
+            {
+                "district": "Dibrugarh",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Dima-Hasao",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Biswanath",
+                "noHdOthersHuts": 1,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 1
+            },
+            {
+                "district": "Dhubri",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Bongaigaon",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Lakhimpur",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Karimganj",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            }
+        ]
+    },
+    "rescueOperationDetails": [
+        {
+            "district": "Biswanath",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Bongaigaon",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Dhubri",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Dibrugarh",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Dima-Hasao",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Karimganj",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Kokrajhar",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Lakhimpur",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        }
+    ],
+    "reliefDistributionDetails": {
+        "reliefData": [
+            {
+                "district": "Biswanath",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Bongaigaon",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Dhubri",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Dibrugarh",
+                "rice": "63.13",
+                "dal": "11.57",
+                "salt": "3.47",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Dima-Hasao",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Karimganj",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Kokrajhar",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Lakhimpur",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            }
+        ],
+        "otherReliefData": [
+            {
+                "district": "Biswanath",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Bongaigaon",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Dhubri",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Dibrugarh",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Dima-Hasao",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Karimganj",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Kokrajhar",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Lakhimpur",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            }
+        ]
+    },
+    "infDamageDetails": {
+        "embBreached": [
+            {
+                "district": "Biswanath",
+                "total": 1,
+                "details": [
+                    {
+                        "block": "(Halem | 1)",
+                        "details": [
+                            {
+                                "id": 2538,
+                                "type": "embBreached",
+                                "name": "Brahmajan Embankment",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Hatibondhia",
+                                "latitude": 93.54,
+                                "longitude": 26.83,
+                                "remarks": "The rising water of river Brahmajan breached the left embankment at village Hatibondhia by almost 15 meters. 14-04-2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Bongaigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Srijangram | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chapar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Athani | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chabua | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Haflong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karimganj",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Patherkandi | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kokrajhar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gossaigaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dotma | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Bagribari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Narayanpur | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "embAffected": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Halem | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Bongaigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Srijangram | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chapar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Athani | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chabua | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Haflong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karimganj",
+                "total": 4,
+                "details": [
+                    {
+                        "block": "(Patherkandi | 4)",
+                        "details": [
+                            {
+                                "id": 2657,
+                                "type": "embAffected",
+                                "name": "Kalacherra Right Bank on River Longai",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Kalacherra",
+                                "latitude": 92.31,
+                                "longitude": 24.43,
+                                "remarks": "Erosion (slump down), occurred on 22/02/2022 as per the information received from Water Resource Division Karimganj",
+                                "createdAt": null,
+                                "updatedAt": null
+                            },
+                            {
+                                "id": 2658,
+                                "type": "embAffected",
+                                "name": "Durlavpur Right Bank on River Longai",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Durlavpur Pt-I",
+                                "latitude": 92.32,
+                                "longitude": 24.63,
+                                "remarks": "erosion (slump down) occurred on 25/04/2022 as per the information received from Water Resource Division Karimganj",
+                                "createdAt": null,
+                                "updatedAt": null
+                            },
+                            {
+                                "id": 2663,
+                                "type": "embAffected",
+                                "name": "Lowairpoa left bank on River Longai",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Lowairpoa",
+                                "latitude": 92.32,
+                                "longitude": 24.47,
+                                "remarks": "Erosion (slump down) occurred on 27/04/2022 as damage report received from Resource Division, Karimganj",
+                                "createdAt": null,
+                                "updatedAt": null
+                            },
+                            {
+                                "id": 2664,
+                                "type": "embAffected",
+                                "name": "Patharkandi Forest Office area left bank",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Patharkandi",
+                                "latitude": 92.31,
+                                "longitude": 24.6,
+                                "remarks": "erosion (slump down) occurred on 26/04/2022 as damage report received from Resource Division, Karimganj",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kokrajhar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gossaigaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dotma | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Bagribari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Narayanpur | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "roadAffected": [
+            {
+                "district": "Biswanath",
+                "total": 1,
+                "details": [
+                    {
+                        "block": "(Halem | 1)",
+                        "details": [
+                            {
+                                "id": 2644,
+                                "type": "road",
+                                "name": "Madhya Chattrang Dhenudhara Connecting Road",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Madhya Chattrang",
+                                "latitude": 93.62,
+                                "longitude": 26.88,
+                                "remarks": "Madhya Chattrang Dhenudhara Connecting road was partially damaged by flash flood of river chattrang on 25.04.2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Bongaigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Srijangram | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chapar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Athani | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chabua | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Haflong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karimganj",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Patherkandi | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 1,
+                "details": [
+                    {
+                        "block": "(Kokrajhar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gossaigaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dotma | 1)",
+                        "details": [
+                            {
+                                "id": 2539,
+                                "type": "road",
+                                "name": " Ward no.2 Kodaldhowa Fakiragram road",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Kodaldhowa Fakiragram ",
+                                "latitude": 0,
+                                "longitude": 0,
+                                "remarks": "Approach road damaged at Ward no.2 Kodaldhowa Fakiragram due to heavy rain as on 14.04.2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(Bagribari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Narayanpur | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "bridgeAffected": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Halem | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Bongaigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Srijangram | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chapar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Athani | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chabua | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Haflong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karimganj",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Patherkandi | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kokrajhar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gossaigaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dotma | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Bagribari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Narayanpur | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ]
+    },
+    "otherDamageDetails": [
+        {
+            "district": "Biswanath",
+            "details": [
+                {
+                    "block": "Halem",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Bongaigaon",
+            "details": [
+                {
+                    "block": "Srijangram",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Dhubri",
+            "details": [
+                {
+                    "block": "Chapar",
+                    "damages": []
+                },
+                {
+                    "block": "Athani",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Dibrugarh",
+            "details": [
+                {
+                    "block": "Chabua",
+                    "damages": [
+                        {
+                            "damageName": "Anganwadi Centres Affected (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 1167,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Kuligaon AWC Submerged",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Elementary Schools Damaged (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 1168,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "1 no. of LPS Submerged",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "district": "Dima-Hasao",
+            "details": [
+                {
+                    "block": "Haflong",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Karimganj",
+            "details": [
+                {
+                    "block": "Patherkandi",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Kokrajhar",
+            "details": [
+                {
+                    "block": "Kokrajhar",
+                    "damages": []
+                },
+                {
+                    "block": "Gossaigaon",
+                    "damages": []
+                },
+                {
+                    "block": "Dotma",
+                    "damages": []
+                },
+                {
+                    "block": "Bagribari",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Lakhimpur",
+            "details": [
+                {
+                    "block": "Narayanpur",
+                    "damages": [
+                        {
+                            "damageName": "Culvert Approach Road Damaged (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 1198,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Name of Road:Bhogpur to Bholabori via Vorpur Gogoi Gaon RoadType of Damage:Approach of Culvert No. 1/1 is damaged due to erosion of flood water. Date of occurrence :25/4/22",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Power Dept. Poles (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 1206,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "On dated 26/04/2022 One 11 kV PSC Pole  on the verge of erosion in the bank of Pichala river at Lakhipur village under pichala panchayat due to rise of water level.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "wildlife": [
+        {
+            "district": "Biswanath",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Bongaigaon",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dhubri",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dibrugarh",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dima-Hasao",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Karimganj",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Kokrajhar",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Lakhimpur",
+            "wildlifeAffected": ""
+        }
+    ],
+    "remarks": [
+        {
+            "district": "Biswanath",
+            "remarks": ""
+        },
+        {
+            "district": "Bongaigaon",
+            "remarks": ""
+        },
+        {
+            "district": "Dhubri",
+            "remarks": ""
+        },
+        {
+            "district": "Dibrugarh",
+            "remarks": ""
+        },
+        {
+            "district": "Dima-Hasao",
+            "remarks": ""
+        },
+        {
+            "district": "Karimganj",
+            "remarks": ""
+        },
+        {
+            "district": "Kokrajhar",
+            "remarks": ""
+        },
+        {
+            "district": "Lakhimpur",
+            "remarks": ""
+        }
+    ]
+}

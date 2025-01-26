@@ -8,8 +8,8 @@ warnings.filterwarnings("ignore")
 #ASSAM_VILLAGES = gpd.read_file(os.getcwd()+'/Maps/assam_village_complete_with_revenueCircle_district_35_oct2022.geojson',
  #                              driver='GeoJSON')
 
-ASSAM_VILLAGES = pd.read_csv(os.getcwd()+'/Maps/ASSAM_VILLAGES_MASTER.csv', encoding='utf-8').dropna()
-ASSAM_RCS = gpd.read_file(os.getcwd()+'/Maps/Assam_Revenue_Circles/assam_revenue_circle_nov2022.geojson', driver='GeoJSON')
+ASSAM_VILLAGES = pd.read_csv(os.getcwd()+r'/Maps/Extra/ASSAM_VILLAGES_RC_DISTRICT_MAPPING.csv', encoding='utf-8').dropna()
+ASSAM_RCS = gpd.read_file(os.getcwd()+r'/Maps/Geojson/assam_rc_2024-11.geojson', driver='GeoJSON')
 
 RC_HQs = list(ASSAM_RCS[ASSAM_RCS.HQ=='y']['revenue_ci'])
 

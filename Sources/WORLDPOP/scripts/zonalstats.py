@@ -9,10 +9,10 @@ import sys
 path = os.getcwd()+'/Sources/WORLDPOP/'
 
 year = sys.argv[1]
-assam_rc_gdf = gpd.read_file(os.getcwd()+'/Maps/Assam_Revenue_Circles/assam_revenue_circle_nov2022.shp')
+assam_rc_gdf = gpd.read_file(os.getcwd()+r'/Maps\Geojson\assam_rc_2024-11.geojson')
 
 # TOTAL POPULATION IN EACH RC
-worldpop_raster = rasterio.open(path+'/data/population_counts/assam_ppp_{}_UNadj.tif'.format(year))
+worldpop_raster = rasterio.open(path+r'/data/population_counts/assam_ppp_{}_UNadj.tif'.format(year))
 worldpop_raster_array = worldpop_raster.read(1)
 
 sum_dicts = rasterstats.zonal_stats(assam_rc_gdf.to_crs(worldpop_raster.crs),
@@ -28,7 +28,7 @@ for rc in sum_dicts:
 
 pop_zonal_stats_df = pd.concat(dfs).reset_index(drop=True)
 pop_zonal_stats_df = pop_zonal_stats_df.rename(columns={'sum':'sum_population'})
-
+'''
 # AVERAGE SEX RATIO IN EACH RC
 sexratio_raster = rasterio.open(path+'/data/agesexstructure/sexratio_assam_{}.tif'.format(year))
 sexratio_raster_array = sexratio_raster.read(1)
@@ -92,6 +92,8 @@ merged_df = merged_df.merge(aged_pop_zonal_stats_df, on='object_id')
 merged_df = merged_df.merge(young_pop_zonal_stats_df, on='object_id')
 
 merged_df.to_csv(path+"data/worldpopstats_{}.csv".format(year), index=False)
+'''
+pop_zonal_stats_df.to_csv(path+"data/worldpopstats_{}.csv".format(year), index=False)
 
 
 

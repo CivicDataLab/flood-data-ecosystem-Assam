@@ -18,7 +18,7 @@ DATA_FOLDER = os.path.abspath(CURRENT_FOLDER + "/../" + "data")
 TIFF_DATA_FOLDER = os.path.join(DATA_FOLDER, "rain", "tiff")
 CSV_DATA_FOLDER = os.path.join(DATA_FOLDER, "rain", "csv")
 
-ADMIN_BDRY_GDF = gpd.read_file(path + "<administrative_boundary_shapefile_path>")
+ADMIN_BDRY_GDF = gpd.read_file(path + r"\Maps\Geojson\assam_rc_2024-11.geojson")
 
 
 def download_data(year: int, start_date: str, end_date: str):
@@ -215,7 +215,7 @@ def retrieve_assam_revenue_circle_data(year: int):
 if __name__ == "__main__":
 
     # Takes year as an input from the cli
-    year = str(sys.argv[1])
+    year = 2021#str(sys.argv[1])
     year = int(year)
 
     # IF the year is current year, specify start and end date
