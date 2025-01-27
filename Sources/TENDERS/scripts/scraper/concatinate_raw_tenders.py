@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import glob
 
-for year in range(2016,2024):
+for year in range(2016,2025):
     year = str(year)
     
     for month in range(1,13):        
@@ -34,7 +34,7 @@ for year in range(2016,2024):
                             'Product Category', 'Is Multi Currency Allowed For BOQ', 'Allow Two Stage Bidding', 'Independent External Monitor/Remarks',
                             'Publish Date', 'Pre Bid Meeting Date', 'Bid Validity(Days)', 'Should Allow NDA Tender', 'Allow Preferential Bidder',
                             'Payment Mode', 'Bid Opening Date', 'Organisation Chain', 'Location', 'Pincode','No. of Covers', 'Tender Value in ₹',
-                            'Bidder Name', 'Awarded Value', 'Status', 'Contract Date :', 'Tender Stage']]
+                            'Bidder Name', 'Awarded Value', 'Status', 'Contract Date :']]#, 'Tender Stage']] #Tender Stage is not present in manually scraped tenders
         except:
             print('Error')
             continue

@@ -4,7 +4,7 @@ from rasterio.transform import Affine
 import numpy as np
 import os
 
-dem_path = os.getcwd()+'/Sources/NASADEM/data/NASADEM_DEM.tif'
+dem_path = os.getcwd()+'/IDS-DRR-Assam/Sources/NASADEM/data/NASADEM_DEM_30.tif'
 
 raster = rasterio.open(dem_path)
 dem_array = raster.read(1)
@@ -22,5 +22,5 @@ meta = raster.meta.copy()
 meta.update(dtype=rasterio.float32, count=1)
 
 # Write slope data to a new raster
-with rasterio.open(os.getcwd()+'/Sources/NASADEM/data/NASADEM_SLOPE_30.tif', 'w', **meta) as dst:
+with rasterio.open(os.getcwd()+'/IDS-DRR-Assam/Sources/NASADEM/data/NASADEM_SLOPE_30.tif', 'w', **meta) as dst:
     dst.write(slope_degrees.astype(rasterio.float32), 1)

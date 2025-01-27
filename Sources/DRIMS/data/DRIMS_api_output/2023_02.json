@@ -1,0 +1,47 @@
+{
+    "cwcDetails": {
+        "riversAtWarningLevel": "",
+        "riversAtDangerLevel": "",
+        "riversAtFloodLevel": ""
+    },
+    "affectedDistricts": {
+        "total": 0,
+        "districts": "",
+        "districtCodes": ""
+    },
+    "affectedRevenueCircles": {
+        "total": 0,
+        "districts": []
+    },
+    "affectedVillages": [],
+    "affectedPopulation": [],
+    "reliefCampsAndCenters": [],
+    "campInmates": [],
+    "nonCampInmates": [],
+    "hllDetails": {
+        "confirmed": [],
+        "missing": []
+    },
+    "livestocksDetails": {
+        "affected": [],
+        "washedAway": []
+    },
+    "houseDamagedDetails": {
+        "damage": [],
+        "otherDamage": []
+    },
+    "rescueOperationDetails": [],
+    "reliefDistributionDetails": {
+        "reliefData": [],
+        "otherReliefData": []
+    },
+    "infDamageDetails": {
+        "embBreached": [],
+        "embAffected": [],
+        "roadAffected": [],
+        "bridgeAffected": []
+    },
+    "otherDamageDetails": [],
+    "wildlife": [],
+    "remarks": []
+}

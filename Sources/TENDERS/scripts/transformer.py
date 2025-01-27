@@ -2,13 +2,13 @@ import pandas as pd
 import os
 import geopandas as gpd
 
-data_path = os.getcwd()+'/Sources/TENDERS/data/'
-assam_rc_gdf = gpd.read_file(os.getcwd()+'/Maps/Assam_Revenue_Circles/assam_revenue_circle_nov2022.shp')
+data_path = os.getcwd()+r'/Sources/TENDERS/data/'
+assam_rc_gdf = gpd.read_file(os.getcwd()+r'/Maps/Geojson/assam_rc_2024-11.geojson')
 
 flood_tenders_geotagged_df = pd.read_csv(data_path + 'floodtenders_RCgeotagged_manual.csv')
 flood_tenders_geotagged_df = flood_tenders_geotagged_df.merge(assam_rc_gdf,
                                  left_on = ['DISTRICT_FINALISED', 'REVENUE_CIRCLE_FINALISED'],
-                                 right_on = ['district_3', 'revenue_ci'],
+                                 right_on = ['dtname', 'revenue_ci'],
                                  how='left')
 # Total tender variable
 variable = 'total_tender_awarded_value'

@@ -8,7 +8,7 @@ idea_frm_tenders_df = pd.read_csv(os.getcwd()+'/Sources/TENDERS/data/flood_tende
 
 #ASSAM_VILLAGES = gpd.read_file(os.getcwd()+'/Maps/assam_village_complete_with_revenueCircle_district_35_oct2022.geojson',
  #                              driver='GeoJSON')
-ASSAM_VILLAGES = pd.read_csv(os.getcwd()+'/Maps/ASSAM_VILLAGES_MASTER.csv', encoding='utf-8').dropna()
+ASSAM_VILLAGES = pd.read_csv(os.getcwd()+r'\Maps\Extra\ASSAM_VILLAGES_RC_DISTRICT_MAPPING.csv', encoding='utf-8').dropna()
 
 #Clean village names
 assam_villages = ASSAM_VILLAGES["VILNAM_SOI"]
@@ -298,6 +298,13 @@ for idx, row in idea_frm_tenders_df.iterrows():
 
 idea_frm_tenders_df.to_csv(os.getcwd()+'/Sources/TENDERS/data/floodtenders_districtgeotagged.csv',index=False)
 
-print('Total number of flood related tenders: ', idea_frm_tenders_df.shape[0])
-print('Number of tenders whose district could not be geo-tagged: ',idea_frm_tenders_df[idea_frm_tenders_df['DISTRICT_FINALISED']=='NA'].shape[0])
-print('Number of tenders whose district identification is a CONFLICT: ',idea_frm_tenders_df[idea_frm_tenders_df['DISTRICT_FINALISED']=='CONFLICT'].shape[0])
+total_number_of_flood_tenders = idea_frm_tenders_df.shape[0]
+unidentified_flood_tenders = idea_frm_tenders_df[idea_frm_tenders_df['DISTRICT_FINALISED']=='NA'].shape[0]
+conflict_flood_tenders = idea_frm_tenders_df[idea_frm_tenders_df['DISTRICT_FINALISED']=='CONFLICT'].shape[0]
+
+percentage = (total_number_of_flood_tenders - unidentified_flood_tenders + conflict_flood_tenders)*100/total_number_of_flood_tenders
+
+print('Total number of flood related tenders: ', total_number_of_flood_tenders)
+print('Number of tenders whose district could not be geo-tagged: ',unidentified_flood_tenders)
+print('Number of tenders whose district identification is a CONFLICT: ',conflict_flood_tenders)
+print(percentage)

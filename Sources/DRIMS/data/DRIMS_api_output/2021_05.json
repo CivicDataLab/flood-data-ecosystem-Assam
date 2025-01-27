@@ -1,0 +1,559 @@
+{
+    "cwcDetails": {
+        "riversAtWarningLevel": "",
+        "riversAtDangerLevel": "",
+        "riversAtFloodLevel": ""
+    },
+    "affectedDistricts": {
+        "total": 5,
+        "districts": "Dima-Hasao, Sivasagar, Morigaon, Biswanath, Nalbari",
+        "districtCodes": "12, 29, 26, 06, 28"
+    },
+    "affectedRevenueCircles": {
+        "total": 0,
+        "districts": []
+    },
+    "affectedVillages": [
+        {
+            "total": 0,
+            "district": "Dima-Hasao",
+            "districtCode": "12",
+            "details": "(null | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Sivasagar",
+            "districtCode": "29",
+            "details": "(null | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Morigaon",
+            "districtCode": "26",
+            "details": "(null | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Biswanath",
+            "districtCode": "06",
+            "details": "(null | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Nalbari",
+            "districtCode": "28",
+            "details": "(null | 0)"
+        }
+    ],
+    "affectedPopulation": [],
+    "reliefCampsAndCenters": [],
+    "campInmates": [],
+    "nonCampInmates": [],
+    "hllDetails": {
+        "confirmed": [
+            {
+                "district": "Dima-Hasao",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Sivasagar",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Morigaon",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Biswanath",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Nalbari",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            }
+        ],
+        "missing": [
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            }
+        ]
+    },
+    "livestocksDetails": {
+        "affected": [],
+        "washedAway": []
+    },
+    "houseDamagedDetails": {
+        "damage": [
+            {
+                "district": "Dima-Hasao",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Sivasagar",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Morigaon",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Biswanath",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Nalbari",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            }
+        ],
+        "otherDamage": [
+            {
+                "district": "Dima-Hasao",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Sivasagar",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Morigaon",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Biswanath",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Nalbari",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            }
+        ]
+    },
+    "rescueOperationDetails": [],
+    "reliefDistributionDetails": {
+        "reliefData": [],
+        "otherReliefData": []
+    },
+    "infDamageDetails": {
+        "embBreached": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "embAffected": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "roadAffected": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "bridgeAffected": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ]
+    },
+    "otherDamageDetails": [
+        {
+            "district": "Biswanath",
+            "details": [
+                {
+                    "block": "null",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Dima-Hasao",
+            "details": [
+                {
+                    "block": "null",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Morigaon",
+            "details": [
+                {
+                    "block": "null",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Nalbari",
+            "details": [
+                {
+                    "block": "null",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Sivasagar",
+            "details": [
+                {
+                    "block": "null",
+                    "damages": []
+                }
+            ]
+        }
+    ],
+    "wildlife": [
+        {
+            "district": "Biswanath",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dima-Hasao",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Morigaon",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Nalbari",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Sivasagar",
+            "wildlifeAffected": "(null - 0)"
+        }
+    ],
+    "remarks": [
+        {
+            "district": "Biswanath",
+            "remarks": ""
+        },
+        {
+            "district": "Dima-Hasao",
+            "remarks": ""
+        },
+        {
+            "district": "Morigaon",
+            "remarks": ""
+        },
+        {
+            "district": "Nalbari",
+            "remarks": ""
+        },
+        {
+            "district": "Sivasagar",
+            "remarks": ""
+        }
+    ]
+}

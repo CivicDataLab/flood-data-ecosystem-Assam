@@ -1,0 +1,4994 @@
+{
+    "cwcDetails": {
+        "riversAtWarningLevel": "Jia-Bharali (Nt Road Crossing), Brahmaputra (Tezpur), Brahmaputra (Neamatighat), Beki (Road Bridge), Brahmaputra (Dibrugarh), Subansiri (Badatighat), Sankosh (Golokganj), Brahmaputra (Dhubri), Brahmaputra (Goalpara), Brahmaputra (Guwahati), Ranganadi (Nt Road Crossing)",
+        "riversAtDangerLevel": "Brahmaputra (Neamatighat), Brahmaputra (Tezpur)",
+        "riversAtFloodLevel": ""
+    },
+    "affectedDistricts": {
+        "total": 20,
+        "districts": "Udalguri, Nalbari, Karimganj, Dhubri, Majuli, Chirang, Dhemaji, Karbi Anglong, Morigaon, Lakhimpur, Kamrup, Dibrugarh, Karbi Anglong West, Golaghat, Nagaon, Jorhat, Darrang, Tinsukia, Kokrajhar, South Salmara",
+        "districtCodes": "33, 28, 22, 10, 25, 09, 05, 20, 26, 24, 19, 11, 21, 14, 27, 17, 04, 32, 23, 31"
+    },
+    "affectedRevenueCircles": {
+        "total": 46,
+        "districts": [
+            {
+                "district": "Chirang",
+                "districtCode": "09",
+                "total": 1,
+                "details": "Bengtal"
+            },
+            {
+                "district": "Darrang",
+                "districtCode": "04",
+                "total": 1,
+                "details": "Sipajhar"
+            },
+            {
+                "district": "Dhemaji",
+                "districtCode": "05",
+                "total": 4,
+                "details": "Jonai, Sissiborgaon, Dhemaji, Gogamukh"
+            },
+            {
+                "district": "Dhubri",
+                "districtCode": "10",
+                "total": 5,
+                "details": "Bilasipara, Dhubri, Gauripur, Chapar, South Salmara Part"
+            },
+            {
+                "district": "Dibrugarh",
+                "districtCode": "11",
+                "total": 3,
+                "details": "Chabua, Dibrugarh West, Dibrugarh East"
+            },
+            {
+                "district": "Golaghat",
+                "districtCode": "14",
+                "total": 3,
+                "details": "Bokakhat, Dergaon, Khumtai"
+            },
+            {
+                "district": "Jorhat",
+                "districtCode": "17",
+                "total": 2,
+                "details": "Teok, Jorhat West"
+            },
+            {
+                "district": "Kamrup",
+                "districtCode": "19",
+                "total": 1,
+                "details": "Hajo"
+            },
+            {
+                "district": "Karbi Anglong",
+                "districtCode": "20",
+                "total": 1,
+                "details": "Phuloni"
+            },
+            {
+                "district": "Karbi Anglong West",
+                "districtCode": "21",
+                "total": 1,
+                "details": "Donkamokam"
+            },
+            {
+                "district": "Kokrajhar",
+                "districtCode": "23",
+                "total": 1,
+                "details": "Bagribari"
+            },
+            {
+                "district": "Lakhimpur",
+                "districtCode": "24",
+                "total": 6,
+                "details": "Bihpuria, Nowboicha, North Lakhimpur, Subansiri, Dhakuakhana, Narayanpur"
+            },
+            {
+                "district": "Majuli",
+                "districtCode": "25",
+                "total": 2,
+                "details": "Majuli, Ujani Majuli"
+            },
+            {
+                "district": "Morigaon",
+                "districtCode": "26",
+                "total": 1,
+                "details": "Mayong"
+            },
+            {
+                "district": "Nagaon",
+                "districtCode": "27",
+                "total": 4,
+                "details": "Kampur, Nagaon, Dhing, Rupahi"
+            },
+            {
+                "district": "Nalbari",
+                "districtCode": "28",
+                "total": 7,
+                "details": "Nalbari, Banekuchi, Ghograpar, Tihu, Paschim Nalbari, Barbhag, Barkhetri"
+            },
+            {
+                "district": "South Salmara",
+                "districtCode": "31",
+                "total": 1,
+                "details": "South Salmara"
+            },
+            {
+                "district": "Tinsukia",
+                "districtCode": "32",
+                "total": 1,
+                "details": "Tinsukia"
+            },
+            {
+                "district": "Udalguri",
+                "districtCode": "33",
+                "total": 1,
+                "details": "Harisinga"
+            }
+        ]
+    },
+    "affectedVillages": [
+        {
+            "total": 0,
+            "district": "Udalguri",
+            "districtCode": "33",
+            "details": "(Harisinga | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Nalbari",
+            "districtCode": "28",
+            "details": "(Nalbari | 0), (Banekuchi | 0), (Ghograpar | 0), (Tihu | 0), (Paschim Nalbari | 0), (Barbhag | 0), (Barkhetri | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Karimganj",
+            "districtCode": "22",
+            "details": "(null | 0)"
+        },
+        {
+            "total": 115,
+            "district": "Dhubri",
+            "districtCode": "10",
+            "details": "(Bilasipara | 22), (Dhubri | 0), (Gauripur | 0), (Chapar | 48), (South Salmara Part | 45)"
+        },
+        {
+            "total": 36,
+            "district": "Majuli",
+            "districtCode": "25",
+            "details": "(Majuli | 26), (Ujani Majuli | 10)"
+        },
+        {
+            "total": 0,
+            "district": "Chirang",
+            "districtCode": "09",
+            "details": "(Bengtal | 0)"
+        },
+        {
+            "total": 89,
+            "district": "Dhemaji",
+            "districtCode": "05",
+            "details": "(Jonai | 34), (Sissiborgaon | 30), (Dhemaji | 10), (Gogamukh | 15)"
+        },
+        {
+            "total": 2,
+            "district": "Karbi Anglong",
+            "districtCode": "20",
+            "details": "(Phuloni | 2)"
+        },
+        {
+            "total": 17,
+            "district": "Morigaon",
+            "districtCode": "26",
+            "details": "(Mayong | 17)"
+        },
+        {
+            "total": 117,
+            "district": "Lakhimpur",
+            "districtCode": "24",
+            "details": "(Bihpuria | 40), (Nowboicha | 22), (North Lakhimpur | 8), (Subansiri | 2), (Dhakuakhana | 28), (Narayanpur | 17)"
+        },
+        {
+            "total": 0,
+            "district": "Kamrup",
+            "districtCode": "19",
+            "details": "(Hajo | 0)"
+        },
+        {
+            "total": 3,
+            "district": "Dibrugarh",
+            "districtCode": "11",
+            "details": "(Chabua | 2), (Dibrugarh West | 1), (Dibrugarh East | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Karbi Anglong West",
+            "districtCode": "21",
+            "details": "(Donkamokam | 0)"
+        },
+        {
+            "total": 28,
+            "district": "Golaghat",
+            "districtCode": "14",
+            "details": "(Bokakhat | 19), (Dergaon | 6), (Khumtai | 3)"
+        },
+        {
+            "total": 34,
+            "district": "Nagaon",
+            "districtCode": "27",
+            "details": "(Kampur | 13), (Nagaon | 8), (Dhing | 10), (Rupahi | 3)"
+        },
+        {
+            "total": 14,
+            "district": "Jorhat",
+            "districtCode": "17",
+            "details": "(Teok | 2), (Jorhat West | 12)"
+        },
+        {
+            "total": 3,
+            "district": "Darrang",
+            "districtCode": "04",
+            "details": "(Sipajhar | 3)"
+        },
+        {
+            "total": 3,
+            "district": "Tinsukia",
+            "districtCode": "32",
+            "details": "(Tinsukia | 3)"
+        },
+        {
+            "total": 22,
+            "district": "Kokrajhar",
+            "districtCode": "23",
+            "details": "(Bagribari | 22)"
+        },
+        {
+            "total": 31,
+            "district": "South Salmara",
+            "districtCode": "31",
+            "details": "(South Salmara | 31)"
+        }
+    ],
+    "affectedPopulation": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Chirang",
+            "districtCode": "09",
+            "details": "(Bengtal | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 116,
+            "district": "Darrang",
+            "districtCode": "04",
+            "details": "(Sipajhar | Population Affected: 0 | Crop Area: 116)"
+        },
+        {
+            "total": 38774,
+            "totalMale": 16199,
+            "totalFemale": 14690,
+            "totalChildren": 7885,
+            "totalCropArea": 3872.4,
+            "district": "Dhemaji",
+            "districtCode": "05",
+            "details": "(Jonai | Population Affected: 11687 | Crop Area: 2119.4), (Sissiborgaon | Population Affected: 12905 | Crop Area: 1433), (Dhemaji | Population Affected: 7167 | Crop Area: 120), (Gogamukh | Population Affected: 7015 | Crop Area: 200)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 1382,
+            "district": "Dhubri",
+            "districtCode": "10",
+            "details": "(Bilasipara | Population Affected: 0 | Crop Area: 237), (Dhubri | Population Affected: 0 | Crop Area: 0), (Gauripur | Population Affected: 0 | Crop Area: 0), (Chapar | Population Affected: 0 | Crop Area: 624), (South Salmara Part | Population Affected: 0 | Crop Area: 521)"
+        },
+        {
+            "total": 3857,
+            "totalMale": 1567,
+            "totalFemale": 1240,
+            "totalChildren": 1050,
+            "totalCropArea": 65,
+            "district": "Dibrugarh",
+            "districtCode": "11",
+            "details": "(Chabua | Population Affected: 3857 | Crop Area: 25), (Dibrugarh West | Population Affected: 0 | Crop Area: 40), (Dibrugarh East | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 753.09,
+            "district": "Golaghat",
+            "districtCode": "14",
+            "details": "(Bokakhat | Population Affected: 0 | Crop Area: 663.5), (Dergaon | Population Affected: 0 | Crop Area: 69), (Khumtai | Population Affected: 0 | Crop Area: 20.59)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 135.5,
+            "district": "Jorhat",
+            "districtCode": "17",
+            "details": "(Teok | Population Affected: 0 | Crop Area: 32.5), (Jorhat West | Population Affected: 0 | Crop Area: 103)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Kamrup",
+            "districtCode": "19",
+            "details": "(Hajo | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 96.31,
+            "district": "Karbi Anglong",
+            "districtCode": "20",
+            "details": "(Phuloni | Population Affected: 0 | Crop Area: 96.31)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Karbi Anglong West",
+            "districtCode": "21",
+            "details": "(Donkamokam | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 259.63,
+            "district": "Kokrajhar",
+            "districtCode": "23",
+            "details": "(Bagribari | Population Affected: 0 | Crop Area: 259.63)"
+        },
+        {
+            "total": 39416,
+            "totalMale": 16030,
+            "totalFemale": 13275,
+            "totalChildren": 10111,
+            "totalCropArea": 2267.5,
+            "district": "Lakhimpur",
+            "districtCode": "24",
+            "details": "(Bihpuria | Population Affected: 2615 | Crop Area: 1381.5), (Nowboicha | Population Affected: 28655 | Crop Area: 0), (North Lakhimpur | Population Affected: 7439 | Crop Area: 158), (Subansiri | Population Affected: 707 | Crop Area: 35), (Dhakuakhana | Population Affected: 0 | Crop Area: 400), (Narayanpur | Population Affected: 0 | Crop Area: 293)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 724.69,
+            "district": "Majuli",
+            "districtCode": "25",
+            "details": "(Majuli | Population Affected: 0 | Crop Area: 452), (Ujani Majuli | Population Affected: 0 | Crop Area: 272.69)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 733,
+            "district": "Morigaon",
+            "districtCode": "26",
+            "details": "(Mayong | Population Affected: 0 | Crop Area: 733)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 1046,
+            "district": "Nagaon",
+            "districtCode": "27",
+            "details": "(Kampur | Population Affected: 0 | Crop Area: 318), (Nagaon | Population Affected: 0 | Crop Area: 174), (Dhing | Population Affected: 0 | Crop Area: 462), (Rupahi | Population Affected: 0 | Crop Area: 92)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Nalbari",
+            "districtCode": "28",
+            "details": "(Nalbari | Population Affected: 0 | Crop Area: 0), (Banekuchi | Population Affected: 0 | Crop Area: 0), (Ghograpar | Population Affected: 0 | Crop Area: 0), (Tihu | Population Affected: 0 | Crop Area: 0), (Paschim Nalbari | Population Affected: 0 | Crop Area: 0), (Barbhag | Population Affected: 0 | Crop Area: 0), (Barkhetri | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 436,
+            "district": "South Salmara",
+            "districtCode": "31",
+            "details": "(South Salmara | Population Affected: 0 | Crop Area: 436)"
+        },
+        {
+            "total": 2666,
+            "totalMale": 985,
+            "totalFemale": 848,
+            "totalChildren": 833,
+            "totalCropArea": 238,
+            "district": "Tinsukia",
+            "districtCode": "32",
+            "details": "(Tinsukia | Population Affected: 2666 | Crop Area: 238)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Udalguri",
+            "districtCode": "33",
+            "details": "(Harisinga | Population Affected: 0 | Crop Area: 0)"
+        }
+    ],
+    "reliefCampsAndCenters": [
+        {
+            "total": 0,
+            "district": "Chirang",
+            "reliefCamps": "(Bengtal | 0)",
+            "reliefCenters": "(Bengtal | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Darrang",
+            "reliefCamps": "(Sipajhar | 0)",
+            "reliefCenters": "(Sipajhar | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 20,
+            "district": "Dhemaji",
+            "reliefCamps": "(Jonai | 0), (Sissiborgaon | 0), (Dhemaji | 0), (Gogamukh | 0)",
+            "reliefCenters": "(Jonai | 2), (Sissiborgaon | 4), (Dhemaji | 8), (Gogamukh | 6)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 20
+        },
+        {
+            "total": 0,
+            "district": "Dhubri",
+            "reliefCamps": "(Bilasipara | 0), (Dhubri | 0), (Gauripur | 0), (Chapar | 0), (South Salmara Part | 0)",
+            "reliefCenters": "(Bilasipara | 0), (Dhubri | 0), (Gauripur | 0), (Chapar | 0), (South Salmara Part | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 2,
+            "district": "Dibrugarh",
+            "reliefCamps": "(Chabua | 0), (Dibrugarh West | 0), (Dibrugarh East | 0)",
+            "reliefCenters": "(Chabua | 2), (Dibrugarh West | 0), (Dibrugarh East | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 2
+        },
+        {
+            "total": 0,
+            "district": "Golaghat",
+            "reliefCamps": "(Bokakhat | 0), (Dergaon | 0), (Khumtai | 0)",
+            "reliefCenters": "(Bokakhat | 0), (Dergaon | 0), (Khumtai | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Jorhat",
+            "reliefCamps": "(Teok | 0), (Jorhat West | 0)",
+            "reliefCenters": "(Teok | 0), (Jorhat West | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Kamrup",
+            "reliefCamps": "(Hajo | 0)",
+            "reliefCenters": "(Hajo | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Karbi Anglong",
+            "reliefCamps": "(Phuloni | 0)",
+            "reliefCenters": "(Phuloni | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Karbi Anglong West",
+            "reliefCamps": "(Donkamokam | 0)",
+            "reliefCenters": "(Donkamokam | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Kokrajhar",
+            "reliefCamps": "(Bagribari | 0)",
+            "reliefCenters": "(Bagribari | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 33,
+            "district": "Lakhimpur",
+            "reliefCamps": "(Bihpuria | 0), (Nowboicha | 0), (North Lakhimpur | 0), (Subansiri | 0), (Dhakuakhana | 0), (Narayanpur | 0)",
+            "reliefCenters": "(Bihpuria | 4), (Nowboicha | 17), (North Lakhimpur | 8), (Subansiri | 4), (Dhakuakhana | 0), (Narayanpur | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 33
+        },
+        {
+            "total": 0,
+            "district": "Majuli",
+            "reliefCamps": "(Majuli | 0), (Ujani Majuli | 0)",
+            "reliefCenters": "(Majuli | 0), (Ujani Majuli | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Morigaon",
+            "reliefCamps": "(Mayong | 0)",
+            "reliefCenters": "(Mayong | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Nagaon",
+            "reliefCamps": "(Kampur | 0), (Nagaon | 0), (Dhing | 0), (Rupahi | 0)",
+            "reliefCenters": "(Kampur | 0), (Nagaon | 0), (Dhing | 0), (Rupahi | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Nalbari",
+            "reliefCamps": "(Nalbari | 0), (Banekuchi | 0), (Ghograpar | 0), (Tihu | 0), (Paschim Nalbari | 0), (Barbhag | 0), (Barkhetri | 0)",
+            "reliefCenters": "(Nalbari | 0), (Banekuchi | 0), (Ghograpar | 0), (Tihu | 0), (Paschim Nalbari | 0), (Barbhag | 0), (Barkhetri | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "South Salmara",
+            "reliefCamps": "(South Salmara | 0)",
+            "reliefCenters": "(South Salmara | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 1,
+            "district": "Tinsukia",
+            "reliefCamps": "(Tinsukia | 0)",
+            "reliefCenters": "(Tinsukia | 1)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 1
+        },
+        {
+            "total": 0,
+            "district": "Udalguri",
+            "reliefCamps": "(Harisinga | 0)",
+            "reliefCenters": "(Harisinga | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        }
+    ],
+    "campInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Chirang",
+            "details": "(Bengtal | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Darrang",
+            "details": "(Sipajhar | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Dhemaji",
+            "details": "(Jonai | 0), (Sissiborgaon | 0), (Dhemaji | 0), (Gogamukh | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Dhubri",
+            "details": "(Bilasipara | 0), (Dhubri | 0), (Gauripur | 0), (Chapar | 0), (South Salmara Part | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Dibrugarh",
+            "details": "(Chabua | 0), (Dibrugarh West | 0), (Dibrugarh East | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Golaghat",
+            "details": "(Bokakhat | 0), (Dergaon | 0), (Khumtai | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Jorhat",
+            "details": "(Teok | 0), (Jorhat West | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Kamrup",
+            "details": "(Hajo | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Karbi Anglong",
+            "details": "(Phuloni | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Karbi Anglong West",
+            "details": "(Donkamokam | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Kokrajhar",
+            "details": "(Bagribari | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Lakhimpur",
+            "details": "(Bihpuria | 0), (Nowboicha | 0), (North Lakhimpur | 0), (Subansiri | 0), (Dhakuakhana | 0), (Narayanpur | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Majuli",
+            "details": "(Majuli | 0), (Ujani Majuli | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Morigaon",
+            "details": "(Mayong | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Nagaon",
+            "details": "(Kampur | 0), (Nagaon | 0), (Dhing | 0), (Rupahi | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Nalbari",
+            "details": "(Nalbari | 0), (Banekuchi | 0), (Ghograpar | 0), (Tihu | 0), (Paschim Nalbari | 0), (Barbhag | 0), (Barkhetri | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "South Salmara",
+            "details": "(South Salmara | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Tinsukia",
+            "details": "(Tinsukia | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Udalguri",
+            "details": "(Harisinga | 0)"
+        }
+    ],
+    "nonCampInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Chirang",
+            "details": "(Bengtal | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Darrang",
+            "details": "(Sipajhar | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Dhemaji",
+            "details": "(Jonai | 0), (Sissiborgaon | 0), (Dhemaji | 0), (Gogamukh | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Dhubri",
+            "details": "(Bilasipara | 0), (Dhubri | 0), (Gauripur | 0), (Chapar | 0), (South Salmara Part | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Dibrugarh",
+            "details": "(Chabua | 0), (Dibrugarh West | 0), (Dibrugarh East | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Golaghat",
+            "details": "(Bokakhat | 0), (Dergaon | 0), (Khumtai | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Jorhat",
+            "details": "(Teok | 0), (Jorhat West | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Kamrup",
+            "details": "(Hajo | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Karbi Anglong",
+            "details": "(Phuloni | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Karbi Anglong West",
+            "details": "(Donkamokam | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Kokrajhar",
+            "details": "(Bagribari | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Lakhimpur",
+            "details": "(Bihpuria | 0), (Nowboicha | 0), (North Lakhimpur | 0), (Subansiri | 0), (Dhakuakhana | 0), (Narayanpur | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Majuli",
+            "details": "(Majuli | 0), (Ujani Majuli | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Morigaon",
+            "details": "(Mayong | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Nagaon",
+            "details": "(Kampur | 0), (Nagaon | 0), (Dhing | 0), (Rupahi | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Nalbari",
+            "details": "(Nalbari | 0), (Banekuchi | 0), (Ghograpar | 0), (Tihu | 0), (Paschim Nalbari | 0), (Barbhag | 0), (Barkhetri | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "South Salmara",
+            "details": "(South Salmara | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Tinsukia",
+            "details": "(Tinsukia | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Udalguri",
+            "details": "(Harisinga | 0)"
+        }
+    ],
+    "hllDetails": {
+        "confirmed": [
+            {
+                "district": "Udalguri",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Harisinga | 0)"
+            },
+            {
+                "district": "Nalbari",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Nalbari | 0), (Banekuchi | 0), (Ghograpar | 0), (Tihu | 0), (Paschim Nalbari | 0), (Barbhag | 0), (Barkhetri | 0)"
+            },
+            {
+                "district": "Karimganj",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Dhubri",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bilasipara | 0), (Dhubri | 0), (Gauripur | 0), (Chapar | 0), (South Salmara Part | 0)"
+            },
+            {
+                "district": "Majuli",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Majuli | 0), (Ujani Majuli | 0)"
+            },
+            {
+                "district": "Chirang",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bengtal | 0)"
+            },
+            {
+                "district": "Dhemaji",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Jonai | 0), (Sissiborgaon | 0), (Dhemaji | 0), (Gogamukh | 0)"
+            },
+            {
+                "district": "Karbi Anglong",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Phuloni | 0)"
+            },
+            {
+                "district": "Morigaon",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Mayong | 0)"
+            },
+            {
+                "district": "Lakhimpur",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bihpuria | 0), (Nowboicha | 0), (North Lakhimpur | 0), (Subansiri | 0), (Dhakuakhana | 0), (Narayanpur | 0)"
+            },
+            {
+                "district": "Kamrup",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Hajo | 0)"
+            },
+            {
+                "district": "Dibrugarh",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Chabua | 0), (Dibrugarh West | 0), (Dibrugarh East | 0)"
+            },
+            {
+                "district": "Karbi Anglong West",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Donkamokam | 0)"
+            },
+            {
+                "district": "Golaghat",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bokakhat | 0), (Dergaon | 0), (Khumtai | 0)"
+            },
+            {
+                "district": "Nagaon",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Kampur | 0), (Nagaon | 0), (Dhing | 0), (Rupahi | 0)"
+            },
+            {
+                "district": "Jorhat",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Teok | 0), (Jorhat West | 0)"
+            },
+            {
+                "district": "Darrang",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Sipajhar | 0)"
+            },
+            {
+                "district": "Tinsukia",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Tinsukia | 0)"
+            },
+            {
+                "district": "Kokrajhar",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bagribari | 0)"
+            },
+            {
+                "district": "South Salmara",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(South Salmara | 0)"
+            }
+        ],
+        "missing": [
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Harisinga | 0)"
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Nalbari | 0), (Banekuchi | 0), (Ghograpar | 0), (Tihu | 0), (Paschim Nalbari | 0), (Barbhag | 0), (Barkhetri | 0)"
+            },
+            {
+                "district": "Karimganj",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(null | 0)"
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bilasipara | 0), (Dhubri | 0), (Gauripur | 0), (Chapar | 0), (South Salmara Part | 0)"
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Majuli | 0), (Ujani Majuli | 0)"
+            },
+            {
+                "district": "Chirang",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bengtal | 0)"
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Jonai | 0), (Sissiborgaon | 0), (Dhemaji | 0), (Gogamukh | 0)"
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Phuloni | 0)"
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Mayong | 0)"
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bihpuria | 0), (Nowboicha | 0), (North Lakhimpur | 0), (Subansiri | 0), (Dhakuakhana | 0), (Narayanpur | 0)"
+            },
+            {
+                "district": "Kamrup",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Hajo | 0)"
+            },
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Chabua | 0), (Dibrugarh West | 0), (Dibrugarh East | 0)"
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Donkamokam | 0)"
+            },
+            {
+                "district": "Golaghat",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bokakhat | 0), (Dergaon | 0), (Khumtai | 0)"
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Kampur | 0), (Nagaon | 0), (Dhing | 0), (Rupahi | 0)"
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Teok | 0), (Jorhat West | 0)"
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Sipajhar | 0)"
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Tinsukia | 0)"
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Bagribari | 0)"
+            },
+            {
+                "district": "South Salmara",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(South Salmara | 0)"
+            }
+        ]
+    },
+    "livestocksDetails": {
+        "affected": [
+            {
+                "district": "Chirang",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Darrang",
+                "noLaBig": 474,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 474
+            },
+            {
+                "district": "Dhemaji",
+                "noLaBig": 24796,
+                "noLaSmall": 11686,
+                "noLaPoultry": 5342,
+                "total": 41824
+            },
+            {
+                "district": "Dhubri",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dibrugarh",
+                "noLaBig": 621,
+                "noLaSmall": 102,
+                "noLaPoultry": 0,
+                "total": 723
+            },
+            {
+                "district": "Golaghat",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Jorhat",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kamrup",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karbi Anglong",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karbi Anglong West",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Lakhimpur",
+                "noLaBig": 8253,
+                "noLaSmall": 3264,
+                "noLaPoultry": 1320,
+                "total": 12837
+            },
+            {
+                "district": "Majuli",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Morigaon",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Nagaon",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Nalbari",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "South Salmara",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Tinsukia",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Udalguri",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            }
+        ],
+        "washedAway": [
+            {
+                "district": "Chirang",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Darrang",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dhubri",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dibrugarh",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Golaghat",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Jorhat",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kamrup",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karbi Anglong",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karbi Anglong West",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Lakhimpur",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Majuli",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Morigaon",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Nagaon",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Nalbari",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "South Salmara",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Tinsukia",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Udalguri",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            }
+        ]
+    },
+    "houseDamagedDetails": {
+        "damage": [
+            {
+                "district": "Udalguri",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Nalbari",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Karimganj",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Dhubri",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Majuli",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Chirang",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noHdFullyKuccha": 1,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 23,
+                "totalFully": 1,
+                "totalPartially": 23
+            },
+            {
+                "district": "Karbi Anglong",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Morigaon",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Lakhimpur",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Kamrup",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Dibrugarh",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Karbi Anglong West",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Golaghat",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Nagaon",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Jorhat",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Darrang",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Tinsukia",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "South Salmara",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            }
+        ],
+        "otherDamage": [
+            {
+                "district": "Udalguri",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Nalbari",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Karimganj",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Dhubri",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Majuli",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Chirang",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Karbi Anglong",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Morigaon",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Lakhimpur",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Kamrup",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Dibrugarh",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Karbi Anglong West",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Golaghat",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Nagaon",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Jorhat",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Darrang",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Tinsukia",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "South Salmara",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            }
+        ]
+    },
+    "rescueOperationDetails": [
+        {
+            "district": "Chirang",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Darrang",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Dhemaji",
+            "agencies": "SDRF",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 1,
+            "totalPersonEvacuated": 3,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Dhubri",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Dibrugarh",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Golaghat",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Jorhat",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Kamrup",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Karbi Anglong",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Karbi Anglong West",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Kokrajhar",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Lakhimpur",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Majuli",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Morigaon",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Nagaon",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Nalbari",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "South Salmara",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Tinsukia",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Udalguri",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        }
+    ],
+    "reliefDistributionDetails": {
+        "reliefData": [
+            {
+                "district": "Chirang",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Darrang",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "16.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Dhemaji",
+                "rice": "352.69",
+                "dal": "62.65",
+                "salt": "18.77",
+                "mOil": "1804.35",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Dhubri",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Dibrugarh",
+                "rice": "63.13",
+                "dal": "11.57",
+                "salt": "3.47",
+                "mOil": "186.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "77.58",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Golaghat",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Jorhat",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Kamrup",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Karbi Anglong",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Karbi Anglong West",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Kokrajhar",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Lakhimpur",
+                "rice": "615.89",
+                "dal": "114.69",
+                "salt": "34.60",
+                "mOil": "3459.63",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "166.60"
+            },
+            {
+                "district": "Majuli",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Morigaon",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Nagaon",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Nalbari",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "South Salmara",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Tinsukia",
+                "rice": "42.99",
+                "dal": "7.99",
+                "salt": "2.39",
+                "mOil": "239.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Udalguri",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            }
+        ],
+        "otherReliefData": [
+            {
+                "district": "Chirang",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Darrang",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Dhemaji",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": "0-0.00-Q, Tarpoulin-243.00-Pieces, Tarpaulin-261.00-Pieces"
+            },
+            {
+                "district": "Dhubri",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Dibrugarh",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Golaghat",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Jorhat",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Kamrup",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Karbi Anglong",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Karbi Anglong West",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Kokrajhar",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Lakhimpur",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": "HTW-22.00-Pieces, Concentrated Cattle feed/Gold level (Godrej brand)-397.20-Q, Concentrated Cattle Feed/Gold Level ( Godrej Brand)-73.28-Q"
+            },
+            {
+                "district": "Majuli",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Morigaon",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Nagaon",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Nalbari",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "South Salmara",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Tinsukia",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": "0-0.00-Q"
+            },
+            {
+                "district": "Udalguri",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            }
+        ]
+    },
+    "infDamageDetails": {
+        "embBreached": [
+            {
+                "district": "Chirang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bengtal | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Sipajhar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Jonai | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sissiborgaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhemaji | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gogamukh | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bilasipara | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhubri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gauripur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Chapar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(South Salmara Part | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chabua | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dibrugarh West | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dibrugarh East | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Golaghat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bokakhat | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dergaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Khumtai | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Teok | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Jorhat West | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Hajo | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Phuloni | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Donkamokam | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karimganj",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bagribari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 1,
+                "details": [
+                    {
+                        "block": "(Bihpuria | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nowboicha | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(North Lakhimpur | 1)",
+                        "details": [
+                            {
+                                "id": 32069,
+                                "type": "embBreached",
+                                "name": "NA ALI TELIAPATHAR GHANCHARAI RIGHT BANK",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "NA ALI TELIA PATHAR",
+                                "latitude": 0,
+                                "longitude": 0,
+                                "remarks": "Embankment breached at NA ALI TELIAPATHAR GHANCHARAI RIGHT BANK about 20 MTR as reported by WR department, NLP on 10-10-2022.",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(Subansiri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhakuakhana | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Narayanpur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Majuli | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Ujani Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mayong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kampur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nagaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhing | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Rupahi | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Banekuchi | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Ghograpar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Tihu | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Paschim Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barbhag | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barkhetri | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "South Salmara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(South Salmara | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Tinsukia | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Harisinga | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "embAffected": [
+            {
+                "district": "Chirang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bengtal | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Sipajhar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Jonai | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sissiborgaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhemaji | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gogamukh | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bilasipara | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhubri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gauripur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Chapar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(South Salmara Part | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chabua | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dibrugarh West | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dibrugarh East | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Golaghat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bokakhat | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dergaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Khumtai | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Teok | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Jorhat West | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Hajo | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 2,
+                "details": [
+                    {
+                        "block": "(Phuloni | 2)",
+                        "details": [
+                            {
+                                "id": 32063,
+                                "type": "embAffected",
+                                "name": "Constructed under MGNREGA",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Kampuriya gaon under Borongatoli Rev. village ",
+                                "latitude": 93.67,
+                                "longitude": 26.54,
+                                "remarks": "Due to heavy rainfall embankment at Kampuriya gaon under Borongatoli Rev. village constructed by DRDA under MGNREGA was partially damaged. Length of damaged-03m Dated 08-10-2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            },
+                            {
+                                "id": 32064,
+                                "type": "embAffected",
+                                "name": "Constructed under MGNREGA",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Nihang Engti gaon under Ok Kereng Pothar Rev. village ",
+                                "latitude": 93.01,
+                                "longitude": 26.16,
+                                "remarks": "Due to heavy rainfall embankment at Nihang Engti gaon under Ok Kereng Pothar Rev. village constructed by DRDA under MGNREGA was partially damaged. Length of damaged-04m, Dated 08-10-2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 1,
+                "details": [
+                    {
+                        "block": "(Donkamokam | 1)",
+                        "details": [
+                            {
+                                "id": 32077,
+                                "type": "embAffected",
+                                "name": "Baliguchi to Pudomoni Embankment",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Baliguchi to Pudomoni ",
+                                "latitude": 92.75,
+                                "longitude": 26.06,
+                                "remarks": "Due to incessant Rain damage caused by Kopili River on its L/B from Baliguchi to Pudomoni Embankment was affected/damaged on 21/05/2022 at the length of 1050 M as reported by Executive Engineer,West Karbi Anglong, Water Resource Division,Donkamokam on 12/10/2022.",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Karimganj",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bagribari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 2,
+                "details": [
+                    {
+                        "block": "(Bihpuria | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nowboicha | 2)",
+                        "details": [
+                            {
+                                "id": 32070,
+                                "type": "embAffected",
+                                "name": "Singra L/B embankment (U/S of NH-15)",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Bharaluwa",
+                                "latitude": 0,
+                                "longitude": 0,
+                                "remarks": "Rain cuts has been observed at Singra LB embankment (U/S of NH-15)about 10 mtr during last night shower i.e. 09.10.2022. Report received from, AE, Water Resources Dept. Lakhimpur on 10.10.2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            },
+                            {
+                                "id": 32072,
+                                "type": "embAffected",
+                                "name": "Earthen peripheral Bund",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Pandhowa",
+                                "latitude": 0,
+                                "longitude": 0,
+                                "remarks": "Errosion of Earthen peripheral bundh Hasi Baperi bridge to asot Ali chuburi (wc/9010256743) under MGNREGA (BMP GP). Report received from Karunabari Dev. Block on 11.10.2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(North Lakhimpur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Subansiri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhakuakhana | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Narayanpur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Majuli | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Ujani Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mayong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kampur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nagaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhing | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Rupahi | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Banekuchi | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Ghograpar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Tihu | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Paschim Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barbhag | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barkhetri | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "South Salmara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(South Salmara | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Tinsukia | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Harisinga | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "roadAffected": [
+            {
+                "district": "Chirang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bengtal | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Sipajhar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 3,
+                "details": [
+                    {
+                        "block": "(Jonai | 1)",
+                        "details": [
+                            {
+                                "id": 32074,
+                                "type": "road",
+                                "name": "PWRD territorial road Akland Machuwa Camp to Majgaon Kachari under PMGSY Package No.AS-04-163, 130.00 meter road damaged on 10/10/2022 by Baginadi River",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "From Ch.550.00M to Ch.650.00M  From Ch.120.00M to Ch.15.00M",
+                                "latitude": 95.25,
+                                "longitude": 27.76,
+                                "remarks": "As per report received from PWRD,Jonai Territorial Road Sub-Division-II, Jonai a PWRD territorial road Akland Machuwa Camp to Majgaon Kachari under PMGSY Package No.AS-04-163, 130.00 meter road damaged on 10/10/2022 by Baginadi River. for immediate restoration of the damaged portion contractor Ricky Taye have been engaged.",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(Sissiborgaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhemaji | 1)",
+                        "details": [
+                            {
+                                "id": 32088,
+                                "type": "road",
+                                "name": "Batamari to Machkhowa PWD road ",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Machkhowa",
+                                "latitude": 94.48,
+                                "longitude": 27.32,
+                                "remarks": "Yesterday on 13/10/2022, Bridge approach( Br.No.4/1) damaged occurred at Batamari to Machkhowa PWD road (Length-5 m.)",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(Gogamukh | 1)",
+                        "details": [
+                            {
+                                "id": 32085,
+                                "type": "road",
+                                "name": "PWRD. Berbhanga PWD road to Bhuma road via MAC Fish Production",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "From Ch.0.00 m to Ch.1000.00 m",
+                                "latitude": 94.35,
+                                "longitude": 27.39,
+                                "remarks": "Road overtopped from Ch.0.00 m to 1000.00 m of Berbhanga PWD road to Bhuma road via MAC Fish Production under PWRD, Dhemaji Teritorial Road Division. Dated 12/10/2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bilasipara | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhubri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gauripur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Chapar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(South Salmara Part | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chabua | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dibrugarh West | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dibrugarh East | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Golaghat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bokakhat | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dergaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Khumtai | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Teok | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Jorhat West | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Hajo | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Phuloni | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Donkamokam | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karimganj",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bagribari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 2,
+                "details": [
+                    {
+                        "block": "(Bihpuria | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nowboicha | 2)",
+                        "details": [
+                            {
+                                "id": 32073,
+                                "type": "road",
+                                "name": "Pandhowa to Mohghuli Road",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Pandhowa",
+                                "latitude": 0,
+                                "longitude": 0,
+                                "remarks": "Pandhowa to Mohghuli Road.Package no . AS 15 189.Road submerges from Ch  1300.00m to Ch 1900.00m.Average depth  45.00 cm. Erosion occurs at different stretches  from Ch  1370.00m to ch 1410.00m and from Ch 1760.00m to ch  1800.00m. Report received from PWRD Dept., Nowboicha Territorial Toad Road Sub Division on 11.10.2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            },
+                            {
+                                "id": 32086,
+                                "type": "road",
+                                "name": "Pahumora Pakania PWD Road",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "Bamungaya",
+                                "latitude": 0,
+                                "longitude": 0,
+                                "remarks": "Damaged and overtopped from Ch. 8600m to Ch 11300m. Report received from PWRD,  Lakhimpur, Nowboicha  Bihpuria Territorial Road Sub Division on 13.10.2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(North Lakhimpur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Subansiri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhakuakhana | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Narayanpur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Majuli | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Ujani Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 2,
+                "details": [
+                    {
+                        "block": "(Mayong | 2)",
+                        "details": [
+                            {
+                                "id": 32113,
+                                "type": "road",
+                                "name": "Hariabori SC village to Tetelitol",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "submerged at 1st and 3rd km",
+                                "latitude": 92.2,
+                                "longitude": 26.25,
+                                "remarks": "As reported by EE PWD Morigaon District Territorial Road Division on 15/10/2022",
+                                "createdAt": null,
+                                "updatedAt": null
+                            },
+                            {
+                                "id": 32114,
+                                "type": "road",
+                                "name": "Morisutitup to 1no Murkata road",
+                                "departmentName": null,
+                                "villageName": "",
+                                "location": "5th km submerged",
+                                "latitude": 92.04,
+                                "longitude": 26.27,
+                                "remarks": "As reported by EE PWD Morigaon District Territorial Road Division on 15/10/22",
+                                "createdAt": null,
+                                "updatedAt": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kampur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nagaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhing | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Rupahi | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Banekuchi | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Ghograpar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Tihu | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Paschim Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barbhag | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barkhetri | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "South Salmara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(South Salmara | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Tinsukia | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Harisinga | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "bridgeAffected": [
+            {
+                "district": "Chirang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bengtal | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Sipajhar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Jonai | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sissiborgaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhemaji | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gogamukh | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhubri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bilasipara | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhubri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Gauripur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Chapar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(South Salmara Part | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dibrugarh",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chabua | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dibrugarh West | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dibrugarh East | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Golaghat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bokakhat | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dergaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Khumtai | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Teok | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Jorhat West | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Hajo | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Phuloni | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Donkamokam | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karimganj",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(null | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bagribari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Lakhimpur",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Bihpuria | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nowboicha | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(North Lakhimpur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Subansiri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhakuakhana | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Narayanpur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Majuli | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Ujani Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mayong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kampur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nagaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Dhing | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Rupahi | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Banekuchi | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Ghograpar | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Tihu | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Paschim Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barbhag | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barkhetri | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "South Salmara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(South Salmara | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Tinsukia | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Harisinga | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ]
+    },
+    "otherDamageDetails": [
+        {
+            "district": "Chirang",
+            "details": [
+                {
+                    "block": "Bengtal",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Darrang",
+            "details": [
+                {
+                    "block": "Sipajhar",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Dhemaji",
+            "details": [
+                {
+                    "block": "Jonai",
+                    "damages": [
+                        {
+                            "damageName": "Bridge Approach Road Damaged (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35624,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "PWRD territorial road Bahir Jonai to Bera Chapori via Bolaipam under PMGSY Package No.AS-04-12, 50.00 meter bridge approach road damaged on 10/10/2022 by Boginadi River.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "block": "Sissiborgaon",
+                    "damages": []
+                },
+                {
+                    "block": "Dhemaji",
+                    "damages": []
+                },
+                {
+                    "block": "Gogamukh",
+                    "damages": [
+                        {
+                            "damageName": "Bridge Approach Road Damaged (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35640,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Erosion occurred at bridge approach at Ch.2630.00 m. (Gobindapur Side) of Borola to Gobindapur (Br. No.-3/1) Road under PWRD, Dhemaji Teritorial Road Division. Dated: 12/10/2022  Longitude: 94.356636°E & Latitude: 27.519912°N. ",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "district": "Dhubri",
+            "details": [
+                {
+                    "block": "Bilasipara",
+                    "damages": []
+                },
+                {
+                    "block": "Dhubri",
+                    "damages": []
+                },
+                {
+                    "block": "Gauripur",
+                    "damages": []
+                },
+                {
+                    "block": "Chapar",
+                    "damages": []
+                },
+                {
+                    "block": "South Salmara Part",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Dibrugarh",
+            "details": [
+                {
+                    "block": "Chabua",
+                    "damages": [
+                        {
+                            "damageName": "Anganwadi Centres Affected (in Nos)",
+                            "noOfDamage": 14,
+                            "details": [
+                                {
+                                    "id": 35664,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA CHALBIL AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 13/10/2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35665,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "KULIGAON AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 13/10/2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35663,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA ROMAI AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 13/10/2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35659,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 13/10/2022 ",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35660,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA KULIGAON AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 13/10/2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35661,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA TENGABARI AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 13/10/2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35662,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA CHALBIL AISUNG CHAPORI AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 13/10/2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35755,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA CHALBIL AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 14/10/2022,N27. 5714 E95. 2346",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35750,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 14/10/2022, N27 36.390  E9513.651",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35751,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA KULIGAON AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 14/10/2022,   N2735.845 E9513.227",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35752,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA TENGABARI AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 14/10/2022, N2736.652 E9514.237",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35753,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA CHALBIL AISUNG AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 14/10/2022, N27 34.890 E95 13.563,",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35754,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "DODHIA ROMAI AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 14/10/2022,N27 36.450 E95 13.782",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35756,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "KULIGAON AWC AFFECTED AS PER INFORMATION RECEIVED FROM SOCIAL WELFARE DEPT ON 14/10/2022,N27 35.860 E95 13.460",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "block": "Dibrugarh West",
+                    "damages": []
+                },
+                {
+                    "block": "Dibrugarh East",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Golaghat",
+            "details": [
+                {
+                    "block": "Bokakhat",
+                    "damages": []
+                },
+                {
+                    "block": "Dergaon",
+                    "damages": []
+                },
+                {
+                    "block": "Khumtai",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Jorhat",
+            "details": [
+                {
+                    "block": "Teok",
+                    "damages": []
+                },
+                {
+                    "block": "Jorhat West",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Kamrup",
+            "details": [
+                {
+                    "block": "Hajo",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Karbi Anglong",
+            "details": [
+                {
+                    "block": "Phuloni",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Karbi Anglong West",
+            "details": [
+                {
+                    "block": "Donkamokam",
+                    "damages": [
+                        {
+                            "damageName": "Protection Bundh Damaged (in Nos)",
+                            "noOfDamage": 8,
+                            "details": [
+                                {
+                                    "id": 35635,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Due to incessant rain damaged caused by Kopili River to Hanse Japan on its L/B in West karbi Anglong at the length of 400 M  was affected/damaged on 22/07/2022 at the geographical coordinates of Latitude:25.9185,longitude:92.79508 as reported by Executive Engineer,West karbi Anglong,Water Resource Division,Donkamokam on 12/10/2022. ",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35632,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Due to incessant rain damaged caused by Kopili River to Ringbundh from taradubi Weekly market to goroimari area on its L/B in West karbi Anglong at the length of 1825 M  affected/damaged on 20/05/2022 at the geographical coordinates of Latitude:26.036568,longitude:92.748124 as reported by Executive Engineer,West karbi Anglong,Water Resource Division,Donkamokam on 12/10/2022.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35633,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Due to incessant rain damaged caused by Kopili River  from Tumpreng market  area on its L/B in West karbi Anglong at the length of 1025 M  affected/damaged on 23/07/2022 at the geographical coordinates of Latitude:26.00687,longitude:92.760351 as reported by Executive Engineer,West karbi Anglong,Water Resource Division,Donkamokam on 12/10/2022.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35634,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Due to incessant rain damaged caused by Kopili River  from Tumpreng bridge area to downstream on its L/B in West karbi Anglong at the length of 800 M  affected/damaged on 23/07/2022 at the geographical coordinates of Latitude:26.00728,longitude:92.760916 as reported by Executive Engineer,West karbi Anglong,Water Resource Division,Donkamokam on 12/10/2022.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35636,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Due to incessant rain damaged caused by Kopili River to Sing Ronghang Memorial Park area on its L/B in West Karbi Anglong at the length of 530 M  was affected/damaged on 23/07/2022 at the geographical coordinates of Latitude:26.005141,longitude:92.757891 as reported by Executive Engineer,West karbi Anglong,Water Resource Division,Donkamokam on 12/10/2022. ",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35637,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Due to incessant rain damaged caused by Kopili River to Goroimari area on its L/B in West Karbi Anglong at the length of 530 M  was affected/damaged on 21/05/2022 at the geographical coordinates of Latitude:26.050418,longitude:92.744729 as reported by Executive Engineer,West karbi Anglong,Water Resource Division,Donkamokam on 12/10/2022. ",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35638,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Due to incessant rain damaged caused by River Karbi langpi to Kharopindha area on its L/B in West Karbi Anglong at the length of 500 M  was affected/damaged on 23/07/2022 at the geographical coordinates of Latitude:25.978392,longitude:92.597967 as reported by Executive Engineer,West karbi Anglong,Water Resource Division,Donkamokam on 12/10/2022. ",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35639,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Due to incessant rain damaged caused by River Kopili  to Baligaon area on its L/B in West Karbi Anglong at the length of 500 M  was affected/damaged on 20/05/2022 at the geographical coordinates of Latitude:26.005197,longitude:92. 758039 as reported by Executive Engineer,West karbi Anglong,Water Resource Division,Donkamokam on 12/10/2022. ",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "district": "Karimganj",
+            "details": [
+                {
+                    "block": "null",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Kokrajhar",
+            "details": [
+                {
+                    "block": "Bagribari",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Lakhimpur",
+            "details": [
+                {
+                    "block": "Bihpuria",
+                    "damages": [
+                        {
+                            "damageName": "Protection Bundh Damaged (in Nos)",
+                            "noOfDamage": 2,
+                            "details": [
+                                {
+                                    "id": 35628,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "A newly constructed MGNREGA 21/22 scheme Protection bundh from Bango Muslim gaon to Bishnumandir has damaged at two locations/points of length about 50 m and 100m respectively due to rising water level of Dikrong river under Dikrong GP  on 11/10/2022 as reported by the officials of Karunabari Dev. Block, Lat-27.058, Long-93.919",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35630,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "About 90 m of the protection bundh under MGNREGA at Islampur-Salmora PWD to Noor Hussain Chuburi under Tinthengia GP has been eroded due to heavy rainfall  as reported by officials of Karunabari Dev. Block on 11/10/2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Fisheries/Pond (in Nos)",
+                            "noOfDamage": 2,
+                            "details": [
+                                {
+                                    "id": 35629,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "13 nos. of fishery  (area= 0.85 hectare) affected at Garmur as reported by FDO, Karunabari Block on 11/10/2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35666,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "1OO nos. of fishery (area 13.3 hectares) affected at Fatehpur, 130 nos. of fishery (area 17.33 hectares)affected at Ahmedpur Block, 11 nos. of fishery (area 3.06 hectares) affected at Nadika as reported by FDO, Karunabari Block on 13/10/2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "block": "Nowboicha",
+                    "damages": [
+                        {
+                            "damageName": "Elementary Schools Damaged (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35608,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Gelahati LPS water submerged. Report received from BEEO, Nowboicha on 11.10.2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Public Health Engineering (PHE) (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35609,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Metre cabinet may be damaged due to water logging at Gorchiga pwss. Report received from PHE dept. Lakhimpur on 11.10.2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Fisheries/Pond (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35777,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Total Nos. of pond affected - 9 Nos. (Area- 11 Bigha). Report received from Fishery Dept., Lakhimpur on 15.10.2022",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "block": "North Lakhimpur",
+                    "damages": [
+                        {
+                            "damageName": "Fisheries/Pond (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35614,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "10 nos. of pond affected at Na ali Teliapathar as per report received from Fishery Department Lakhimpur on dated 11/10/2022.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Power Dept. Poles (in Nos)",
+                            "noOfDamage": 2,
+                            "details": [
+                                {
+                                    "id": 35765,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "PSC POLE 8.5 MTR 20 NOS as reported by APDCL, NLP on 14/10/2022.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                },
+                                {
+                                    "id": 35766,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "PSC POLE 7.5 MTR 46 NOS as reported by APDCL, NLP on 14/10/2022.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Power Dept. Conductors (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35767,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "27.8 KM APPROX as reported by APDCL, NLP on 14/10/2022.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Bamboo Foot Bridge (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35787,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "A locally constructed bamboo foot bridge was washed away at kharkati area due to increasing water level of Ranganodi river as reported by .BDO, Telahi on 25/10/2022.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "block": "Subansiri",
+                    "damages": []
+                },
+                {
+                    "block": "Dhakuakhana",
+                    "damages": [
+                        {
+                            "damageName": "Sericulture Deptt. Damaged (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35768,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "About 27,400 numbers of Muga Silk Worm damaged at Maj Jalbhari on 14/10/2022 as reported by Sericulture Department., Dhakuakhana.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "block": "Narayanpur",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Majuli",
+            "details": [
+                {
+                    "block": "Majuli",
+                    "damages": []
+                },
+                {
+                    "block": "Ujani Majuli",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Morigaon",
+            "details": [
+                {
+                    "block": "Mayong",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Nagaon",
+            "details": [
+                {
+                    "block": "Kampur",
+                    "damages": [
+                        {
+                            "damageName": "Power Dept. Poles (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35783,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Pole : 4 Nos damaged under Kathiatoli ESD on dated  25.10.2022 at Longjup NC",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Power Dept. Transformers (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 35784,
+                                    "name": null,
+                                    "departmentName": null,
+                                    "villageName": null,
+                                    "location": null,
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Transformer: 1 Nos damaged at Longjup NC on dated 25.10.2022 under Kathiatoli ESD.",
+                                    "createdAt": null,
+                                    "updatedAt": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "block": "Nagaon",
+                    "damages": []
+                },
+                {
+                    "block": "Dhing",
+                    "damages": []
+                },
+                {
+                    "block": "Rupahi",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Nalbari",
+            "details": [
+                {
+                    "block": "Nalbari",
+                    "damages": []
+                },
+                {
+                    "block": "Banekuchi",
+                    "damages": []
+                },
+                {
+                    "block": "Ghograpar",
+                    "damages": []
+                },
+                {
+                    "block": "Tihu",
+                    "damages": []
+                },
+                {
+                    "block": "Paschim Nalbari",
+                    "damages": []
+                },
+                {
+                    "block": "Barbhag",
+                    "damages": []
+                },
+                {
+                    "block": "Barkhetri",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "South Salmara",
+            "details": [
+                {
+                    "block": "South Salmara",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Tinsukia",
+            "details": [
+                {
+                    "block": "Tinsukia",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Udalguri",
+            "details": [
+                {
+                    "block": "Harisinga",
+                    "damages": []
+                }
+            ]
+        }
+    ],
+    "wildlife": [
+        {
+            "district": "Chirang",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Darrang",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dhemaji",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dhubri",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dibrugarh",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Golaghat",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Jorhat",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Kamrup",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Karbi Anglong",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Karbi Anglong West",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Karimganj",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Kokrajhar",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Lakhimpur",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Majuli",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Morigaon",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Nagaon",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Nalbari",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "South Salmara",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Tinsukia",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Udalguri",
+            "wildlifeAffected": ""
+        }
+    ],
+    "remarks": [
+        {
+            "district": "Chirang",
+            "remarks": ""
+        },
+        {
+            "district": "Darrang",
+            "remarks": ""
+        },
+        {
+            "district": "Dhemaji",
+            "remarks": ""
+        },
+        {
+            "district": "Dhubri",
+            "remarks": ""
+        },
+        {
+            "district": "Dibrugarh",
+            "remarks": ""
+        },
+        {
+            "district": "Golaghat",
+            "remarks": ""
+        },
+        {
+            "district": "Jorhat",
+            "remarks": ""
+        },
+        {
+            "district": "Kamrup",
+            "remarks": ""
+        },
+        {
+            "district": "Karbi Anglong",
+            "remarks": ""
+        },
+        {
+            "district": "Karbi Anglong West",
+            "remarks": ""
+        },
+        {
+            "district": "Karimganj",
+            "remarks": ""
+        },
+        {
+            "district": "Kokrajhar",
+            "remarks": ""
+        },
+        {
+            "district": "Lakhimpur",
+            "remarks": ""
+        },
+        {
+            "district": "Majuli",
+            "remarks": ""
+        },
+        {
+            "district": "Morigaon",
+            "remarks": ""
+        },
+        {
+            "district": "Nagaon",
+            "remarks": ""
+        },
+        {
+            "district": "Nalbari",
+            "remarks": ""
+        },
+        {
+            "district": "South Salmara",
+            "remarks": ""
+        },
+        {
+            "district": "Tinsukia",
+            "remarks": ""
+        },
+        {
+            "district": "Udalguri",
+            "remarks": ""
+        }
+    ]
+}

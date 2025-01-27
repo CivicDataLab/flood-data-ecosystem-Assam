@@ -1,0 +1,2833 @@
+{
+    "cwcDetails": {
+        "riversAtWarningLevel": "Jia-Bharali (Nt Road Crossing)",
+        "riversAtDangerLevel": "",
+        "riversAtFloodLevel": ""
+    },
+    "affectedDistricts": {
+        "total": 14,
+        "districts": "Jorhat, Biswanath, Karbi Anglong, Nagaon, Tinsukia, Udalguri, Darrang, Nalbari, Kamrup (M), Dima-Hasao, Dhemaji, Charaideo, Morigaon, Majuli",
+        "districtCodes": "17, 06, 20, 27, 32, 33, 04, 28, 18, 12, 05, 07, 26, 25"
+    },
+    "affectedRevenueCircles": {
+        "total": 22,
+        "districts": [
+            {
+                "district": "Biswanath",
+                "districtCode": "06",
+                "total": 1,
+                "details": "Gohpur"
+            },
+            {
+                "district": "Charaideo",
+                "districtCode": "07",
+                "total": 1,
+                "details": "Sonari"
+            },
+            {
+                "district": "Darrang",
+                "districtCode": "04",
+                "total": 4,
+                "details": "Dalgaon, Mangaldoi, Patharighat, Sipajhar"
+            },
+            {
+                "district": "Dhemaji",
+                "districtCode": "05",
+                "total": 1,
+                "details": "Dhemaji"
+            },
+            {
+                "district": "Dima-Hasao",
+                "districtCode": "12",
+                "total": 1,
+                "details": "Haflong"
+            },
+            {
+                "district": "Jorhat",
+                "districtCode": "17",
+                "total": 1,
+                "details": "Mariani"
+            },
+            {
+                "district": "Kamrup (M)",
+                "districtCode": "18",
+                "total": 2,
+                "details": "Chandrapur, Sonapur"
+            },
+            {
+                "district": "Karbi Anglong",
+                "districtCode": "20",
+                "total": 1,
+                "details": "Diphu"
+            },
+            {
+                "district": "Majuli",
+                "districtCode": "25",
+                "total": 1,
+                "details": "Ujani Majuli"
+            },
+            {
+                "district": "Morigaon",
+                "districtCode": "26",
+                "total": 1,
+                "details": "Mayong"
+            },
+            {
+                "district": "Nagaon",
+                "districtCode": "27",
+                "total": 1,
+                "details": "Kaliabor"
+            },
+            {
+                "district": "Nalbari",
+                "districtCode": "28",
+                "total": 5,
+                "details": "Barkhetri, Tihu, Nalbari, Paschim Nalbari, Barbhag"
+            },
+            {
+                "district": "Tinsukia",
+                "districtCode": "32",
+                "total": 1,
+                "details": "Margherita"
+            },
+            {
+                "district": "Udalguri",
+                "districtCode": "33",
+                "total": 1,
+                "details": "Harisinga"
+            }
+        ]
+    },
+    "affectedVillages": [
+        {
+            "total": 0,
+            "district": "Jorhat",
+            "districtCode": "17",
+            "details": "(Mariani | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Biswanath",
+            "districtCode": "06",
+            "details": "(Gohpur | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Karbi Anglong",
+            "districtCode": "20",
+            "details": "(Diphu | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Nagaon",
+            "districtCode": "27",
+            "details": "(Kaliabor | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Tinsukia",
+            "districtCode": "32",
+            "details": "(Margherita | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Udalguri",
+            "districtCode": "33",
+            "details": "(Harisinga | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Darrang",
+            "districtCode": "04",
+            "details": "(Dalgaon | 0), (Mangaldoi | 0), (Patharighat | 0), (Sipajhar | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Nalbari",
+            "districtCode": "28",
+            "details": "(Barkhetri | 0), (Tihu | 0), (Nalbari | 0), (Paschim Nalbari | 0), (Barbhag | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Kamrup (M)",
+            "districtCode": "18",
+            "details": "(Chandrapur | 0), (Sonapur | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Dima-Hasao",
+            "districtCode": "12",
+            "details": "(Haflong | 0)"
+        },
+        {
+            "total": 1,
+            "district": "Dhemaji",
+            "districtCode": "05",
+            "details": "(Dhemaji | 1)"
+        },
+        {
+            "total": 0,
+            "district": "Charaideo",
+            "districtCode": "07",
+            "details": "(Sonari | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Morigaon",
+            "districtCode": "26",
+            "details": "(Mayong | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Majuli",
+            "districtCode": "25",
+            "details": "(Ujani Majuli | 0)"
+        }
+    ],
+    "affectedPopulation": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Biswanath",
+            "districtCode": "06",
+            "details": "(Gohpur | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Charaideo",
+            "districtCode": "07",
+            "details": "(Sonari | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Darrang",
+            "districtCode": "04",
+            "details": "(Dalgaon | Population Affected: 0 | Crop Area: 0), (Mangaldoi | Population Affected: 0 | Crop Area: 0), (Patharighat | Population Affected: 0 | Crop Area: 0), (Sipajhar | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 44,
+            "totalMale": 16,
+            "totalFemale": 18,
+            "totalChildren": 10,
+            "totalCropArea": 0,
+            "district": "Dhemaji",
+            "districtCode": "05",
+            "details": "(Dhemaji | Population Affected: 44 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Dima-Hasao",
+            "districtCode": "12",
+            "details": "(Haflong | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Jorhat",
+            "districtCode": "17",
+            "details": "(Mariani | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Kamrup (M)",
+            "districtCode": "18",
+            "details": "(Chandrapur | Population Affected: 0 | Crop Area: 0), (Sonapur | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Karbi Anglong",
+            "districtCode": "20",
+            "details": "(Diphu | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Majuli",
+            "districtCode": "25",
+            "details": "(Ujani Majuli | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Morigaon",
+            "districtCode": "26",
+            "details": "(Mayong | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Nagaon",
+            "districtCode": "27",
+            "details": "(Kaliabor | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Nalbari",
+            "districtCode": "28",
+            "details": "(Barkhetri | Population Affected: 0 | Crop Area: 0), (Tihu | Population Affected: 0 | Crop Area: 0), (Nalbari | Population Affected: 0 | Crop Area: 0), (Paschim Nalbari | Population Affected: 0 | Crop Area: 0), (Barbhag | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Tinsukia",
+            "districtCode": "32",
+            "details": "(Margherita | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Udalguri",
+            "districtCode": "33",
+            "details": "(Harisinga | Population Affected: 0 | Crop Area: 0)"
+        }
+    ],
+    "reliefCampsAndCenters": [
+        {
+            "total": 0,
+            "district": "Biswanath",
+            "reliefCamps": "(Gohpur | 0)",
+            "reliefCenters": "(Gohpur | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Charaideo",
+            "reliefCamps": "(Sonari | 0)",
+            "reliefCenters": "(Sonari | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Darrang",
+            "reliefCamps": "(Dalgaon | 0), (Mangaldoi | 0), (Patharighat | 0), (Sipajhar | 0)",
+            "reliefCenters": "(Dalgaon | 0), (Mangaldoi | 0), (Patharighat | 0), (Sipajhar | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Dhemaji",
+            "reliefCamps": "(Dhemaji | 0)",
+            "reliefCenters": "(Dhemaji | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Dima-Hasao",
+            "reliefCamps": "(Haflong | 0)",
+            "reliefCenters": "(Haflong | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Jorhat",
+            "reliefCamps": "(Mariani | 0)",
+            "reliefCenters": "(Mariani | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Kamrup (M)",
+            "reliefCamps": "(Chandrapur | 0), (Sonapur | 0)",
+            "reliefCenters": "(Chandrapur | 0), (Sonapur | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Karbi Anglong",
+            "reliefCamps": "(Diphu | 0)",
+            "reliefCenters": "(Diphu | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Majuli",
+            "reliefCamps": "(Ujani Majuli | 0)",
+            "reliefCenters": "(Ujani Majuli | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Morigaon",
+            "reliefCamps": "(Mayong | 0)",
+            "reliefCenters": "(Mayong | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Nagaon",
+            "reliefCamps": "(Kaliabor | 0)",
+            "reliefCenters": "(Kaliabor | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Nalbari",
+            "reliefCamps": "(Barkhetri | 0), (Tihu | 0), (Nalbari | 0), (Paschim Nalbari | 0), (Barbhag | 0)",
+            "reliefCenters": "(Barkhetri | 0), (Tihu | 0), (Nalbari | 0), (Paschim Nalbari | 0), (Barbhag | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Tinsukia",
+            "reliefCamps": "(Margherita | 0)",
+            "reliefCenters": "(Margherita | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Udalguri",
+            "reliefCamps": "(Harisinga | 0)",
+            "reliefCenters": "(Harisinga | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        }
+    ],
+    "campInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Biswanath",
+            "details": "(Gohpur | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Charaideo",
+            "details": "(Sonari | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Darrang",
+            "details": "(Dalgaon | 0), (Mangaldoi | 0), (Patharighat | 0), (Sipajhar | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Dhemaji",
+            "details": "(Dhemaji | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Dima-Hasao",
+            "details": "(Haflong | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Jorhat",
+            "details": "(Mariani | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Kamrup (M)",
+            "details": "(Chandrapur | 0), (Sonapur | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Karbi Anglong",
+            "details": "(Diphu | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Majuli",
+            "details": "(Ujani Majuli | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Morigaon",
+            "details": "(Mayong | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Nagaon",
+            "details": "(Kaliabor | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Nalbari",
+            "details": "(Barkhetri | 0), (Tihu | 0), (Nalbari | 0), (Paschim Nalbari | 0), (Barbhag | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Tinsukia",
+            "details": "(Margherita | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Udalguri",
+            "details": "(Harisinga | 0)"
+        }
+    ],
+    "nonCampInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Biswanath",
+            "details": "(Gohpur | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Charaideo",
+            "details": "(Sonari | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Darrang",
+            "details": "(Dalgaon | 0), (Mangaldoi | 0), (Patharighat | 0), (Sipajhar | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Dhemaji",
+            "details": "(Dhemaji | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Dima-Hasao",
+            "details": "(Haflong | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Jorhat",
+            "details": "(Mariani | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Kamrup (M)",
+            "details": "(Chandrapur | 0), (Sonapur | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Karbi Anglong",
+            "details": "(Diphu | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Majuli",
+            "details": "(Ujani Majuli | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Morigaon",
+            "details": "(Mayong | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Nagaon",
+            "details": "(Kaliabor | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Nalbari",
+            "details": "(Barkhetri | 0), (Tihu | 0), (Nalbari | 0), (Paschim Nalbari | 0), (Barbhag | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Tinsukia",
+            "details": "(Margherita | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Udalguri",
+            "details": "(Harisinga | 0)"
+        }
+    ],
+    "hllDetails": {
+        "confirmed": [
+            {
+                "district": "Jorhat",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Mariani | 0)"
+            },
+            {
+                "district": "Biswanath",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Gohpur | 0)"
+            },
+            {
+                "district": "Karbi Anglong",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Diphu | 0)"
+            },
+            {
+                "district": "Nagaon",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Kaliabor | 0)"
+            },
+            {
+                "district": "Tinsukia",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Margherita | 0)"
+            },
+            {
+                "district": "Udalguri",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Harisinga | 0)"
+            },
+            {
+                "district": "Darrang",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Dalgaon | 0), (Mangaldoi | 0), (Patharighat | 0), (Sipajhar | 0)"
+            },
+            {
+                "district": "Nalbari",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Barkhetri | 0), (Tihu | 0), (Nalbari | 0), (Paschim Nalbari | 0), (Barbhag | 0)"
+            },
+            {
+                "district": "Kamrup (M)",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Chandrapur | 0), (Sonapur | 0)"
+            },
+            {
+                "district": "Dima-Hasao",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Haflong | 0)"
+            },
+            {
+                "district": "Dhemaji",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Dhemaji | 0)"
+            },
+            {
+                "district": "Charaideo",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Sonari | 0)"
+            },
+            {
+                "district": "Morigaon",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Mayong | 0)"
+            },
+            {
+                "district": "Majuli",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Ujani Majuli | 0)"
+            }
+        ],
+        "missing": [
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Mariani | 0)"
+            },
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Gohpur | 0)"
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Diphu | 0)"
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Kaliabor | 0)"
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Margherita | 0)"
+            },
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Harisinga | 0)"
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Dalgaon | 0), (Mangaldoi | 0), (Patharighat | 0), (Sipajhar | 0)"
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Barkhetri | 0), (Tihu | 0), (Nalbari | 0), (Paschim Nalbari | 0), (Barbhag | 0)"
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Chandrapur | 0), (Sonapur | 0)"
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Haflong | 0)"
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Dhemaji | 0)"
+            },
+            {
+                "district": "Charaideo",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Sonari | 0)"
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Mayong | 0)"
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Ujani Majuli | 0)"
+            }
+        ]
+    },
+    "livestocksDetails": {
+        "affected": [
+            {
+                "district": "Biswanath",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Charaideo",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Darrang",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dima-Hasao",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Jorhat",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kamrup (M)",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karbi Anglong",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Majuli",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Morigaon",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Nagaon",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Nalbari",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Tinsukia",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Udalguri",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            }
+        ],
+        "washedAway": [
+            {
+                "district": "Biswanath",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Charaideo",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Darrang",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dima-Hasao",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Jorhat",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kamrup (M)",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karbi Anglong",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Majuli",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Morigaon",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Nagaon",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Nalbari",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Tinsukia",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Udalguri",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            }
+        ]
+    },
+    "houseDamagedDetails": {
+        "damage": [
+            {
+                "district": "Jorhat",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Biswanath",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Karbi Anglong",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Nagaon",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Tinsukia",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Udalguri",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Darrang",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Nalbari",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Kamrup (M)",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Dima-Hasao",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Charaideo",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Morigaon",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Majuli",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            }
+        ],
+        "otherDamage": [
+            {
+                "district": "Jorhat",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Biswanath",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Karbi Anglong",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Nagaon",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Tinsukia",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Udalguri",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Darrang",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Nalbari",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Kamrup (M)",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Dima-Hasao",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Charaideo",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Morigaon",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Majuli",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            }
+        ]
+    },
+    "rescueOperationDetails": [
+        {
+            "district": "Biswanath",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Charaideo",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Darrang",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Dhemaji",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Dima-Hasao",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Jorhat",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Kamrup (M)",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Karbi Anglong",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Majuli",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Morigaon",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Nagaon",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Nalbari",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Tinsukia",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Udalguri",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        }
+    ],
+    "reliefDistributionDetails": {
+        "reliefData": [
+            {
+                "district": "Biswanath",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Charaideo",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Darrang",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Dhemaji",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Dima-Hasao",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Jorhat",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Kamrup (M)",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Karbi Anglong",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Majuli",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Morigaon",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Nagaon",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Nalbari",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Tinsukia",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Udalguri",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            }
+        ],
+        "otherReliefData": [
+            {
+                "district": "Biswanath",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Charaideo",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Darrang",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Dhemaji",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Dima-Hasao",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Jorhat",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Kamrup (M)",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Karbi Anglong",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Majuli",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Morigaon",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Nagaon",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Nalbari",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Tinsukia",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Udalguri",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            }
+        ]
+    },
+    "infDamageDetails": {
+        "embBreached": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gohpur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Charaideo",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Sonari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dalgaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Mangaldoi | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Patharighat | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sipajhar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dhemaji | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Haflong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mariani | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chandrapur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sonapur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Diphu | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Ujani Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mayong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kaliabor | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Barkhetri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Tihu | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Paschim Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barbhag | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Margherita | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Harisinga | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "embAffected": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gohpur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Charaideo",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Sonari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dalgaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Mangaldoi | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Patharighat | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sipajhar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dhemaji | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Haflong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mariani | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chandrapur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sonapur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Diphu | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Ujani Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mayong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kaliabor | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Barkhetri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Tihu | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Paschim Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barbhag | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Margherita | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Harisinga | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "roadAffected": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gohpur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Charaideo",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Sonari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dalgaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Mangaldoi | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Patharighat | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sipajhar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dhemaji | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Haflong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mariani | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chandrapur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sonapur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Diphu | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Ujani Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mayong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kaliabor | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Barkhetri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Tihu | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Paschim Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barbhag | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Margherita | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Harisinga | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "bridgeAffected": [
+            {
+                "district": "Biswanath",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gohpur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Charaideo",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Sonari | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dalgaon | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Mangaldoi | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Patharighat | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sipajhar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dhemaji | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dima-Hasao",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Haflong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mariani | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Chandrapur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sonapur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Diphu | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Ujani Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Morigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Mayong | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nagaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Kaliabor | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Nalbari",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Barkhetri | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Tihu | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Paschim Nalbari | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Barbhag | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Tinsukia",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Margherita | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Udalguri",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Harisinga | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ]
+    },
+    "otherDamageDetails": [
+        {
+            "district": "Biswanath",
+            "details": [
+                {
+                    "block": "Gohpur",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Charaideo",
+            "details": [
+                {
+                    "block": "Sonari",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Darrang",
+            "details": [
+                {
+                    "block": "Dalgaon",
+                    "damages": []
+                },
+                {
+                    "block": "Mangaldoi",
+                    "damages": []
+                },
+                {
+                    "block": "Patharighat",
+                    "damages": []
+                },
+                {
+                    "block": "Sipajhar",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Dhemaji",
+            "details": [
+                {
+                    "block": "Dhemaji",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Dima-Hasao",
+            "details": [
+                {
+                    "block": "Haflong",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Jorhat",
+            "details": [
+                {
+                    "block": "Mariani",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Kamrup (M)",
+            "details": [
+                {
+                    "block": "Chandrapur",
+                    "damages": []
+                },
+                {
+                    "block": "Sonapur",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Karbi Anglong",
+            "details": [
+                {
+                    "block": "Diphu",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Majuli",
+            "details": [
+                {
+                    "block": "Ujani Majuli",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Morigaon",
+            "details": [
+                {
+                    "block": "Mayong",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Nagaon",
+            "details": [
+                {
+                    "block": "Kaliabor",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Nalbari",
+            "details": [
+                {
+                    "block": "Barkhetri",
+                    "damages": []
+                },
+                {
+                    "block": "Tihu",
+                    "damages": []
+                },
+                {
+                    "block": "Nalbari",
+                    "damages": []
+                },
+                {
+                    "block": "Paschim Nalbari",
+                    "damages": []
+                },
+                {
+                    "block": "Barbhag",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Tinsukia",
+            "details": [
+                {
+                    "block": "Margherita",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Udalguri",
+            "details": [
+                {
+                    "block": "Harisinga",
+                    "damages": []
+                }
+            ]
+        }
+    ],
+    "wildlife": [
+        {
+            "district": "Biswanath",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Charaideo",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Darrang",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dhemaji",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dima-Hasao",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Jorhat",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Kamrup (M)",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Karbi Anglong",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Majuli",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Morigaon",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Nagaon",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Nalbari",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Tinsukia",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Udalguri",
+            "wildlifeAffected": ""
+        }
+    ],
+    "remarks": [
+        {
+            "district": "Biswanath",
+            "remarks": ""
+        },
+        {
+            "district": "Charaideo",
+            "remarks": ""
+        },
+        {
+            "district": "Darrang",
+            "remarks": ""
+        },
+        {
+            "district": "Dhemaji",
+            "remarks": ""
+        },
+        {
+            "district": "Dima-Hasao",
+            "remarks": ""
+        },
+        {
+            "district": "Jorhat",
+            "remarks": ""
+        },
+        {
+            "district": "Kamrup (M)",
+            "remarks": ""
+        },
+        {
+            "district": "Karbi Anglong",
+            "remarks": ""
+        },
+        {
+            "district": "Majuli",
+            "remarks": ""
+        },
+        {
+            "district": "Morigaon",
+            "remarks": ""
+        },
+        {
+            "district": "Nagaon",
+            "remarks": ""
+        },
+        {
+            "district": "Nalbari",
+            "remarks": ""
+        },
+        {
+            "district": "Tinsukia",
+            "remarks": ""
+        },
+        {
+            "district": "Udalguri",
+            "remarks": ""
+        }
+    ]
+}

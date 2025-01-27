@@ -5,11 +5,11 @@ import pandas as pd
 import os
 import glob
 import numpy as np
-path = os.getcwd()+'/Sources/NASADEM/'
+path = os.getcwd()+r'\Sources\NASADEM'
 
-assam_rc_gdf = gpd.read_file(os.getcwd()+'/Maps/Assam_Revenue_Circles/assam_revenue_circle_nov2022.shp')
+assam_rc_gdf = gpd.read_file(os.getcwd()+r'\Maps\Geojson\assam_rc_2024-11.geojson')
 
-dem_raster = rasterio.open(path+'/data/NASADEM_DEM_30.tif')
+dem_raster = rasterio.open(path+r'/data/NASADEM_DEM_30.tif')
 dem_raster_array = dem_raster.read(1)
 
 mean_dicts = rasterstats.zonal_stats(assam_rc_gdf.to_crs(dem_raster.crs),
@@ -25,7 +25,7 @@ for rc in mean_dicts:
 dem_zonal_stats_df = pd.concat(dfs).reset_index(drop=True)
 dem_zonal_stats_df = dem_zonal_stats_df.rename(columns={'mean':'elevation_mean'})
 
-slope_raster = rasterio.open(path+'/data/NASADEM_SLOPE_30.tif')
+slope_raster = rasterio.open(path+r'\Sources\NASADEM\data\NASADEM_SLOPE_30.tif')
 slope_raster_array = slope_raster.read(1)
 
 mean_dicts = rasterstats.zonal_stats(assam_rc_gdf.to_crs(slope_raster.crs),

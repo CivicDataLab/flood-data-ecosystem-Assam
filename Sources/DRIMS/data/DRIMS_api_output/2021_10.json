@@ -1,0 +1,999 @@
+{
+    "cwcDetails": {
+        "riversAtWarningLevel": "",
+        "riversAtDangerLevel": "",
+        "riversAtFloodLevel": ""
+    },
+    "affectedDistricts": {
+        "total": 5,
+        "districts": "Darrang, Majuli, Karbi Anglong West, Kamrup (M), Barpeta",
+        "districtCodes": "04, 25, 21, 18, 02"
+    },
+    "affectedRevenueCircles": {
+        "total": 5,
+        "districts": [
+            {
+                "district": "Barpeta",
+                "districtCode": "02",
+                "total": 1,
+                "details": "Baghbar"
+            },
+            {
+                "district": "Darrang",
+                "districtCode": "04",
+                "total": 1,
+                "details": "Dalgaon"
+            },
+            {
+                "district": "Kamrup (M)",
+                "districtCode": "18",
+                "total": 1,
+                "details": "Dispur"
+            },
+            {
+                "district": "Karbi Anglong West",
+                "districtCode": "21",
+                "total": 1,
+                "details": "Donkamokam"
+            },
+            {
+                "district": "Majuli",
+                "districtCode": "25",
+                "total": 1,
+                "details": "Majuli"
+            }
+        ]
+    },
+    "affectedVillages": [
+        {
+            "total": 0,
+            "district": "Darrang",
+            "districtCode": "04",
+            "details": "(Dalgaon | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Majuli",
+            "districtCode": "25",
+            "details": "(Majuli | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Karbi Anglong West",
+            "districtCode": "21",
+            "details": "(Donkamokam | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Kamrup (M)",
+            "districtCode": "18",
+            "details": "(Dispur | 0)"
+        },
+        {
+            "total": 0,
+            "district": "Barpeta",
+            "districtCode": "02",
+            "details": "(Baghbar | 0)"
+        }
+    ],
+    "affectedPopulation": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Barpeta",
+            "districtCode": "02",
+            "details": "(Baghbar | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Darrang",
+            "districtCode": "04",
+            "details": "(Dalgaon | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Kamrup (M)",
+            "districtCode": "18",
+            "details": "(Dispur | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Karbi Anglong West",
+            "districtCode": "21",
+            "details": "(Donkamokam | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Majuli",
+            "districtCode": "25",
+            "details": "(Majuli | Population Affected: 0 | Crop Area: 0)"
+        }
+    ],
+    "reliefCampsAndCenters": [
+        {
+            "total": 0,
+            "district": "Barpeta",
+            "reliefCamps": "(Baghbar | 0)",
+            "reliefCenters": "(Baghbar | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Darrang",
+            "reliefCamps": "(Dalgaon | 0)",
+            "reliefCenters": "(Dalgaon | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Kamrup (M)",
+            "reliefCamps": "(Dispur | 0)",
+            "reliefCenters": "(Dispur | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Karbi Anglong West",
+            "reliefCamps": "(Donkamokam | 0)",
+            "reliefCenters": "(Donkamokam | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Majuli",
+            "reliefCamps": "(Majuli | 0)",
+            "reliefCenters": "(Majuli | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        }
+    ],
+    "campInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Barpeta",
+            "details": "(Baghbar | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Darrang",
+            "details": "(Dalgaon | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Kamrup (M)",
+            "details": "(Dispur | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Karbi Anglong West",
+            "details": "(Donkamokam | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Majuli",
+            "details": "(Majuli | 0)"
+        }
+    ],
+    "nonCampInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Barpeta",
+            "details": "(Baghbar | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Darrang",
+            "details": "(Dalgaon | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Kamrup (M)",
+            "details": "(Dispur | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Karbi Anglong West",
+            "details": "(Donkamokam | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Majuli",
+            "details": "(Majuli | 0)"
+        }
+    ],
+    "hllDetails": {
+        "confirmed": [
+            {
+                "district": "Darrang",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Dalgaon | 0)"
+            },
+            {
+                "district": "Majuli",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 1,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 1,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Majuli | 1)"
+            },
+            {
+                "district": "Karbi Anglong West",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Donkamokam | 0)"
+            },
+            {
+                "district": "Kamrup (M)",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Dispur | 0)"
+            },
+            {
+                "district": "Barpeta",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Baghbar | 0)"
+            }
+        ],
+        "missing": [
+            {
+                "district": "Darrang",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Dalgaon | 0)"
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Majuli | 0)"
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Donkamokam | 0)"
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Dispur | 0)"
+            },
+            {
+                "district": "Barpeta",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Baghbar | 0)"
+            }
+        ]
+    },
+    "livestocksDetails": {
+        "affected": [
+            {
+                "district": "Barpeta",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Darrang",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kamrup (M)",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karbi Anglong West",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Majuli",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            }
+        ],
+        "washedAway": [
+            {
+                "district": "Barpeta",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Darrang",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kamrup (M)",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Karbi Anglong West",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Majuli",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            }
+        ]
+    },
+    "houseDamagedDetails": {
+        "damage": [
+            {
+                "district": "Darrang",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Majuli",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Karbi Anglong West",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Kamrup (M)",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Barpeta",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            }
+        ],
+        "otherDamage": [
+            {
+                "district": "Darrang",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Majuli",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Karbi Anglong West",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Kamrup (M)",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Barpeta",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            }
+        ]
+    },
+    "rescueOperationDetails": [
+        {
+            "district": "Barpeta",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Darrang",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Kamrup (M)",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Karbi Anglong West",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Majuli",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        }
+    ],
+    "reliefDistributionDetails": {
+        "reliefData": [
+            {
+                "district": "Barpeta",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Darrang",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Kamrup (M)",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Karbi Anglong West",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            },
+            {
+                "district": "Majuli",
+                "rice": "0.00",
+                "dal": "0.00",
+                "salt": "0.00",
+                "mOil": "0.00",
+                "cattleFeedGreenFooder": "0.00",
+                "cattleFeedWheatBran": "0.00",
+                "cattleFeedRiceBran": "0.00"
+            }
+        ],
+        "otherReliefData": [
+            {
+                "district": "Barpeta",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Darrang",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Kamrup (M)",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Karbi Anglong West",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            },
+            {
+                "district": "Majuli",
+                "babyFoodLiquid": "0.00-Pkt",
+                "babyFoodSolid": "0.00-Pkt",
+                "otherItems": ""
+            }
+        ]
+    },
+    "infDamageDetails": {
+        "embBreached": [
+            {
+                "district": "Barpeta",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Baghbar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dalgaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dispur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Donkamokam | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "embAffected": [
+            {
+                "district": "Barpeta",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Baghbar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dalgaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dispur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Donkamokam | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "roadAffected": [
+            {
+                "district": "Barpeta",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Baghbar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dalgaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dispur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Donkamokam | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "bridgeAffected": [
+            {
+                "district": "Barpeta",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Baghbar | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Darrang",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dalgaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kamrup (M)",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Dispur | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Karbi Anglong West",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Donkamokam | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Majuli",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Majuli | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ]
+    },
+    "otherDamageDetails": [
+        {
+            "district": "Barpeta",
+            "details": [
+                {
+                    "block": "Baghbar",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Darrang",
+            "details": [
+                {
+                    "block": "Dalgaon",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Kamrup (M)",
+            "details": [
+                {
+                    "block": "Dispur",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Karbi Anglong West",
+            "details": [
+                {
+                    "block": "Donkamokam",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Majuli",
+            "details": [
+                {
+                    "block": "Majuli",
+                    "damages": []
+                }
+            ]
+        }
+    ],
+    "wildlife": [
+        {
+            "district": "Barpeta",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Darrang",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Kamrup (M)",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Karbi Anglong West",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Majuli",
+            "wildlifeAffected": ""
+        }
+    ],
+    "remarks": [
+        {
+            "district": "Barpeta",
+            "remarks": ""
+        },
+        {
+            "district": "Darrang",
+            "remarks": ""
+        },
+        {
+            "district": "Kamrup (M)",
+            "remarks": ""
+        },
+        {
+            "district": "Karbi Anglong West",
+            "remarks": ""
+        },
+        {
+            "district": "Majuli",
+            "remarks": ""
+        }
+    ]
+}
