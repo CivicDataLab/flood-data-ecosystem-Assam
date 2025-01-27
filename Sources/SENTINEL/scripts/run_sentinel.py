@@ -5,8 +5,8 @@ import os
 cwd = os.getcwd()
 script_path = cwd+'/Sources/SENTINEL/scripts/sentinel.py'
 
-start_date = date(2017, 4, 1)
-end_date = date(2023, 9, 1)
+start_date = date(2023, 9, 1)
+end_date = date(2024, 12, 1)
 
 date_list = []
 

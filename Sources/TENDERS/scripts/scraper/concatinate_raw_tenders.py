@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import glob
 
-for year in range(2016,2025):
+for year in range(2024,2025):
     year = str(year)
     
     for month in range(1,13):        
