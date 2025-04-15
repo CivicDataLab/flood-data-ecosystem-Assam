@@ -13,6 +13,9 @@ scraped_data.csv
 #Env Files / Secret Keys
 *.env
 ee-idsdrr-d856f70748a7.json
+gen-lang-client-0703494113-959eed01bd50.json
+gen-lang-client-0703494113-d14ca4fc3cda.json
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
