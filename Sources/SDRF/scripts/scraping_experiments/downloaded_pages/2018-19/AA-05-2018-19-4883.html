@@ -1,0 +1,2614 @@
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Public Finance Management System - Government of Assam">
+
+<link href="/assamfinance/resources/icons/favicon.ico" rel="icon" type="image/x-icon">
+<link href="/assamfinance/resources/icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/assamfinance/resources/style/kranstyle.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/style/jquery-ui.css" rel="stylesheet" type="text/css">
+
+<!-- BOOTSTRAP -->
+<link href="/assamfinance/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- CALENDAR  -->
+<link href="/assamfinance/resources/js/calendar/calendar.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+<script src="/assamfinance/resources/js/jquery-1.9.1.js"></script>
+<script src="/assamfinance/resources/js/jquery-ui.js"></script>
+<script src="/assamfinance/resources/bootstrap/js/bootstrap.min.js"></script>
+<!-- TINY-BOX  -->
+<script src="/assamfinance/resources/js/tinybox/tinybox.js" type="text/javascript"></script>
+<script src="/assamfinance/resources/js/calendar/calendar.js"></script>
+
+<script src="/assamfinance/resources/bootstrap/js/bootstrap-datetimepicker.js" type="text/javascript" charset="UTF-8"></script>
+
+<!-- TOOL-TIP  -->
+<link href="/assamfinance/resources/js/menu/css/dropdown/dropdown.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/js/menu/css/dropdown/dropdown.vertical.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/js/menu/css/dropdown/themes/default/default.ultimate.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/js/tooltipster-master/css/tooltipster.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/js/tooltipster-master/css/themes/tooltipster-noir.css" rel="stylesheet" type="text/css">
+<script src="/assamfinance/resources/js/tooltipster-master/js/jquery.tooltipster.min.js" type="text/javascript"></script>
+<script src="/assamfinance/resources/js/jquery.slimscroll.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="../resources/js/ckeditor/ckeditor.js?version=2" charset="utf-8"></script><style>.cke{visibility:hidden;}</style>
+<script type="text/javascript" src="../resources/js/ckeditor5-build-classic/ckeditor.js" charset="utf-8"></script><style type="text/css">.ck-hidden{display:none!important}.ck.ck-reset,.ck.ck-reset_all,.ck.ck-reset_all *{box-sizing:border-box;height:auto;position:static;width:auto}:root{--ck-color-base-action:#61b045;--ck-color-base-active:#198cf0;--ck-color-base-active-focus:#0e7fe1;--ck-color-base-background:#fff;--ck-color-base-border:#c4c4c4;--ck-color-base-focus:#6cb5f9;--ck-color-base-foreground:#fafafa;--ck-color-base-text:#333;--ck-color-button-action-active-background:#53973b;--ck-color-button-action-active-shadow:#498433;--ck-color-button-action-background:var(--ck-color-base-action);--ck-color-button-action-disabled-background:#7ec365;--ck-color-button-action-hover-background:#579e3d;--ck-color-button-action-text:var(--ck-color-base-background);--ck-color-button-cancel:#db3700;--ck-color-button-default-active-background:#d9d9d9;--ck-color-button-default-active-shadow:#bfbfbf;--ck-color-button-default-background:transparent;--ck-color-button-default-disabled-background:transparent;--ck-color-button-default-hover-background:#e6e6e6;--ck-color-button-on-active-background:#bababa;--ck-color-button-on-active-shadow:#a1a1a1;--ck-color-button-on-background:#dedede;--ck-color-button-on-disabled-background:#dedede;--ck-color-button-on-hover-background:#c4c4c4;--ck-color-button-save:#008a00;--ck-color-dropdown-panel-background:var(--ck-color-base-background);--ck-color-dropdown-panel-border:var(--ck-color-base-border);--ck-color-engine-placeholder-text:#c2c2c2;--ck-color-focus-border:#47a4f5;--ck-color-focus-disabled-shadow:rgba(119,186,248,0.3);--ck-color-focus-shadow:rgba(119,186,248,0.5);--ck-color-input-background:var(--ck-color-base-background);--ck-color-input-border:#c7c7c7;--ck-color-input-disabled-background:#f2f2f2;--ck-color-input-disabled-border:#c7c7c7;--ck-color-input-disabled-text:#5c5c5c;--ck-color-input-text:var(--ck-color-base-text);--ck-color-link-default:#0000f0;--ck-color-link-selected-background:#ebf8ff;--ck-color-list-background:var(--ck-color-base-background);--ck-color-list-button-hover-background:var(--ck-color-base-foreground);--ck-color-list-button-on-background:var(--ck-color-base-active);--ck-color-list-button-on-background-focus:var(--ck-color-base-active-focus);--ck-color-list-button-on-text:var(--ck-color-base-background);--ck-color-panel-background:var(--ck-color-base-background);--ck-color-panel-border:var(--ck-color-base-border);--ck-color-shadow-drop:rgba(0,0,0,0.15);--ck-color-shadow-inner:rgba(0,0,0,0.1);--ck-color-switch-button-inner-background:var(--ck-color-base-background);--ck-color-switch-button-off-background:#b0b0b0;--ck-color-switch-button-on-background:var(--ck-color-button-action-background);--ck-color-text:var(--ck-color-base-text);--ck-color-toolbar-background:var(--ck-color-base-foreground);--ck-color-toolbar-border:var(--ck-color-base-border);--ck-color-tooltip-background:var(--ck-color-base-text);--ck-color-tooltip-text:var(--ck-color-base-background);--ck-color-upload-bar-background:#6cb5f9;--ck-color-upload-infinite-background:rgba(0,0,0,0.1);--ck-disabled-opacity:.5;--ck-focus-disabled-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-disabled-shadow);--ck-focus-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-shadow);--ck-focus-outer-shadow-geometry:0 0 0 3px;--ck-focus-ring:1px solid var(--ck-color-focus-border);--ck-font-face:Helvetica,Arial,Tahoma,Verdana,Sans-Serif;--ck-font-size-base:13px;--ck-font-size-big:1.4em;--ck-font-size-large:1.8em;--ck-font-size-normal:1em;--ck-font-size-small:0.75em;--ck-font-size-tiny:0.7em;--ck-line-height-base:1.84615;--ck-ui-component-min-height:2.3em;--ck-z-default:1;--ck-z-modal:calc(var(--ck-z-default) + 999)}.ck.ck-reset,.ck.ck-reset_all,.ck.ck-reset_all *{background:transparent;border:0;margin:0;padding:0;text-decoration:none;transition:none;vertical-align:middle;word-wrap:break-word}.ck.ck-reset_all,.ck.ck-reset_all *{border-collapse:collapse;color:var(--ck-color-text);cursor:auto;float:none;font:normal normal normal var(--ck-font-size-base)/var(--ck-line-height-base) var(--ck-font-face);text-align:left;white-space:nowrap}.ck.ck-reset_all .ck-rtl *{text-align:right}.ck.ck-reset_all iframe{vertical-align:inherit}.ck.ck-reset_all textarea{white-space:pre-wrap}.ck.ck-reset_all input[type=password],.ck.ck-reset_all input[type=text],.ck.ck-reset_all textarea{cursor:text}.ck.ck-reset_all input[type=password][disabled],.ck.ck-reset_all input[type=text][disabled],.ck.ck-reset_all textarea[disabled]{cursor:default}.ck.ck-reset_all fieldset{border:2px groove #dfdee3;padding:10px}.ck.ck-reset_all button::-moz-focus-inner{border:0;padding:0}:root{--ck-border-radius:2px;--ck-drop-shadow:0 1px 2px 1px var(--ck-color-shadow-drop);--ck-inner-shadow:2px 2px 3px var(--ck-color-shadow-inner) inset;--ck-spacing-extra-tiny:calc(var(--ck-spacing-unit) * 0.16);--ck-spacing-large:calc(var(--ck-spacing-unit) * 1.5);--ck-spacing-medium:calc(var(--ck-spacing-unit) * 0.8);--ck-spacing-small:calc(var(--ck-spacing-unit) * 0.5);--ck-spacing-standard:var(--ck-spacing-unit);--ck-spacing-tiny:calc(var(--ck-spacing-unit) * 0.3);--ck-spacing-unit:0.6em}.ck.ck-editor__editable:not(.ck-editor__nested-editable){border-radius:0}.ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable),.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused{border:var(--ck-focus-ring);box-shadow:var(--ck-inner-shadow),0 0;outline:none}.ck.ck-editor__editable_inline{border:1px solid transparent;overflow:auto;padding:0 var(--ck-spacing-standard)}.ck.ck-editor__editable_inline>:first-child{margin-top:var(--ck-spacing-large)}.ck.ck-editor__editable_inline>:last-child{margin-bottom:var(--ck-spacing-large)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_n]:after{border-bottom-color:var(--ck-color-base-foreground)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_s]:after{border-top-color:var(--ck-color-base-foreground)}.ck.ck-label{display:block}.ck.ck-voice-label{display:none}.ck.ck-label{font-weight:700}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky{position:fixed;top:0;z-index:var(--ck-z-modal)}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky_bottom-limit{position:absolute;top:auto}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky{border-top-left-radius:0;border-top-right-radius:0;border-width:0 1px 1px;box-shadow:var(--ck-drop-shadow),0 0}.ck.ck-toolbar{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;align-items:center;display:flex;flex-flow:row wrap;user-select:none}.ck.ck-toolbar.ck-toolbar_vertical{flex-direction:column}.ck.ck-toolbar.ck-toolbar_floating{flex-wrap:nowrap}.ck.ck-toolbar__separator{display:inline-block}.ck.ck-toolbar__newline{display:block;width:100%}.ck.ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-toolbar,.ck.ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-toolbar{background:var(--ck-color-toolbar-background);border:1px solid var(--ck-color-toolbar-border);padding:0 var(--ck-spacing-small)}.ck.ck-toolbar>*{margin-bottom:var(--ck-spacing-small);margin-right:var(--ck-spacing-small);margin-top:var(--ck-spacing-small)}.ck.ck-toolbar.ck-toolbar_vertical{padding:0}.ck.ck-toolbar.ck-toolbar_vertical>*{border:0;border-radius:0;margin:0;width:100%}.ck.ck-toolbar>:last-child{margin-right:0}.ck-toolbar-container .ck.ck-toolbar{border:0}.ck.ck-toolbar__separator{align-self:stretch;background:var(--ck-color-toolbar-border);margin-bottom:0;margin-top:0;width:1px}.ck.ck-toolbar__newline{margin:0}.ck.ck-editor{position:relative}.ck.ck-editor .ck-editor__top .ck-sticky-panel .ck-toolbar{z-index:var(--ck-z-modal)}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners{border-bottom-left-radius:0;border-bottom-right-radius:0;border-radius:var(--ck-border-radius)}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-bottom-width:0}.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar{border-bottom-width:1px;border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius);border-radius:0}.ck.ck-editor__main>.ck-editor__editable{background:var(--ck-color-base-background);border-radius:0}.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0;border-top-right-radius:0}.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){border-color:var(--ck-color-base-border)}.ck.ck-icon{vertical-align:middle}:root{--ck-icon-size:calc(var(--ck-line-height-base) * var(--ck-font-size-normal))}.ck.ck-icon{font-size:.8333350694em;height:var(--ck-icon-size);width:var(--ck-icon-size);will-change:transform}.ck.ck-icon,.ck.ck-icon *{color:inherit;cursor:inherit}.ck.ck-icon *{fill:currentColor}.ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{-webkit-backface-visibility:hidden;pointer-events:none;position:absolute}.ck-tooltip{display:none;opacity:0;visibility:hidden;z-index:var(--ck-z-modal)}.ck-tooltip .ck-tooltip__text{display:inline-block}.ck-tooltip .ck-tooltip__text:after{content:"";height:0;width:0}:root{--ck-tooltip-arrow-size:5px}.ck.ck-tooltip{left:50%}.ck.ck-tooltip.ck-tooltip_s{bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(100%)}.ck.ck-tooltip.ck-tooltip_s .ck-tooltip__text:after{border-bottom-color:var(--ck-color-tooltip-background);border-bottom-width:var(--ck-tooltip-arrow-size);border-left-color:transparent;border-left-width:var(--ck-tooltip-arrow-size);border-right-color:transparent;border-right-width:var(--ck-tooltip-arrow-size);border-top-color:transparent;border-top-width:0;top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%)}.ck.ck-tooltip.ck-tooltip_n{top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(-100%)}.ck.ck-tooltip.ck-tooltip_n .ck-tooltip__text:after{border-bottom-color:transparent;border-bottom-width:0;border-left-color:transparent;border-left-width:var(--ck-tooltip-arrow-size);border-right-color:transparent;border-right-width:var(--ck-tooltip-arrow-size);border-top-color:var(--ck-color-tooltip-background);border-top-width:var(--ck-tooltip-arrow-size);bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%)}.ck.ck-tooltip .ck-tooltip__text{border-radius:0}.ck-rounded-corners .ck.ck-tooltip .ck-tooltip__text,.ck.ck-tooltip .ck-tooltip__text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-tooltip .ck-tooltip__text{background:var(--ck-color-tooltip-background);color:var(--ck-color-tooltip-text);font-size:.9em;left:-50%;line-height:1.5;padding:var(--ck-spacing-small) var(--ck-spacing-medium);position:relative}.ck.ck-tooltip .ck-tooltip__text:after{border-style:solid;left:50%}.ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{transition:opacity .2s ease-in-out .2s}.ck.ck-button,a.ck.ck-button{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none}.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:block}@media (hover:none){.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:none}}.ck.ck-button,a.ck.ck-button{align-items:center;display:inline-flex;justify-content:left;position:relative}.ck.ck-button.ck-button_with-text .ck-button__label,a.ck.ck-button.ck-button_with-text .ck-button__label{display:inline-block}.ck.ck-button:not(.ck-button_with-text),a.ck.ck-button:not(.ck-button_with-text){justify-content:center}.ck.ck-button:hover .ck-tooltip,a.ck.ck-button:hover .ck-tooltip{opacity:1;visibility:visible}.ck.ck-button .ck-button__label,.ck.ck-button:focus:not(:hover) .ck-tooltip,a.ck.ck-button .ck-button__label,a.ck.ck-button:focus:not(:hover) .ck-tooltip{display:none}.ck.ck-button,a.ck.ck-button{background:var(--ck-color-button-default-background)}.ck.ck-button:not(.ck-disabled):hover,a.ck.ck-button:not(.ck-disabled):hover{background:var(--ck-color-button-default-hover-background)}.ck.ck-button:not(.ck-disabled):active,a.ck.ck-button:not(.ck-disabled):active{background:var(--ck-color-button-default-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-default-active-shadow)}.ck.ck-button.ck-disabled,a.ck.ck-button.ck-disabled{background:var(--ck-color-button-default-disabled-background)}.ck.ck-button,a.ck.ck-button{border-radius:0}.ck-rounded-corners .ck.ck-button,.ck-rounded-corners a.ck.ck-button,.ck.ck-button.ck-rounded-corners,a.ck.ck-button.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-button,a.ck.ck-button{border:1px solid transparent;cursor:default;font-size:inherit;line-height:1;min-height:var(--ck-ui-component-min-height);min-width:var(--ck-ui-component-min-height);padding:var(--ck-spacing-tiny);text-align:center;transition:box-shadow .2s ease-in-out;vertical-align:middle;white-space:nowrap}.ck.ck-button:active,.ck.ck-button:focus,a.ck.ck-button:active,a.ck.ck-button:focus{border:var(--ck-focus-ring);border-color:transparent;box-shadow:var(--ck-focus-outer-shadow),0 0;outline:none}.ck.ck-button.ck-disabled:active,.ck.ck-button.ck-disabled:focus,a.ck.ck-button.ck-disabled:active,a.ck.ck-button.ck-disabled:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),0 0}.ck.ck-button.ck-disabled .ck-button__icon,a.ck.ck-button.ck-disabled .ck-button__icon{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-disabled .ck-button__label,a.ck.ck-button.ck-disabled .ck-button__label{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-button_with-text,a.ck.ck-button.ck-button_with-text{padding:var(--ck-spacing-tiny) var(--ck-spacing-standard)}.ck.ck-button.ck-button_with-text .ck-button__icon,a.ck.ck-button.ck-button_with-text .ck-button__icon{margin-left:calc(-1 * var(--ck-spacing-small));margin-right:var(--ck-spacing-small)}.ck.ck-button.ck-on,a.ck.ck-button.ck-on{background:var(--ck-color-button-on-background)}.ck.ck-button.ck-on:not(.ck-disabled):hover,a.ck.ck-button.ck-on:not(.ck-disabled):hover{background:var(--ck-color-button-on-hover-background)}.ck.ck-button.ck-on:not(.ck-disabled):active,a.ck.ck-button.ck-on:not(.ck-disabled):active{background:var(--ck-color-button-on-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-on-active-shadow)}.ck.ck-button.ck-on.ck-disabled,a.ck.ck-button.ck-on.ck-disabled{background:var(--ck-color-button-on-disabled-background)}.ck.ck-button.ck-button-save,a.ck.ck-button.ck-button-save{color:var(--ck-color-button-save)}.ck.ck-button.ck-button-cancel,a.ck.ck-button.ck-button-cancel{color:var(--ck-color-button-cancel)}.ck.ck-button .ck-button__icon use,.ck.ck-button .ck-button__icon use *,a.ck.ck-button .ck-button__icon use,a.ck.ck-button .ck-button__icon use *{color:inherit}.ck.ck-button .ck-button__label,a.ck.ck-button .ck-button__label{color:inherit;cursor:inherit;font-size:inherit;font-weight:inherit;vertical-align:middle}.ck.ck-button-action,a.ck.ck-button-action{background:var(--ck-color-button-action-background)}.ck.ck-button-action:not(.ck-disabled):hover,a.ck.ck-button-action:not(.ck-disabled):hover{background:var(--ck-color-button-action-hover-background)}.ck.ck-button-action:not(.ck-disabled):active,a.ck.ck-button-action:not(.ck-disabled):active{background:var(--ck-color-button-action-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-action-active-shadow)}.ck.ck-button-action.ck-disabled,a.ck.ck-button-action.ck-disabled{background:var(--ck-color-button-action-disabled-background)}.ck.ck-button-action,a.ck.ck-button-action{color:var(--ck-color-button-action-text)}.ck.ck-button-bold,a.ck.ck-button-bold{font-weight:700}.ck.ck-dropdown{display:inline-block;position:relative}.ck.ck-dropdown .ck-dropdown__arrow{pointer-events:none;z-index:var(--ck-z-default)}.ck.ck-dropdown .ck-button.ck-dropdown__button{width:100%}.ck.ck-dropdown .ck-button.ck-dropdown__button.ck-on .ck-tooltip{display:none}.ck.ck-dropdown .ck-dropdown__panel{-webkit-backface-visibility:hidden;display:none;left:0;position:absolute;transform:translate3d(0,100%,0);z-index:var(--ck-z-modal)}.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel-visible{display:inline-block;will-change:transform}:root{--ck-dropdown-arrow-size:calc(0.5 * var(--ck-icon-size))}.ck.ck-dropdown{font-size:inherit}.ck.ck-dropdown .ck-dropdown__arrow{margin-left:var(--ck-spacing-small);right:var(--ck-spacing-standard);width:var(--ck-dropdown-arrow-size)}.ck.ck-dropdown.ck-disabled .ck-dropdown__arrow{opacity:var(--ck-disabled-opacity)}.ck.ck-dropdown .ck-button.ck-dropdown__button:not(.ck-button_with-text){padding-left:var(--ck-spacing-small)}.ck.ck-dropdown .ck-button.ck-dropdown__button.ck-disabled .ck-button__label{opacity:var(--ck-disabled-opacity)}.ck.ck-dropdown .ck-button.ck-dropdown__button.ck-on{border-bottom-left-radius:0;border-bottom-right-radius:0}.ck.ck-dropdown .ck-button.ck-dropdown__button .ck-button__label{overflow:hidden;text-overflow:ellipsis;width:7em}.ck.ck-dropdown__panel{border-radius:0;box-shadow:var(--ck-drop-shadow),0 0}.ck-rounded-corners .ck.ck-dropdown__panel,.ck.ck-dropdown__panel.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0}.ck.ck-dropdown__panel{background:var(--ck-color-dropdown-panel-background);border:1px solid var(--ck-color-dropdown-panel-border);bottom:0;min-width:100%}.ck.ck-list{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;display:flex;flex-direction:column;user-select:none}.ck.ck-list .ck-list__item,.ck.ck-list .ck-list__separator{display:block}.ck.ck-list .ck-list__item>:focus{position:relative;z-index:var(--ck-z-default)}.ck.ck-list{border-radius:0}.ck-rounded-corners .ck.ck-list,.ck.ck-list.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-list{background:var(--ck-color-list-background);list-style-type:none}.ck.ck-list__item{cursor:default;min-width:12em}.ck.ck-list__item .ck-button{border:0;border-radius:0;min-height:unset;padding:calc(.2 * var(--ck-line-height-base) * var(--ck-font-size-base)) calc(.4 * var(--ck-line-height-base) * var(--ck-font-size-base));text-align:left;width:100%}.ck.ck-list__item .ck-button .ck-button__label{line-height:calc(1.2 * var(--ck-line-height-base) * var(--ck-font-size-base))}.ck.ck-list__item .ck-button:active{box-shadow:none}.ck.ck-list__item .ck-button.ck-on{background:var(--ck-color-list-button-on-background);color:var(--ck-color-list-button-on-text)}.ck.ck-list__item .ck-button.ck-on:hover:not(ck-disabled){background:var(--ck-color-list-button-on-background-focus)}.ck.ck-list__item .ck-button.ck-on:active{box-shadow:none}.ck.ck-list__item .ck-button:hover:not(.ck-disabled){background:var(--ck-color-list-button-hover-background)}.ck.ck-list__item .ck-switchbutton.ck-on{background:var(--ck-color-list-background);color:inherit}.ck.ck-list__item .ck-switchbutton.ck-on:hover:not(ck-disabled){background:var(--ck-color-list-button-hover-background);color:inherit}.ck.ck-list__separator{background:var(--ck-color-base-border);height:1px;width:100%}.ck.ck-button.ck-switchbutton .ck-button__toggle,.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner{display:block}:root{--ck-switch-button-toggle-inner-size:1.0769230769em;--ck-switch-button-toggle-spacing:1px;--ck-switch-button-toggle-width:2.6153846154em}.ck.ck-button.ck-switchbutton .ck-button__label{margin-right:calc(2 * var(--ck-spacing-large))}.ck.ck-button.ck-switchbutton.ck-disabled .ck-button__toggle{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-switchbutton .ck-button__toggle{border-radius:0}.ck-rounded-corners .ck.ck-button.ck-switchbutton .ck-button__toggle,.ck.ck-button.ck-switchbutton .ck-button__toggle.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-button.ck-switchbutton .ck-button__toggle{background:var(--ck-color-switch-button-off-background);margin-left:auto;transition:background .4s ease;width:var(--ck-switch-button-toggle-width)}.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner{border-radius:0}.ck-rounded-corners .ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner,.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner.ck-rounded-corners{border-radius:var(--ck-border-radius);border-radius:calc(.5 * var(--ck-border-radius))}.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner{background:var(--ck-color-switch-button-inner-background);height:var(--ck-switch-button-toggle-inner-size);margin:var(--ck-switch-button-toggle-spacing);transition:transform .3s ease;width:var(--ck-switch-button-toggle-inner-size)}.ck.ck-button.ck-switchbutton.ck-on .ck-button__toggle{background:var(--ck-color-switch-button-on-background)}.ck.ck-button.ck-switchbutton.ck-on .ck-button__toggle .ck-button__toggle__inner{transform:translateX(1.3846153847em)}.ck.ck-toolbar-dropdown .ck-toolbar{flex-wrap:nowrap}.ck.ck-toolbar-dropdown .ck-dropdown__panel .ck-button:focus{z-index:calc(var(--ck-z-default) + 1)}.ck.ck-toolbar-dropdown .ck-toolbar{border:0}.ck.ck-dropdown .ck-dropdown__panel .ck-list{border-radius:0}.ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list,.ck.ck-dropdown .ck-dropdown__panel .ck-list.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0}.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:first-child .ck-button{border-radius:0}.ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:first-child .ck-button,.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:first-child .ck-button.ck-rounded-corners{border-bottom-left-radius:0;border-bottom-right-radius:0;border-radius:var(--ck-border-radius);border-top-left-radius:0}.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:last-child .ck-button{border-radius:0}.ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:last-child .ck-button,.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:last-child .ck-button.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0;border-top-right-radius:0}.text-tiny{font-size:.7em}.text-small{font-size:.85em}.text-big{font-size:1.4em}.text-huge{font-size:1.8em}.ck.ck-splitbutton{font-size:inherit}.ck.ck-splitbutton .ck-splitbutton__action:focus{z-index:calc(var(--ck-z-default) + 1)}.ck.ck-splitbutton.ck-splitbutton_open>.ck-button .ck-tooltip{display:none}:root{--ck-color-split-button-hover-background:#ebebeb;--ck-color-split-button-hover-border:#b3b3b3}.ck.ck-splitbutton>.ck-splitbutton__action{border-radius:0}.ck-rounded-corners .ck.ck-splitbutton>.ck-splitbutton__action,.ck.ck-splitbutton>.ck-splitbutton__action.ck-rounded-corners{border-bottom-right-radius:unset;border-radius:var(--ck-border-radius);border-top-right-radius:unset}.ck.ck-splitbutton>.ck-splitbutton__arrow{border-radius:0;min-width:unset}.ck-rounded-corners .ck.ck-splitbutton>.ck-splitbutton__arrow,.ck.ck-splitbutton>.ck-splitbutton__arrow.ck-rounded-corners{border-bottom-left-radius:unset;border-radius:var(--ck-border-radius);border-top-left-radius:unset}.ck.ck-splitbutton>.ck-splitbutton__arrow svg{width:var(--ck-dropdown-arrow-size)}.ck.ck-splitbutton.ck-splitbutton_open>.ck-button:not(.ck-on):not(:hover),.ck.ck-splitbutton:hover>.ck-button:not(.ck-on):not(:hover){background:var(--ck-color-split-button-hover-background)}.ck.ck-splitbutton.ck-splitbutton_open>.ck-splitbutton__arrow,.ck.ck-splitbutton:hover>.ck-splitbutton__arrow{border-left-color:var(--ck-color-split-button-hover-border)}.ck.ck-splitbutton.ck-splitbutton_open{border-radius:0}.ck-rounded-corners .ck.ck-splitbutton.ck-splitbutton_open,.ck.ck-splitbutton.ck-splitbutton_open.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck-rounded-corners .ck.ck-splitbutton.ck-splitbutton_open>.ck-splitbutton__action,.ck.ck-splitbutton.ck-splitbutton_open.ck-rounded-corners>.ck-splitbutton__action{border-bottom-left-radius:0}.ck-rounded-corners .ck.ck-splitbutton.ck-splitbutton_open>.ck-splitbutton__arrow,.ck.ck-splitbutton.ck-splitbutton_open.ck-rounded-corners>.ck-splitbutton__arrow{border-bottom-right-radius:0}:root{--ck-highlight-marker-blue:#72cdfd;--ck-highlight-marker-green:#63f963;--ck-highlight-marker-pink:#fc7999;--ck-highlight-marker-yellow:#fdfd77;--ck-highlight-pen-green:#180;--ck-highlight-pen-red:#e91313}.marker-yellow{background-color:var(--ck-highlight-marker-yellow)}.marker-green{background-color:var(--ck-highlight-marker-green)}.marker-pink{background-color:var(--ck-highlight-marker-pink)}.marker-blue{background-color:var(--ck-highlight-marker-blue)}.pen-red{color:var(--ck-highlight-pen-red)}.pen-green,.pen-red{background-color:transparent}.pen-green{color:var(--ck-highlight-pen-green)}.ck-content blockquote{border-left:5px solid #ccc;font-style:italic;margin-left:0;overflow:hidden;padding-left:1.5em;padding-right:1.5em}.ck.ck-heading_heading1{font-size:20px}.ck.ck-heading_heading2{font-size:17px}.ck.ck-heading_heading3{font-size:14px}.ck[class*=ck-heading_heading]{font-weight:700}.ck.ck-dropdown.ck-heading-dropdown .ck-dropdown__button .ck-button__label{width:8em}.ck.ck-dropdown.ck-heading-dropdown .ck-dropdown__panel .ck-list__item{min-width:18em}.ck .ck-widget.ck-widget_selectable{position:relative}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{position:absolute;visibility:hidden}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{display:block}.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{visibility:visible}:root{--ck-color-widget-blurred-border:#dedede;--ck-color-widget-drag-handler-icon-color:var(--ck-color-base-background);--ck-color-widget-editable-focus-background:var(--ck-color-base-background);--ck-color-widget-hover-border:#ffc83d;--ck-widget-handler-animation-curve:ease;--ck-widget-handler-animation-duration:200ms;--ck-widget-handler-icon-size:16px;--ck-widget-outline-thickness:3px}.ck .ck-widget{margin:var(--ck-spacing-standard) 0;outline-color:transparent;outline-style:solid;outline-width:var(--ck-widget-outline-thickness);padding:0;transition:outline-color var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve)}.ck .ck-widget.ck-widget_selected,.ck .ck-widget.ck-widget_selected:hover{outline:var(--ck-widget-outline-thickness) solid var(--ck-color-focus-border)}.ck .ck-widget:hover{outline-color:var(--ck-color-widget-hover-border)}.ck .ck-editor__nested-editable{border:1px solid transparent}.ck .ck-editor__nested-editable.ck-editor__nested-editable_focused,.ck .ck-editor__nested-editable:focus{background-color:var(--ck-color-widget-editable-focus-background);border:var(--ck-focus-ring);box-shadow:var(--ck-inner-shadow),0 0;outline:none}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{background-color:transparent;border-radius:var(--ck-border-radius) var(--ck-border-radius) 0 0;box-sizing:border-box;left:calc(0px - var(--ck-widget-outline-thickness));opacity:0;padding:4px;transform:translateY(-100%);transition:background-color var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),visibility var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),opacity var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve)}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler:hover .ck-icon .ck-icon__selected-indicator{opacity:1}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{color:var(--ck-color-widget-drag-handler-icon-color);height:var(--ck-widget-handler-icon-size);width:var(--ck-widget-handler-icon-size)}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{opacity:0;transition:opacity .3s var(--ck-widget-handler-animation-curve)}.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler{background-color:var(--ck-color-focus-border);opacity:1}.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{opacity:1}.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{background-color:var(--ck-color-widget-hover-border);opacity:1}.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover{outline-color:var(--ck-color-widget-blurred-border)}.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected .ck-widget__selection-handler,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected .ck-widget__selection-handler:hover,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover .ck-widget__selection-handler,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover .ck-widget__selection-handler:hover{background:var(--ck-color-widget-blurred-border)}:root{--ck-input-text-width:18em}.ck.ck-input-text{border-radius:0}.ck-rounded-corners .ck.ck-input-text,.ck.ck-input-text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-input-text{background:var(--ck-color-input-background);border:1px solid var(--ck-color-input-border);box-shadow:var(--ck-inner-shadow),0 0;min-height:var(--ck-ui-component-min-height);min-width:var(--ck-input-text-width);padding:var(--ck-spacing-extra-tiny) var(--ck-spacing-medium);transition:.2s ease-in-out;transition-property:box-shadow,border}.ck.ck-input-text:focus{border:var(--ck-focus-ring);box-shadow:var(--ck-focus-outer-shadow),var(--ck-inner-shadow);outline:none}.ck.ck-input-text[readonly]{background:var(--ck-color-input-disabled-background);border:1px solid var(--ck-color-input-disabled-border);color:var(--ck-color-input-disabled-text)}.ck.ck-input-text[readonly]:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),var(--ck-inner-shadow)}.ck.ck-text-alternative-form .ck-labeled-input{display:inline-block}.ck.ck-text-alternative-form .ck-label{display:none}.ck.ck-text-alternative-form{padding:var(--ck-spacing-standard)}.ck.ck-text-alternative-form:focus{outline:none}.ck.ck-text-alternative-form>:not(:first-child){margin-left:var(--ck-spacing-standard)}:root{--ck-balloon-panel-arrow-z-index:calc(var(--ck-z-default) - 3)}.ck.ck-balloon-panel{display:none;position:absolute;z-index:var(--ck-z-modal)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{content:"";position:absolute}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_n]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_n]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_s]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_s]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel.ck-balloon-panel_visible{display:block}:root{--ck-balloon-arrow-half-width:8px;--ck-balloon-arrow-height:10px;--ck-balloon-arrow-offset:2px}.ck.ck-balloon-panel{border-radius:0}.ck-rounded-corners .ck.ck-balloon-panel,.ck.ck-balloon-panel.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-balloon-panel{background:var(--ck-color-panel-background);border:1px solid var(--ck-color-panel-border);box-shadow:var(--ck-drop-shadow),0 0;min-height:15px}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{border-style:solid;height:0;width:0}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-bottom-width:var(--ck-balloon-arrow-height);border-left-width:var(--ck-balloon-arrow-half-width);border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:0}.ck.ck-balloon-panel[class*=arrow_n]:before{border-bottom-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-color:transparent;border-right-color:transparent;border-top-color:transparent}.ck.ck-balloon-panel[class*=arrow_n]:after{border-bottom-color:var(--ck-color-panel-background);margin-top:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-bottom-width:0;border-left-width:var(--ck-balloon-arrow-half-width);border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:var(--ck-balloon-arrow-height)}.ck.ck-balloon-panel[class*=arrow_s]:before{border-top-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-bottom-color:transparent;border-left-color:transparent;border-right-color:transparent}.ck.ck-balloon-panel[class*=arrow_s]:after{border-top-color:var(--ck-color-panel-background);margin-bottom:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:before{right:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:before{bottom:calc(-1 * var(--ck-balloon-arrow-height));left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:before{bottom:calc(-1 * var(--ck-balloon-arrow-height));left:calc(2 * var(--ck-balloon-arrow-half-width))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:before{bottom:calc(-1 * var(--ck-balloon-arrow-height));right:calc(2 * var(--ck-balloon-arrow-half-width))}.ck-content .image{clear:both;text-align:center}.ck-content .image>img{display:block;margin:0 auto;max-width:100%}.ck.ck-placeholder:before,.ck .ck-placeholder:before{color:var(--ck-color-engine-placeholder-text);content:attr(data-placeholder);cursor:text;pointer-events:none}.ck-content .image>figcaption{background-color:#f7f7f7;color:#333;font-size:.75em;outline-offset:-1px;padding:.6em}:root{--ck-image-style-spacing:1.5em}.ck-content .image-style-align-center,.ck-content .image-style-align-left,.ck-content .image-style-align-right,.ck-content .image-style-side{max-width:50%}.ck-content .image-style-side{float:right;margin-left:var(--ck-image-style-spacing)}.ck-content .image-style-align-left{float:left;margin-right:var(--ck-image-style-spacing)}.ck-content .image-style-align-center{margin-left:auto;margin-right:auto}.ck-content .image-style-align-right{float:right;margin-left:var(--ck-image-style-spacing)}.ck-content .image{overflow:hidden;position:relative}.ck-content .image .ck-progress-bar{left:0;position:absolute;top:0}:root{--ck-image-upload-progress-line-width:30px}.ck-content .image.ck-appear{animation:fadeIn .7s}.ck-content .image .ck-progress-bar{background:var(--ck-color-upload-bar-background);height:2px;transition:width .1s;width:0}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.ck-image-upload-complete-icon{border-radius:50%;display:block;position:absolute;right:10px;top:10px}.ck-image-upload-complete-icon:after{content:"";position:absolute}:root{--ck-color-image-upload-icon:#fff;--ck-color-image-upload-icon-background:#008a00;--ck-image-upload-icon-size:20px;--ck-image-upload-icon-width:2px}.ck-image-upload-complete-icon{animation-delay:0ms,3s;animation-duration:.5s,.5s;animation-fill-mode:forwards,forwards;animation-name:ck-upload-complete-icon-show,ck-upload-complete-icon-hide;background:var(--ck-color-image-upload-icon-background);font-size:var(--ck-image-upload-icon-size);height:var(--ck-image-upload-icon-size);opacity:0;width:var(--ck-image-upload-icon-size)}.ck-image-upload-complete-icon:after{animation-delay:.5s;animation-duration:.5s;animation-fill-mode:forwards;animation-name:ck-upload-complete-icon-check;border-right:var(--ck-image-upload-icon-width) solid var(--ck-color-image-upload-icon);border-top:var(--ck-image-upload-icon-width) solid var(--ck-color-image-upload-icon);box-sizing:border-box;height:0;left:25%;opacity:0;top:50%;transform:scaleX(-1) rotate(135deg);transform-origin:left top;width:0}@keyframes ck-upload-complete-icon-show{0%{opacity:0}to{opacity:1}}@keyframes ck-upload-complete-icon-hide{0%{opacity:1}to{opacity:0}}@keyframes ck-upload-complete-icon-check{0%{height:0;opacity:1;width:0}33%{height:0;width:.3em}to{height:.45em;opacity:1;width:.3em}}.ck .ck-upload-placeholder-loader{align-items:center;display:flex;justify-content:center;left:0;position:absolute;top:0}.ck .ck-upload-placeholder-loader:before{content:"";position:relative}:root{--ck-color-upload-placeholder-loader:#b3b3b3;--ck-upload-placeholder-loader-size:32px}.ck .ck-image-upload-placeholder{margin:0;width:100%}.ck .ck-upload-placeholder-loader{height:100%;width:100%}.ck .ck-upload-placeholder-loader:before{animation:ck-upload-placeholder-loader 1s linear infinite;border-radius:50%;border-right:2px solid transparent;border-top:3px solid var(--ck-color-upload-placeholder-loader);height:var(--ck-upload-placeholder-loader-size);width:var(--ck-upload-placeholder-loader-size)}@keyframes ck-upload-placeholder-loader{to{transform:rotate(1turn)}}.ck .ck-link_selected{background:var(--ck-color-link-selected-background)}.ck.ck-link-form .ck-labeled-input{display:inline-block}.ck.ck-link-form .ck-label{display:none}.ck.ck-link-form{padding:var(--ck-spacing-standard)}.ck.ck-link-form:focus{outline:none}.ck.ck-link-form>:not(:first-child){margin-left:var(--ck-spacing-standard)}.ck.ck-link-actions .ck-link-actions__preview{display:inline-block}.ck.ck-link-actions .ck-link-actions__preview .ck-button__label{overflow:hidden}.ck.ck-link-actions{padding:var(--ck-spacing-standard)}.ck.ck-link-actions .ck-button.ck-link-actions__preview{padding-left:0;padding-right:0}.ck.ck-link-actions .ck-button.ck-link-actions__preview,.ck.ck-link-actions .ck-button.ck-link-actions__preview:active,.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus,.ck.ck-link-actions .ck-button.ck-link-actions__preview:hover{background:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:active{box-shadow:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus .ck-button__label{text-decoration:underline}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label{color:var(--ck-color-link-default);cursor:pointer;max-width:var(--ck-input-text-width);min-width:3em;padding:0 var(--ck-spacing-medium);text-align:center;text-overflow:ellipsis}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label:hover{text-decoration:underline}.ck.ck-link-actions:focus{outline:none}.ck.ck-link-actions>:not(:first-child){margin-left:var(--ck-spacing-standard)}:root{--ck-color-table-focused-cell-background:#f5fafe}.ck-widget.table td.ck-editor__nested-editable.ck-editor__nested-editable_focused,.ck-widget.table th.ck-editor__nested-editable.ck-editor__nested-editable_focused{background:var(--ck-color-table-focused-cell-background);border-style:none;outline:1px solid var(--ck-color-focus-border);outline-offset:-1px}:root{--ck-insert-table-dropdown-box-active-background:#c7e5ff;--ck-insert-table-dropdown-box-border-active-color:#53a0e4;--ck-insert-table-dropdown-box-border-color:#bfbfbf;--ck-insert-table-dropdown-box-height:11px;--ck-insert-table-dropdown-box-margin:1px;--ck-insert-table-dropdown-box-width:12px;--ck-insert-table-dropdown-padding:10px}.ck .ck-insert-table-dropdown__grid{display:flex;flex-direction:row;flex-wrap:wrap;padding:var(--ck-insert-table-dropdown-padding) var(--ck-insert-table-dropdown-padding) 0;width:calc(var(--ck-insert-table-dropdown-box-width) * 10 + var(--ck-insert-table-dropdown-box-margin) * 20 + var(--ck-insert-table-dropdown-padding) * 2)}.ck .ck-insert-table-dropdown__label{text-align:center}.ck .ck-insert-table-dropdown-grid-box{border:1px solid var(--ck-insert-table-dropdown-box-border-color);border-radius:1px;height:var(--ck-insert-table-dropdown-box-height);margin:var(--ck-insert-table-dropdown-box-margin);width:var(--ck-insert-table-dropdown-box-width)}.ck .ck-insert-table-dropdown-grid-box.ck-on{background:var(--ck-insert-table-dropdown-box-active-background);border-color:var(--ck-insert-table-dropdown-box-border-active-color)}.ck-content .table{display:table;margin:1em auto}.ck-content .table table{border:1px double #b3b3b3;border-collapse:collapse;border-spacing:0}.ck-content .table table td,.ck-content .table table th{border-color:#d9d9d9;min-width:2em;padding:.4em;text-align:center}.ck-content .table table th{background:#fafafa;font-weight:700}</style>
+
+<script type="text/javascript">
+	window.history.forward();
+	function noBack() {
+		window.history.forward();
+	}
+
+	$(function() {
+		tab = 'administrativeApprovalDept';
+		surveyId = '';
+		seat = '18914';
+
+		if (typeof surveyId !== 'undefined' && surveyId > 0
+				&& tab == "dashboard") {
+			$.ajax({
+				url : "https://fin.assam.gov.in/survey/getMySurveyBanner",
+				data : {
+					surveyId : surveyId,
+					seat : seat
+				}
+			}).then(function(data) {
+				$('#surveyModal .modal-body').html(data);
+			});
+
+			$('#surveyModal').modal('show');
+		}
+
+		if (tab != "") {
+			$("#" + tab).addClass("active");
+		}
+
+		if (tab != "") {
+			subtab = 'aaOngoing';
+			if (subtab != "") {
+				$("#" + subtab).attr("class", "active");
+				if (subtab == "man" || subtab == "obl" || subtab == "suo"
+						|| subtab == "oth") {
+					stab = '';
+
+					$("#" + stab).attr("class", "current_page_item");
+					var $el, leftPos, newWidth, $mainNav = $("#example-one");
+
+					$mainNav.append("<li id='magic-line'></li>");
+					var $magicLine = $("#magic-line");
+
+					$magicLine.width($(".current_page_item").width()).css(
+							"left", $(".current_page_item a").position().left)
+							.data("origLeft", $magicLine.position().left).data(
+									"origWidth", $magicLine.width());
+
+					$("#example-one li a").hover(function() {
+						$el = $(this);
+						leftPos = $el.position().left;
+						newWidth = $el.parent().width();
+						$magicLine.stop().animate({
+							left : leftPos,
+							width : newWidth
+						});
+					}, function() {
+						$magicLine.stop().animate({
+							left : $magicLine.data("origLeft"),
+							width : $magicLine.data("origWidth")
+						});
+					});
+				}
+
+				subsubtab = '';
+				if (subsubtab != "") {
+					$("#" + subsubtab).attr("class", "selected");
+				}
+				if (tab != "" && tab == "la" && subsubtab != "") {
+					$("#" + subsubtab).attr("class", "active");
+				}
+			}
+		}
+
+		if (tab != "" && tab == "home") {
+			$('#d3').height($(window).height() - 280);
+			$('#d2').height($(window).height() - 236);
+		}
+
+		if (tab != "" && tab == "reports") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+			$('#pr').height($(window).height() - 180);
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+			}
+		}
+
+		if (tab != "" && subtab == "otherAllowanceSetup") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+			$('#pr').height($(window).height() - 180);
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+			}
+		}
+
+		if (tab != "" && tab == "specialDeductionSetup") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+			$('#pr').height($(window).height() - 180);
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+			}
+		}
+
+		if (tab != "" && subtab == "debtSetup") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+				/* 	$("#" + stab).css("background-color", "white"); */
+			}
+		}
+
+		$('#3').height($(window).height() - 280);
+		$('#4').height($(window).height() - 350);
+	});
+
+	function viewGraph(year) {
+		if ('aaOngoing' == "sfp") {
+			view(document.getElementById("scid").value, year);
+		}
+	}
+
+	function reportCeil() {
+		var s = "Y";
+		TINY.box.show({
+			iframe : 'ceilingDetails?template=Y',
+			width : 750,
+			height : 320,
+			fixed : false,
+			maskid : 'bluemask',
+			maskopacity : 60,
+			openjs : function() {
+				openJS()
+			}
+		});
+	}
+
+	function loadAjaxContent(elemId, action, param) {
+		$.ajax({
+			type : 'GET',
+			url : action,
+			data : param,
+			success : function(msg) {
+				$('#' + elemId).html(msg);
+			}
+		});
+	}
+
+	function goToFinVault(param1, param2, param3) {
+		window.open("https://fin.assam.gov.in/finvault/goToFinVault?q=" + q);
+	}
+
+	$(document)
+			.ready(
+					function() {
+						if ('D' == "O"
+								&& '' != null) {
+							var justificationSurrender = '';
+							if (justificationSurrender == "true") {
+
+								TINY.box.show({
+									iframe : 'surrenderInitiationStatus',
+									closejs : function() {
+										window.parent.document.location
+												.reload();
+									},
+									width : window.innerWidth - 900,
+									height : window.innerHeight - 350,
+									boxid : 'frameless'
+								});
+
+							}
+						}
+						
+// 						const tokenInput = document.querySelector('input[name="token"]');
+
+// 						// Get the value of the hidden input field
+// 						const sessionId = tokenInput ? tokenInput.value : null;
+// 						    localStorage.setItem("whatsapp-session", JSON.stringify({ loggedIn: true, sessionId }));
+						    
+						    
+// 								debugger
+// 							    const checkSessionInterval = setInterval(function () {
+// 							        const tokenInput = document.querySelector('input[name="token"]');
+// 							        const sessionId = tokenInput ? tokenInput.value : null;
+
+// 							        if (sessionId) {
+// 							            const currentSession = JSON.parse(localStorage.getItem("whatsapp-session"));
+
+// 							            if (!currentSession || currentSession.sessionId !== sessionId) {
+// 							                // Update the localStorage if sessionId changes
+// 							                alert("Another session is being started on a different tab.")
+// 							            }
+// 							        }
+// 							    }, 1000); // Check every 1 second
+
+// 							    });
+						
+					});
+	
+	
+	
+
+</script>
+
+<title>Administrative Approval, Technical and Financial Sanctions</title>
+
+<style type="text/css">
+.header-part .nav-tabs {
+	border-bottom: none;
+}
+
+ul.header-part {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+ul.header-part li {
+	display: inline;
+}
+
+ul.header-part li .mainLink {
+	background-color: #F8C301;
+	color: #000000;
+	margin: -1px;
+	padding: 3px 6px 4px 6px;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-left: 3px solid #F9CC32;
+	border-right: 3px solid #F9CC32;
+	border-top: 3px solid #F9CC32;
+}
+
+ul.header-part li .mainLink:hover {
+	background-color: #2666AB;
+	border: 3px solid #1A60AB;
+	border-bottom: none;
+	color: #FFFFFF;
+}
+
+ul.header-part li .mainLink.active {
+	background-color: #01458E;
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 3px 8px 4px 8px;
+	outline: none;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-left: 3px solid #01458E;
+	border-right: 3px solid #01458E;
+	border-top: 3px solid #01458E;
+}
+
+.header-part .dropdown-menu {
+	transition: all 0.5s;
+	overflow: hidden;
+	transform-origin: top center;
+	transform: scale(1, 0);
+	display: block;
+	opacity: 0.97;
+}
+
+.header-part .dropdown-menu a .row {
+	padding: 3px 8px 4px 14px;
+}
+
+.header-part .dropdown:hover>.dropdown-menu {
+	transform: scale(1);
+}
+
+.header-part .dropdown:hover>.dropdown-menu a:hover .row {
+	color: #28a745;
+	background-color: #f5f5f5;
+}
+
+.header-part .dropdown-menu a {
+	color: #000;
+	font-size: 12px;
+	line-height: 1.8;
+}
+
+.header-part .dropdown-menu .dropdown-item {
+	background-color: none;
+}
+
+.header-part .dropdown-menu .dropdown-item-disable {
+	display: none;
+}
+</style>
+
+<link rel="stylesheet" href="https://finanalytics.assam.gov.in/botpress/assets/modules/channel-web/inject.css"></head>
+
+<body onload="noBack();" onpageshow="if(event.persisted) noBack();">
+
+	<table class="layoutStyle">
+		<tbody><tr>
+			<td colspan="3">
+
+
+<link rel="stylesheet" type="text/css" href="../resources/js/anylinkmenu.css">
+<script type="text/javascript" src="../resources/js/anylinkmenu.js"></script>
+<script type="text/javascript" src="../resources/js/jQuery-idle/jquery-idle.min.js"></script>
+<script src="https://finanalytics.assam.gov.in/botpress/assets/modules/channel-web/inject.js"></script> 
+
+ <script type="text/javascript">
+	anylinkmenu.init("menuanchorclass")
+	var anylinkmenu4 = { 
+		divclass : 'anylinkmenu',
+		inlinestyle : 'width:150px; background:#ffffff',
+		linktarget : '_self'
+	}
+
+	anylinkmenu4.items = [
+			[
+				"Profile",
+				"javascript: editProfile()" ],
+			[
+					"Change Password",
+					"javascript:TINY.box.show({iframe:'/assamfinance/changePasswd',width:650,height:500,boxid : 'frameless' })" ],
+			[ "Password History", "javascript: passwordHistory()" ],
+			[
+				"Deactivate Account",
+				"javascript:TINY.box.show({iframe:'deleteProfile',width:600,height:450,boxid : 'frameless' })" ]]
+
+	function passwordHistory() {
+		window.location.href = "passwordHistory";
+	}
+	
+	function editProfile() {
+		window.location.href = "editProfile";
+	}
+
+	$(function() {
+		if ('Y' == "N") {
+			TINY.box
+					.show({
+						iframe : '/assamfinance/changePasswd',
+						closejs : function() {
+							window.parent.document.location.reload();
+						},
+						width : 650,
+						height : 300,
+						boxid : 'frameless'
+					});
+		}
+	});
+
+	$(document).on('click', '.forceLogout', function(event) {
+		forceLogout();
+	});
+
+	$(document).on('click', '.keepAlive', function(event) {
+		keepAlive();
+	});
+
+	$(document).idle({
+		onIdle : function() {
+			$("#notifyLogout").modal('show');
+			countdown();
+		},
+		idle : 1000000
+	})
+
+	var timeoutHandle;
+	function countdown() {
+		var seconds = 60;
+		function tick() {
+			var counter = document.getElementById("countdowntimer");
+			seconds--;
+			counter.innerHTML = "(" + (seconds < 10 ? "0" : "")
+					+ String(seconds) + ")";
+			if (seconds > 0) {
+				timeoutHandle = setTimeout(tick, 1000);
+			} else {
+				forceLogout();
+			}
+		}
+		tick();
+	}
+
+	function forceLogout() {
+		window.location.href = '/cas/logout';
+	}
+
+	function keepAlive() {
+		$.ajax({
+			url : 'keepSessionAlive',
+			complete : function() {
+				$("#notifyLogout").modal('hide');
+			}
+		});
+	}
+
+	function viewSupportNumbers() {
+		$.ajax({
+			type : "GET",
+			url : "viewSupportNumbers",
+			beforeSend : function() {
+				$('#supportModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#supportModal .modal-body').html(msg);
+			}
+		});
+		$('#supportModal').modal('show');
+	}
+</script>
+<table>
+	<tbody><tr>
+		<td class="headerband" height="60px" width="300px" style="background-image: url('../resources/images/Assam_Logo_Header.png'); background-repeat: no-repeat; border: none; vertical-align: middle; margin: 10px 10px 10px 10px">
+		</td>
+		<td class="headerband" height="56" style="vertical-align: middle;">
+			<img src="../resources/images/AssamFinance_Logo_Header.png" align="right">
+		</td>
+	</tr>
+
+	<tr class="band">
+		<td style="width: 60%; padding-top: 5px; padding-left: 5px;">
+			<div align="left">
+				<span style="color: white; font-size: 12px;"> Mr.&nbsp;Assistant&nbsp;rdm,&nbsp;Assistant Department,&nbsp;Revenue and Disaster Management Department
+				</span> <a href="#" class="menuanchorclass" rel="anylinkmenu4"> <img src="../resources/images/arr.png" height="10px" width="10px" border="0"></a>
+				
+					<span style="color: #FFF;"> Last Log In : Friday, 21 March 2025, 12:32 PM</span>
+					<a href="loginHistory" style="color: #F8C301;">Show More</a>
+				
+			</div>
+		</td>
+		<td height="22px;" style="padding-top: 5px; padding-left: 5px">
+			<div align="right">
+				<span color="#FFFFFF;" style="font-weight: lighter;"> <a href="gotoMyInbox" title="Home Page" style="text-decoration: none;">
+						<span style="color: white; font-weight: normal; font-size: 12px;">
+							<i class="fa fa-home"></i>&nbsp;Home&nbsp;|
+					</span>
+				</a>  <a id="userManualLink" href="javascript:void(0);" onclick="gotoUserManuals();" title="User Manuals" style="text-decoration: none;"> <span style="color: white; font-size: 12px; font-weight: lighter;">
+							<i class="fa fa-book"></i> Manuals &amp; Tutorials |
+					</span>
+				</a> 
+					<a href="changeAccountDetails" title="Home Page" style="text-decoration: none;"> <span style="color: white; font-weight: normal; font-size: 12px;">
+							<i class="fa fa-user-circle-o"></i>&nbsp;Change Account&nbsp;|
+					</span>
+				</a> <a href="/cas/logout" title="logout" style="text-decoration: none;">
+						<span style="color: white; font-size: 12px; font-weight: lighter; padding-right: 10px;">
+							<i class="fa fa-sign-out"></i>&nbsp;Logout
+					</span>
+				</a>
+				</span>
+			</div>
+		</td>
+	</tr>
+</tbody></table>
+
+<!-- GENERAL-USER-IDLE-STATUS -->
+<div class="modal fade in" id="notifyLogout" tabindex="-1" role="dialog" aria-labelledby="notifyLogoutLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title" id="notifyLogoutLabel" style="color: #444;">Session
+					Timeout</h4>
+			</div>
+			<div class="modal-body" style="font-size: 14px; line-height: 20px;">You're
+				being timed out due to inactivity. Please choose to stay signed in
+				or to logout. Otherwise, you will be logged out automatically.</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-sm btn-danger forceLogout">Logout</button>
+				<button type="button" class="btn btn-sm btn-primary keepAlive" data-dismiss="modal">
+					Stay Logged In <span id="countdowntimer"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="supportModal" role="dialog" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-body" style="background-color: #f5f5f5;"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="updatePasswordModal" role="dialog" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header" style="display: flex;">
+				<h4 class="modal-title" style="color: #fff; width: 95%; text-align: left;">Update
+					Password</h4>
+				<button type="button" class="close" data-dismiss="modal" style="width: 5%">
+					<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+				</button>
+			</div>
+			<div class="modal-body" id="updatePasswordModalBody" style="height: 375px;"></div>
+		</div>
+	</div>
+</div>
+
+ <script>
+	let webchatOpen = false
+	window.botpressWebChat.init({
+		host : 'https://finanalytics.assam.gov.in/botpress',
+		botId : 'helpdesk',
+		userId : "18914",
+		botName : 'Helpdesk',
+		enableTranscriptDownload : false,
+		showConversationsButton : false,
+		hideWidget : true,
+		useSessionStorage: true
+	})
+
+	window.addEventListener('message', function(event) {
+		if (event.data.name === 'webchatReady') {
+			window.botpressWebChat.sendEvent({
+				type : 'proactive-trigger',
+				text : 'Hi',
+				channel : "web",
+				payload : {
+					token : "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZC5yZG0iLCJuYmYiOjE3NDI1NDEyNTgsImlkIjoiMTg5MTQiLCJleHAiOjE3NDI2Mjc2NTgsInVzZXJuYW1lIjoiYWQucmRtIn0.u8huZrKLPgw6EU4vcONoDS-GKWJXhlpMDeoRxFf4gTimcs4tWRxazswO_jqldvJsx9awKx2jvffKU8N9ZzZ8RbLzG7NXQDR-gE5u_MCeAuKzCMkjfu_5E6r2AX9l8-N_1NTlX3uyNR9RkXqKA4_-IdS0ggNo-8hW_RDgYaN1xIQcWnHt-CJJDlrSuhYwsWljXt4aS4Y_212X3VpmoYk5fJsjGP5N5bSNbfdmPBmWeqnrY_hzuAzffJ36BQrO--xs-SyNjRpvaWSEbVRxWc_UEOCq_wZCzTMjC-ELQY7N8R_MW1-gukYqkp-0L2a4HWjP_F7SU1f5NwCcJHcJFfG4lg",
+				},
+			})
+		}
+		if (event.data.name === 'webchatOpened') {
+			webchatOpen = true
+		}
+
+		if (event.data.name === 'webchatClosed') {
+			webchatOpen = false
+		}
+	})
+</script>
+</td>
+		</tr>
+
+		<tr>
+			<td colspan="3" style="padding: 0px 4px 0px 4px" bgcolor="#FFFFFF">
+				<div align="left">
+					<ul class="header-part">
+
+						
+						
+							<li title="Inbox" class="nav-item"><a id="inbox" href="gotoDebtInbox" class="nav-link mainLink">Inbox</a></li>
+						
+						
+
+						<!-- ====================== -->
+
+						<!-- === FOR BUDGET === -->
+						
+						<!-- === FOR BUDGET END === -->
+
+						<!-- === FOR CEILING === -->
+						
+						<!-- === FOR CEILING END === -->
+
+						<!-- === FOR AATSFS === -->
+						
+						<!-- === FOR AATSFS END === -->
+
+						<!-- === FOR BILLS === -->
+						
+
+						<!-- === FOR BILLS END === -->
+
+
+						<!-- === FOR DEBT === -->
+						
+						<!-- === FOR DEBT END === -->
+						<!-- === FOR RIDF === -->
+						
+						<!-- === FOR RIDF END === -->
+
+						<!-- === FOR EIS === -->
+						
+						<!-- === FOR EIS END === -->
+
+						<!-- === FOR WORKS ACCOUNT === -->
+						
+
+						
+
+
+						<!-- === FOR WORKS ACCOUNT END === -->
+
+						<!-- === FOR AUDIT === -->
+						
+						<!-- === FOR AUDIT END === -->
+
+						<!-- === FOR DASHBOARD === -->
+						
+						
+						<!-- === FOR CASH-PLANNING  === -->
+						
+						<!-- === FOR CASH-PLANNING END === -->
+
+						<!-- === FOR TEMPORARY  === -->
+						
+
+						<!-- Master Data -->
+						
+
+						
+					</ul>
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td width="4px"></td>
+			<td id="bodypart">
+				<table>
+					
+					
+					
+
+					
+					
+					
+					
+					
+					
+					
+
+					
+
+					
+
+
+					
+
+					
+					
+					
+					
+					
+					
+
+					
+					
+					
+					
+
+					
+
+					
+
+
+
+					
+
+
+
+					
+
+					
+
+					
+
+
+
+					
+
+					
+					
+
+					
+
+					
+
+					
+
+
+					
+					
+					
+					
+
+					
+
+					
+
+					
+					
+					  
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+						<tbody><tr>
+							<td>
+								<ul class="dropdown dropdown-horizontal">
+									<li title="Received Administrative Approvals (Held By You)">
+										<a id="aaReceivedDept" href="administrativeApprovalDeptReceived"> Received </a>
+									</li>
+									<li title="Create a new Administrative Approval"><a id="aaRequestDept" href="administrativeApprovalDept">Pending</a>
+									</li>
+									<li title="Inter And Intra Department Forwarded"><a id="aaInterAndIntraForwarded" href="aaInterAndIntraDeptForwarded">Forwarded (Dept)</a></li>
+									<li title="Forwarded To Finance"><a id="aaDeptForwarded" href="administrativeApprovalDeptForwarded">Forwarded
+											(Finance)</a></li>
+									<li title="Forwarded To Finance"><a id="aaFinReturnedDept" href="getAaFinanceReturnedInDept">Finance Returned </a></li>
+									<li title="Queried"><a id="aaDeptQueried" href="administrativeApprovalDeptQueried">Queried</a></li>
+									<li title="Issued (Manual+System Generated) Administrative Approvals">
+										<a id="aaIssuedDept" href="aaIssuedDept">Issued</a>
+									</li>
+									<li title="Ongoing + Proposals need to be revalidated"><a id="aaOngoing" href="aaOngoing" class="active">Manually Approved</a></li>
+									<li><a id="aaRejectedDEpt" href="aaRejectedDept">Rejected</a></li>
+									<li><a id="aaCanceledDept" href="aaCanceledDept">Cancelled</a></li>
+									<li><a id="verifyAa" href="getAdministrativeApprovalListForVerification">Verify
+											AA</a></li>
+									<li title="Administrative Approval Summary"><a id="aaSummaryDept" href="administrativeApprovalSummaryDept">Search</a>
+									</li>
+									<li style="background-color: #338ad7;"><a id="getAaGIS" title="District Wise Administrative Approval" href="getAaGIS">AA-GIS</a>
+									</li>
+									<li style="background-color: #338ad7;"><a id="getAaReport" title="Administrative Approval Report" href="getAaReport">Money
+											Flow-Report</a></li>
+									<li><a id="getAaGeneralReportsDept" title="Administrative Approval General Reports" href="getAaGeneralReportsDept">Reports </a></li>
+									<li><a id="getAaWildCardReportsDept" title="Financial Sanction Wild Card Reports" href="getAaWildCardReportsDept">Wild Card Reports </a></li>
+								</ul>
+							</td>
+						</tr>
+					
+
+					
+
+					
+					
+					
+
+					
+
+					
+
+					
+
+					<!-- SUBTAB FOR BILLS -->
+					
+
+					
+
+					
+
+					
+
+					
+
+		
+		
+		<!-- Sub tab for GeM -->
+					  
+
+					
+
+					
+
+					
+
+					
+
+					
+					<!-- SUBTAB FOR TREASURY -->
+					
+					
+					
+
+					
+
+					
+
+					
+					
+
+					
+
+					
+
+					
+
+					
+
+
+					
+
+					
+ 					 
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+
+					
+
+					
+
+					
+					
+
+					
+
+					
+					
+						<tr>
+							<td>
+
+
+
+<script src="/assamfinance/resources/js/CommonAAFS.js"></script>
+<script type="text/javascript" src="../resources/js/ckeditor/ckeditor.js?version=2" charset="utf-8"></script>
+<script type="text/javascript">
+	var manualProposalAttachment = 'AA.pdf';
+	var clicked = false;
+	var iniId;
+	var autocomp_opt = {
+		delay : 100,
+		source : function(request, response) {
+			var ddoValue =  $('#ddoValue').val();
+			$.ajax({
+				url : 'headAutocompleteForAA',
+				dataType : 'JSON',
+				data : {
+					searchQuery : request.term,
+					initiationId : iniId,
+					salaryOnly : false,
+					mappedDdoId : ddoValue
+				},
+				success : function(data) {
+					response($.map(data, function(i) {
+						return {
+							label : i.head,
+							value : i.headId,
+							allottedAmount : i.allottedAmount,
+							shareStatus : i.shareStatus,
+							color : i.color,
+							levelOfImpact : i.levelOfImpact
+						};
+					}));
+				}
+			});
+		},
+		select : function(event, ui) {
+			$(this).val(ui.item.label);
+			$(this).parent('td').find(".headId").val(ui.item.value);
+			$(this).closest('tr').find(".allottedAmount").val(
+					ui.item.allottedAmount);
+			$(this).closest('tr').find(".levelOfImpact").val(ui.item.levelOfImpact);
+			$(this).closest('tr').find(".color").css("backgroundColor", ui.item.color);
+
+			var sum = 0;
+			$('.allottedAmount').each(function() {
+				sum += Number($(this).val());
+			});
+			$('#totBudgetctFY').val(sum);
+
+			if (ui.item.shareStatus == 'C') {
+				$("#centralDiv").show();
+				$('.centrallySponsored').show();
+				$("#centralOrnot").val("Y");
+			} else if ((ui.item.shareStatus != 'C') && (CentralShare != 'C')) {
+				$('.centrallySponsored').hide();
+				$("#centralDiv").hide();
+				$("#centralOrnot").val("N");
+			}
+
+			return false;
+		},
+		minLength : 11
+	};
+
+	var autocomp_ddochoosen = {
+		delay : 100,
+		source : function(request, response) {
+			$.ajax({
+				url : 'ddoAutocomplete',
+				dataType : 'JSON',
+				data : {
+					ddoSearchName : request.term
+				},
+				success : function(data) {
+					response($.map(data, function(i) {
+						return {
+							label : i.hierarchyCode,
+							value : i.hierarchyId
+						};
+					}));
+				}
+			});
+		},
+		select : function(event, ui) {
+			$(this).val(ui.item.label);
+			$(this).closest('td').find(".hierarchyId").val(ui.item.value);
+			return false;
+		},
+		minLength : 1
+	};
+
+	$(document).ready(
+			function() {
+
+				$('.datetimepicker').datetimepicker({
+					minView : 3,
+					pickerPosition : 'bottom-right',
+					format : 'dd-mm-yyyy',
+					pickTime : false,
+					autoclose : true,
+					todayBtn : true,
+					endDate : new Date()
+				});
+				$('.datetimepicker1').datetimepicker({
+					minView : 3,
+					pickerPosition : 'bottom-right',
+					format : 'dd-mm-yyyy',
+					pickTime : false,
+					autoclose : true,
+					todayBtn : true
+
+				});
+
+				iniId = $('#iniId').val();
+				CentralShare = $('#CentralShare').val();
+				if (CentralShare == 'C') {
+					$("#centralDiv").show();
+					$('.centrallySponsored').show();
+					$("#centralOrnot").val("Y");
+				} else {
+					$("#centralDiv").hide();
+					$('.centrallySponsored').hide();
+					$("#centralOrnot").val("N");
+
+				}
+				$('.depname').val("");
+				$('.head').on(
+						"keyup",
+						function(event) {
+							var val = $(this).val();
+							if (event.keyCode != 8) {
+								if (val.length == 4 || val.length == 7
+										|| val.length == 11 || val.length == 16
+										|| val.length == 20) {
+									val = val + "-";
+									$(this).val(val);
+								}
+							}
+						}).autocomplete(autocomp_opt);
+				bindDeptAutoComplete();
+
+				$('.ddochoosen').on("keyup", function(event) {
+					var val = $(this).val();
+
+					$(this).val(val);
+				}).autocomplete(autocomp_ddochoosen);
+
+				var sum = 0;
+				$('.allottedAmount').each(function() {
+					sum += Number($(this).val());
+				});
+				$('#totBudgetctFY').val(sum);
+			});
+
+	function bindDeptAutoComplete() {
+		$('.depname').on("keyup", function(event) {
+		}).autocomplete({
+			delay : 100,
+			source : function(request, response) {
+				$.ajax({
+					url : 'getDepartmentAutocomplete',
+					data : {
+						temp : request.term
+					},
+					beforeSend : function() {
+
+					},
+					success : function(data) {
+						response($.map(data, function(i) {
+							return {
+								label : i.hierarchyName,
+								value : i.hierarchyId
+							};
+
+						}));
+					}
+				});
+			},
+			select : function(event, ui) {
+				$(this).val(ui.item.label);
+				$(".deptId").val(ui.item.value);
+				return false;
+			},
+			minLength : 1
+		});
+	}
+	function showReplyBox(queryId) {
+		$('#parentId').val(queryId);
+		$('#myModal2').modal('show');
+		return false;
+	}
+	function sendQuery(elem, queryId) {
+		$
+				.ajax({
+					type : "GET",
+					url : "sendAdministrativeApprovalQuery",
+					data : {
+						'id' : queryId
+					},
+					beforeSend : function() {
+						$(elem).prop('class',
+								'glyphicon glyphicon-option-horizontal');
+					},
+					success : function(msg) {
+						if (msg) {
+							$(elem)
+									.closest('td')
+									.html(
+											'<i title="Sent" class="fa fa-share" aria-hidden="true" style="font-size: 16px; color: green;"></i>');
+							location.reload();
+						}
+					}
+				});
+	}
+	function deleteQuery(elem, queryId) {
+		$
+				.ajax({
+					type : "GET",
+					url : "deleteAdministrativeApprovalQuery",
+					data : {
+						'id' : queryId
+					},
+					beforeSend : function() {
+						$(elem).prop('class',
+								'glyphicon glyphicon-option-horizontal');
+					},
+					success : function(msg) {
+						if (msg) {
+							location.reload();
+							$(elem).closest('tr').remove();
+							if ($('#queryTable tr').length == 1) {
+								$('#queryTable')
+										.append(
+												'<tr><td colspan="3" style="text-align:center">--No Queries Found--</td></tr>');
+							}
+							var i = 1;
+							$('#queryTable').find(".slno").each(function() {
+								$(this).html(i);
+								i++;
+							});
+						}
+					}
+				});
+	}
+	function validateNum(elem) {
+		if (isNaN(elem.value)) {
+			alert('Invalid numeric value');
+			elem.value = "";
+			elem.focus();
+		}
+	}
+	function validateNumAndTotCost(elem) {
+		if (isNaN(elem.value)) {
+			alert('Invalid numeric value');
+			elem.value = "";
+			elem.focus();
+		} else {
+			var sum = 0;
+			$('.amt').each(function() {
+				sum += Number($(this).val());
+			});
+			$('#aaTotAmount').val(sum);
+		}
+	}
+	function validateCFYAmount(elem) {
+		var txt_bAmt = $(elem).parent('td').find(".amt").val();
+		if (isNaN(elem.value)) {
+			alert('Invalid numeric value');
+			elem.value = "";
+			elem.focus();
+		} else {
+			var sum = 0;
+			$('.eeCFYAmount').each(function() {
+				sum += Number($(this).val());
+			});
+			$('#totEstimatedctFY').val(sum);
+		}
+	}
+	function addNewRow(elem) {
+		var rowLen = $('#proposalTable2').find('tr').length;
+		rowLen = rowLen - 3;
+		var rowData = $('#dynamicRow').html();
+		rowData = rowData.replace(/counter/g, rowLen - 1);
+		$(elem).before($('<tr></tr>').append(rowData));
+	}
+	function addNewCondition(elem) {
+		var rowLen = $('#conditionTable').find('tr').length;
+		rowLen = rowLen - 3;
+		var rowData = $('#dynamicRow').html();
+		rowData = rowData.replace(/counterIndex/g, rowLen);
+		rowData = rowData.replace(/counter/g, rowLen - 1);
+		$(elem).before($('<tr></tr>').append(rowData));
+	}
+	function addNewHOArow(elem) {
+		var rowLen = $('#hoaTable').find('tr').length;
+		rowLen = rowLen - 2;
+		var rowData = $('#dynamicHOArow').html();
+		rowData = rowData.replace(/counterIndex/g, rowLen);
+		rowData = rowData.replace(/counter/g, rowLen - 1);
+		$(elem).before($('<tr></tr>').append(rowData));
+		$('.head').on(
+				"keyup",
+				function(event) {
+					var val = $(this).val();
+					if (event.keyCode != 8) {
+						if (val.length == 4 || val.length == 7
+								|| val.length == 11 || val.length == 16
+								|| val.length == 20) {
+							val = val + "-";
+							$(this).val(val);
+						}
+					}
+				}).autocomplete(autocomp_opt);
+	}
+	function validateDate(inputText) {
+		var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+		// Match the date format through regular expression
+		if (inputText.value.match(dateformat)) {
+			//Test which seperator is used '/' or '-'
+			var opera1 = inputText.value.split('/');
+			var opera2 = inputText.value.split('-');
+			lopera1 = opera1.length;
+			lopera2 = opera2.length;
+			// Extract the string into month, date and year
+			if (lopera1 > 1) {
+				var pdate = inputText.value.split('/');
+			} else if (lopera2 > 1) {
+				var pdate = inputText.value.split('-');
+			}
+			var dd = parseInt(pdate[0]);
+			var mm = parseInt(pdate[1]);
+			var yy = parseInt(pdate[2]);
+			// Create list of days of a month [assume there is no leap year by default]
+			var ListofDays = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+			if (mm == 1 || mm > 2) {
+				if (dd > ListofDays[mm - 1]) {
+					alert('Invalid date format!');
+					inputText.value = "";
+					return false;
+				}
+			}
+			if (mm == 2) {
+				var lyear = false;
+				if ((!(yy % 4) && yy % 100) || !(yy % 400)) {
+					lyear = true;
+				}
+				if ((lyear == false) && (dd >= 29)) {
+					alert('Invalid date format!');
+					inputText.value = "";
+					return false;
+				}
+				if ((lyear == true) && (dd > 29)) {
+					alert('Invalid date format!');
+					inputText.value = "";
+					return false;
+				}
+			}
+		} else {
+			alert("Invalid date format!");
+			inputText.value = "";
+			return false;
+		}
+	}
+	function proposalReport(approvalId) {
+		window.open('downloadAAChecklist?q=' + approvalId);
+		return false;
+	}
+
+	function displayCentrallySponsored(elem) {
+		if ($(elem).val() == "Y") {
+			$('.centrallySponsored').show();
+		} else {
+			$('.centrallySponsored').hide();
+		}
+	}
+	function validateSave() {
+		var officeCat = 'D';
+		var aaTotalAmount = $('#aaTotAmount').val();
+		if ($(".projectname").val() == '') {
+			alert('Invalid Name of the Scheme/Project proposed');
+			return false;
+		}
+		if ($("input[name='administrativeApproval.amount']").val() == ''
+				|| $("input[name='administrativeApproval.amount']").val() == 0) {
+			alert('Invalid Project Amount');
+			return false;
+		}
+		if ($("input[name='administrativeApproval.manualProposalNo']").val() == ''
+				|| $("input[name='administrativeApproval.manualProposalNo']")
+						.val() == 0) {
+			alert('Invalid Manual Proposal No');
+			return false;
+		}
+		checkManualProposalNoStatus();
+		if ($("input[name='administrativeApproval.issuedOnStr']").val() == ''
+				|| $("input[name='administrativeApproval.issuedOnStr']").val() == 0) {
+			alert('Invalid issued Date');
+			return false;
+		}
+		if ($("input[name='administrativeApproval.validUptoStr']").val() == ''
+				|| $("input[name='administrativeApproval.validUptoStr']").val() == 0) {
+			alert('Invalid Date');
+			return false;
+		}
+		var finyear = $(".chosefinyear").val();
+		if (finyear == '' || finyear == 0) {
+			alert('Invalid Year');
+			return false;
+		}
+		if (officeCat != "O") {
+			var ddoId = $(".hierarchyId").val();
+			if (ddoId == '' || ddoId == 0) {
+				alert('Select DDO Details');
+				return false;
+			}
+		}
+		if (officeCat === 'O') {
+			if (Number(aaTotalAmount) > Number(99999)) {
+				alert('Maximum "Total Project Cost" is limited to 99999.000L!');
+				return false;
+			}
+		}
+		var validUptoStr = $("#validUptoStr").val().split("-");
+		var issuedOnStr = $("#issuedOnStr").val().split("-");
+
+		var validDate = new Date(validUptoStr[2], validUptoStr[1],
+				validUptoStr[0]);
+		var issuedDate = new Date(issuedOnStr[2], issuedOnStr[1],
+				issuedOnStr[0]);
+
+		if (validDate.getFullYear() < issuedDate.getFullYear()) {
+			alert("Validity date shoud be higher than Issued date");
+			return false;
+		}
+		if (validDate.getFullYear() == issuedDate.getFullYear()) {
+			if (validDate.getMonth() < issuedDate.getMonth()) {
+				alert("Validity date shoud be higher than Issued date");
+				return false;
+			}
+		}
+		if (validDate.getFullYear() == issuedDate.getFullYear()
+				&& validDate.getMonth() == issuedDate.getMonth()) {
+			if (validDate.getDate() < issuedDate.getDate()
+					|| validDate.getDate() == issuedDate.getDate()) {
+				alert("Validity date shoud be higher than Issued date");
+				return false;
+			}
+		}
+		if (!clicked) {
+			clicked = true;
+			return true;
+		}
+		return false;
+	}
+
+	function validateVerify() {
+		var officeCat = 'D';
+		var aaTotalAmount = $('#aaTotAmount').val();
+		if ($(".projectname").val() == '') {
+			alert('Invalid Name of the Scheme/Project proposed');
+			return false;
+		}
+		if ($("input[name='administrativeApproval.amount']").val() == ''
+				|| $("input[name='administrativeApproval.amount']").val() == 0) {
+			alert('Invalid Project Amount');
+			return false;
+		}
+
+		if ($("input[name='administrativeApproval.validUptoStr']").val() == ''
+				|| $("input[name='administrativeApproval.validUptoStr']").val() == 0) {
+			alert('Invalid Date');
+			return false;
+		}
+		if ($("input[name='administrativeApproval.manualProposalFile']").val() == ''
+				|| $("input[name='administrativeApproval.manualProposalFile']")
+						.val() == 0) {
+			alert('Invalid Attachment');
+			return false;
+		}
+		if (manualProposalAttachment == '' || manualProposalAttachment == null) {
+			alert('Please upload the Manual AA Attachment and Click the SAVE button !');
+			return false;
+		}
+		if ($("input[name='administrativeApproval.issuedOnStr']").val() == ''
+				|| $("input[name='administrativeApproval.issuedOnStr']").val() == 0) {
+			alert('Invalid issued Date');
+			return false;
+		}
+		if ($("input[name='administrativeApproval.manualProposalNo']").val() == ''
+				|| $("input[name='administrativeApproval.manualProposalNo']")
+						.val() == 0) {
+			alert('Invalid Manual Proposal No');
+			return false;
+		}
+		var finyear = $(".chosefinyear").val();
+		if (finyear == '' || finyear == 0) {
+			alert('Invalid Year');
+			return false;
+		}
+		if (officeCat != "O") {
+			var ddoId = $(".hierarchyId").val();
+			if (ddoId == '' || ddoId == 0) {
+				alert('Select DDO Details');
+				return false;
+			}
+		}
+		if (officeCat === 'O') {
+			if (Number(aaTotalAmount) > Number(99999)) {
+				alert('Maximum "Total Project Cost" is limited to 99999.000L!');
+				return false;
+			}
+		}
+		var validUptoStr = $("#validUptoStr").val().split("-");
+		var issuedOnStr = $("#issuedOnStr").val().split("-");
+
+		var validDate = new Date(validUptoStr[2], validUptoStr[1],
+				validUptoStr[0]);
+		var issuedDate = new Date(issuedOnStr[2], issuedOnStr[1],
+				issuedOnStr[0]);
+
+		getSimilarProposalList();
+	}
+	function getSimilarProposalList() {
+		$.ajax({
+			type : "POST",
+			url : "getSimilarProposalList",
+			data : $('#ongoingSchemeDetails').serialize(),
+			beforeSend : function() {
+				$('#administrativeNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativeNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativeNoteModal').modal('show');
+		return false;
+	}
+
+	function addAANotes(approvalId) {
+		$('#administrativeNoteModal #modalTitle').html(
+				"Administrative Approval Notes");
+		$.ajax({
+			type : "GET",
+			url : "addAANotes",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$('#administrativeNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativeNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativeNoteModal').modal('show');
+		return false;
+	}
+	function back() {
+		window.location.href = "aaOngoing";
+		return true;
+	}
+	function addConcurencePoints(approvalId) {
+		$('#predefinedAAConcurenceModal #modalTitle').html(
+				"Administrative Predefined Concurence");
+		$
+				.ajax({
+					type : "GET",
+					url : "getpredefinedAAConcurence",
+					data : {
+						'administrativeApproval.approvalId' : approvalId
+					},
+					beforeSend : function() {
+						$('#predefinedAAConcurenceModal .modal-body').html(
+								'Loading..');
+					},
+					success : function(msg) {
+						$('#predefinedAAConcurenceModal .modal-body').html(msg);
+					}
+				});
+		$('#predefinedAAConcurenceModal').modal('show');
+		return false;
+	}
+	function deleteManualProposalAttachment(approvalId) {
+		if (confirm('Are you sure to remove ?')) {
+			$.ajax({
+				url : 'deleteAAManualProposalAttachment',
+				data : {
+					'administrativeApproval.approvalId' : approvalId
+				},
+				success : function(msg) {
+					location.reload();
+				}
+			});
+		}
+	}
+	function deleteDfcAttachment(approvalId) {
+		if (confirm('Are you sure to remove ?')) {
+			$.ajax({
+				url : 'deleteDfcAttachment',
+				data : {
+					'administrativeApproval.approvalId' : approvalId
+				},
+				success : function(msg) {
+					location.reload();
+				}
+			});
+		}
+	}
+	function deleteUtilizationAttachment(approvalId) {
+		if (confirm('Are you sure to remove ?')) {
+			$.ajax({
+				url : 'deleteUtilizationAttachment',
+				data : {
+					'administrativeApproval.approvalId' : approvalId
+				},
+				success : function(msg) {
+					location.reload();
+				}
+			});
+		}
+	}
+	function updateYearAndInitId1(element) {
+		var finYear = $("#selectedYear").val();
+		$.ajax({
+			type : "GET",
+			url : "updateInitId",
+			data : {
+				'administrativeApproval.finYear' : finYear
+			},
+			beforeSend : function() {
+			},
+			success : function(msg) {
+				if (msg == 0) {
+
+					$('#hoaTable').prop("disabled", true);
+					$("#hoaTable").hide();
+					$("#hoaOldTable").show();
+
+				} else {
+					$('#hoaOldTable').prop("disabled", true);
+					$("#hoaTable").show();
+					$("#hoaOldTable").hide();
+				}
+				iniId = msg;
+				$("#iniId").val(msg);
+			}
+		});
+	}
+	function shoaOldHoa() {
+		var fullOldHoa = $("#MajorHead").val() + "-" + $("#SubMajorHead").val()
+				+ "-" + $("#MinorHead").val() + "-" + $("#SubHead").val() + "-"
+				+ $("#SubSubHead").val() + "-" + $("#DetailHead").val() + "-"
+				+ $("#SubDetailHead").val() + "-" + $("#descriptionHead").val();
+
+		$("#fulloldHoa").val(fullOldHoa);
+
+	}
+	function checkManualProposalNoStatus() {
+		var manualProposalNo = $("#manualProposalNo").val();
+		var approvalId = $("#approvalId").val();
+		if (approvalId == null || approvalId == "undefined") {
+			approvalId = 0;
+		}
+		$
+				.ajax({
+					type : "GET",
+					url : "checkManualProposalNoStatus",
+					async : false,
+					data : {
+						'administrativeApproval.manualProposalNo' : manualProposalNo,
+						'administrativeApproval.approvalId' : approvalId
+					},
+					beforeSend : function() {
+
+					},
+					success : function(processingFlag) {
+						if (processingFlag == true) {
+							$("#manualProposalNo").val("");
+							alert("This Proposal is already in the system!"
+									+ "\nThe purpose of ongoing administrative approvals only for"
+									+ "the proposals that are issued outside the FinAssam portal!"
+									+ "\n\nPlease goto Issued Tab and Process the available Actions like Revalidation, Revision, etc.. If it is necessary")
+
+							return false;
+						}
+
+					}
+				});
+	}
+</script>
+<script type="text/javascript">
+	jQuery(function($) {
+
+		//filter the rows when searching
+		$('.search-input').on(
+				'keyup',
+				function(event) {
+					//get the search criteria
+					var val = jQuery(this).val();
+					if (event.keyCode != 8) {
+						if (val.length == 4 || val.length == 7
+								|| val.length == 11 || val.length == 16
+								|| val.length == 20 || val.length == 23) {
+							val = val + "-";
+							jQuery(this).val(val);
+						}
+					}
+				});
+	});
+
+	function addNewOldHOArow(elem) {
+		var rowLen = $('#hoaOldTable').find('tr').length;
+		rowLen = rowLen - 2;
+		var rowData = $('#dynamicOldHOArow').html();
+		rowData = rowData.replace(/counterIndex/g, rowLen);
+		rowData = rowData.replace(/counter/g, rowLen - 1);
+		$(elem).before($('<tr></tr>').append(rowData));
+
+		$('.search-input').on(
+				'keyup',
+				function(event) {
+					//get the search criteria
+					var val = jQuery(this).val();
+					if (event.keyCode != 8) {
+						if (val.length == 4 || val.length == 7
+								|| val.length == 11 || val.length == 16
+								|| val.length == 20 || val.length == 23) {
+							val = val + "-";
+							jQuery(this).val(val);
+						}
+					}
+				});
+	}
+	function reviseAdministrativeApproval(approvalId) {
+		if (confirm('A new Revison proposal will generate against this AA. \nAre you sure you want to Continue?')) {
+			window.location.href = "reviseAdministrativeApproval?administrativeApproval.approvalId="
+					+ approvalId;
+			return false;
+		}
+	}
+	function revalidateAdministrativeApproval(approvalId) {
+		if (confirm('A new Revalidation proposal will generate against this AA. \nAre you sure you want to Continue?')) {
+			window.location.href = "revalidateAdministrativeApproval?administrativeApproval.approvalId="
+					+ approvalId;
+			return false;
+		}
+	}
+
+	function checkDate(element) {
+		var currentDate = new Date();
+		var strDate = currentDate.getDate() + "-"
+				+ (currentDate.getMonth() + 1) + "-"
+				+ currentDate.getFullYear();
+		var validUptoStr = $("#validUptoStr").val().split("-");
+		var issuedOnStr = strDate.split("-");
+
+		var validDate = new Date(validUptoStr[2], validUptoStr[1],
+				validUptoStr[0]);
+		var issuedDate = new Date(issuedOnStr[2], issuedOnStr[1],
+				issuedOnStr[0]);
+
+		if (validDate.getFullYear() < issuedDate.getFullYear()) {
+			alert("Validity date shoud be higher than Issued date");
+		}
+		if (validDate.getFullYear() == issuedDate.getFullYear()) {
+			if (validDate.getMonth() < issuedDate.getMonth()) {
+				alert("Validity date shoud be higher than Issued date");
+			}
+		}
+		if (validDate.getFullYear() == issuedDate.getFullYear()
+				&& validDate.getMonth() == issuedDate.getMonth()) {
+			if (validDate.getDate() < issuedDate.getDate()
+					|| validDate.getDate() == issuedDate.getDate()) {
+				alert("Validity date shoud be higher than Issued date");
+			}
+		}
+	}
+</script>
+<style>
+#proposalTable1, #proposalTable2, #remarksTable, #sanctionTable {
+	font-size: 12px;
+}
+
+#proposalTable1 tr>td, #proposalTable1 tr>th {
+	vertical-align: middle;
+}
+
+#proposalTable2 tr>td, #proposalTable2 tr>th {
+	vertical-align: middle;
+}
+
+#remarksTable tr>td, #remarksTable tr>th {
+	vertical-align: middle;
+}
+
+#sanctionTable tr>td, #sanctionTable tr>th {
+	vertical-align: middle;
+}
+
+.input-group-glue {
+	width: 0;
+	display: table-cell;
+}
+
+.input-group-glue+.form-control {
+	border-left: none;
+}
+
+#accordion .panel-heading {
+	padding: 0;
+}
+
+#accordion .panel-title>a {
+	display: block;
+	padding: 0.4em 0.6em;
+	outline: none;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#accordion .panel-title {
+	text-align: left;
+}
+
+#accordion .panel-title>a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before
+	{
+	content: "\e113";
+	float: left;
+	font-family: 'Glyphicons Halflings';
+	margin-right: 1em;
+}
+
+#accordion .panel-title>a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::before
+	{
+	content: "\e114";
+}
+
+@media ( min-width : 768px) {
+	.modal-xl {
+		width: 90%;
+		max-width: 1200px;
+	}
+}
+
+div .col-sm-3, div .col-sm-6, div .col-sm-12, div .col-sm-14, div .col-sm-18
+	{
+	margin: 5px 0px 5px 0px;
+}
+
+.active {
+	border: none;
+	border-left: 2px solid #76c1ff;
+}
+
+.panel-body {
+	background-color: #d9edf733;
+}
+
+
+    .notification {
+      width:100%;
+      margin: 0 auto;
+      text-align: center;
+      color:#313131;
+      font-size:13px;
+      position: absolute;
+      -webkit-animation:colorchange 20s infinite alternate;
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: #e31b1b;
+      }
+      
+      10% {
+        
+        color: #b07207;
+      }
+      
+      20% {
+        
+        color: #859611;
+      }
+      
+      30% {
+        
+        color: #4d9611;
+      }
+      
+      40% {
+        
+        color: #059c19;
+      }
+      
+      50% {
+        
+        color: #05999c;
+      }
+      
+      60% {
+        
+        color: #054b9c;
+      }
+      
+      70% {
+        
+        color: #14106e;
+      }
+      80% {
+     
+        color: #41026e;
+      }
+      
+      90% {
+     
+        color: #9c0296;
+      }
+      
+      100% {
+        
+        color: #6e0552;
+      }
+    }
+</style>
+<div class="container-fluid">
+	<div class="row">
+
+		<div class="col-xs-24">
+			
+			
+			
+			
+				<h4>
+					<span class="label label-primary">Manual Administrative
+						Approval</span>
+				</h4>
+			
+		</div>
+		<div class="col-xs-24 col-sm-24">
+			<h6 style="font-size: 15px; justify-content: center; color: #5e5e5e;">
+				Manual Administrative Approval (For the AA that is not issued from
+				FinAssam)<br>Note : Once a manual AA is entered here no need to
+				enter it again.
+			</h6>
+		</div>
+	</div>
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="row">
+					<div class="col-xs-24 center">
+						<p class="notification">*It has been brought to on notice that
+							some users have wrongly entered the manual Administrative
+							Approvals here. Do not try to enter the Administrative Approvals
+							those are already <b><u>issued from FinAssam Portal</u></b>. (We notice that some users
+							are using special characters/space in the field Manual AA number)</p>
+					</div>
+				</div>
+				<br>
+		<div class="row">
+			<div class="col-xs-24">
+				<div class="row" style="margin-bottom: 2px;">
+						<button type="button" class="btn btn-primary btn-sm" onclick="return back()" style="float: right;">
+							<span class="btn-label label-sm"> <i class="glyphicon glyphicon-chevron-left" title="Back to List"></i></span>Go
+							Back
+						</button>
+				</div>
+				<form id="ongoingSchemeDetails" name="ongoingSchemeDetails" action="/assamfinance/secure/saveOngoingAADetails" method="post" enctype="multipart/form-data" class="form-inline">
+					<input type="hidden" name="struts.token.name" value="token">
+<input type="hidden" name="token" value="L1T0P85M4B1JHRWCJS3JBN48BEUF82HY">
+					<input type="hidden" name="initiationId" value="0" id="iniId">
+					<input type="hidden" name="type" value="" id="type">
+					
+					
+					
+						
+						
+							<input type="hidden" name="administrativeApproval.dirct.hierarchyId" value="43" id="ongoingSchemeDetails_administrativeApproval_dirct_hierarchyId">
+						
+						
+							<input type="hidden" name="administrativeApproval.dept.hierarchyId" value="43" id="ongoingSchemeDetails_administrativeApproval_dept_hierarchyId">
+						
+					
+					
+						
+						<input type="hidden" name="administrativeApproval.approvalId" value="77699" id="approvalId">
+						<input type="hidden" name="administrativeApproval.proposalNo" value="AA-05-2018-19-4883" id="ongoingSchemeDetails_administrativeApproval_proposalNo">
+						
+						
+						<input type="hidden" name="administrativeApprovalNotes.administrativeApproval.approvalId" value="77699" id="ongoingSchemeDetails_administrativeApprovalNotes_administrativeApproval_approvalId">
+						
+						
+							<input type="hidden" name="administrativeApproval.initiatedBy.allotId" value="18914" id="ongoingSchemeDetails_administrativeApproval_initiatedBy_allotId">
+							<input type="hidden" name="administrativeApproval.initiatedOn" value="8/9/21, 12:00:03 PM.000" id="ongoingSchemeDetails_administrativeApproval_initiatedOn">
+						
+						
+							<input type="hidden" name="CentralShare" value="N" id="CentralShare">
+						
+						
+							
+						
+					
+					
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Project
+										Details </a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<div class="" id="proposalTable1">
+										<div class="row borderbelow">
+											<div class="col-sm-6 active">
+												Name of the Scheme/Project proposed <span style="font-style: regular; color: red;"> * </span>
+											</div>
+											<div class="col-sm-6">
+												Restoration of flood damaged to link road of Barazara Kalbari to Barnarddi Ganesh Mandir at Niz Pokowa under SDRF for the year 2017-18
+											</div>
+											<div class="col-sm-6 active">
+												Existing AA No. <span style="font-style: regular; color: red;"> * </span>
+											</div>
+											<div class="col-sm-6">
+												RGR(RRR)954/2018/61
+											</div>
+										</div>
+										<div class="row borderbelow">
+											<div class="col-sm-6 active">
+												Financial Year <span style="font-style: regular; color: red;"> * </span>
+											</div>
+											<div class="col-sm-6">
+												2018-19
+											</div>
+											<div class="col-sm-6 active"></div>
+											<div class="col-sm-6"></div>
+										</div>
+										<div class="row borderbelow">
+											<div class="col-sm-6 active">
+												Proposal No. <span style="font-style: regular; color: red;">
+													* </span>
+											</div>
+											<div class="col-sm-6">
+												<div class="form-group">
+													AA-05-2018-19-4883
+													
+												</div>
+											</div>
+											<div class="col-sm-6 active">
+												Issued Date <span style="font-style: regular; color: red;">
+													* </span>
+											</div>
+											<div class="col-sm-6">
+												01-03-2019
+
+											</div>
+										</div>
+										<div class="row borderbelow">
+											<div class="col-sm-6 active">
+												Validity <span style="font-style: regular; color: red;">
+													* </span>
+											</div>
+											<div class="col-sm-6">
+												28-02-2022
+											</div>
+											<div class="col-sm-6 active">
+												Ddo Details <span style="font-style: regular; color: red;">
+													* </span>
+											</div>
+											<div class="col-sm-6">
+												
+
+													NLB/GAD/001
+												
+											</div>
+										</div>
+										<div class="row borderbelow">
+											<div class="col-sm-6 active">Ongoing Remarks</div>
+											<div class="col-sm-6">
+												As attached
+											</div>
+											<div class="col-sm-6 active">
+												Existing AA Document <span style="font-style: regular; color: red;"> * </span>
+											</div>
+											<div class="col-sm-6">
+												
+													<div style="padding-top: 3px;">
+														<span class="glyphicon glyphicon-paperclip" style="color: #01458E"></span> <a style="color: #01458E;" onclick="window.open('viewManualProposalAttachment?q=7761e3a1-7d91-44dd-9b5d-afe26be361ff', '_blank')" href="javascript:void(0)" title="View Attachment"> AA.pdf</a>
+													</div>
+												
+											</div>
+										</div>
+										<div class="row borderbelow">
+										<div class="col-sm-6 active">
+										DFC (Minutes of the Departmental Finance Committee)</div>
+											<div class="col-sm-6">
+												
+											</div>
+                                            <div class="col-sm-6 active">
+                                            Utilization Certificate 
+											</div>
+											<div class="col-sm-6">
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Financial
+										Details </a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<table class="table table-bordered" id="proposalTable1">
+										<tbody><tr>
+											<th class="active">Head of Account <span style="font-style: regular; color: red;"> * </span></th>
+											<td>
+												<table id="headListing" class="table table-bordered table-hover">
+													<tbody><tr>
+														<th style="text-align: left; width: 10px;">#</th>
+														<th style="text-align: left; width: 200px;">HOA</th>
+														<th style="text-align: left; width: 100px;">Budget
+															Amount</th>
+															<th width="20%" colspan="2" style="text-align: center">Green Budget Tag</th>
+													</tr>
+													
+													
+														
+															
+															<tr>
+																<td>1</td>
+																<td>2245-02-106-0000-000-17-02-SOPD-GSP-V-GA</td>
+																<td>24.18</td>
+																<td width="10%" style="background-color: ;"></td>
+															<td width="10%"></td>
+															</tr>
+														
+														<tr class="info">
+															<td colspan="2">Total <span style="font-style: regular; color: red;"> * </span></td>
+															<td>
+																	24.18000&nbsp;&nbsp;<i class="fa fa-history" style="color: #01458E; font-size: 16px; cursor: pointer;" title="History" onclick="showHistoryAmount('0f448807-88f4-4732-bb40-ca768d136b8d')"></i>
+																</td>
+														</tr>
+													
+												</tbody></table> 
+											</td>
+										</tr>
+									</tbody></table>
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-info">
+								<div class="panel-heading" role="tab" id="headingOtherDoc">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOtherDoc" aria-expanded="true" aria-controls="collapseOtherDoc">Other
+											Documents</a>
+									</h4>
+								</div>
+								<div id="collapseOtherDoc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOtherDoc">
+									<div class="panel-body">
+										<div class="row borderbelow">
+											<div class="col-sm-6 active" style="margin-bottom: 15px;">
+												Other Documents<span style="font-style: italic; color: green;"> ( if
+													required )</span>
+											</div>
+											<div class="col-sm-18">
+												
+												<table id="odMain" class="table table-bordered table-condensed" style="margin-bottom: 0px;">
+													
+													
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						<div align="center" style="margin: 8px;">
+							
+								<a onclick="revalidateAdministrativeApproval('77699')" href="#" class="btn btn-success" role="button" style="color: white;" title="Revalidate this proposal">Revalidate
+									the proposal</a>
+							
+						</div>
+					
+				</form>
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal3" role="dialog">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="administrativeNoteModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="issueAdministrativeApprovalModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="predefinedAAConcurenceModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModalAaValidation" role="dialog">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$.ajax({
+		type : "GET",
+		url : "getMultipleOtherDocs",
+		data : "id="
+				+ '77699&type=OTH&issueType=AA',
+		success : function(msg) {
+			$('#aOdView').html(msg);
+		}
+	});
+});
+
+function addNewOtherDocRow(elem) {
+	var rowLen = $('#otherDocTable').find('tr').length;
+	rowLen = rowLen - 1;
+	var rowData = $('#dynamicOtherDocRow').html();
+	rowData = rowData.replace(/counterIndex/g, rowLen);
+	rowData = rowData.replace(/counter/g, rowLen - 1);
+	$(elem).before($('<tr></tr>').append(rowData));
+	bindDeptAutoComplete();
+}
+function showHistoryAmount(approvalId) {
+	$('#myModal4 #modalTitle').html("Amount Edit History");
+	$.ajax({
+		type : "GET",
+		url : "showHistoryAmount",
+		data : {
+			'administrativeApproval.approvalId' : approvalId
+		},
+		beforeSend : function() {
+			$('#myModal4 .modal-body').html('Loading..');
+		},
+		success : function(msg) {
+			$('#myModal4 .modal-body').html(msg);
+		}
+	});
+	$('#myModal4').modal('show');
+}
+</script>
+<div class="modal fade" id="myModal4" role="dialog">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div></td>
+						</tr>
+					
+				</tbody></table>
+			</td>
+			<td width="4px"></td>
+		</tr>
+		<tr>
+			<td colspan="3" style="height: 15px;">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="background-color: #01458E;">
+
+<table>
+	<tbody><tr>
+		<td width="80%" height="22" valign="baseline" background="../resources/images/th.jpg" bgcolor="#CCCCCC">
+			<div align="left" style="padding: 10px 5px 5px 5px; color: #FFFFFF;">
+				Version 17.7.43
+			</div>
+		</td>
+
+		<td width="20%" height="20%" valign="baseline" background="../resources/images/th.jpg" bgcolor="#CCCCCC">
+			<div align="right">
+				 <button type="button" class="btn btn-helpdesk btn-sm" id="toggle-bp" title="Chatbot">
+					<i class="fa fa-comments-o fa-lg" aria-hidden="true"></i>
+				</button>   
+				 <button type="button" class="btn btn-success btn-sm" title="User Manual" onclick="gotoUMDownload()"><i class="fa fa-book"></i>  UM
+				</button> 
+				
+				<button type="button" class="btn btn-helpdesk btn-sm" title="Technical Support" onclick="gotoHelpDisk('ad.rdm')">
+					<span class="glyphicon glyphicon-question-sign"></span> TSG
+				</button>
+
+				<a href="http://kran.co.in" target="_blank" rel="noopener noreferrer"><img alt="KRAN" align="middle" src="../resources/images/kranitlogo.png"></a>
+			</div>
+		</td>
+	</tr>
+</tbody></table>
+
+<!-- By Sujith -- For Help Desk -->
+<div id="myModalTSG" class="custom-modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+	<div class="custom-modal-dialog" style="width: 90%;">
+		<!-- Modal content -->
+		<div class="custom-modal-content">
+			<div class="custom-modal-header" style="background-color: #13498d;">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<img src="../resources/images/header.png"> <img src="../resources/images/assured_logo.png" style="width: 12%; float: right;">
+			</div>
+			<div class="custom-modal-body" style="overflow: auto; height: 650px;">
+				<iframe width="100%" height="100%" id="modalframe" src="about:blank" frameborder="0" style="height: 535px;"></iframe>
+			</div>
+			<div class="custom-modal-footer" style="background-color: #13498d;">
+				<img alt="KRAN" align="middle" src="../resources/images/kranitlogo.png">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="userManualModal" class="modal fade" style="display: none;" role="dialog" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color: #1469A0; color: #FFF;">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">Manuals &amp; Tutorials</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="userManualModalBS4">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Manuals &amp; Tutorials</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+ 	document.getElementById("toggle-bp").addEventListener("click", function() {
+		window.botpressWebChat.sendEvent({
+			type : webchatOpen ? "hide" : "show"
+		})
+	}) 
+
+	var bootstrap_enabled = (typeof $().emulateTransitionEnd == 'function');
+	if (!bootstrap_enabled) {
+		$("#userManualLink").hide();
+		$.getScript('../resources/bootstrap/js/bootstrap.min.js');
+	}
+
+	$(document).ready(function() {
+		$('#myModalTSG #modalframe').height($(window).height() - 200);
+	});
+
+	function gotoHelpDisk(hierarchyCode) {
+		var pageTitle = document.title;
+		var titleName = "Mr.";
+		var empName = "Assistant";
+		var lastName = "rdm";
+		if (lastName != null) {
+			var userName = titleName + ' ' + empName + ' ' + lastName;
+		} else {
+			var userName = titleName + ' ' + empName;
+		}
+		var seatName = "Assistant Department";
+		var controllingOffice = "Revenue and Disaster Management Department";
+		var seatUserAllotId = "18914";
+		var mobile = "9707133011";
+		var email = "";
+
+		var myJSON = {
+			"userName" : userName,
+			"seatName" : seatName,
+			"controllingOffice" : controllingOffice,
+			"seatUserAllotId" : seatUserAllotId,
+			"hierarchyCode" : hierarchyCode,
+			"pageTitle" : pageTitle,
+			"mobile" : mobile,
+			"email" : email,
+			"finassam" :'finassam'
+		};
+		var strJSON = encodeURIComponent(JSON.stringify(myJSON));
+		$('#modalframe').attr('src',
+				'/helpdesk/gotoHDeskFromApp?strJSON=' + strJSON);
+		$('#myModalTSG').modal('show');
+	}
+
+	function gotoUserManuals() {
+		var subtab = 'aaOngoing';
+		if (subtab == 'dashboardDDO') {
+			$.ajax({
+				type : "GET",
+				url : "getUserManualList",
+				beforeSend : function() {
+					$('#userManualModalBS4 .modal-body').html('Loading..');
+				},
+				success : function(msg) {
+					$('#userManualModalBS4 .modal-body').html(msg);
+				}
+			});
+			$('#userManualModalBS4').modal('show');
+		} else {
+			$.ajax({
+				type : "GET",
+				url : "getUserManualList",
+				beforeSend : function() {
+					$('#userManualModal .modal-body').html('Loading..');
+				},
+				success : function(msg) {
+					$('#userManualModal .modal-body').html(msg);
+				}
+			});
+			$('#userManualModal').modal('show');
+		}
+		return false;
+	}
+	
+	function gotoUMDownload() {
+			$.ajax({
+				type : "GET",
+				url : "gotoUMDownload",
+				beforeSend : function() {
+					
+
+					$('#userManualModal .modal-body').html('Loading..');
+				},
+				success : function(msg) {
+					$('#userManualModal .modal-body').html(msg);
+				}
+			});
+			$('#userManualModal').modal('show');
+	}
+	
+	function gotoFeedbackForm() {
+		window.open("https://forms.gle/V2rio69ugYZS3zR68","_blank");
+	}
+</script>
+
+<script type="text/javascript">
+function gotoHelpDisk(hierarchyCode) {
+		var pageTitle = document.title;
+		var titleName = "Mr.";
+		var empName = "Assistant";
+		var lastName = "rdm";
+		if (lastName != null) {
+			var userName = titleName + ' ' + empName + ' ' + lastName;
+		} else {
+			var userName = titleName + ' ' + empName;
+		}
+		var seatName = "Assistant Department";
+		var controllingOffice = "Revenue and Disaster Management Department";
+		var seatUserAllotId = "18914";
+		var mobile = "9707133011";
+		var email = "";
+
+		var myJSON = {
+			"userName" : userName,
+			"seatName" : seatName,
+			"controllingOffice" : controllingOffice,
+			"seatUserAllotId" : seatUserAllotId,
+			"hierarchyCode" : hierarchyCode,
+			"pageTitle" : pageTitle,
+			"mobile" : mobile,
+			"email" : email,
+			"finassam" :'finassam'
+		};
+		var strJSON = encodeURIComponent(JSON.stringify(myJSON));
+		$('#modalframe').attr('src',
+				'/helpdesk/gotoHDeskFromApp?strJSON=' + strJSON);
+		$('#myModalTSG').modal('show');
+	}
+
+</script>
+
+<style>
+.btnhelpdesk-sm, .btnhelpdesk-group-sm>.btnhelpdesk {
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+.btnhelpdesk {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.custom-modal-body {
+	position: relative;
+	padding: 15px;
+}
+
+.custom-modal-content {
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.custom-modal-content {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: 0;
+}
+
+.custom-modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.custom-modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+
+.custom-modal-header {
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.custom-modal-header .close {
+	margin-top: -2px;
+}
+
+.custom-modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+}
+
+button.close {
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
+}
+
+.close {
+	float: right;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: 1;
+	filter: alpha(opacity = 20);
+}
+
+.custom-modal-dialog {
+	margin: 30px auto;
+}
+
+.custom-modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 5%;
+}
+
+.custom-modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.custom-modal-backdrop.in {
+	opacity: .5;
+	filter: alpha(opacity = 50);
+}
+
+.custom-modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+}
+</style>
+<!-- By Sujith -- For Help Desk --></td>
+		</tr>
+	</tbody></table><div id="bp-web-widget"><iframe id="bp-widget" title="Helpdesk" frameborder="0" src="https://finanalytics.assam.gov.in/botpress/lite/helpdesk/?m=channel-web&amp;v=Embedded&amp;options=%7B%22config%22%3A%7B%22host%22%3A%22https%3A%2F%2Ffinanalytics.assam.gov.in%2Fbotpress%22%2C%22botId%22%3A%22helpdesk%22%2C%22userId%22%3A%2218914%22%2C%22botName%22%3A%22Helpdesk%22%2C%22enableTranscriptDownload%22%3Afalse%2C%22showConversationsButton%22%3Afalse%2C%22hideWidget%22%3Atrue%2C%22useSessionStorage%22%3Atrue%7D%7D" class="bp-widget-web bp-widget-widget bp-widget-hidden"></iframe></div>
+
+	<div class="modal fade centered-modal" id="surveyModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body"></div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="anylinkmenu" style="width: 150px; background: rgb(255, 255, 255);"><ul>
+<li><a href="javascript: editProfile()" target="_self">Profile</a></li>
+<li><a href="javascript:TINY.box.show({iframe:'/assamfinance/changePasswd',width:650,height:500,boxid : 'frameless' })" target="_self">Change Password</a></li>
+<li><a href="javascript: passwordHistory()" target="_self">Password History</a></li>
+<li><a href="javascript:TINY.box.show({iframe:'deleteProfile',width:600,height:450,boxid : 'frameless' })" target="_self">Deactivate Account</a></li>
+
+</ul></div><div class="anylinkshadow" style="width: 150px; height: 92px; opacity: 0.3;"></div></body></html>

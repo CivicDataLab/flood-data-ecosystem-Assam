@@ -8,11 +8,11 @@ import rasterstats
 import pandas as pd
 
 service_account = ' idsdrr@ee-idsdrr.iam.gserviceaccount.com'
-credentials = ee.ServiceAccountCredentials(service_account, 'Sources/NASADEM/ee-idsdrr-d856f70748a7.json')
+credentials = ee.ServiceAccountCredentials(service_account, r'Sources/NASADEM/ee-idsdrr-d856f70748a7.json')
 ee.Initialize(credentials)
 
 cwd = os.getcwd()
-assam_rc_gdf = gpd.read_file(cwd+'/Maps/Assam_Revenue_Circles/assam_revenue_circle_nov2022.shp')
+assam_rc_gdf = gpd.read_file(cwd+r'\Maps\Geojson\assam_rc_2024-11.geojson')
 
 
 

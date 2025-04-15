@@ -10,7 +10,7 @@ variables_data_path = os.getcwd() + '/Sources/master/'
 print(variables_data_path)
 assam_rc = gpd.read_file(r'D:\CivicDataLab_IDS-DRR\IDS-DRR_Github\Deployment\flood-data-ecosystem-Assam\Maps\Geojson\assam_rc_2024-11.geojson')
 
-date_range = pd.date_range(start="2021-04-01", end="2024-12-31", freq='MS')
+date_range = pd.date_range(start="2021-04-01", end="2025-03-31", freq='MS')
 
 # Format the date values as "YYYY_MM" strings
 formatted_dates = [date.strftime('%Y_%m') for date in date_range]
@@ -40,7 +40,9 @@ monthly_variables = ['total_tender_awarded_value',
                      'Embankments affected', 'Roads', 'Bridge', 'Embankment breached',
                      'rainfall',
                      'ndvi_rc', 'ndbi_rc',
-                     'inundation_pct', 'riverlevel'
+                     'inundation_pct', 'riverlevel',
+                     'total_expenditure_value','SOPD_expenditure_value',
+                     'SDRF_expenditure_value','Immediate Measures_expenditure_value','Others_expenditure_value','SOPD_expenditure_value', 'Repair and Restoration_expenditure_value'
                      ]
 
 for variable in monthly_variables:

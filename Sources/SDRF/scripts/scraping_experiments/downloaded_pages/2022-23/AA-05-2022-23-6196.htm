@@ -1,0 +1,3818 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Public Finance Management System - Government of Assam">
+
+<link
+	href="/assamfinance/resources/icons/favicon.ico"
+	rel="icon" type="image/x-icon">
+<link
+	href="/assamfinance/resources/icons/favicon.ico"
+	rel="shortcut icon" type="image/x-icon" />
+<link
+	href="/assamfinance/resources/style/kranstyle.css"
+	rel="stylesheet" type="text/css">
+<link
+	href="/assamfinance/resources/style/jquery-ui.css"
+	rel="stylesheet" type="text/css">
+
+<!-- BOOTSTRAP -->
+<link
+	href="/assamfinance/resources/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css">
+<link
+	href="/assamfinance/resources/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+
+<!-- CALENDAR  -->
+<link
+	href="/assamfinance/resources/js/calendar/calendar.css"
+	rel="stylesheet" type="text/css" />
+<link
+	href="/assamfinance/resources/bootstrap/css/bootstrap-datetimepicker.min.css"
+	rel="stylesheet" media="screen">
+
+<script
+	src="/assamfinance/resources/js/jquery-1.9.1.js"></script>
+<script
+	src="/assamfinance/resources/js/jquery-ui.js"></script>
+<script
+	src="/assamfinance/resources/bootstrap/js/bootstrap.min.js"></script>
+<!-- TINY-BOX  -->
+<script
+	src="/assamfinance/resources/js/tinybox/tinybox.js"
+	type="text/javascript"></script>
+<script
+	src="/assamfinance/resources/js/calendar/calendar.js"></script>
+
+<script
+	src="/assamfinance/resources/bootstrap/js/bootstrap-datetimepicker.js"
+	type="text/javascript" charset="UTF-8"></script>
+
+<!-- TOOL-TIP  -->
+<link
+	href="/assamfinance/resources/js/menu/css/dropdown/dropdown.css"
+	rel="stylesheet" type="text/css" />
+<link
+	href="/assamfinance/resources/js/menu/css/dropdown/dropdown.vertical.css"
+	rel="stylesheet" type="text/css" />
+<link
+	href="/assamfinance/resources/js/menu/css/dropdown/themes/default/default.ultimate.css"
+	rel="stylesheet" type="text/css" />
+<link
+	href="/assamfinance/resources/js/tooltipster-master/css/tooltipster.css"
+	rel="stylesheet" type="text/css" />
+<link
+	href="/assamfinance/resources/js/tooltipster-master/css/themes/tooltipster-noir.css"
+	rel="stylesheet" type="text/css" />
+<script
+	src="/assamfinance/resources/js/tooltipster-master/js/jquery.tooltipster.min.js"
+	type="text/javascript"></script>
+<script
+	src="/assamfinance/resources/js/jquery.slimscroll.js"
+	type="text/javascript"></script>
+
+<script type="text/javascript"
+	src="../resources/js/ckeditor/ckeditor.js?version=2" charset="utf-8"></script>
+<script type="text/javascript"
+	src="../resources/js/ckeditor5-build-classic/ckeditor.js"
+	charset="utf-8"></script>
+
+<script type="text/javascript">
+	window.history.forward();
+	function noBack() {
+		window.history.forward();
+	}
+
+	$(function() {
+		tab = 'administrativeApprovalDept';
+		surveyId = '';
+		seat = '18914';
+
+		if (typeof surveyId !== 'undefined' && surveyId > 0
+				&& tab == "dashboard") {
+			$.ajax({
+				url : "https://fin.assam.gov.in/survey/getMySurveyBanner",
+				data : {
+					surveyId : surveyId,
+					seat : seat
+				}
+			}).then(function(data) {
+				$('#surveyModal .modal-body').html(data);
+			});
+
+			$('#surveyModal').modal('show');
+		}
+
+		if (tab != "") {
+			$("#" + tab).addClass("active");
+		}
+
+		if (tab != "") {
+			subtab = 'aaIssuedDept';
+			if (subtab != "") {
+				$("#" + subtab).attr("class", "active");
+				if (subtab == "man" || subtab == "obl" || subtab == "suo"
+						|| subtab == "oth") {
+					stab = '';
+
+					$("#" + stab).attr("class", "current_page_item");
+					var $el, leftPos, newWidth, $mainNav = $("#example-one");
+
+					$mainNav.append("<li id='magic-line'></li>");
+					var $magicLine = $("#magic-line");
+
+					$magicLine.width($(".current_page_item").width()).css(
+							"left", $(".current_page_item a").position().left)
+							.data("origLeft", $magicLine.position().left).data(
+									"origWidth", $magicLine.width());
+
+					$("#example-one li a").hover(function() {
+						$el = $(this);
+						leftPos = $el.position().left;
+						newWidth = $el.parent().width();
+						$magicLine.stop().animate({
+							left : leftPos,
+							width : newWidth
+						});
+					}, function() {
+						$magicLine.stop().animate({
+							left : $magicLine.data("origLeft"),
+							width : $magicLine.data("origWidth")
+						});
+					});
+				}
+
+				subsubtab = '';
+				if (subsubtab != "") {
+					$("#" + subsubtab).attr("class", "selected");
+				}
+				if (tab != "" && tab == "la" && subsubtab != "") {
+					$("#" + subsubtab).attr("class", "active");
+				}
+			}
+		}
+
+		if (tab != "" && tab == "home") {
+			$('#d3').height($(window).height() - 280);
+			$('#d2').height($(window).height() - 236);
+		}
+
+		if (tab != "" && tab == "reports") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+			$('#pr').height($(window).height() - 180);
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+			}
+		}
+
+		if (tab != "" && subtab == "otherAllowanceSetup") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+			$('#pr').height($(window).height() - 180);
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+			}
+		}
+
+		if (tab != "" && tab == "specialDeductionSetup") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+			$('#pr').height($(window).height() - 180);
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+			}
+		}
+
+		if (tab != "" && subtab == "debtSetup") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+				/* 	$("#" + stab).css("background-color", "white"); */
+			}
+		}
+
+		$('#3').height($(window).height() - 280);
+		$('#4').height($(window).height() - 350);
+	});
+
+	function viewGraph(year) {
+		if ('aaIssuedDept' == "sfp") {
+			view(document.getElementById("scid").value, year);
+		}
+	}
+
+	function reportCeil() {
+		var s = "Y";
+		TINY.box.show({
+			iframe : 'ceilingDetails?template=Y',
+			width : 750,
+			height : 320,
+			fixed : false,
+			maskid : 'bluemask',
+			maskopacity : 60,
+			openjs : function() {
+				openJS()
+			}
+		});
+	}
+
+	function loadAjaxContent(elemId, action, param) {
+		$.ajax({
+			type : 'GET',
+			url : action,
+			data : param,
+			success : function(msg) {
+				$('#' + elemId).html(msg);
+			}
+		});
+	}
+
+	function goToFinVault(param1, param2, param3) {
+		window.open("https://fin.assam.gov.in/finvault/goToFinVault?q=" + q);
+	}
+
+	$(document)
+			.ready(
+					function() {
+						if ('D' == "O"
+								&& '' != null) {
+							var justificationSurrender = '';
+							if (justificationSurrender == "true") {
+
+								TINY.box.show({
+									iframe : 'surrenderInitiationStatus',
+									closejs : function() {
+										window.parent.document.location
+												.reload();
+									},
+									width : window.innerWidth - 900,
+									height : window.innerHeight - 350,
+									boxid : 'frameless'
+								});
+
+							}
+						}
+						
+// 						const tokenInput = document.querySelector('input[name="token"]');
+
+// 						// Get the value of the hidden input field
+// 						const sessionId = tokenInput ? tokenInput.value : null;
+// 						    localStorage.setItem("whatsapp-session", JSON.stringify({ loggedIn: true, sessionId }));
+						    
+						    
+// 								debugger
+// 							    const checkSessionInterval = setInterval(function () {
+// 							        const tokenInput = document.querySelector('input[name="token"]');
+// 							        const sessionId = tokenInput ? tokenInput.value : null;
+
+// 							        if (sessionId) {
+// 							            const currentSession = JSON.parse(localStorage.getItem("whatsapp-session"));
+
+// 							            if (!currentSession || currentSession.sessionId !== sessionId) {
+// 							                // Update the localStorage if sessionId changes
+// 							                alert("Another session is being started on a different tab.")
+// 							            }
+// 							        }
+// 							    }, 1000); // Check every 1 second
+
+// 							    });
+						
+					});
+	
+	
+	
+
+</script>
+
+<title>Administrative Approval, Technical and Financial Sanctions</title>
+
+<style type="text/css">
+.header-part .nav-tabs {
+	border-bottom: none;
+}
+
+ul.header-part {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+ul.header-part li {
+	display: inline;
+}
+
+ul.header-part li .mainLink {
+	background-color: #F8C301;
+	color: #000000;
+	margin: -1px;
+	padding: 3px 6px 4px 6px;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-left: 3px solid #F9CC32;
+	border-right: 3px solid #F9CC32;
+	border-top: 3px solid #F9CC32;
+}
+
+ul.header-part li .mainLink:hover {
+	background-color: #2666AB;
+	border: 3px solid #1A60AB;
+	border-bottom: none;
+	color: #FFFFFF;
+}
+
+ul.header-part li .mainLink.active {
+	background-color: #01458E;
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 3px 8px 4px 8px;
+	outline: none;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-left: 3px solid #01458E;
+	border-right: 3px solid #01458E;
+	border-top: 3px solid #01458E;
+}
+
+.header-part .dropdown-menu {
+	transition: all 0.5s;
+	overflow: hidden;
+	transform-origin: top center;
+	transform: scale(1, 0);
+	display: block;
+	opacity: 0.97;
+}
+
+.header-part .dropdown-menu a .row {
+	padding: 3px 8px 4px 14px;
+}
+
+.header-part .dropdown:hover>.dropdown-menu {
+	transform: scale(1);
+}
+
+.header-part .dropdown:hover>.dropdown-menu a:hover .row {
+	color: #28a745;
+	background-color: #f5f5f5;
+}
+
+.header-part .dropdown-menu a {
+	color: #000;
+	font-size: 12px;
+	line-height: 1.8;
+}
+
+.header-part .dropdown-menu .dropdown-item {
+	background-color: none;
+}
+
+.header-part .dropdown-menu .dropdown-item-disable {
+	display: none;
+}
+</style>
+
+</head>
+
+<body onload="noBack();" onpageshow="if(event.persisted) noBack();">
+
+	<table class="layoutStyle">
+		<tr>
+			<td colspan="3">
+
+
+<link rel="stylesheet" type="text/css"
+	href="../resources/js/anylinkmenu.css" />
+<script type="text/javascript" src="../resources/js/anylinkmenu.js"></script>
+<script type="text/javascript"
+	src="../resources/js/jQuery-idle/jquery-idle.min.js"></script>
+<script
+	src="https://finanalytics.assam.gov.in/botpress/assets/modules/channel-web/inject.js"></script> 
+
+ <script type="text/javascript">
+	anylinkmenu.init("menuanchorclass")
+	var anylinkmenu4 = { 
+		divclass : 'anylinkmenu',
+		inlinestyle : 'width:150px; background:#ffffff',
+		linktarget : '_self'
+	}
+
+	anylinkmenu4.items = [
+			[
+				"Profile",
+				"javascript: editProfile()" ],
+			[
+					"Change Password",
+					"javascript:TINY.box.show({iframe:'/assamfinance/changePasswd',width:650,height:500,boxid : 'frameless' })" ],
+			[ "Password History", "javascript: passwordHistory()" ],
+			[
+				"Deactivate Account",
+				"javascript:TINY.box.show({iframe:'deleteProfile',width:600,height:450,boxid : 'frameless' })" ]]
+
+	function passwordHistory() {
+		window.location.href = "passwordHistory";
+	}
+	
+	function editProfile() {
+		window.location.href = "editProfile";
+	}
+
+	$(function() {
+		if ('Y' == "N") {
+			TINY.box
+					.show({
+						iframe : '/assamfinance/changePasswd',
+						closejs : function() {
+							window.parent.document.location.reload();
+						},
+						width : 650,
+						height : 300,
+						boxid : 'frameless'
+					});
+		}
+	});
+
+	$(document).on('click', '.forceLogout', function(event) {
+		forceLogout();
+	});
+
+	$(document).on('click', '.keepAlive', function(event) {
+		keepAlive();
+	});
+
+	$(document).idle({
+		onIdle : function() {
+			$("#notifyLogout").modal('show');
+			countdown();
+		},
+		idle : 1000000
+	})
+
+	var timeoutHandle;
+	function countdown() {
+		var seconds = 60;
+		function tick() {
+			var counter = document.getElementById("countdowntimer");
+			seconds--;
+			counter.innerHTML = "(" + (seconds < 10 ? "0" : "")
+					+ String(seconds) + ")";
+			if (seconds > 0) {
+				timeoutHandle = setTimeout(tick, 1000);
+			} else {
+				forceLogout();
+			}
+		}
+		tick();
+	}
+
+	function forceLogout() {
+		window.location.href = '/cas/logout';
+	}
+
+	function keepAlive() {
+		$.ajax({
+			url : 'keepSessionAlive',
+			complete : function() {
+				$("#notifyLogout").modal('hide');
+			}
+		});
+	}
+
+	function viewSupportNumbers() {
+		$.ajax({
+			type : "GET",
+			url : "viewSupportNumbers",
+			beforeSend : function() {
+				$('#supportModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#supportModal .modal-body').html(msg);
+			}
+		});
+		$('#supportModal').modal('show');
+	}
+</script>
+<table>
+	<tr>
+		<td class="headerband" height="60px" width="300px"
+			style="background-image: url('../resources/images/Assam_Logo_Header.png'); background-repeat: no-repeat; border: none; vertical-align: middle; margin: 10px 10px 10px 10px">
+		</td>
+		<td class="headerband" height="56" style="vertical-align: middle;">
+			<img src="../resources/images/AssamFinance_Logo_Header.png"
+			align="right" />
+		</td>
+	</tr>
+
+	<tr class="band">
+		<td style="width: 60%; padding-top: 5px; padding-left: 5px;">
+			<div align="left">
+				<span style="color: white; font-size: 12px;"> Mr.&nbsp;Assistant&nbsp;rdm,&nbsp;Assistant Department,&nbsp;Revenue and Disaster Management Department
+				</span> <a href="#" class="menuanchorclass" rel="anylinkmenu4"> <img
+					src="../resources/images/arr.png" height="10px" width="10px"
+					border="0" /></a>
+				
+					<span style="color: #FFF;">&emsp;Last Log In : Thursday, 20 March 2025, 01:46 PM</span>
+					<a href="loginHistory" style="color: #F8C301;">Show More</a>
+				
+			</div>
+		</td>
+		<td height="22px;" style="padding-top: 5px; padding-left: 5px">
+			<div align="right">
+				<span color="#FFFFFF;" style="font-weight: lighter;"> <a
+					href="gotoMyInbox" title="Home Page" style="text-decoration: none;">
+						<span style="color: white; font-weight: normal; font-size: 12px;">
+							<i class="fa fa-home"></i>&nbsp;Home&nbsp;|
+					</span>
+				</a>  <a id="userManualLink" href="javascript:void(0);"
+					onclick="gotoUserManuals();" title="User Manuals"
+					style="text-decoration: none;"> <span
+						style="color: white; font-size: 12px; font-weight: lighter;">
+							<i class="fa fa-book"></i> Manuals & Tutorials |
+					</span>
+				</a> 
+					<a href="changeAccountDetails" title="Home Page"
+					style="text-decoration: none;"> <span
+						style="color: white; font-weight: normal; font-size: 12px;">
+							<i class="fa fa-user-circle-o"></i>&nbsp;Change Account&nbsp;|
+					</span>
+				</a> <a href="/cas/logout" title="logout" style="text-decoration: none;">
+						<span
+						style="color: white; font-size: 12px; font-weight: lighter; padding-right: 10px;">
+							<i class="fa fa-sign-out"></i></i>&nbsp;Logout
+					</span>
+				</a>
+				</span>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<!-- GENERAL-USER-IDLE-STATUS -->
+<div class="modal fade in" id="notifyLogout" tabindex="-1" role="dialog"
+	aria-labelledby="notifyLogoutLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title" id="notifyLogoutLabel" style="color: #444;">Session
+					Timeout</h4>
+			</div>
+			<div class="modal-body" style="font-size: 14px; line-height: 20px;">You're
+				being timed out due to inactivity. Please choose to stay signed in
+				or to logout. Otherwise, you will be logged out automatically.</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-sm btn-danger forceLogout">Logout</button>
+				<button type="button" class="btn btn-sm btn-primary keepAlive"
+					data-dismiss="modal">
+					Stay Logged In <span id="countdowntimer"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="supportModal" role="dialog"
+	data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-body" style="background-color: #f5f5f5;"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="updatePasswordModal" role="dialog"
+	data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header" style="display: flex;">
+				<h4 class="modal-title"
+					style="color: #fff; width: 95%; text-align: left;">Update
+					Password</h4>
+				<button type="button" class="close" data-dismiss="modal"
+					style="width: 5%">
+					<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+				</button>
+			</div>
+			<div class="modal-body" id="updatePasswordModalBody"
+				style="height: 375px;"></div>
+		</div>
+	</div>
+</div>
+
+ <script>
+	let webchatOpen = false
+	window.botpressWebChat.init({
+		host : 'https://finanalytics.assam.gov.in/botpress',
+		botId : 'helpdesk',
+		userId : "18914",
+		botName : 'Helpdesk',
+		enableTranscriptDownload : false,
+		showConversationsButton : false,
+		hideWidget : true,
+		useSessionStorage: true
+	})
+
+	window.addEventListener('message', function(event) {
+		if (event.data.name === 'webchatReady') {
+			window.botpressWebChat.sendEvent({
+				type : 'proactive-trigger',
+				text : 'Hi',
+				channel : "web",
+				payload : {
+					token : "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZC5yZG0iLCJuYmYiOjE3NDI0NTg5ODgsImlkIjoiMTg5MTQiLCJleHAiOjE3NDI1NDUzODgsInVzZXJuYW1lIjoiYWQucmRtIn0.TnfKRWu3Vm6M3-Q6jm9tMhyDrxc6WjZyh8Plq0d1g2kaEqv8y88Qq85O1ihxGo-SlclZd1vQ8wMBVEB5xbS7GHAZlmgvmRQxGSQs3tpn6Cy8C-dliLO7-VAvChiHGOfPnOJzKSIwWHUo0brYXmaqxixujLmuDHbDqH1I-pzAKw8Jk90BD__Wx95sX6E9hzgwxfiJjgdxydb1Zwe5GAdt8pyxI9c7dLlrXMI692QjZAzbul8ksbpn9cgNYoZYLpgLnUIARSPhpGJ7Y2NX2XouUKOB9MT-HqAgJh_wzAxxhqt_sCqzzGjxNBVuhsMOfhoosjg7D-YzKB5VpnO3Z9sxfA",
+				},
+			})
+		}
+		if (event.data.name === 'webchatOpened') {
+			webchatOpen = true
+		}
+
+		if (event.data.name === 'webchatClosed') {
+			webchatOpen = false
+		}
+	})
+</script>
+</td>
+		</tr>
+
+		<tr>
+			<td colspan="3" style="padding: 0px 4px 0px 4px" bgcolor="#FFFFFF">
+				<div align="left">
+					<ul class="header-part">
+
+						
+						
+							<li title="Inbox" class="nav-item"><a id="inbox"
+								href="gotoDebtInbox" class="nav-link mainLink">Inbox</a></li>
+						
+						
+
+						<!-- ====================== -->
+
+						<!-- === FOR BUDGET === -->
+						
+						<!-- === FOR BUDGET END === -->
+
+						<!-- === FOR CEILING === -->
+						
+						<!-- === FOR CEILING END === -->
+
+						<!-- === FOR AATSFS === -->
+						
+						<!-- === FOR AATSFS END === -->
+
+						<!-- === FOR BILLS === -->
+						
+
+						<!-- === FOR BILLS END === -->
+
+
+						<!-- === FOR DEBT === -->
+						
+						<!-- === FOR DEBT END === -->
+						<!-- === FOR RIDF === -->
+						
+						<!-- === FOR RIDF END === -->
+
+						<!-- === FOR EIS === -->
+						
+						<!-- === FOR EIS END === -->
+
+						<!-- === FOR WORKS ACCOUNT === -->
+						
+
+						
+
+
+						<!-- === FOR WORKS ACCOUNT END === -->
+
+						<!-- === FOR AUDIT === -->
+						
+						<!-- === FOR AUDIT END === -->
+
+						<!-- === FOR DASHBOARD === -->
+						
+						
+						<!-- === FOR CASH-PLANNING  === -->
+						
+						<!-- === FOR CASH-PLANNING END === -->
+
+						<!-- === FOR TEMPORARY  === -->
+						
+
+						<!-- Master Data -->
+						
+
+						
+					</ul>
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td width="4px"></td>
+			<td id="bodypart">
+				<table>
+					
+					
+					
+
+					
+					
+					
+					
+					
+					
+					
+
+					
+
+					
+
+
+					
+
+					
+					
+					
+					
+					
+					
+
+					
+					
+					
+					
+
+					
+
+					
+
+
+
+					
+
+
+
+					
+
+					
+
+					
+
+
+
+					
+
+					
+					
+
+					
+
+					
+
+					
+
+
+					
+					
+					
+					
+
+					
+
+					
+
+					
+					
+					  
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+						<tr>
+							<td>
+								<ul class="dropdown dropdown-horizontal">
+									<li title="Received Administrative Approvals (Held By You)">
+										<a id="aaReceivedDept"
+										href="administrativeApprovalDeptReceived"> Received </a>
+									</li>
+									<li title="Create a new Administrative Approval"><a
+										id="aaRequestDept" href="administrativeApprovalDept">Pending</a>
+									</li>
+									<li title="Inter And Intra Department Forwarded"><a
+										id="aaInterAndIntraForwarded"
+										href="aaInterAndIntraDeptForwarded">Forwarded (Dept)</a></li>
+									<li title="Forwarded To Finance"><a id="aaDeptForwarded"
+										href="administrativeApprovalDeptForwarded">Forwarded
+											(Finance)</a></li>
+									<li title="Forwarded To Finance"><a id="aaFinReturnedDept"
+										href="getAaFinanceReturnedInDept">Finance Returned </a></li>
+									<li title="Queried"><a id="aaDeptQueried"
+										href="administrativeApprovalDeptQueried">Queried</a></li>
+									<li
+										title="Issued (Manual+System Generated) Administrative Approvals">
+										<a id="aaIssuedDept" href="aaIssuedDept">Issued</a>
+									</li>
+									<li title="Ongoing + Proposals need to be revalidated"><a
+										id="aaOngoing" href="aaOngoing">Manually Approved</a></li>
+									<li><a id="aaRejectedDEpt" href="aaRejectedDept">Rejected</a></li>
+									<li><a id="aaCanceledDept" href="aaCanceledDept">Cancelled</a></li>
+									<li><a id="verifyAa"
+										href="getAdministrativeApprovalListForVerification">Verify
+											AA</a></li>
+									<li title="Administrative Approval Summary"><a
+										id="aaSummaryDept" href="administrativeApprovalSummaryDept">Search</a>
+									</li>
+									<li style="background-color: #338ad7;"><a id="getAaGIS"
+										title="District Wise Administrative Approval" href="getAaGIS">AA-GIS</a>
+									</li>
+									<li style="background-color: #338ad7;"><a id="getAaReport"
+										title="Administrative Approval Report" href="getAaReport">Money
+											Flow-Report</a></li>
+									<li><a id="getAaGeneralReportsDept"
+										title="Administrative Approval General Reports"
+										href="getAaGeneralReportsDept">Reports </a></li>
+									<li><a id="getAaWildCardReportsDept"
+										title="Financial Sanction Wild Card Reports"
+										href="getAaWildCardReportsDept">Wild Card Reports </a></li>
+								</ul>
+							</td>
+						</tr>
+					
+
+					
+
+					
+					
+					
+
+					
+
+					
+
+					
+
+					<!-- SUBTAB FOR BILLS -->
+					
+
+					
+
+					
+
+					
+
+					
+
+		
+		
+		<!-- Sub tab for GeM -->
+					  
+
+					
+
+					
+
+					
+
+					
+
+					
+					<!-- SUBTAB FOR TREASURY -->
+					
+					
+					
+
+					
+
+					
+
+					
+					
+
+					
+
+					
+
+					
+
+					
+
+
+					
+
+					
+ 					 
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+
+					
+
+					
+
+					
+					
+
+					
+
+					
+					
+						<tr>
+							<td>
+
+
+
+
+<script type="text/javascript"
+	src="../resources/js/ckeditor/ckeditor.js?version=2" charset="utf-8"></script>
+<script type="text/javascript"
+	src="../webjars/tinymce/5.0.9/tinymce.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+	var displayMessage = '';
+	$(document).ready(function() {
+		if (displayMessage != null && displayMessage != "") {
+			$("#confirmAlertTitle").html(displayMessage);
+			$('#confirmAlert').modal('show');
+		}
+		var sum = 0;
+		$('.allottedAmount').each(function() {
+			sum += Number($(this).val());
+		});
+		$('#totBudgetctFY').val(sum);
+
+		CentralShare = $('#CentralShare').val();
+		if (CentralShare == 'C') {
+			$("#centralDiv").show();
+		} else {
+			$("#centralDiv").hide();
+
+		}
+	});
+
+	function viewSignedChecklist(sanctionId) {
+		window.open(
+				"viewSignedChecklistAdministrativeApproval?q="
+						+ sanctionId, "_blank");
+		return false;
+	}
+	function showQueryBox() {
+		$('#myModal2').find('.modal-title').find('.label').html("Query HoD");
+		$('#querySaveBtn')
+				.prop("name", "action:addAdministrativeApprovalQuery");
+		$('#parentId').val('');
+		$('#myModal2').modal('show');
+		return false;
+	}
+	function showReplyBox(queryId) {
+		$('#myModal2').find('.modal-title').find('.label').html(
+				"Query Reply To Finance");
+		$('#querySaveBtn').prop("name",
+				"action:addAdministrativeApprovalQueryReply");
+		$('#parentId').val(queryId);
+		$('#myModal2').modal('show');
+		return false;
+	}
+	function sendQuery(elem, queryId, approvalId, status) {
+		$
+				.ajax({
+					type : "GET",
+					url : "sendAdministrativeApprovalQuery",
+					data : {
+						'id' : queryId,
+						'administrativeApproval.approvalId' : approvalId,
+						'administrativeApproval.finQueryStatus' : status
+					},
+					beforeSend : function() {
+						$(elem).prop('class',
+								'glyphicon glyphicon-option-horizontal');
+					},
+					success : function(msg) {
+						if (msg) {
+							location.reload();
+							$(elem)
+									.closest('td')
+									.html(
+											'<i title="Sent" class="fa fa-share" aria-hidden="true" style="font-size: 16px; color: green;"></i>');
+						}
+					}
+				});
+	}
+	function sendQueryDept(elem, queryId, approvalId, status) {
+		$
+				.ajax({
+					type : "GET",
+					url : "sendAdministrativeApprovalQueryDept",
+					data : {
+						'id' : queryId,
+						'administrativeApproval.approvalId' : approvalId,
+						'administrativeApproval.finQueryStatus' : status
+					},
+					beforeSend : function() {
+						$(elem).prop('class',
+								'glyphicon glyphicon-option-horizontal');
+					},
+					success : function(msg) {
+						if (msg) {
+							location.reload();
+							$(elem)
+									.closest('td')
+									.html(
+											'<i title="Sent" class="fa fa-share" aria-hidden="true" style="font-size: 16px; color: green;"></i>');
+						}
+					}
+				});
+	}
+	function deleteQuery(elem, queryId) {
+		$
+				.ajax({
+					type : "GET",
+					url : "deleteAdministrativeApprovalQuery",
+					data : {
+						'id' : queryId
+					},
+					beforeSend : function() {
+						$(elem).prop('class',
+								'glyphicon glyphicon-option-horizontal');
+					},
+					success : function(msg) {
+						if (msg) {
+							location.reload();
+							$(elem).closest('tr').remove();
+							if ($('#queryTable tr').length == 1) {
+								$('#queryTable')
+										.append(
+												'<tr><td colspan="3" style="text-align:center">--No Queries Found--</td></tr>');
+							}
+							var i = 1;
+							$('#queryTable').find(".slno").each(function() {
+								$(this).html(i);
+								i++;
+							});
+						}
+					}
+				});
+	}
+	function proposalReport(approvalId) {
+		window.open("downloadAAChecklist?q="
+				+ approvalId, "_blank");
+		return false;
+	}
+
+	function uploadSignedChecklist(elem, approvalId) {
+		$('#myModal3 #modalTitle').html("Upload Signed Checklist");
+		$
+				.ajax({
+					type : "GET",
+					url : "uploadSignedChecklistAdministrativeApproval",
+					data : {
+						'administrativeApproval.approvalId' : approvalId
+					},
+					beforeSend : function() {
+						$('#myModal3 .modal-body').html('Loading..');
+					},
+					success : function(msg) {
+						$('#myModal3 .modal-body').html(msg);
+						$('#checklist')
+								.change(
+										function(event) {
+											var ext = this.value
+													.match(/\.(.+)$/)[1];
+											switch (ext) {
+											case 'pdf':
+												var tmppath = URL
+														.createObjectURL(event.target.files[0]);
+												$("#uploads").attr('src',
+														tmppath);
+												break;
+											case 'PDF':
+												var tmppath = URL
+														.createObjectURL(event.target.files[0]);
+												$("#uploads").attr('src',
+														tmppath);
+												break;
+											default:
+												alert('Please upload PDF file.');
+												this.value = '';
+											}
+										});
+					}
+				});
+		$('#myModal3').modal('show');
+		return false;
+	}
+	function showHistoryAmount(approvalId) {
+		$('#myModal4 #modalTitle').html("Amount Edit History");
+		$.ajax({
+			type : "GET",
+			url : "showHistoryAmount",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$('#myModal4 .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#myModal4 .modal-body').html(msg);
+			}
+		});
+		$('#myModal4').modal('show');
+	}
+	//rejection note
+	function addAANotes(approvalId) {
+		$('#administrativeNoteModal #modalTitle').html(
+				"Administrative Approval Notes");
+		$.ajax({
+			type : "GET",
+			url : "addAANotes",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$('#administrativeNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativeNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativeNoteModal').modal('show');
+		return false;
+	}
+	function validateSchemeWise(approvalId){ 
+		var a=getIssuedDetails(approvalId);
+		$('#issueAdministrativeApprovalModal').modal('hide');
+		$('#SchemeWiseValidationModal').modal('show');
+		 return false;
+	}
+	function getIssuedDetails(approvalId) {
+	    var result = vaidateHoaWiseBudgetLimit();
+	    var budgetProvisions = result.budgetProvisions;
+	    var aaIssuedAmount = JSON.parse($('#aaIssuedAmount').val());
+	    var aaExpenditureAmount = JSON.parse($('#aaExpenditureAmount').val());
+	    var eligibleAAAmounts = [];
+	    var allEligible = true;
+
+	    for (var i = 0; i < budgetProvisions.length; i++) {
+	        var Budgetprovision = budgetProvisions[i];
+	        var aaIssued = aaIssuedAmount[i];
+	        var aaExpenditure = aaExpenditureAmount[i];
+	        var EligibleAAAmount = Budgetprovision - (aaIssued - aaExpenditure);
+	        eligibleAAAmounts.push(EligibleAAAmount);
+
+	        var elementId = 'eligibleAAAmount' + i;
+	        var element = document.getElementById(elementId);
+	        if (element) {
+	            element.innerText = formatAmount(EligibleAAAmount);
+	        }
+      	 $('#eligibleAAAmountscheck'+i).text(formatAmount(EligibleAAAmount));
+	        
+	    }
+
+	    var totalEligibleAAAmount = eligibleAAAmounts.reduce((acc, amount) => acc + amount, 0);
+
+	    var proceedButton = document.getElementById('proceedButton');
+	    var saveButton = document.getElementById('saveButton');
+	    var additionalInfo = document.getElementById('additionalInfo');
+		var attachment = '';
+	    if (totalEligibleAAAmount <= 0 && !attachment) {
+	    	proceedButton.style.display = "none";
+	     	additionalInfo.style.display = "block";
+	        document.getElementById('alertId').innerText = "The AA cannot be issued, as the outstanding liabilities are more than double the budget provision for the current financial year.";
+		 } 
+		 else if(attachment!=null && attachment !== ""){
+			additionalInfo.style.display = "block";
+		 		$('#SchemeWiseValidationModal').modal('hide');
+		 		issueAdministrativeApprovalDFP(approvalId);
+		 	   }
+		 else {
+	    	saveButton.style.display = "none";
+	    	additionalInfo.style.display = "none";
+	        document.getElementById('alertId').innerText = "";
+	        $('#SchemeWiseValidationModal').modal('hide');
+	        issueAdministrativeApprovalDFP(approvalId);
+	    }
+	}
+
+	function formatAmount(amount) {
+	    var formattedString = '₹ ' + amount.toFixed(2); 
+	    if (amount >= 10000000) {
+	        formattedString += ' crore';
+	    } else if (amount >= 100000) {
+	        formattedString += ' lakh';
+	    }
+
+	    return formattedString;
+	}
+	function issueAdministrativeApprovalDFP(approvalId) {
+		$('#issueAdministrativeApprovalModal #modalTitle').html(
+		"Administrative Approval Issue (Under DFP)");
+		var abbreviationforAA = $("#abbreviationforAA").val();
+		var aaValidationExempted = $("#aaValidationExempted").val();
+		if(!aaValidationExempted){
+		if (abbreviationforAA == "undefined" || (abbreviationforAA != "SOPD-EE-SSA" && abbreviationforAA != "SOPD-FDR" && abbreviationforAA != "SOPD-G" && abbreviationforAA != "SOPD-GSP" && abbreviationforAA != "SOPD-ODS" && abbreviationforAA != "SOPD-SCSP" && abbreviationforAA != "SOPD-SCSP SS" && abbreviationforAA != "SOPD-SS" && abbreviationforAA != "SOPD-TSP")) {
+		var isValidationSuccess = vaidateHoaWiseBudgetLimit();
+		if (!isValidationSuccess.responseObj.statusFlag && Number(isValidationSuccess.responseObj.param) > 0) {
+			alert('Proposal cannot be issued since the overall project cost against the HoA is exceeding the ' + isValidationSuccess.responseObj.param + 'x budget provision of HoA(s)');
+		return false;
+			}
+		}
+	}
+		var theTotalAAAmount = $("#theTotalAAAmount").val();
+		if (theTotalAAAmount > 0) {
+			var totalHoaAmount = $("#totalHoaAmount").val();
+			if (isNaN(totalHoaAmount)) {
+				alert("Invalid Financial Details");
+				return false;
+			} else {
+				if (totalHoaAmount > 0) {
+					$('#issueAdministrativeApprovalModal #modalTitle').html(
+							"Administrative Approval Issue (Under DFP)");
+					$.ajax({
+						type : "GET",
+						url : "issueAdministrativeApprovalDFP",
+						data : {
+							'administrativeApproval.approvalId' : approvalId
+						},
+						beforeSend : function() {
+							$('#issueAdministrativeApprovalModal .modal-body')
+									.html('Loading..');
+						},
+						success : function(msg) {
+							$('#issueAdministrativeApprovalModal .modal-body')
+									.html(msg);
+						}
+					});
+					$('#issueAdministrativeApprovalModal').modal('show');
+					return false;
+
+				} else {
+					alert("Invalid Financial Details");
+					return false;
+				}
+			}
+		} else {
+			alert("Invalid Amount");
+			return false;
+		}
+	}
+	function back() {
+		var tab = 'aaIssuedDept';
+		if (tab != "" && tab == "aaIssuedDept") {
+			window.location.href = "aaIssuedDept";
+		}
+		if (tab != "" && tab == "aaRequestDept") {
+			window.location.href = "administrativeApprovalDept";
+		}
+		if (tab != "" && tab == "aaRejectedDept") {
+			window.location.href = "aaRejectedDept";
+		}
+		if (tab != "" && tab == "aaDeptForwarded") {
+			window.location.href = "administrativeApprovalDeptForwarded";
+		}
+		if (tab != "" && tab == "aaInterAndIntraForwarded") {
+			window.location.href = "aaInterAndIntraDeptForwarded";
+		}
+		if (tab != "" && tab == "aaReceivedDept") {
+			window.location.href = "administrativeApprovalDeptReceived";
+		}
+		return false;
+	}
+	function addNewCondition(elem) {
+		var rowLen = $('#conditionTable').find('tr').length;
+		rowLen = rowLen - 5;
+		var rowData = $('#dynamicRow').html();
+		rowData = rowData.replace(/counterIndex/g, rowLen);
+		rowData = rowData.replace(/counter/g, rowLen - 1);
+		$(elem).before($('<tr></tr>').append(rowData));
+	}
+	function addConcurencePoints(approvalId) {
+		$('#predefinedAAConcurenceModal #modalTitle').html(
+				"Administrative Predefined Concurence");
+		$
+				.ajax({
+					type : "GET",
+					url : "getpredefinedAAConcurence",
+					data : {
+						'administrativeApproval.approvalId' : approvalId
+					},
+					beforeSend : function() {
+						$('#predefinedAAConcurenceModal .modal-body').html(
+								'Loading..');
+					},
+					success : function(msg) {
+						$('#predefinedAAConcurenceModal .modal-body').html(msg);
+					}
+				});
+		$('#predefinedAAConcurenceModal').modal('show');
+		return false;
+	}
+	function acceptProposalDept(approvalId) {
+		$('#selectedAaId').val(approvalId);
+		$
+				.ajax({
+					type : "POST",
+					url : "acceptProposalDept",
+					data : $('#aaDetailsId').serialize(),
+					success : function(msg) {
+						alert('The Proposal is added to your Received Tab');
+						location.reload();
+					}
+				});
+	}
+	function validateNumAndTotCost(elem) {
+		if (isNaN(elem.value)) {
+			alert('Invalid numeric value');
+			elem.value = "";
+			elem.focus();
+		} else if (elem.value == "") {
+			alert('This field can not be blank!');
+			elem.value = "";
+		} else if (elem.value == 0) {
+			alert('Amount must be greater than zero');
+			elem.value = "";
+		} else {
+			var sum = 0;
+			var aaSum = 0;
+			var concurredAmount = '0.65';
+			concurredAmount = Number(concurredAmount);
+			$('.amt').each(function() {
+				sum += Number($(this).val());
+			});
+			$('#totalHoaAmount').val(sum);
+			if (sum != null && sum != "") {
+				var benShareAmount = $("#benShareAmount").val();
+				if (benShareAmount != null && benShareAmount != "") {
+					aaSum = Number(sum) + Number(benShareAmount);
+				} else {
+					aaSum = sum;
+				}
+			}
+			//validating the edited amount with the concurred amount
+			if (aaSum > concurredAmount) {
+				alert('New amount( '
+						+ aaSum.toFixed(5)
+						+ 'L ) should not exceed the concurred amount. Which is, '
+						+ concurredAmount.toFixed(5) + 'L');
+				//reloading the form to reset the amount to previous(actual) one
+				location.reload();
+			} else {
+				$('#theTotalAAAmount').val(aaSum.toFixed(5));
+			}
+		}
+	}
+	function calculateAaAmount(elem) {
+		if (isNaN(elem.value)) {
+			alert('Invalid numeric value');
+			elem.value = "";
+			elem.focus();
+		} else {
+			var sum = 0;
+			var aaSum = 0;
+			$('.amt').each(function() {
+				sum += Number($(this).val());
+			});
+			$('#totalHoaAmount').val(sum.toFixed(5));
+			if (sum != null && sum != "") {
+				var benShareAmount = $("#benShareAmount").val();
+				if (benShareAmount != null && benShareAmount != "") {
+					aaSum = Number(sum) + Number(benShareAmount);
+				} else {
+					aaSum = sum;
+				}
+			}
+			$('#theTotalAAAmount').val(aaSum.toFixed(5));
+		}
+	}
+
+	function validateCFYAmount(elem) {
+		var txt_bAmt = $(elem).parent('td').find(".amt").val();
+		if (isNaN(elem.value)) {
+			alert('Invalid numeric value');
+			elem.value = "";
+			elem.focus();
+		} else if (elem.value == "") {
+			alert('This field can not be blank!');
+			elem.value = "";
+		} else if (elem.value == 0) {
+			alert('Amount must be greater than zero');
+			elem.value = "";
+		} else {
+			var sum = 0;
+			$('.eeCFYAmount').each(function() {
+				sum += Number($(this).val());
+			});
+			$('#totEstimatedctFY').val(sum);
+		}
+	}
+	function validateUpdate() {
+		if (confirm('Do you really want to update the modifications?') == true) {
+			if ($('#costOfProject').val() == ""
+					|| $('#costOfProject').val() == 0) {
+				alert('Project cost value can not be blank/zero');
+				$('#costOfProject').val("").css('border', '1px solid red');
+				return false;
+			}
+			if ($('#estimatedAmount').val() == ""
+					|| $('#estimatedAmount').val() == 0) {
+				alert('Estimated cost value can not be blank/zero');
+				$('#estimatedAmount').val("").css('border', '1px solid red');
+				return false;
+			}
+			return true;
+		}
+		return false;
+	}
+	function validateBasicDetails() {
+		if (confirm('Do you want to continue?') == true) {
+			var totalHoaAmount = $("#totalHoaAmount").val();
+			if (isNaN(totalHoaAmount)) {
+				alert("Invalid Financial Details");
+				return false;
+			} else {
+				if (totalHoaAmount > 0) {
+					return true;
+				} else {
+					alert("Invalid Financial Details");
+					return false;
+				}
+			}
+			return false;
+		}
+		return false;
+	}
+
+	function addAADeptForwardNotes(approvalId) {
+		$('#administrativeNoteModal #modalTitle').html(
+				"Forward Administrative Approval");
+		$.ajax({
+			type : "GET",
+			url : "addAADeptForwardNotes",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$('#administrativeNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativeNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativeNoteModal').modal('show');
+		return false;
+	}
+
+	function saveAdministrativeApprovalNotes(approvalId) {
+		if (tinyMCE.get('kraneditorD').getContent() == "") {
+			alert("Enter Forward Notes!");
+			return false;
+		} else {
+			tinyMCE.triggerSave();
+			$.ajax({
+				type : "POST",
+				url : "saveAdministrativeApprovalNotes",
+				data : $('#approvalNotes').serialize(),
+				success : function(result) {
+					if (result)
+						alert('Notes Saved');
+				}
+			});
+			return false;
+		}
+	}
+	function getdprDetails() {
+		$('#administrativeNoteModal #modalTitle').html("Scheme Details");
+		var dprId = $("#dprId").val();
+		$.ajax({
+			type : "GET",
+			url : "getdprDetails",
+			data : {
+				id : dprId
+			},
+			beforeSend : function() {
+				$('#administrativeNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativeNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativeNoteModal').modal('show');
+		return false;
+	}
+
+	var clicked_val=false;
+	function financialProgressDetails(approvalId){
+		if(!clicked_val){
+			clicked_val=true;
+		$.ajax({
+			type : "GET",
+			url : "getFinancialProgressDetailsOfAa",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$("#removedCommitmentHistory").html('Loading...Please Wait...    '+'<i class="fa fa-circle-o-notch fa-spin"></i>')
+			},
+			success : function(result) {
+				$("#removedCommitmentHistory").html(result)
+			}
+		 });
+		}
+	 }
+	$(document).on('keyup', '.amount', function() {
+		var breakUpSum = 0;
+		var aaTotalProjectCost = $('#theTotalAAAmount').val();
+		aaTotalProjectCost = parseFloat(Number(aaTotalProjectCost).toFixed(5));
+		
+		$('.amount').each((index, element)=> {
+			breakUpSum += parseFloat(element.value);
+			breakUpSum = parseFloat(breakUpSum.toFixed(5));
+			if (breakUpSum > aaTotalProjectCost) {
+				alert('Break-up amount exceeds total approval amount!');
+				element.value = "";
+			}
+		});
+	});
+
+	function pullBack(approvalId) {
+		$('#administrativepullNoteModal #modalTitle').html(
+				"Pull Back Notes");
+		$.ajax({
+			type : "GET",
+			url : "pullBack",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$('#administrativepullNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativepullNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativepullNoteModal').modal('show');
+		return false;
+	}
+	function validateAttachmentSize(element) {
+		var file = element.files[0];
+		if((file.size/1000) > 10000) {
+			alert('File size exceeds maximum limit');
+			element.value = "";
+		}
+	}
+</script>
+<style>
+#proposalTable1 {
+	font-size: 12px;
+}
+
+#proposalTable1 tr>td, #proposalTable1 tr>th {
+	vertical-align: middle;
+}
+
+#accordion .panel-heading {
+	padding: 0;
+}
+
+#accordion .panel-title>a {
+	display: block;
+	padding: 0.4em 0.6em;
+	outline: none;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#accordion .panel-title {
+	text-align: left;
+}
+
+#accordion .panel-title>a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before
+	{
+	content: "\e113";
+	float: left;
+	font-family: 'Glyphicons Halflings';
+	margin-right: 1em;
+}
+
+#accordion .panel-title>a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::before
+	{
+	content: "\e114";
+}
+
+@media ( min-width : 768px) {
+	.modal-xl {
+		width: 90%;
+		max-width: 1200px;
+	}
+}
+
+div .col-sm-3, div .col-sm-6, div .col-sm-12 {
+	margin: 5px 0px 5px 0px;
+}
+
+.active {
+	border: none;
+	border-left: 2px solid #76c1ff;
+	font-weight: bold;
+}
+
+.panel-body {
+	background-color: #d9edf733;
+}
+
+.row {
+	margin-bottom: 15px;
+}
+</style>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-23">
+			<h4>
+				<span class="label label-primary">Administrative Approval</span>
+				
+			</h4>
+		</div>
+		<div class="col-xs-1" style="margin-bottom: 5px;">
+		
+				
+				
+			<button type="button" class="btn btn-labeled btn-primary btn-sm"
+				onclick="return back()" style="float: right;">
+				<span class="btn-label"> <i
+					class="glyphicon glyphicon-chevron-left" title="Back to List"></i></span>Go
+				Back
+			</button>
+			
+			
+		</div>
+	</div>
+	
+		<input type="hidden" name="CentralShare" value="C" id="CentralShare"/>
+	
+	<input type="hidden" name="" value="[451.66939]" id="aaIssuedAmount"/>
+	<input type="hidden" name="" value="[371.91229]" id="aaExpenditureAmount"/>
+	<input type="hidden" name="" value="false" id="aaValidationExempted"/>
+	<input type="hidden" name="" value="2" id="validationParameter"/>
+	
+	
+	
+	
+		
+	
+	
+	<div class="panel-group" id="accordion" role="tablist"
+		aria-multiselectable="true">
+		<div class="row">
+			<div class="col-xs-24">
+				<form id="aaDetailsId" name="proposal" action="/assamfinance/secure/administrativeApprovalDetailsDept" method="post" enctype="multipart/form-data" class="form-inline">
+					<input type="hidden" name="struts.token.name" value="token" />
+<input type="hidden" name="token" value="6SZZMEZAV2GSGFUY2WF3U5SYP14P3KX6" />
+					<input type="hidden" name="administrativeApproval.approvalId" value="97940" id="approvalId"/>
+					<input name="administrativeApprovalNotes.administrativeApproval.approvalId" id="selectedAaId" type="hidden">
+					
+						<input type="hidden" name="administrativeApproval.deptHeldBy.allotId" value="38074" id="aaDetailsId_administrativeApproval_deptHeldBy_allotId"/>
+					
+					
+
+					
+					
+
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									data-parent="#accordion" href="#collapseTwo"
+									aria-expanded="true" aria-controls="collapseTwo">Administrative
+									Approval Details </a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse in"
+							role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 active">Name of the Scheme/Project
+										proposed</div>
+									<div class="col-sm-18">
+										SDRF estimate for 1No. Fakial MDTW IS(1Pt)
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Whether scheme/project is
+										new/ongoing</div>
+									<div class="col-sm-6">
+										
+										
+											<span
+												style="font-style: italic; color: green; font-size: 12px;">
+												New project</span>
+										
+										<div>
+											
+										</div>
+									</div>
+									<div class="col-sm-6 active">Whether the scheme is funded
+										by NABARD</div>
+									<div class="col-sm-6">
+										
+											
+											
+											No
+											
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Proposal Number</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											AA-05-2022-23-6196
+										</div>
+									</div>
+									<div class="col-sm-6 active">Proposal Date</div>
+									<div class="col-sm-6">
+										27-03-2023
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Issued Number</div>
+									<div class="col-sm-6" style="color: blue;">
+										<div class="form-group">
+											
+												
+													AA/05_2022-23(I)_4772
+												
+												
+											
+											
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">
+										Valid Upto <span style="font-style: italic; color: green;">(Auto
+											generated after Issue)</span>
+									</div>
+									<div class="col-sm-6">
+										
+											27-03-2026
+										
+										
+
+									</div>
+									<div class="col-sm-6 active">Admin Department File Number
+									</div>
+									<div class="col-sm-6">
+										274407
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Detailed Project Report
+										(DPR) / Project Estimate approved by the Competent Authority</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											As attached
+											
+												<div style="padding-top: 3px;">
+													<span class="glyphicon glyphicon-paperclip"
+														style="color: #01458E"></span> <a
+														style="color: #01458E; cursor: pointer;"
+														onclick="window.open('viewProjectReportAttachment?q=05ddb7e0-e6c6-4377-a166-1c0a0b1a0c2d', '_blank')"
+														title="View Attachment"> tinsukia-6.pdf</a>
+												</div>
+											
+										</div>
+									</div>
+									<div class="col-sm-6 active">Brief nature of the
+										scheme/project and the time period required for
+										implementation/execution</div>
+									<div class="col-sm-6">
+										FDR scheme
+									</div>
+								</div>
+								<div class="row borderbelowtall">
+									<div class="col-sm-6 active">Aim, objectives and benefit
+										expected from the scheme/project</div>
+									<div class="col-sm-6">
+										SDRF estimate for 1No. Fakial MDTW IS(1Pt)
+									</div>
+									<div class="col-sm-6 active">Whether included in the
+										priority list approved by the Departmental Minister</div>
+									<div class="col-sm-6">
+										
+											
+											No
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Ddo Details</div>
+									<div class="col-sm-6">
+										
+										
+											TSK/GAD/001
+										
+									</div>
+									<div class="col-sm-6 active">
+										Common Proposal<span style="font-style: italic; color: red;">
+											(If the documents in the Proposal Needs a Referance in other
+											Proposals)</span>
+									</div>
+									<div class="col-sm-6">
+										
+										
+									No
+									
+									</div>
+
+
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Project Profile Id:</div>
+									<div class="col-sm-6">
+
+										
+
+
+										
+
+										
+									</div>
+
+									<div class="col-sm-6 active">Project Classification :</div>
+									<div class="col-sm-6" style="margin-top: 5px;">
+										
+											
+												<div class="col-lg-6">
+													
+													<input type="hidden" name="heads.headScheme.planCategory.abbreviation" value="SOPD-GSP" id="abbreviationforAA"/>
+														<span class="text-warning h6"> SOPD-GSP&nbsp;-
+														</span>
+													
+													
+												</div>
+												<div class="col-lg-18">
+													
+														<span class="text-success h6"> State Own Priority Scheme-GOI Special Scheme
+														</span>
+													
+													
+												</div>
+											
+										
+										
+									</div>
+
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Type of the project:</div>
+									<div class="col-lg-12">
+										
+											
+															3 Year Project
+														
+											
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Opening and Closing dates:</div>
+									<div class="col-sm-6">
+										<div class="col-sm-6">
+											
+												27-03-2023
+											
+											
+										</div>
+										<div class="col-sm-6">
+											
+												27-03-2026
+											
+											
+										</div>
+									</div>
+									<div class="col-sm-6 active">Project Beneficiary :</div>
+									<div class="col-sm-6" style="margin-top: 10px;">
+										
+											NA
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Procurement Activity Type:</div>
+									<div class="col-sm-8" style="margin-top: 10px;">
+										
+										
+											<span>--Not Available--</span>
+										
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingYearWise">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseYearWise"
+										aria-expanded="true" aria-controls="collapseYearWise">Year-Wise
+										Breakup</a>
+								</h4>
+							</div>
+							<div id="collapseYearWise" class="panel-collapse collapse"
+								role="tabpanel" aria-labelledby="headingYearWise">
+								<div class="panel-body">
+									<div class="row borderbelow">
+										
+											<div class="col-xs-24">
+												<table class="table table-hover table-bordered">
+													<tr class="info">
+														<th colspan="4">Year-Wise Breakup</th>
+													</tr>
+													<tr>
+														<th style="text-align: center;">Sl.No</th>
+														<th style="text-align: center;">HOA</th>
+														<th style="text-align: center;">Year-wise breakup</th>
+													</tr>
+													
+													
+														<tr id='rowt0'>
+															
+															<td style="text-align: center;"><input type="hidden" name="administrativeApprovalHeadsList[].Id" value="" id="aaDetailsId_administrativeApprovalHeadsList___Id"/> 1
+															</td>
+															<td>
+																<div id='ajaxDiv109289'
+																	style="float: center;">Please Wait</div> <script
+																	type="text/javascript">
+																	loadAjaxContent(
+																	'ajaxDiv109289',
+																	'getHeadDetailsAjaxForAlloctn',
+																	'heads.headId=46625&pageView=4');
+															</script> <input type="hidden"
+																class="head46625"
+																name="heads.headId"
+																value="46625">
+															</td>
+															<td><input type="hidden"
+																value="0.65"
+																id="amount46625">
+																<table class="table table-hover table-bordered">
+																	
+																	<tr>
+																		<th style="text-align: center;">Year</th>
+																		<th style="text-align: center;">Amount (In Lakhs)</th>
+																	</tr>
+																	<tr>
+																		
+																			<tr>
+																				
+																				<td><span>2024-25</span></td>
+																				<td> -- No data found --</td>
+																			</tr>
+																		
+																			<tr>
+																				
+																				<td><span>2025-26</span></td>
+																				<td> -- No data found --</td>
+																			</tr>
+																		
+																			<tr>
+																				
+																				<td><span>2026-27</span></td>
+																				<td> -- No data found --</td>
+																			</tr>
+																		
+																</table></td>
+														</tr>
+													
+												</table>
+											</div>
+										
+
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseThree"
+										aria-expanded="true" aria-controls="collapseThree">Financial
+										Details </a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse"
+								role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<table class="table table-bordered" id="proposalTable1">
+										<tr>
+											<th class="active">Head of Account</th>
+											<td>
+												<table id="hoaTable" class="table table-bordered">
+													<tr class="panel panel-info">
+														<th >SI No.</th>
+														<th >Head Of Account</th>
+														<th >Grant No.</th>
+														<th >Current Year's Budget Provision (In Lakhs)</th>
+														<th >Total Estimated Cost of the Project (In Lakhs)</th>
+														<th >Estimated Expenditure in (Ct FY) (In Lakhs)</th>
+														<th width="20%" colspan="2" style="text-align: center">Green Budget Tag</th>
+													</tr>
+													
+													
+													
+														
+															 <input type="hidden" class="headId" name="heads.headId" value="46625">
+															
+																
+															
+															
+															 <input type="hidden" id="amounts" name="administrativeApprovalHeadsList[%{#h.index}].amount" value="0.65">
+															<tr style="margin: 15px;">
+																<td style="text-align: center;">1</td>
+																<td>2245-02-122-1000-000-17-05-SOPD-GSP-V-GA <br> <br>
+																	
+																		<label style="color: #01458E;"> Relief on account of Natural Calamities-Floods, Cyclones etc-Repairs and Restoration of Damaged Irrigation &amp; Flood Control Works-Repairs and Restoration of damaged Irrigation &amp; Flood Control Works (Irrigation)-NULL-Maintenance-Asset Maintenance
+																		</label>
+																	</td>
+																<td>41</td>
+																<td>478</td>
+																<td>0.65</td>
+																<td>0.65</td>
+																<td
+																	 width="10%" style="background-color: ;"></td>
+																<td  width="10%"></td>
+															</tr>
+														
+														<tr>
+															<th class="active" colspan="4">Total<span
+																style="font-style: italic;">(In Lakhs)</span></th>
+															<td>
+																	<input type="hidden" name="totalHoaAmount" value="0.65" id="totalHoaAmount"/>
+																	0.65000
+																</td>
+															<td>0.65000</td>
+														</tr>
+
+													
+												</table>
+											</td>
+										</tr>
+									</table>
+									<div class="row">
+										<div class="col-sm-6 active">
+											Beneficiary Share Amount <span style="font-style: italic;">(In
+												Lakhs)</span>
+										</div>
+										<div class="col-sm-12">
+											
+											-N/A-
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-6 active">Beneficiary Name</div>
+										<div class="col-sm-12">
+											
+												
+											
+											
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-6 active">Whether the scheme is
+											centrally sponsored scheme</div>
+										<div class="col-sm-12">
+											
+											
+												Yes
+														
+												
+												
+											
+											
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6 active"
+											title="Beneficiary share amount + HOA Sum amount">
+											Total Administrative Approval Amount (Project Cost) <span
+												style="font-style: italic; color: green;"> (In Lakhs)
+											</span>
+										</div>
+										<div class="col-sm-12">
+											
+												<input type="hidden" name="administrativeApproval.amount" value="0.65" id="theTotalAAAmount"/>
+												0.65000&nbsp;&nbsp;<i
+													class="fa fa-history"
+													style="color: #01458E; font-size: 16px; cursor: pointer;"
+													title="History"
+													onclick="showHistoryAmount('093f0d8c-420f-4aaa-b60a-2024a4fcff93')"></i>
+											
+											
+										</div>
+									</div>
+								</div>
+								<!-- loads dashboard content -->
+								<div class="row">
+									<div class="col-sm-12 col-md-24 col-lg-24">
+										<div class="panel panel-warning dataListing">
+											<div class="panel-heading" role="tab" id="headingBudget">
+												<h4 class="panel-title">
+													<a class="collapsed text-danger" role="button"
+														data-toggle="collapse" id="anchorBudget"
+														onclick="getBudgetDetails()" data-parent="#accordion"
+														href="#collapseBudget" aria-expanded="true"
+														aria-controls="collapseTwo">Head of Account wise
+														Budget details (C.F.Y)</a>
+												</h4>
+											</div>
+											<div id="collapseBudget" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBudget">
+												<div class="panel-body" style="background-color: #feffe133;">
+													<div id="dashboardContainer"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingDdoDet">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									data-parent="#accordion" href="#collapseDdoDet"
+									aria-expanded="true" aria-controls="collapseDdoDet">Drawing
+									& Disbursing Details</a>
+							</h4>
+						</div>
+						<div id="collapseDdoDet" class="panel-collapse collapse"
+							role="tabpanel" aria-labelledby="headingDdoDet">
+							<div class="panel-body">
+								<div class="row borderbelow">
+									<div class="col-sm-6 active">DDO Code</div>
+									<div class="col-sm-6">
+										TSK/GAD/001
+									</div>
+									<div class="col-sm-6 active">
+										Treasury Name <span style="font-style: italic; color: green;">(Auto
+											generated)</span>
+									</div>
+									<div class="col-sm-6 ">
+										<label class="ddoTreasuryName"></label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">
+										DDO Office Name <span
+											style="font-style: italic; color: green;">(Auto
+											generated)</span>
+									</div>
+									<div class="col-sm-18">
+										<label class="ddoOfficeName"></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingProDet">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseProDet"
+										aria-expanded="true" aria-controls="collapseProDet">Procurement
+										Activity </a>
+								</h4>
+							</div>
+							<div id="collapseProDet" class="panel-collapse collapse"
+								role="tabpanel" aria-labelledby="headingProDet">
+								<div class="panel-body">
+									<div class="row borderbelow">
+										<div class="col-sm-6 active" style="width: 10%;">Unique Number</div>
+										<input type="hidden"
+											name="administrativeApproval.procurementActivityHeadMapping.id"
+											value=''
+											id="procurementActivityId"> <input type="text"
+											class="form-control input-sm" id="uniqueName"
+											value=''
+											style="width: 30%;" readonly="readonly">
+									</div>
+									<br>
+									<table class="table table-bordered table-responsive procurementTable">
+										<tr class="active">
+											<th width="5%">SI No.</th>
+											<th width="5%">Unique Number</th>
+											<th width="5%">Estimated Cost</th>
+										</tr>
+										
+										<tr>
+											<td>1</td>
+											<td><input type="text"
+											class="form-control input-sm" id="uniqueName"
+											value=''
+											style="width: 60%;" readonly="readonly"></td>
+											<td><input type="text"
+											class="form-control input-sm" id="uniqueName"
+											value=''
+											style="width: 60%;" readonly="readonly"></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					
+						<div class="panel panel-success">
+							<div class="panel-heading" role="tab" id="headingOneFP"
+								onclick="financialProgressDetails('8c1cc0c8-c0e6-4ef2-aab7-093370b21849')">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseEightFP"
+										aria-expanded="true" aria-controls="collapseEightFP">
+										Financial Progress Of The Project</a>
+								</h4>
+							</div>
+							<div id="collapseEightFP" class="panel-collapse collapse"
+								role="tabpanel" aria-labelledby="headingOneFP">
+								<div class="panel-body" id="removedCommitmentHistory"></div>
+							</div>
+						</div>
+					
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									data-parent="#accordion" href="#collapseFour"
+									aria-expanded="true" aria-controls="collapseFour">Statutory
+									/ Necessary Clearances</a>
+							</h4>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse"
+							role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 active">Permission from local bodies
+										for construction/establishment wherever necessary</div>
+									<div class="col-sm-18" style="padding-top: 10px;">
+										
+											
+											No<br>
+												
+											
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Non-Objection certificate</div>
+									<div class="col-sm-18" style="padding-top: 10px;">
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Non-Duplicity certificate</div>
+									<div class="col-sm-18" style="padding-top: 10px;">
+										
+											<table class="table_style0">
+												<tr>
+													<th>Attached Documents</th>
+												</tr>
+												
+													<tr>
+														<td><a style="color: #01458E; cursor: pointer;"
+															onclick="window.open('viewECAttachment?q=f3baec2a-45d4-4c4c-8855-a718f99df202', '_blank')"
+															title="View Attachment"> Executive Engineer Tinisukia-Digboi-MargharitaDivn(I)</a>
+														</td>
+													</tr>
+												
+											</table>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									data-parent="#accordion" href="#collapseFive"
+									aria-expanded="true" aria-controls="collapseFive">Inter-Departmental
+									Views </a>
+							</h4>
+						</div>
+						<div id="collapseFive" class="panel-collapse collapse in"
+							role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 active">Views of Department</div>
+									<div class="col-sm-18">
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Details information in case
+										of observation made by T&D in last year's endorsement</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											
+											
+											---
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									data-parent="#accordion" href="#collapseSix"
+									aria-expanded="true" aria-controls="collapseSix">Departmental
+									Views </a>
+							</h4>
+						</div>
+						<div id="collapseSix" class="panel-collapse collapse"
+							role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 active">Departments view on the
+										feasibility of the proposal by the Departmental Authority</div>
+									<div class="col-sm-18">
+										<div class="col-sm-18">
+											As attached
+										</div>
+										<div class="col-sm-6">
+											
+												<div style="padding-top: 3px;">
+													<span class="glyphicon glyphicon-paperclip"
+														style="color: #01458E; cursor: pointer;"></span> <a
+														style="color: #01458E;"
+														onclick="window.open('viewDeptViewAttachment?q=0fe81bcc-8a15-45c5-8c09-6b42e6f8ddfb', '_blank');"
+														title="View Attachment"> tinsukia-6.pdf</a>
+												</div>
+											
+											
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Specific View of F.A/Sr.F.A
+										and Checklist of F.A</div>
+									<div class="col-sm-18">
+										
+											As attached
+										
+										
+											<div style="padding-top: 3px;">
+												<span class="glyphicon glyphicon-paperclip"
+													style="color: #01458E"></span> <a
+													style="color: #01458E; cursor: pointer;"
+													onclick="window.open('viewFaViewAttachment?q=0fe82fc4-4671-4b5e-9afa-4831aaaf5683', '_blank')"
+													title="View Attachment"> note.pdf</a>
+											</div>
+
+										
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-6 active">Sanction letter copy of GOI
+										in case of Central Sector Schemes</div>
+									<div class="col-sm-18">
+										
+											
+											
+												<div class="col-sm-6">No</div>
+												<div class="col-sm-18">
+													
+												</div>
+											
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Views of Sr.F.A/F.A for
+										non-admissibility of the instant project under DFPR</div>
+									<div class="col-sm-18">
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Views of Senior Most
+										Secretary in the Department</div>
+									<div class="col-sm-18">
+										As attached
+										
+											<div style="padding-top: 3px;">
+												<span class="glyphicon glyphicon-paperclip"
+													style="color: #01458E;"></span> <a
+													style="color: #01458E; cursor: pointer;"
+													onclick="window.open('viewDeptSecretaryAttachment?q=bfef9300-2cab-4bd8-9618-0a8389bdb018', '_blank');"
+													title="View Attachment"> note.pdf</a>
+											</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+						<div class="panel panel-primary" id="centralDiv" hidden="true">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseSeven"
+										aria-expanded="true" aria-controls="collapseSeven">Funding
+										Details(Whether the scheme is centrally sponsored scheme) </a>
+								</h4>
+							</div>
+							<div id="collapseSeven" class="panel-collapse collapse"
+								role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-sm-6 active">Funding pattern of the
+											scheme</div>
+										<div class="col-sm-6">
+											
+										</div>
+										<div class="col-sm-6 active">The year from which the
+											scheme is being implemented</div>
+										<div class="col-sm-6">
+											
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6 active">The quantum of central
+											share allocated/released for the year along with the
+											supporting document</div>
+										<div class="col-sm-6">
+											
+											
+										</div>
+										<div class="col-sm-6 active">The criteria of proposing
+											the amount of state share</div>
+										<div class="col-sm-6">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					<!-- 	other doc -->
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOtherDoc">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseOtherDoc"
+										aria-expanded="true" aria-controls="collapseOtherDoc">Other
+										Documents</a>
+								</h4>
+							</div>
+							<div id="collapseOtherDoc" class="panel-collapse collapse"
+								role="tabpanel" aria-labelledby="headingOtherDoc">
+								<div class="panel-body">
+									<div class="row borderbelow">
+										<div class="col-sm-6 active" style="margin-bottom: 15px;">
+											Other Documents<span
+												style="font-style: italic; color: green;"> ( if
+												required )</span>
+										</div>
+										<div class="col-sm-18">
+											
+												<table class="table_style0">
+													<tr>
+														<th>Attached Documents</th>
+													</tr>
+													
+														<tr>
+															<td><a style="color: #01458E;"
+																onclick="window.open('viewECAttachment?q=434682d1-a024-44e4-a35e-ab38dbdf01e8', '_blank')"
+																title="View Attachment"> Photo</a></td>
+														</tr>
+													
+												</table>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseEight"
+										aria-expanded="true" aria-controls="collapseEight">Approval
+										Conditions </a>
+								</h4>
+							</div>
+							<div id="collapseEight" class="panel-collapse collapse"
+								role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<table class="table table-bordered table-hover"
+										id="aaConditionsNoteTable">
+										<tr class="active">
+											<th style="text-align: center; width: 20%;">#</th>
+											<th style="text-align: center; width: 50%;">Condition
+												Description</th>
+										</tr>
+										
+											<tr>
+												<td style="text-align: center;">1</td>
+												<td style="text-align: center;">All the procedures laid down at Assam Financial Rules, Condition and Codal provisions of AFRBM Act 2005 and CVC guidelines is to be strictly followed invariably.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">2</td>
+												<td style="text-align: center;">The admissible deductions can be deducted and deposited into the Govt. Account by the Concerned Authority as per rule/ Govt. Instructions.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">3</td>
+												<td style="text-align: center;">Work to be completed within the estimated cost in all respect without involving cost and time over run.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">4</td>
+												<td style="text-align: center;">This Administrative Approval is issued as per delegation of power at Sl. No. 75 of DFP rule, 2022</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">5</td>
+												<td style="text-align: center;">FDR Scheme for the year 2021-22 APPROVED IN  46TH SEC MEETING</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">6</td>
+												<td style="text-align: center;">Executing department must complete the assigned works within 3(Three) months from the date of issue of administrative approval and no extension beyond the stipulated period will be allowed. The claims for fund must reach the department of Revenue &amp; D.M. through concerned Deputy Commissioner within 3(three) months from the date of completion of the scheme / project.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">7</td>
+												<td style="text-align: center;">The works shall be executed by the Irrigation Department. The works will be monitored by the Deputy Commissioner concerned who will ensure that the execution of the works have been done strictly as per plan and estimate before submitting the work completion report to the authority concerned.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">8</td>
+												<td style="text-align: center;">No works shall be executed before issue of technical sanction by the competent authority.</td>
+											</tr>
+										
+									</table>
+								</div>
+							</div>
+						</div>
+					
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseNine"
+										aria-expanded="true" aria-controls="collapseNine">Issued
+										Details</a>
+								</h4>
+							</div>
+							<div id="collapseNine" class="panel-collapse collapse"
+								role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<!-- SETTING LABELS FOR THE ATTACHMENT -->
+									
+										
+									
+									
+									
+									
+									<table class="table table-bordered table-condensed table-hover">
+										<tr class="info">
+											<th colspan="4">
+												<h4 style="margin: 0; text-align: center; padding: 2px;">
+													<span class="label label-primary">Issued DFP Details</span>
+												</h4>
+											</th>
+										</tr>
+										<tr>
+											<th style="text-align: center; width: 15%;">DFP</th>
+											<th style="text-align: left;">Remarks</th>
+											<th style="text-align: left;">DFP Attachment</th>
+											<th style="text-align: center;">Departmental Finance Committee - MoM Attachment</th>
+										</tr>
+										<tr>
+											<td
+												style="text-align: center; vertical-align: middle; width: 20%">
+												<div
+													style="font-size: 15px; font-style: italic; padding-top: 5px; color: #006d8e;">
+													DFP Rule :
+													This Administrative Approval is issued as per delegation of power at Sl. No. 75 of DFP rule, 2022
+												</div>
+											</td>
+											<td>
+												<div style="font-size: 15px; padding-top: 5px;">
+													<p>This Administrative Approval is issued as per delegation of power at Sl. No. 75 of DFP rule, 2022</p>
+												</div>
+												<div
+													style="font-size: 12px; font-style: italic; padding-top: 5px; color: #01458E;">
+													Issued By
+													
+													
+														Satyajit Bhagowati, AFS
+														,
+														Senior Financial Advisor
+														On
+														27-03-2023
+													
+												</div>
+											</td>
+											<td
+												style="text-align: center; vertical-align: middle; cursor: pointer;">
+												 
+													<i style="font: 10px; color: red;">- Attachment Not
+														Available -</i>
+												
+											</td>
+											<td
+												style="text-align: center; vertical-align: middle; cursor: pointer;">
+												 
+													<i style="font: 10px; color: red;">- Attachment Not
+														Available -</i>
+												
+											</td>
+										</tr>
+										
+									</table>
+								</div>
+							</div>
+						</div>
+					
+					
+					
+					
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingRep">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseRep"
+										aria-expanded="true" aria-controls="collapseRep">Reference
+										Notes and Queries</a>
+								</h4>
+							</div>
+							<div id="collapseRep" class="panel-collapse collapse in"
+								role="tabpanel" aria-labelledby="headingRep">
+								<div class="panel-body">
+
+									<div class="panel panel-info">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapseTwelve"
+													aria-expanded="true" aria-controls="collapseTwelve">Reference
+													Notes </a>
+											</h4>
+										</div>
+										<div id="collapseTwelve" class="panel-collapse collapse in"
+											role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<table
+													class="table table-bordered table-condensed table-hover"
+													id="notesTable">
+													<tr>
+														<td colspan="2" style="text-align: right;"> 
+																<a title="Download this document"
+																	style="cursor: pointer;"
+																	onclick="window.open('generateAaFinanceWorkBookReport?q=f4a07ed2-72a5-4f22-85bf-49821ef392d6', '_blank');">
+																	<span class="glyphicon glyphicon-save-file"
+																	style="font-size: 25px; color: red;"></span>
+																</a>
+															</td>
+													</tr>
+													
+														
+															<tr>
+																<td
+																	style="text-align: center; vertical-align: middle; width: 5%"
+																	class="slno">1</td>
+																<td>
+																	<div>
+																		Forwarded
+																	</div>
+																	<div
+																		style="font-size: 9px; font-style: italic; padding-top: 5px; color: #01458E;">
+																		Assistant rdm
+																		,
+																		Assistant Department
+																		On
+																		17-03-2023
+																	</div>
+																</td>
+															</tr>
+														
+															<tr>
+																<td
+																	style="text-align: center; vertical-align: middle; width: 5%"
+																	class="slno">2</td>
+																<td>
+																	<div>
+																		Forwarded
+																	</div>
+																	<div
+																		style="font-size: 9px; font-style: italic; padding-top: 5px; color: #01458E;">
+																		Satyajit Bhagowati, AFS
+																		,
+																		Senior Financial Advisor
+																		On
+																		23-03-2023
+																	</div>
+																</td>
+															</tr>
+														
+															<tr>
+																<td
+																	style="text-align: center; vertical-align: middle; width: 5%"
+																	class="slno">3</td>
+																<td>
+																	<div>
+																		Forwarded
+																	</div>
+																	<div
+																		style="font-size: 9px; font-style: italic; padding-top: 5px; color: #01458E;">
+																		Assistant rdm
+																		,
+																		Assistant Department
+																		On
+																		27-03-2023
+																	</div>
+																</td>
+															</tr>
+														
+													
+													
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-info">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapseThirteen"
+													aria-expanded="true" aria-controls="collapseThirteen">Queries</a>
+											</h4>
+										</div>
+										<div id="collapseThirteen" class="panel-collapse collapse"
+											role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<table
+													class="table table-bordered table-condensed table-hover"
+													id="queryTable">
+													<tr>
+														<td colspan="3" style="text-align: right;">
+														<h4 style="margin: 0; text-align: left; padding: 2px;">
+														<span class="label label-primary">Query From
+															Finance </span>
+													</h4>
+														 
+																<a title="Download this document"
+																	style="cursor: pointer;"
+																	onclick="window.open('generateAaFinanceWorkBookReport?q=fafc0a25-12a7-47a1-a90b-10fd14d8100a', '_blank');">
+																	<span class="glyphicon glyphicon-save-file"
+																	style="font-size: 25px; color: red;"></span>
+																</a>
+															</td>
+													</tr>
+													
+													
+														<tr>
+															<td colspan="3" style="text-align: center">--No
+																Queries Found--</td>
+														</tr>
+													
+												</table>
+												
+												
+													
+														
+															
+														
+													
+												
+											</div>
+										</div>
+									</div>
+
+									
+
+								</div>
+							</div>
+						</div>
+					
+					<div class="row">
+						<div class="col-xs-24" style="text-align: center; padding: 8px;">
+							
+							
+							
+
+							
+								
+								
+								
+								
+									
+										
+									
+								
+							
+
+							
+							
+								
+								
+									
+										
+									
+								
+							
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<div class="modal fade" id="myModal2" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">
+						<span class="label label-primary">Query To HoD</span>
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-24">
+							<textarea placeholder="Type your Query here.."
+								name="administrativeApprovalQuery.query" id="kraneditor"></textarea>
+							<script type="text/javascript">
+													tinymce.remove('#kraneditor');
+													tinymce
+															.init({
+																selector : '#kraneditor',
+																resize : false,
+																plugins : "table",
+																toolbar : 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent | forecolor backcolor removeformat',
+																table_appearance_options : true,
+																statusbar : true,
+																height : 300,
+															});
+	
+													function validateQuery() {
+														if (tinyMCE.get(
+																'kraneditor')
+																.getContent() == "") {
+															alert("Enter Query");
+															return false;
+														} else {
+															return true;
+														}
+													}
+												</script>
+						</div>
+					</div>
+					<div style="margin: 10px; padding: 8px; border: 1px solid #01458E;">
+						<label style="color: #01458E; text-decoration: underline;">Add
+							Attachment</label>
+						<input type="file" name="administrativeApprovalQuery.file" accept="application/pdf" id="aaDetailsId_administrativeApprovalQuery_file" onchange="validateAttachmentSize(this)"/>
+						<p class="help-block">Upload PDF file only.</p>
+					</div>
+					<div align="center" style="margin: 10px;">
+						<input type="submit" value="Save" id="querySaveBtn" name="action:addAdministrativeApprovalQuery" class="btn btn-primary" onclick="return validateQuery();"/>
+
+						<input type="hidden" name="administrativeApprovalQuery.parentId" value="" id="parentId"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</form>
+
+
+
+<div class="modal fade" id="myModal3" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal4" role="dialog">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="administrativeNoteModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close" onclick="reloadPageForRefreshToken()">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="issueAdministrativeApprovalModal"
+	role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close" onclick="reloadPageForRefreshToken()">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="predefinedAAConcurenceModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div id="confirmAlert" class="modal fade" role="dialog">
+	<div class="modal-dialog" id="modal-confirmAlert">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="fa fa-exclamation"></i>
+				</div>
+				<h4 class="modal-title" id="confirmAlertTitle">Message !</h4>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="administrativepullNoteModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="SchemeWiseValidationModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title"><b>AA Pool Balance For SOPD Scheme</b>
+                    <span class="label label-primary" id="modalTitle"></span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                
+                    
+						<table class="table table-hover table-bordered">
+							<tr class="active">
+								<td>
+									<div id='ajaxDiv1'
+										style="text-align: center; font-size: 13px">Please Wait</div>
+									<script type="text/javascript">
+                                        loadAjaxContent(
+                                            'ajaxDiv1',
+                                            'getHeadDetailsAjaxForAlloctn',
+                                            'heads.headId=46625&pageView=4'
+                                        );
+                                    </script>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+										<table class="table table-hover table-bordered">
+											<tr>
+												<th style="text-align: center;">Financial Year</th>
+												<th style="text-align: center;">Budget Provision (In
+													Lakhs)</th>
+												<th style="text-align: center; width: 150px">AA limit</th>
+												<th style="text-align: center;">AA Issued Amount (In
+													Lakhs)</th>
+												<th style="text-align: center;">Expenditure against AA
+													(In Lakhs)</th>
+												<th style="text-align: center;">Year wise Liability</th>
+												<th style="text-align: center;">Cummulative Liabilities</th>
+											</tr>
+											<tr>
+												<th style="text-align: center;">(I)</th>
+												<th style="text-align: center;">(II)</th>
+												<th style="text-align: center;">(III)<br>= (2 X
+													II) - (Total of (IV) - Total of (V))
+												</th>
+												<th style="text-align: center;">(IV)</th>
+												<th style="text-align: center;">(V)</th>
+												<th style="text-align: center;">(VI)<br>= IV - V
+												</th>
+												<th style="text-align: center;">(VII)<br>= Total
+													of (IV) - Total of (V)
+												</th>
+											</tr>
+											
+												<tr>
+													<td style="text-align: center;">2022-23</td>
+													<td style="text-align: center;">478</td>
+													<td style="text-align: center;">956</td>
+													<td style="text-align: center;">355.56194</td>
+													<td style="text-align: center;">83.64541</td>
+													<td style="text-align: center;">271.91653</td>
+													<td style="text-align: center;">271.91653</td>
+												</tr>
+											
+												<tr>
+													<td style="text-align: center;">2023-24</td>
+													<td style="text-align: center;">442.545</td>
+													<td style="text-align: center;">613.17347</td>
+													<td style="text-align: center;">97.60745</td>
+													<td style="text-align: center;">288.26688</td>
+													<td style="text-align: center;">-190.65943</td>
+													<td style="text-align: center;">81.2571</td>
+												</tr>
+											
+												<tr>
+													<td style="text-align: center;">2024-25</td>
+													<td style="text-align: center;">200</td>
+													<td style="text-align: center;">318.7429</td>
+													<td style="text-align: center;">61.44185</td>
+													<td style="text-align: center;">0</td>
+													<td style="text-align: center;">61.44185</td>
+													<td style="text-align: center;">142.69895</td>
+												</tr>
+											
+										</table>
+										<tr class="active">
+											<th style="text-align: left; font-size: 13px">Eligible
+												Amount for this Year's AA
+											<td
+												style="text-align: center; font-weight: bold; font-size: 13px"
+												id="eligibleAAAmountscheck0"></td>
+											</th>
+										</tr>
+										<br>
+									</td>
+							</tr>
+						</table>
+					
+                    <div id="alertId" style="font-weight: bold; font-size: 17px; text-align: center">
+                        The AA cannot be issued, as the outstanding liabilities are more than
+                        double the budget provision for the current financial year.
+                    </div><br>
+                
+			</div>
+			<div class="row" id="additionalInfo" style="display: none;">
+				<div style="text-align: center; font-size: 12px; font-weight: bold;">If
+					the concerned proposal is exempted from this validation, as per
+					clause 21.3 of DFPR 2022, then please attach a justification
+					document for the same in the provided field and submit the proposal
+					to the Finance Department for Concurrence</div>
+				<br>
+				<div class="col-sm-6 active" style="margin-left: 20px;">
+					SOPD Justification Document<span
+						style="font-style: regular; color: red; font-size: 15px;">
+						* </span><br />
+				</div>
+				<div class="col-sm-6">
+					
+					
+						<input type="file" name="administrativeApproval.sopdFile" id="sopdFileAttach" onchange="validateAttachmentSize(this)"/>
+						<span style="color: #d25656; font-style: italic;">Maximum
+							upload file size is 10MB</span>
+						<p class="help-block">Upload PDF file only.</p>
+					
+				</div>
+				<div class="col-sm-6">
+					<textarea name="administrativeApproval.sopdJustifyRemark" cols="54" rows="" id="sopdJustifyRemark" class="form-control" style="resize: true;" onkeyup="validateStringOnly($(this))" placeholder="Type your Remarks here."></textarea>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success"
+					onclick="return aaSaveDetails('97940');"
+					id="saveButton">Save Details</button>
+				<button type="button" class="btn btn-primary"
+					onclick="return getIssuedDetails('98a62dc1-c758-498a-b5a3-ca0a524d01f7');"
+					id="proceedButton">Proceed</button>
+			</div>
+		</div>
+    </div>
+</div>
+<script type="text/javascript">
+	var uri = window.location.toString();
+	if (uri.indexOf("?") > 0) {
+		var clean_uri = uri.substring(0, uri.indexOf("&"));
+		window.history.replaceState({}, document.title, clean_uri);
+	}
+
+	//for budget variance dashboard
+	var head = '';
+	function getSelectedHead(headId) {
+		head += headId + '_';
+		getBudgetDetailsByHeadOfAccount(head, null);
+	}
+	function getBudgetDetailsByHeadOfAccount(headIds, approvalId) {
+		$.ajax({
+			type : 'GET',
+			url : 'getBudgetDetailsForAdministrativeApprovalByHeadOfAccount',
+			data : {
+				'headIdsForBudgetVarianceView' : headIds,
+				'administrativeApproval.approvalId' : approvalId,
+			},
+			beforeSend : function() {
+				$('#dashboardContainer').html('<h5 align = "center">Loading...</h5>');
+			},
+			success : function(data) {
+				$('#dashboardContainer').html(data);
+			}
+		});
+	}
+	
+	function getBudgetDetails() {
+		classNames = $('#anchorBudget').attr('class');
+		if (classNames.split(' ').includes('collapsed')) {
+			approvalId = '97940';
+			if (typeof approvalId != 'undefined' && approvalId > 0) {
+				getBudgetDetailsByHeadOfAccount(null, approvalId);
+			}
+		}
+	}
+
+	// FOR AA CANCEL
+	function addCancelNotes(q) {
+		$('#myModal .modal-title').html('Update Cancel Remarks');
+		$.ajax({
+			type: 'GET',
+			url: 'addAANotes',
+			data: {
+				'q':q
+			},
+			beforeSend: ()=> {
+				$('#myModal .modal-body').html('Loading..');
+			},
+			success: (result)=> {
+				$('#myModal .modal-body').html(result);
+			}
+		});
+		$('#myModal').modal('show');
+		return false;
+	}
+
+	// For retrieviing all details of AA by ID
+	function getAllDetailsByApprovalId(q) {
+		$('#myModal .modal-title').html('Cancel Administrative Approval');
+		$('#modalDialog').removeClass('modal-lg');
+		$('#modalDialog').addClass('modal-xl');
+		$.ajax({
+			type: 'GET',
+			url: 'findAllApprovalDetailsById',
+			data: {
+				'q' : q
+			},
+			beforeSend: ()=> {
+				$('#myModal .modal-body').html('Loading..');
+			},
+			success: (response)=> {
+				$('#myModal .modal-body').html(response);
+			}
+		});
+		$('#myModal').modal('show');
+		return false;
+	}
+	function reloadPageForRefreshToken(){
+		location.reload();
+	}
+
+	function vaidateHoaWiseBudgetLimit(){
+		var responseObj = {};
+	var budgetProvisions = [];
+		$('.headId').each((index, element)=>{ 
+			if(element.value != ""){
+				$.ajax({
+					type: "GET",
+					url: "vaidateHoaWiseBudgetLimit",
+					async: false,
+					data:{
+						"hoaId": element.value
+					},
+					success: (response)=>{
+						responseObj = {statusFlag: true, param: 0};
+						var isExempted = response[0];
+						var currentYearBudget = response[1];
+						currentYearBudget = parseAndFormatFloats(currentYearBudget);
+						var amountApprovedTillDate = response[2];
+						var validationParameter = response[3];
+						amountApprovedTillDate = parseAndFormatFloats(amountApprovedTillDate);
+						currentYearBudgetprovision = currentYearBudget * validationParameter;
+						budgetProvisions.push(currentYearBudgetprovision);
+						$('#currentBudgetProvision').val(currentYearBudgetprovision);
+						
+						if(!isExempted){							 
+							var amountRequestingFromTheHead = $('#amounts').val();
+							amountRequestingFromTheHead = parseAndFormatFloats(amountRequestingFromTheHead);
+							amountApprovedTillDate = amountApprovedTillDate + amountRequestingFromTheHead;
+							amountApprovedTillDate = parseAndFormatFloats(amountApprovedTillDate);
+							
+							if(validationParameter!=null){
+								if(amountApprovedTillDate > (currentYearBudget*validationParameter)){
+									responseObj.param = validationParameter;
+									responseObj.statusFlag = false;
+								} 
+							} 
+						}
+					}
+				});
+			}
+			if(!responseObj.statusFlag){
+				return false;
+			}
+		});
+		return { responseObj, budgetProvisions,validationParameter };
+	}
+	
+	function parseAndFormatFloats(value){
+		var floatValue = parseFloat(value);
+		floatValue = parseFloat(floatValue.toFixed(5));
+		return floatValue;
+	}
+	
+	function aaSaveDetails(approvalId) {
+		var token = '6SZZMEZAV2GSGFUY2WF3U5SYP14P3KX6';
+		var formData = new FormData();
+	    var attachment = document.getElementById('sopdFileAttach').files[0];
+	    var remark = document.getElementById('sopdJustifyRemark').value;
+
+	    if (!attachment) {
+	        alert("Please upload the SOPD Justification document.");
+	        return false;
+	    }
+	    if (!remark) {
+	        alert("Please provide your remarks.");
+	        return false;
+	    }
+
+	    formData.append('administrativeApproval.sopdFile', attachment);
+	    formData.append('administrativeApproval.sopdJustifyRemark', remark);
+	    formData.append('administrativeApproval.approvalId', approvalId);
+	    formData.append("struts.token.name", "token");
+		formData.append("token", token);
+	    
+	    $.ajax({
+			type: "POST",
+			url: "saveSopdAttachment",
+			contentType: false,
+			processData: false,
+			data: formData,
+			success: (response)=>{
+				alert("Details saved successfully.");
+				location.reload();
+			}
+		});
+	    return true;
+	}
+	
+</script>
+</td>
+						</tr>
+					
+				</table>
+			</td>
+			<td width="4px"></td>
+		</tr>
+		<tr>
+			<td colspan="3" style="height: 15px;">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="background-color: #01458E;">
+
+<table>
+	<tr>
+		<td width="80%" height="22" valign="baseline"
+			background="../resources/images/th.jpg" bgcolor="#CCCCCC">
+			<div align="left" style="padding: 10px 5px 5px 5px; color: #FFFFFF;">
+				Version 17.7.42
+			</div>
+		</td>
+
+		<td width="20%" height="20%" valign="baseline"
+			background="../resources/images/th.jpg" bgcolor="#CCCCCC">
+			<div align="right">
+				 <button type="button" class="btn btn-helpdesk btn-sm" id="toggle-bp" title="Chatbot">
+					<i class="fa fa-comments-o fa-lg" aria-hidden="true"></i>
+				</button>   
+				 <button type="button" class="btn btn-success btn-sm" title="User Manual"
+					onclick="gotoUMDownload()"><i class="fa fa-book"></i>  UM
+				</button> 
+				
+				<button type="button" class="btn btn-helpdesk btn-sm" title="Technical Support"
+					onclick="gotoHelpDisk('ad.rdm')">
+					<span class="glyphicon glyphicon-question-sign"></span> TSG
+				</button>
+
+				<a href="http://kran.co.in" target="_blank"
+					rel="noopener noreferrer"><img alt="KRAN" align="middle"
+					src="../resources/images/kranitlogo.png"></a>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<!-- By Sujith -- For Help Desk -->
+<div id="myModalTSG" class="custom-modal fade" role="dialog"
+	data-backdrop="static" data-keyboard="false">
+	<div class="custom-modal-dialog" style="width: 90%;">
+		<!-- Modal content -->
+		<div class="custom-modal-content">
+			<div class="custom-modal-header" style="background-color: #13498d;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<img src="../resources/images/header.png" /> <img
+					src="../resources/images/assured_logo.png"
+					style="width: 12%; float: right;" />
+			</div>
+			<div class="custom-modal-body" style="overflow: auto; height: 650px;">
+				<iframe width="100%" height="100%" id="modalframe" src="about:blank"
+					frameborder="0"></iframe>
+			</div>
+			<div class="custom-modal-footer" style="background-color: #13498d;">
+				<img alt="KRAN" align="middle" src="../resources/images/kranitlogo.png">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="userManualModal" class="modal fade" style="display: none;"
+	role="dialog" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header"
+				style="background-color: #1469A0; color: #FFF;">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">Manuals & Tutorials</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="userManualModalBS4">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Manuals & Tutorials</h4>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+ 	document.getElementById("toggle-bp").addEventListener("click", function() {
+		window.botpressWebChat.sendEvent({
+			type : webchatOpen ? "hide" : "show"
+		})
+	}) 
+
+	var bootstrap_enabled = (typeof $().emulateTransitionEnd == 'function');
+	if (!bootstrap_enabled) {
+		$("#userManualLink").hide();
+		$.getScript('../resources/bootstrap/js/bootstrap.min.js');
+	}
+
+	$(document).ready(function() {
+		$('#myModalTSG #modalframe').height($(window).height() - 200);
+	});
+
+	function gotoHelpDisk(hierarchyCode) {
+		var pageTitle = document.title;
+		var titleName = "Mr.";
+		var empName = "Assistant";
+		var lastName = "rdm";
+		if (lastName != null) {
+			var userName = titleName + ' ' + empName + ' ' + lastName;
+		} else {
+			var userName = titleName + ' ' + empName;
+		}
+		var seatName = "Assistant Department";
+		var controllingOffice = "Revenue and Disaster Management Department";
+		var seatUserAllotId = "18914";
+		var mobile = "9707133011";
+		var email = "";
+
+		var myJSON = {
+			"userName" : userName,
+			"seatName" : seatName,
+			"controllingOffice" : controllingOffice,
+			"seatUserAllotId" : seatUserAllotId,
+			"hierarchyCode" : hierarchyCode,
+			"pageTitle" : pageTitle,
+			"mobile" : mobile,
+			"email" : email,
+			"finassam" :'finassam'
+		};
+		var strJSON = encodeURIComponent(JSON.stringify(myJSON));
+		$('#modalframe').attr('src',
+				'/helpdesk/gotoHDeskFromApp?strJSON=' + strJSON);
+		$('#myModalTSG').modal('show');
+	}
+
+	function gotoUserManuals() {
+		var subtab = 'aaIssuedDept';
+		if (subtab == 'dashboardDDO') {
+			$.ajax({
+				type : "GET",
+				url : "getUserManualList",
+				beforeSend : function() {
+					$('#userManualModalBS4 .modal-body').html('Loading..');
+				},
+				success : function(msg) {
+					$('#userManualModalBS4 .modal-body').html(msg);
+				}
+			});
+			$('#userManualModalBS4').modal('show');
+		} else {
+			$.ajax({
+				type : "GET",
+				url : "getUserManualList",
+				beforeSend : function() {
+					$('#userManualModal .modal-body').html('Loading..');
+				},
+				success : function(msg) {
+					$('#userManualModal .modal-body').html(msg);
+				}
+			});
+			$('#userManualModal').modal('show');
+		}
+		return false;
+	}
+	
+	function gotoUMDownload() {
+			$.ajax({
+				type : "GET",
+				url : "gotoUMDownload",
+				beforeSend : function() {
+					
+
+					$('#userManualModal .modal-body').html('Loading..');
+				},
+				success : function(msg) {
+					$('#userManualModal .modal-body').html(msg);
+				}
+			});
+			$('#userManualModal').modal('show');
+	}
+	
+	function gotoFeedbackForm() {
+		window.open("https://forms.gle/V2rio69ugYZS3zR68","_blank");
+	}
+</script>
+
+<script type="text/javascript">
+function gotoHelpDisk(hierarchyCode) {
+		var pageTitle = document.title;
+		var titleName = "Mr.";
+		var empName = "Assistant";
+		var lastName = "rdm";
+		if (lastName != null) {
+			var userName = titleName + ' ' + empName + ' ' + lastName;
+		} else {
+			var userName = titleName + ' ' + empName;
+		}
+		var seatName = "Assistant Department";
+		var controllingOffice = "Revenue and Disaster Management Department";
+		var seatUserAllotId = "18914";
+		var mobile = "9707133011";
+		var email = "";
+
+		var myJSON = {
+			"userName" : userName,
+			"seatName" : seatName,
+			"controllingOffice" : controllingOffice,
+			"seatUserAllotId" : seatUserAllotId,
+			"hierarchyCode" : hierarchyCode,
+			"pageTitle" : pageTitle,
+			"mobile" : mobile,
+			"email" : email,
+			"finassam" :'finassam'
+		};
+		var strJSON = encodeURIComponent(JSON.stringify(myJSON));
+		$('#modalframe').attr('src',
+				'/helpdesk/gotoHDeskFromApp?strJSON=' + strJSON);
+		$('#myModalTSG').modal('show');
+	}
+
+</script>
+
+<style>
+.btnhelpdesk-sm, .btnhelpdesk-group-sm>.btnhelpdesk {
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+.btnhelpdesk {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.custom-modal-body {
+	position: relative;
+	padding: 15px;
+}
+
+.custom-modal-content {
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.custom-modal-content {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: 0;
+}
+
+.custom-modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.custom-modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+
+.custom-modal-header {
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.custom-modal-header .close {
+	margin-top: -2px;
+}
+
+.custom-modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+}
+
+button.close {
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
+}
+
+.close {
+	float: right;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: 1;
+	filter: alpha(opacity = 20);
+}
+
+.custom-modal-dialog {
+	margin: 30px auto;
+}
+
+.custom-modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 5%;
+}
+
+.custom-modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.custom-modal-backdrop.in {
+	opacity: .5;
+	filter: alpha(opacity = 50);
+}
+
+.custom-modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+}
+</style>
+<!-- By Sujith -- For Help Desk --></td>
+		</tr>
+	</table>
+
+	<div class="modal fade centered-modal" id="surveyModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
