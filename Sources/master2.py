@@ -31,7 +31,7 @@ print(master_df)
 monthly_variables = ['total_tender_awarded_value',
                      'SOPD_tenders_awarded_value','SDRF_sanctions_awarded_value', 
                      'SDRF_tenders_awarded_value', 'RIDF_tenders_awarded_value', 'LTIF_tenders_awarded_value', 'CIDF_tenders_awarded_value',
-                      'Preparedness Measures_tenders_awarded_value', 'Immediate Measures_tenders_awarded_value', 'Others_tenders_awarded_value',
+                      'Preparedness Measures_tenders_awarded_value', 'Immediate Measures_tenders_awarded_value', 'Others_tenders_awarded_value','Repair and Restoration_tenders_awarded_value',
                       'Total_Animal_Washed_Away', 'Total_Animal_Affected',
                       'Population_affected_Total', 'Crop_Area',
                       'Male_Camp', 'Female_Camp', 'Children_Camp',
@@ -42,7 +42,8 @@ monthly_variables = ['total_tender_awarded_value',
                      'ndvi_rc', 'ndbi_rc',
                      'inundation_pct', 'riverlevel',
                      'total_expenditure_value','SOPD_expenditure_value',
-                     'SDRF_expenditure_value','Immediate Measures_expenditure_value','Others_expenditure_value','SOPD_expenditure_value', 'Repair and Restoration_expenditure_value'
+                     'SDRF_expenditure_value','Immediate Measures_expenditure_value','Others_expenditure_value','SOPD_expenditure_value', 'Repair and Restoration_expenditure_value',
+                     'Relief Camps','Relief Centers','Relief Inmates'
                      ]
 
 for variable in monthly_variables:

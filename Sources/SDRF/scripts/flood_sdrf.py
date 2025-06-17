@@ -5,7 +5,23 @@ import dateutil.parser
 import glob
 
 # Build file paths using os.path.join
-data_path = os.path.join(os.getcwd(), 'IDS-DRR-Assam', 'Sources', 'SDRF', 'data', 'all_extracted_data.csv')
+data_path = os.path.join(os.getcwd(), 'Sources', 'SDRF', 'data', 'all_extracted_data_v2.csv')
+
+flood_codes = ['2245-02-101-2621-000-32-01','2245-02-101-4385-000-32-01','2245-02-101-4703-000-32-01','2245-02-105-0000-000-32-01',
+'2245-02-106-0000-000-17-02',
+'2245-02-122-0999-000-17-05',
+'2245-02-122-1000-000-17-05',
+'2245-02-193-1001-000-17-05',
+'2245-80-800-0821-000-17-05',
+'2245-80-800-1360-000-17-05',
+'2245-80-800-1360-000-32-01',
+'2245-80-800-5004-000-17-05',
+'2245-80-800-4617-000-17-05',
+'2245-80-800-4616-000-14-99',
+'2245-80-800-4615-000-17-99',
+'2245-80-800-6313-000-17-05',
+'2245-80-800-6314-000-17-05'
+]
 
 # Flood Keywords
 POSITIVE_KEYWORDS = ['Flood', 'Embankment', 'embkt', 'Relief', 'Erosion', 'SDRF', 'Inundation', 'Hydrology',
@@ -24,6 +40,9 @@ def flood_filter(row):
     Returns a tuple of:
       (is_flood_tender, positive_keywords_dict, negative_keywords_dict)
     """
+    hoa_number = str(row.get('HOA_Number', ''))[:26]
+    if hoa_number in flood_codes:
+        return "True", str(populate_keyword_dict(POSITIVE_KEYWORDS)), str(populate_keyword_dict(NEGATIVE_KEYWORDS))
     positive_keywords_dict = populate_keyword_dict(POSITIVE_KEYWORDS)
     negative_keywords_dict = populate_keyword_dict(NEGATIVE_KEYWORDS)
     
@@ -59,6 +78,12 @@ sdrf_df = pd.read_csv(data_path)
 
 # Remove duplicate rows
 sdrf_df = sdrf_df.drop_duplicates()
+sdrf_df = sdrf_df[
+    sdrf_df['HOA_Number']
+        .astype(str)
+        .str[:26]                # first 26 characters
+        .isin(flood_codes)       # exact-match against your list
+].copy()
 
 # Apply flood_filter to every row and add the results as new columns
 flood_filter_tuples = sdrf_df.apply(flood_filter, axis=1)
@@ -206,5 +231,5 @@ sdrf_df['Response Type'] = [res[0] for res in response_classification]
 sdrf_df['Flood Response - Subhead'] = [res[1] for res in response_classification]
 
 # Write the output CSV using os.path.join
-output_path = os.path.join(os.getcwd(), 'IDS-DRR-Assam', 'Sources', 'SDRF', 'data', 'flood_expenditure.csv')
+output_path = os.path.join(os.getcwd(), 'Sources', 'SDRF', 'data', 'flood_expenditure_v2.csv')
 sdrf_df.to_csv(output_path, encoding='utf-8', index=False)
