@@ -4,6 +4,7 @@ import time
 import os
 import warnings
 from captcha import captcha
+import re
 import pdb
 from selenium.webdriver.common.by import By
 
@@ -16,9 +17,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import sys
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
+import pytesseract
 
-year = sys.argv[1]
-month = sys.argv[2]
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+year = "2025"#sys.argv[1]
+month = "3"#sys.argv[2]
 
 month_start = str(int(month)-1)
 month_end = str(int(month)-1)
@@ -34,25 +37,28 @@ if int(month)<10:
     month = '0'+str(month)
 folder = year+'_'+str(month)
 try:
-    os.mkdir(os.getcwd()+'/Sources/TENDERS/scripts/scraper/scraped_recent_tenders/'+folder)
-except:
-    sys.exit(0)
+    print(os.getcwd())
+    os.mkdir(os.getcwd()+r'/IDS-DRR-Assam/Sources/TENDERS/scripts/scraper/scraped_recent_tenders/'+folder)
+except FileExistsError:
+    pass
 
 try:
-    os.mkdir(os.getcwd()+'/Sources/TENDERS/scripts/scraper/scraped_recent_tenders/concatinated_csvs')
+    os.mkdir(os.getcwd()+r'/IDS-DRR-Assam/Sources/TENDERS/scripts/scraper/scraped_recent_tenders/concatinated_csvs')
 except:
     pass
 
-url = 'https://assamtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page'
+url = r'https://assamtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page'
+print(url)
 firefox_options = Options()
 firefox_options.headless = True
-service = Service('/snap/bin/firefox.geckodriver')
+#service=Service(r"D:\CivicDataLab_IDS-DRR\IDS-DRR_Github\IDS-DRR-Assam\Sources\TENDERS\scripts\scraper\chromedriver")
+service = Service(r"C:\Users\saura\anaconda3\Scripts\geckodriver.exe")
 #browser = WebDriver()
-
-os.chdir(os.getcwd()+"/Sources/TENDERS/scripts/scraper/scraped_recent_tenders")
+print(firefox_options)
+os.chdir(os.getcwd()+r"/IDS-DRR-Assam/Sources/TENDERS/scripts/scraper/scraped_recent_tenders")
 dict_tables_type = {"Bids List": "Vertical","Technical Bid Opening Summary":"Horizontal",
                    "Technical Evaluation Summary Details":"Horizontal",
-                    "Bid Opening Summary":"Horizontal",
+                   "Bid Opening Summary":"Horizontal",
                    "Finance Bid Opening Summary":"Horizontal",
                    "Financial Evaluation Bid List":"Vertical",
                    "Finance Evaluation Summary Details":"Horizontal",
@@ -61,7 +67,7 @@ dict_tables_type = {"Bids List": "Vertical","Technical Bid Opening Summary":"Hor
                    "Tender Revocation List":"Vertical",
                    "Corrigendum Details":"Vertical"}
 
-dict_tender_status = {'1': "To be Opened",
+dict_tender_status = {'1': "To be Opened Tenders",
                       '2': "Technical Bid Opening",
                       '3': "Technical Evaluation",
                       '4': "Financial Bid Opening",
@@ -70,14 +76,24 @@ dict_tender_status = {'1': "To be Opened",
                       '7': "Retender",
                       '8': "Cancelled"}
 
+def sanitize_filename(filename):
+    # Remove invalid characters: \ / : * ? " < > | (on Windows)
+    sanitized = re.sub(r'[<>:"/\\|?*₹,]', '', filename)
+    # Optionally replace spaces with underscores
+    sanitized = sanitized.replace(' ', '_')
+    return sanitized
+
+'''
 def captcha_input(xpath_image,xpath_input_text):
-    captcha_text = captcha(browser,xpath_image)
-    #pdb.set_trace()
+    #captcha_text = captcha(browser,xpath_image)
+    pdb.set_trace()
     captcha_input_element = SeleniumScrappingUtils.get_page_element(browser,xpath_input_text)
-    SeleniumScrappingUtils.input_text_box(browser, captcha_input_element,captcha_text)
-    button = browser.find_element(By.XPATH, "//*[@id='Search']")
+    #SeleniumScrappingUtils.input_text_box(browser, captcha_input_element,captcha_text)
+    #wait = WebDriverWait(browser, 10)
+    button = browser.find_element(By.XPATH, "//*[@id='Search']") 
     button.click()
     invalid_string = browser.find_elements(By.CLASS_NAME,"error")
+    print(invalid_string)
     if len(invalid_string)==0:
         pass
     else:
@@ -97,11 +113,36 @@ def captcha_input(xpath_image,xpath_input_text):
                 break
             else:
                 pass
+'''
+def captcha_input(xpath_image, xpath_input_text):
+    # 1) wait for the captcha <img> to load
+    img = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.XPATH, xpath_image))
+    )
+
+    # 2) give yourself time to read it and type it back
+    user_sol = input("🔒  Captcha is now visible in the browser.  Please type it here: ")
+
+    # 3) find the text‐box, clear & send your answer
+    captcha_box = SeleniumScrappingUtils.get_page_element(browser, xpath_input_text)
+    captcha_box.clear()
+    captcha_box.send_keys(user_sol)
+
+    # 4) click Search
+    browser.find_element(By.ID, "Search").click()
+
+    # 5) if it complains, let you retry
+    errs = browser.find_elements(By.CLASS_NAME, "error")
+    while errs and "Invalid Captcha!" in errs[0].text:
+        user_sol = input("⚠️  That didn’t work—please re-type the captcha: ")
+        captcha_box.clear()
+        captcha_box.send_keys(user_sol)
+        browser.find_element(By.ID, "Search").click()
+        errs = browser.find_elements(By.CLASS_NAME, "error")
 
 #Select tender status
-for tender_status_id in range(6,7):
+for tender_status_id in range(6,7): #AOC
     browser = webdriver.Firefox(service=service, options=firefox_options)
-
     browser.get(url)
     wait = WebDriverWait(browser, 10)  # Wait up to 3 seconds
     tender_status_id = str(tender_status_id)

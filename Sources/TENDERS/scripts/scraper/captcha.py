@@ -6,6 +6,8 @@ from scipy.ndimage.filters import gaussian_filter
 import os
 from selenium.webdriver.common.by import By
 
+#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 th1 = 140
 th2 = 140 # threshold after blurring 
 sig = 1.5 

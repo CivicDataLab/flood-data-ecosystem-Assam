@@ -71,8 +71,8 @@ for csv in csvs:
 
     # Removing tenders from certain departments that are not related to flood management.
     idea_frm_tenders_df = input_df[(input_df.is_flood_tender=='True')&
-                                    (~input_df.Department.isin(["Directorate of Agriculture and Assam Seed Corporation","Department of Handloom Textile and Sericulture"]))]
-
+                                    (~input_df.Department.isin(["Directorate of Agriculture and Assam Seed Corporation","Department of Handloom Textile and Sericulture"])) ]
+    idea_frm_tenders_df = idea_frm_tenders_df.loc[idea_frm_tenders_df['Status']=='Accepted-AOC']
     print('Number of flood related tenders filtered: ', idea_frm_tenders_df.shape[0])
     if idea_frm_tenders_df.shape[0]==0:
         continue

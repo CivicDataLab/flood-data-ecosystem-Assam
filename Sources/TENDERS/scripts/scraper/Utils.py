@@ -14,6 +14,14 @@ import shutil
 from urllib3.util import Retry
 import time
 import pdb
+import re
+
+def sanitize_filename(filename):
+    # Remove invalid characters: \ / : * ? " < > | (on Windows)
+    sanitized = re.sub(r'[<>:"/\\|?*₹,]', '', filename)
+    # Optionally replace spaces with underscores
+    sanitized = sanitized.replace(' ', '_')
+    return sanitized
 
 MAX_RELOADS = 3
 SLEEP_TIME = 5
@@ -57,7 +65,7 @@ class SeleniumScrappingUtils(object):
         '''
         Extracts vertical tables
         '''
-        with open(str(name_of_file)+".csv", 'w', newline='') as csvfile:
+        with open(str(name_of_file)+".csv", 'w', newline='', encoding="utf-8") as csvfile:
             wr = csv.writer(csvfile)
             for row in table_section.find_elements(By.CSS_SELECTOR,'tr')[skip_header_number:]:
                 wr.writerow([d.text for d in row.find_elements(By.CSS_SELECTOR,'td')])
@@ -65,13 +73,17 @@ class SeleniumScrappingUtils(object):
         '''
         Extracts horizontal tables
         '''
-        with open(str(name_of_file) + ".csv", 'w', newline='') as csvfile:
+        sanitized_name_of_file = sanitize_filename(name_of_file)
+
+        with open(str(sanitized_name_of_file) + ".csv", 'w', newline='', encoding="utf-8") as csvfile:
             wr = csv.writer(csvfile)
             for row in table_section.find_elements(By.CSS_SELECTOR,"tbody"):
                 try:
                      wr.writerow([d.text for d in row.find_elements(By.CSS_SELECTOR,'td:nth-of-type(2n+1)')[skip_header_number:]])
-                except:
-                    pdb.set_trace()    
+                except Exception as e:
+                    #pdb.set_trace()    
+                    print(f"Error processing row: {e}")
+                    continue
                 wr.writerow([d.text for d in row.find_elements(By.CSS_SELECTOR,'td:nth-of-type(2n+2)')])
                 
             
