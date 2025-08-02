@@ -38,12 +38,12 @@ if int(month)<10:
 folder = year+'_'+str(month)
 try:
     print(os.getcwd())
-    os.mkdir(os.getcwd()+r'/IDS-DRR-Assam/Sources/TENDERS/scripts/scraper/scraped_recent_tenders/'+folder)
+    os.mkdir(os.getcwd()+r'/Sources/TENDERS/scripts/scraper/scraped_recent_tenders/'+folder)
 except FileExistsError:
     pass
 
 try:
-    os.mkdir(os.getcwd()+r'/IDS-DRR-Assam/Sources/TENDERS/scripts/scraper/scraped_recent_tenders/concatinated_csvs')
+    os.mkdir(os.getcwd()+r'/Sources/TENDERS/scripts/scraper/scraped_recent_tenders/concatinated_csvs')
 except:
     pass
 
@@ -55,7 +55,7 @@ firefox_options.headless = True
 service = Service(r"C:\Users\saura\anaconda3\Scripts\geckodriver.exe")
 #browser = WebDriver()
 print(firefox_options)
-os.chdir(os.getcwd()+r"/IDS-DRR-Assam/Sources/TENDERS/scripts/scraper/scraped_recent_tenders")
+os.chdir(os.getcwd()+r"/Sources/TENDERS/scripts/scraper/scraped_recent_tenders")
 dict_tables_type = {"Bids List": "Vertical","Technical Bid Opening Summary":"Horizontal",
                    "Technical Evaluation Summary Details":"Horizontal",
                    "Bid Opening Summary":"Horizontal",
