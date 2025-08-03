@@ -219,9 +219,9 @@ if __name__ == "__main__":
     year = int(year)
 
     # IF the year is current year, specify start and end date
-    start_date = "2025-01-01"
-    end_date = "2025-03-31"
+    start_date = "2025-04-01"
+    end_date = "2025-07-31"
 
-    #download_data(year, start_date=start_date, end_date=end_date)
+    download_data(year, start_date=start_date, end_date=end_date)
     parse_and_format_data(year, start_date=start_date, end_date=end_date)
     retrieve_assam_revenue_circle_data(year)

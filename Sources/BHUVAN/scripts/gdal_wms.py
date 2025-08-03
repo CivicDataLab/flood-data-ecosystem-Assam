@@ -9,6 +9,38 @@ gdal.DontUseExceptions()
 path = os.getcwd() + "/Sources/BHUVAN/"
 
 date_strings = [
+    #2025June-July
+    "2025_13_07_18",
+    "2025_11_07_10",
+    "2025_08_07_06",
+    "2025_06_07_18",
+    "2025_05_07_18",
+    "2025_07_04_10",
+    "2025_03_07_10",
+    "2025_03_06_10",
+    "2025_28_06_11",
+    "2025_27_06_18",
+    "2025_26_06_06",
+    "2025_24_06_18",
+    "2025_19_06_18",
+    "2025_31_05_12_06",  # range from 31 May to 12 June
+    "2025_17_06_18",
+    "2025_17_06_10",
+    "2025_12_06_18",
+    "2025_12_06_10",
+    "2025_11_06_10",
+    "2025_10_06_11",
+    "2025_09_06_18",
+    "2025_09_06_06",
+    "2025_09_06_10",
+    "2025_08_06_06",
+    "2025_07_06_18",
+    "2025_06_06_06",
+    "2025_04_06_18",
+    "2025_03_06_06",
+    "2025_01_06_06",
+    #2024
+    '''
     "2024_04_07_18",
     "2024_03-04_07_06",
     "2024_03_07_06",
@@ -24,7 +56,7 @@ date_strings = [
     "2024_03_06_06",
     "2024_02_06_11",
     "2024_02_06_18",
-    "2024_31_05_18",
+    "2024_31_05_18",'''
 ]  # Sample date for assam - "2023_07_07_18"
 
 # Specify the state information to scrape data for.
@@ -37,7 +69,7 @@ for dates in date_strings:
     input_xml_path = path + "/data/inundation.xml"
     output_tiff_path = path + f"/data/tiffs/{dates}.tif"
 
-    layer_as = "flood%3Aas_2023_07_07_18"
+    layer_as = "flood%3Aas"
     bbox_as = "89.6922970,23.990548,96.0205936,28.1690311"
     url_cached = "https://bhuvan-ras2.nrsc.gov.in/mapcache"
     url_as = "https://bhuvan-gp1.nrsc.gov.in/bhuvan/wms"
@@ -47,7 +79,7 @@ for dates in date_strings:
         "gdal_translate",
         "-of",
         "WMS",
-        f"WMS:{url_as}?&LAYERS={layer_as}&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A4326&BBOX={bbox_as}",
+        f"WMS:{url_as}?&LAYERS={layer_as}_{dates}&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS=EPSG%3A4326&BBOX={bbox_as}",
         f"{path}/data/inundation.xml",
     ]
     subprocess.run(command)
