@@ -7,6 +7,9 @@ MissionAntyodaya2020_Assam.xlsx
 *.zip
 scraped_data.csv
 
+*.json
+*.csv
+
 #Don't ignore zip files in Map
 !Maps/*.zip
 
