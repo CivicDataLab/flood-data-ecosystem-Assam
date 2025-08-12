@@ -44,7 +44,7 @@ csvs = glob.glob(data_path+'*.csv')
 
 for csv in csvs:
     filename  = csv.split(r'/')[-1]
-    filename  = re.split(r'\\',csv)[-1]
+    #filename  = re.split(r'\\',csv)[-1]
     input_df = pd.read_csv(csv)
     
     # De-Duplication (Change the logic once the time of scraping is added in the input_df)
@@ -91,7 +91,7 @@ for csv in csvs:
                 monsoon = "Post-Monsoon"
         else:
             monsoon = "Post-Monsoon"
-        idea_frm_tenders_df.loc[index, "Season"] = monsoon
+        idea_frm_tenders_df.loc[index, "Season"] = monsoon # type: ignore
 
     # identify scheme related information
     schemes_identified = []
@@ -184,7 +184,7 @@ for csv in csvs:
                 preparedness_measures_dict[keyword] =  False
             elif response_type == "Others":
                 response_type = "Preparedness Measures"
-        idea_frm_tenders_df.loc[index, "Response Type"] = response_type
+        idea_frm_tenders_df.loc[index, "Response Type"] = response_type      
         
         if response_type == "Immediate Measures":
             sub_head_dict = {k: v for k, v in immedidate_measures_dict.items() if v is not False}
@@ -194,7 +194,7 @@ for csv in csvs:
             idea_frm_tenders_df.loc[index, "Flood Response - Subhead"] = str(sub_head_dict) 
         elif response_type == "Preparedness Measures":
             sub_head_dict = {k: v for k, v in preparedness_measures_dict.items() if v is not False}
-            idea_frm_tenders_df.loc[index, "Flood Response - Subhead"] = str(sub_head_dict)  
+            idea_frm_tenders_df.loc[index, "Flood Response - Subhead"] = str(sub_head_dict)   # type: ignore
 
     idea_frm_tenders_df.to_csv(os.getcwd()+r'/Sources/TENDERS/data/flood_tenders/'+filename,
                             encoding='utf-8',

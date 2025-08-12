@@ -8,7 +8,7 @@ idea_frm_tenders_df = pd.read_csv(os.getcwd()+'/Sources/TENDERS/data/flood_tende
 
 #ASSAM_VILLAGES = gpd.read_file(os.getcwd()+'/Maps/assam_village_complete_with_revenueCircle_district_35_oct2022.geojson',
  #                              driver='GeoJSON')
-ASSAM_VILLAGES = pd.read_csv(os.getcwd()+r'\Maps\Extra\ASSAM_VILLAGES_RC_DISTRICT_MAPPING.csv', encoding='utf-8').dropna()
+ASSAM_VILLAGES = pd.read_csv(os.getcwd()+r'/Maps/Extra/ASSAM_VILLAGES_RC_DISTRICT_MAPPING.csv', encoding='utf-8').dropna()
 
 #Clean village names
 assam_villages = ASSAM_VILLAGES["VILNAM_SOI"]

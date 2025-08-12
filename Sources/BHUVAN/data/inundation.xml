@@ -2,7 +2,23 @@
   <Service name="WMS">
     <Version>1.1.1</Version>
     <ServerUrl>https://bhuvan-gp1.nrsc.gov.in/bhuvan/wms?&amp;SERVICE=WMS</ServerUrl>
-    <Layers>flood%3Aas_2023_07_07_18</Layers>
+    <Layers>flood%3Aas_
+    "2024_04_07_18",
+    "2024_03-04_07_06",
+    "2024_03_07_06",
+    "2024_01_07_18",
+    "2024_26_06_11",
+    "2024_20_06_06",
+    "2024_17_06_18",
+    "2024_12_06_18",
+    "2024_08_06_06",
+    "2024_07_06_11",
+    "2024_06_06_11",
+    "2024_03_06_18",
+    "2024_03_06_06",
+    "2024_02_06_11",
+    "2024_02_06_18",
+    "2024_31_05_18",</Layers>
     <SRS>EPSG%3A4326</SRS>
     <ImageFormat>image%2Fpng</ImageFormat>
     <Transparent>TRUE</Transparent>
