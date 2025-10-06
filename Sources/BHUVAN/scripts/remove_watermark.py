@@ -19,6 +19,7 @@ for file in wm_removed_files:
     dates_watermark_removed.append(file.split(r"/")[-1].split("_w")[0])
 
 for file in files:
+    
     date_string = file.split(r"/")[-1][:-4]
     if date_string in dates_watermark_removed:
         continue
