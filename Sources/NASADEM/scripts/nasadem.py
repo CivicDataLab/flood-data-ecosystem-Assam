@@ -14,8 +14,6 @@ ee.Initialize(credentials)
 cwd = os.getcwd()
 assam_rc_gdf = gpd.read_file(cwd+r'\Maps\Geojson\assam_rc_2024-11.geojson')
 
-
-
 assam_rcs = ee.FeatureCollection("projects/ee-idsdrr/assets/assam_rc_180")
 geometry = assam_rcs.geometry() 
 
