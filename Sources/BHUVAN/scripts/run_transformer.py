@@ -1,43 +1,25 @@
 import glob
 import os
 import subprocess
-from datetime import date, timedelta
 
 cwd = os.getcwd()
-# print(cwd)
-path = os.getcwd() + "/Sources/BHUVAN/"
-script_path = cwd + "/Sources/BHUVAN/scripts/transformer.py"
+path = os.path.join(cwd, "Sources/BHUVAN/")
+script_path = os.path.join(cwd, "Sources/BHUVAN/scripts/transformer.py")
+PY = "/Users/stephensmathew/anaconda3/envs/flood_env/bin/python"
+
 print(path)
-for year in [2024]:
+for year in [2025]:
     print(year)
     year = str(year)
-    for month in [
-        "01",
-        "02",
-        "03",
-        "04",
-        "05",
-        "06",
-        "07",
-        "08",
-        "09",
-        "10",
-        "11",
-        "12",
-    ]:
-        files1 = glob.glob(
-            path + "data/tiffs/removed_watermarks/" + year + "_??_" + month + "*.tif"
-        )
-        files2 = glob.glob(
-            path + "data/tiffs/removed_watermarks/" + year + "_??-??_" + month + "*.tif"
-        )
-        # files3 = glob.glob(
-        #     path + "data/tiffs/removed_watermarks/" + year + "_??_??_" + month + "*.tif"
-        # )
+    for month in ["06","07","08","09"]:
+        files1 = glob.glob(path + f"data/tiffs/removed_watermarks/{year}_??_{month}*.tif")
+        files2 = glob.glob(path + f"data/tiffs/removed_watermarks/{year}_??-??_{month}*.tif")
         files = files1 + files2
-        if len(files) == 0:
+        if not files:
             print(f"No files for the month {month}")
             continue
-        else:
-            print("Number of images:", len(files))
-            subprocess.call(["python3", script_path, year, month])
+
+        print("Number of images:", len(files))
+        subprocess.run([PY, script_path, year, month],
+            check=True
+        )
