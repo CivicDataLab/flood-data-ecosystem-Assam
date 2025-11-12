@@ -12,10 +12,11 @@ from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
 
-sdrf = pd.read_csv(r'D:\CivicDataLab_IDS-DRR\IDS-DRR_Github\Deployment\flood-data-ecosystem-Assam\Sources\TENDERS\data\SDRF\SEC\45th to 50th SEC - Summary.csv')
-rc_gdf = gpd.read_file(r'D:\CivicDataLab_IDS-DRR\IDS-DRR_Github\Deployment\flood-data-ecosystem-Assam\Maps\Geojson\assam_rc_2024-11.geojson')
+sdrf = pd.read_csv(r'Sources/TENDERS/data/SDRF/SEC/45th to 50th SEC - Summary.csv')
+sdrf_51_53 = pd.read_csv(r'Sources/TENDERS/data/SDRF/SEC/extracted/51_to_53rd_SEC_flood_related_allocations_aggregated.csv')
+rc_gdf = gpd.read_file(r'Maps/Geojson/assam_rc_2024-11.geojson')
 
-output_dir = r'D:\CivicDataLab_IDS-DRR\IDS-DRR_Github\IDS-DRR-Assam\Sources\TENDERS\data\variables\SDRF_sanctions_awarded_value'
+output_dir = r'Sources/TENDERS/data/variables/SDRF_sanctions_awarded_value'
 
 
 sdrf = sdrf.rename(columns={'District ':'District'})
@@ -47,6 +48,11 @@ melted_df = melted_df.drop(columns=['SDRF Column'])
 melted_df = melted_df[['District','timeperiod', 'SDRF funding']]
 melted_df['SDRF funding'] = melted_df['SDRF funding']*100000
 
+# Standardize district names to title case before concatenating
+melted_df['District'] = melted_df['District'].str.lower()
+sdrf_51_53['District'] = sdrf_51_53['District'].str.lower()
+
+melted_df = pd.concat([melted_df, sdrf_51_53], ignore_index=True)
 
 def fuzzy_merge(df_1, df_2, key1, key2, threshold=90, limit=2):
     """
@@ -70,7 +76,6 @@ def fuzzy_merge(df_1, df_2, key1, key2, threshold=90, limit=2):
 
 
 fuzzymatch = fuzzy_merge(rc_gdf, melted_df, 'dtname', 'District', threshold=80,limit=1)
-
 # Step 1: Merge df1 with the revenue_circle_data
 merged_df = pd.merge(melted_df,fuzzymatch, left_on='District', right_on='matches')
 
@@ -81,23 +86,24 @@ revenue_circle_count.columns = ['matches', 'num_revenue_circles']
 # Step 3: Merge the revenue circle count into the merged dataframe
 merged_df = merged_df.merge(revenue_circle_count, on='matches')
 
-# Step 4: Divide the columns 'totalHousesFullyDamaged' and 'livestockDetails' by the number of revenue circles
+# Step 4: Divide the columns 'SDRF_RC' by the number of revenue circles
 merged_df['SDRF_RC'] = merged_df['SDRF funding'] / merged_df['num_revenue_circles']
 
 # Step 5: Drop the unnecessary columns if needed
 interpolated = merged_df.drop(columns=['dtname', 'num_revenue_circles','geometry','HQ','revenue_cr'])
 interpolated['District'] = interpolated['District'].str.upper()
 interpolated = interpolated.rename(columns={'District':'DISTRICT'})
-sdrf = interpolated.to_csv(r'D:\CivicDataLab_IDS-DRR\IDS-DRR_Github\Deployment\flood-data-ecosystem-Assam\Sources\TENDERS\data\SDRF\SEC\SEC_SDRF.csv')
-
+interpolated.to_csv(r'Sources/TENDERS/data/SDRF/SEC/SEC_SDRF.csv')
+sdrf_new = interpolated.copy()
+print(sdrf_new.columns)
 # Step 1: Ensure the output directory exists
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # Step 2: Group the data by timeperiod
-for timeperiod in sdrf['timeperiod'].unique():
+for timeperiod in sdrf_new['timeperiod'].unique():
     # Step 3: Filter the DataFrame for the specific timeperiod and extract the relevant columns
-    filtered_df = sdrf[sdrf['timeperiod'] == timeperiod][['object_id', 'SDRF_RC']]
+    filtered_df = sdrf_new[sdrf_new['timeperiod'] == timeperiod][['object_id', 'SDRF_RC']]
     
     # Step 4: Rename the 'SDRF_RC' column to 'SDRF_sanctions_awarded_value'
     filtered_df = filtered_df.rename(columns={'SDRF_RC': 'SDRF_sanctions_awarded_value'})
