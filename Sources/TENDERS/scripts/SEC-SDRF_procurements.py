@@ -13,7 +13,7 @@ from fuzzywuzzy import process
 
 
 sdrf = pd.read_csv(r'Sources/TENDERS/data/SDRF/SEC/45th to 50th SEC - Summary.csv')
-sdrf_51_53 = pd.read_csv(r'Sources/TENDERS/data/SDRF/SEC/extracted/51_to_53rd_SEC_flood_related_allocations_aggregated.csv')
+sdrf_51_54 = pd.read_csv(r'Sources/TENDERS/data/SDRF/SEC/extracted/51_to_54th_SEC_flood_related_allocations_aggregated.csv')
 rc_gdf = gpd.read_file(r'Maps/Geojson/assam_rc_2024-11.geojson')
 
 output_dir = r'Sources/TENDERS/data/variables/SDRF_sanctions_awarded_value'
