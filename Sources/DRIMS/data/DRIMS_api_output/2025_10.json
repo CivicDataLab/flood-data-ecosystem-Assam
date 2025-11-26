@@ -1,0 +1,2071 @@
+{
+    "cwcDetails": {
+        "riversAtWarningLevel": "Dhansiri (S) (Numaligarh), Brahmaputra (Dibrugarh), Brahmaputra (Neamatighat), Beki (Road Bridge)",
+        "riversAtDangerLevel": "Beki (Road Bridge), Sankosh (Golokganj)",
+        "riversAtFloodLevel": "Katakhal (MATIZURI (FFS))"
+    },
+    "affectedDistricts": {
+        "total": 5,
+        "districts": "Sivasagar, Jorhat, Dhemaji, Kokrajhar, Cachar",
+        "districtCodes": "29, 17, 05, 23, 03"
+    },
+    "affectedRevenueCircles": {
+        "total": 6,
+        "districts": [
+            {
+                "district": "Cachar",
+                "districtCode": "03",
+                "total": 1,
+                "details": "Udharbond"
+            },
+            {
+                "district": "Dhemaji",
+                "districtCode": "05",
+                "total": 1,
+                "details": "Sissiborgaon"
+            },
+            {
+                "district": "Jorhat",
+                "districtCode": "17",
+                "total": 2,
+                "details": "Teok, Jorhat West"
+            },
+            {
+                "district": "Kokrajhar",
+                "districtCode": "23",
+                "total": 1,
+                "details": "Gossaigaon"
+            },
+            {
+                "district": "Sivasagar",
+                "districtCode": "29",
+                "total": 1,
+                "details": "Amguri"
+            }
+        ]
+    },
+    "affectedVillages": [
+        {
+            "total": 5,
+            "district": "Sivasagar",
+            "districtCode": "29",
+            "details": "(Amguri | 5)"
+        },
+        {
+            "total": 9,
+            "district": "Jorhat",
+            "districtCode": "17",
+            "details": "(Teok | 6), (Jorhat West | 3)"
+        },
+        {
+            "total": 8,
+            "district": "Dhemaji",
+            "districtCode": "05",
+            "details": "(Sissiborgaon | 8)"
+        },
+        {
+            "total": 7,
+            "district": "Kokrajhar",
+            "districtCode": "23",
+            "details": "(Gossaigaon | 7)"
+        },
+        {
+            "total": 1,
+            "district": "Cachar",
+            "districtCode": "03",
+            "details": "(Udharbond | 1)"
+        }
+    ],
+    "affectedPopulation": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Bongaigaon",
+            "districtCode": "08",
+            "details": "(Manikpur | Population Affected: 0 | Crop Area: 0), (Srijangram | Population Affected: 0 | Crop Area: 0), (Bongaigaon | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 521,
+            "totalMale": 178,
+            "totalFemale": 192,
+            "totalChildren": 151,
+            "totalCropArea": 0,
+            "district": "Cachar",
+            "districtCode": "03",
+            "details": "(Udharbond | Population Affected: 521 | Crop Area: 0)"
+        },
+        {
+            "total": 3203,
+            "totalMale": 1320,
+            "totalFemale": 1125,
+            "totalChildren": 758,
+            "totalCropArea": 0,
+            "district": "Dhemaji",
+            "districtCode": "05",
+            "details": "(Gogamukh | Population Affected: 0 | Crop Area: 0), (Sissiborgaon | Population Affected: 3203 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Goalpara",
+            "districtCode": "13",
+            "details": "(Balijana | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 0,
+            "district": "Golaghat",
+            "districtCode": "14",
+            "details": "(Golaghat | Population Affected: 0 | Crop Area: 0)"
+        },
+        {
+            "total": 2537,
+            "totalMale": 921,
+            "totalFemale": 890,
+            "totalChildren": 726,
+            "totalCropArea": 586,
+            "district": "Jorhat",
+            "districtCode": "17",
+            "details": "(Teok | Population Affected: 2537 | Crop Area: 567), (Jorhat West | Population Affected: 0 | Crop Area: 19)"
+        },
+        {
+            "total": 1276,
+            "totalMale": 512,
+            "totalFemale": 447,
+            "totalChildren": 317,
+            "totalCropArea": 12.33,
+            "district": "Kokrajhar",
+            "districtCode": "23",
+            "details": "(Gossaigaon | Population Affected: 1276 | Crop Area: 12.33)"
+        },
+        {
+            "total": 549,
+            "totalMale": 218,
+            "totalFemale": 239,
+            "totalChildren": 92,
+            "totalCropArea": 0,
+            "district": "Sivasagar",
+            "districtCode": "29",
+            "details": "(Amguri | Population Affected: 549 | Crop Area: 0)"
+        }
+    ],
+    "reliefCampsAndCenters": [
+        {
+            "total": 0,
+            "district": "Bongaigaon",
+            "reliefCamps": "(Manikpur | 0), (Srijangram | 0), (Bongaigaon | 0)",
+            "reliefCenters": "(Manikpur | 0), (Srijangram | 0), (Bongaigaon | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Cachar",
+            "reliefCamps": "(Udharbond | 0)",
+            "reliefCenters": "(Udharbond | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Dhemaji",
+            "reliefCamps": "(Gogamukh | 0), (Sissiborgaon | 0)",
+            "reliefCenters": "(Gogamukh | 0), (Sissiborgaon | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Goalpara",
+            "reliefCamps": "(Balijana | 0)",
+            "reliefCenters": "(Balijana | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 0,
+            "district": "Golaghat",
+            "reliefCamps": "(Golaghat | 0)",
+            "reliefCenters": "(Golaghat | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        },
+        {
+            "total": 7,
+            "district": "Jorhat",
+            "reliefCamps": "(Teok | 0), (Jorhat West | 0)",
+            "reliefCenters": "(Teok | 4), (Jorhat West | 3)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 7
+        },
+        {
+            "total": 2,
+            "district": "Kokrajhar",
+            "reliefCamps": "(Gossaigaon | 0)",
+            "reliefCenters": "(Gossaigaon | 2)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 2
+        },
+        {
+            "total": 1,
+            "district": "Sivasagar",
+            "reliefCamps": "(Amguri | 0)",
+            "reliefCenters": "(Amguri | 1)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 1
+        }
+    ],
+    "campInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Bongaigaon",
+            "details": "(Manikpur | 0), (Srijangram | 0), (Bongaigaon | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Cachar",
+            "details": "(Udharbond | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Dhemaji",
+            "details": "(Gogamukh | 0), (Sissiborgaon | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Goalpara",
+            "details": "(Balijana | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Golaghat",
+            "details": "(Golaghat | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Jorhat",
+            "details": "(Teok | 0), (Jorhat West | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Kokrajhar",
+            "details": "(Gossaigaon | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Sivasagar",
+            "details": "(Amguri | 0)"
+        }
+    ],
+    "nonCampInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Bongaigaon",
+            "details": "(Manikpur | 0), (Srijangram | 0), (Bongaigaon | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Cachar",
+            "details": "(Udharbond | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Dhemaji",
+            "details": "(Gogamukh | 0), (Sissiborgaon | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Goalpara",
+            "details": "(Balijana | 0)"
+        },
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Golaghat",
+            "details": "(Golaghat | 0)"
+        },
+        {
+            "total": 2537,
+            "totalMale": 921,
+            "totalFemale": 890,
+            "totalChildren": 726,
+            "totalBigAnimal": 5748,
+            "totalSmallAnimal": 1506,
+            "totalPoultryAnimal": 0,
+            "district": "Jorhat",
+            "details": "(Teok | 2537), (Jorhat West | 0)"
+        },
+        {
+            "total": 1103,
+            "totalMale": 475,
+            "totalFemale": 361,
+            "totalChildren": 267,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Kokrajhar",
+            "details": "(Gossaigaon | 1103)"
+        },
+        {
+            "total": 268,
+            "totalMale": 93,
+            "totalFemale": 107,
+            "totalChildren": 68,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Sivasagar",
+            "details": "(Amguri | 268)"
+        }
+    ],
+    "hllDetails": {
+        "confirmed": [
+            {
+                "district": "Sivasagar",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Amguri | 0)"
+            },
+            {
+                "district": "Jorhat",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Teok | 0), (Jorhat West | 0)"
+            },
+            {
+                "district": "Golaghat",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Golaghat | 0)"
+            },
+            {
+                "district": "Dhemaji",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Gogamukh | 0), (Sissiborgaon | 0)"
+            },
+            {
+                "district": "Kokrajhar",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Gossaigaon | 0)"
+            },
+            {
+                "district": "Cachar",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Udharbond | 0)"
+            },
+            {
+                "district": "Bongaigaon",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Manikpur | 0), (Srijangram | 0), (Bongaigaon | 0)"
+            },
+            {
+                "district": "Goalpara",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Balijana | 0)"
+            }
+        ],
+        "missing": [
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Amguri | 0)"
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Teok | 0), (Jorhat West | 0)"
+            },
+            {
+                "district": "Golaghat",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Golaghat | 0)"
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Gogamukh | 0), (Sissiborgaon | 0)"
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Gossaigaon | 0)"
+            },
+            {
+                "district": "Cachar",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Udharbond | 0)"
+            },
+            {
+                "district": "Bongaigaon",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Manikpur | 0), (Srijangram | 0), (Bongaigaon | 0)"
+            },
+            {
+                "district": "Goalpara",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Balijana | 0)"
+            }
+        ]
+    },
+    "livestocksDetails": {
+        "affected": [
+            {
+                "district": "Bongaigaon",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Cachar",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Goalpara",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Golaghat",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Jorhat",
+                "noLaBig": 5748,
+                "noLaSmall": 1506,
+                "noLaPoultry": 0,
+                "total": 7254
+            },
+            {
+                "district": "Kokrajhar",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Sivasagar",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            }
+        ],
+        "washedAway": [
+            {
+                "district": "Bongaigaon",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Cachar",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Goalpara",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Golaghat",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Jorhat",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            },
+            {
+                "district": "Sivasagar",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            }
+        ]
+    },
+    "houseDamagedDetails": {
+        "damage": [
+            {
+                "district": "Sivasagar",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Jorhat",
+                "noHdFullyKuccha": 2,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 1,
+                "totalFully": 2,
+                "totalPartially": 1
+            },
+            {
+                "district": "Golaghat",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Cachar",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Bongaigaon",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            },
+            {
+                "district": "Goalpara",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            }
+        ],
+        "otherDamage": [
+            {
+                "district": "Sivasagar",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Jorhat",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Golaghat",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Dhemaji",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Cachar",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Bongaigaon",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            },
+            {
+                "district": "Goalpara",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            }
+        ]
+    },
+    "rescueOperationDetails": [
+        {
+            "district": "Bongaigaon",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Cachar",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Dhemaji",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Goalpara",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Golaghat",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Jorhat",
+            "agencies": "Fire & Emergency Services (F&ES)",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 4,
+            "totalBoatsDeployed": 1,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Kokrajhar",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        },
+        {
+            "district": "Sivasagar",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        }
+    ],
+    "reliefDistributionDetails": {
+        "reliefData": [
+            {
+                "district": "Bongaigaon",
+                "rice": 0,
+                "dal": 0,
+                "salt": 0,
+                "mOil": 0,
+                "cattleFeedGreenFooder": 0,
+                "cattleFeedWheatBran": 0,
+                "cattleFeedRiceBran": 0
+            },
+            {
+                "district": "Cachar",
+                "rice": 0,
+                "dal": 0,
+                "salt": 0,
+                "mOil": 0,
+                "cattleFeedGreenFooder": 0,
+                "cattleFeedWheatBran": 0,
+                "cattleFeedRiceBran": 0
+            },
+            {
+                "district": "Dhemaji",
+                "rice": 0,
+                "dal": 0,
+                "salt": 0,
+                "mOil": 0,
+                "cattleFeedGreenFooder": 0,
+                "cattleFeedWheatBran": 0,
+                "cattleFeedRiceBran": 0
+            },
+            {
+                "district": "Goalpara",
+                "rice": 0,
+                "dal": 0,
+                "salt": 0,
+                "mOil": 0,
+                "cattleFeedGreenFooder": 0,
+                "cattleFeedWheatBran": 0,
+                "cattleFeedRiceBran": 0
+            },
+            {
+                "district": "Golaghat",
+                "rice": 0,
+                "dal": 0,
+                "salt": 0,
+                "mOil": 0,
+                "cattleFeedGreenFooder": 0,
+                "cattleFeedWheatBran": 0,
+                "cattleFeedRiceBran": 0
+            },
+            {
+                "district": "Jorhat",
+                "rice": 41.31,
+                "dal": 7.62,
+                "salt": 2.29,
+                "mOil": 228.33,
+                "cattleFeedGreenFooder": 0,
+                "cattleFeedWheatBran": 202.56,
+                "cattleFeedRiceBran": 0
+            },
+            {
+                "district": "Kokrajhar",
+                "rice": 6.084,
+                "dal": 1.103,
+                "salt": 0.3309,
+                "mOil": 33.09,
+                "cattleFeedGreenFooder": 0,
+                "cattleFeedWheatBran": 0,
+                "cattleFeedRiceBran": 0
+            },
+            {
+                "district": "Sivasagar",
+                "rice": 4.416,
+                "dal": 0.804,
+                "salt": 0.2412,
+                "mOil": 0,
+                "cattleFeedGreenFooder": 0,
+                "cattleFeedWheatBran": 0,
+                "cattleFeedRiceBran": 0
+            }
+        ],
+        "otherReliefData": [
+            {
+                "district": "Bongaigaon",
+                "babyFoodLiquid": "",
+                "babyFoodSolid": "",
+                "otherItems": ""
+            },
+            {
+                "district": "Cachar",
+                "babyFoodLiquid": "",
+                "babyFoodSolid": "",
+                "otherItems": ""
+            },
+            {
+                "district": "Dhemaji",
+                "babyFoodLiquid": "",
+                "babyFoodSolid": "",
+                "otherItems": ""
+            },
+            {
+                "district": "Goalpara",
+                "babyFoodLiquid": "",
+                "babyFoodSolid": "",
+                "otherItems": ""
+            },
+            {
+                "district": "Golaghat",
+                "babyFoodLiquid": "",
+                "babyFoodSolid": "",
+                "otherItems": ""
+            },
+            {
+                "district": "Jorhat",
+                "babyFoodLiquid": "0-L, 0-Kg",
+                "babyFoodSolid": "0-Kg",
+                "otherItems": "Mineral Water-6135-Ltr."
+            },
+            {
+                "district": "Kokrajhar",
+                "babyFoodLiquid": "0-L",
+                "babyFoodSolid": "0-Kg",
+                "otherItems": "Cheera-6084-Kg, Juggery/Gur-110.3-Kg"
+            },
+            {
+                "district": "Sivasagar",
+                "babyFoodLiquid": "0-L",
+                "babyFoodSolid": "0-Kg",
+                "otherItems": "Candle-65-Pcs, Mosquito Coil-33-Pck."
+            }
+        ]
+    },
+    "infDamageDetails": {
+        "embBreached": [
+            {
+                "district": "Bongaigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Manikpur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Srijangram | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Bongaigaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Cachar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Udharbond | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gogamukh | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sissiborgaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Goalpara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Balijana | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Golaghat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Golaghat | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Teok | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Jorhat West | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gossaigaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Amguri | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "embAffected": [
+            {
+                "district": "Bongaigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Manikpur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Srijangram | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Bongaigaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Cachar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Udharbond | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gogamukh | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sissiborgaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Goalpara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Balijana | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Golaghat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Golaghat | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Teok | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Jorhat West | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gossaigaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Amguri | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "roadAffected": [
+            {
+                "district": "Bongaigaon",
+                "total": 13,
+                "details": [
+                    {
+                        "block": "(Manikpur | 6)",
+                        "details": [
+                            {
+                                "id": 57032,
+                                "type": "road",
+                                "name": "Old NT to Jhawbaari via Moukhowa village",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Moukhowa",
+                                "location": "Moukhowa",
+                                "latitude": 26.456229,
+                                "longitude": 90.818417,
+                                "remarks": "Side berm eroded and hard crust damaged at various location from Ch. 1 km to Ch. 4 KM. as per report received from PWRD, Dated 08.10.2025",
+                                "createdAt": "2025-10-14T09:15:11.467Z",
+                                "updatedAt": "2025-10-14T09:15:11.467Z"
+                            },
+                            {
+                                "id": 57033,
+                                "type": "road",
+                                "name": "Kurshamari to Goraimari Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Goraimari",
+                                "location": "Goraimari",
+                                "latitude": 26.53491,
+                                "longitude": 90.804989,
+                                "remarks": "Side berm eroded and hard crust damaged at various location from Ch 1 km to 7.70 km",
+                                "createdAt": "2025-10-14T09:15:11.469Z",
+                                "updatedAt": "2025-10-14T09:15:11.469Z"
+                            },
+                            {
+                                "id": 57031,
+                                "type": "road",
+                                "name": "Jhawbari Awlaguri to Solmaari road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Jhawbari",
+                                "location": "Jhawbari",
+                                "latitude": 26.406747,
+                                "longitude": 90.827167,
+                                "remarks": "Side berm eroded and hard crust damaged at various location from Ch. 1 km to Ch. 6 KM. as per report received from PWRD, Dated 08.10.2025",
+                                "createdAt": "2025-10-14T09:15:11.464Z",
+                                "updatedAt": "2025-10-14T09:15:11.464Z"
+                            },
+                            {
+                                "id": 57030,
+                                "type": "road",
+                                "name": "NH31 to Nagarjhar Sarodiya Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Nagarjhar",
+                                "location": "Nagarjhar",
+                                "latitude": 26.467589,
+                                "longitude": 90.746843,
+                                "remarks": "Side berm eroded and hard crust damaged at various location from Ch. 1 km to Ch. 6.80 KM. as per report received from PWRD, Dated 08.10.2025",
+                                "createdAt": "2025-10-14T09:15:11.461Z",
+                                "updatedAt": "2025-10-14T09:15:11.461Z"
+                            },
+                            {
+                                "id": 57029,
+                                "type": "road",
+                                "name": "NH 31 to Silkhagiri Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Silghagri",
+                                "location": "Silkhagiri",
+                                "latitude": 26.438695,
+                                "longitude": 90.744142,
+                                "remarks": "Side berm eroded and hard crust damaged at various location from Ch. 1 km to Ch. 4.80 KM. as per report received from PWRD, Dated 08.10.2025",
+                                "createdAt": "2025-10-14T09:15:11.459Z",
+                                "updatedAt": "2025-10-14T09:15:11.459Z"
+                            },
+                            {
+                                "id": 57028,
+                                "type": "road",
+                                "name": "Dangaigaon Kirtanpara Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Manikpur",
+                                "location": "Dagaigaon",
+                                "latitude": 26.458634,
+                                "longitude": 90.730219,
+                                "remarks": "Side berm eroded and bridge approach damaged various location from Ch. 1 km to Ch. 8.50 km. as per report received from PWRD, Dated 08.10.2025",
+                                "createdAt": "2025-10-14T09:15:11.457Z",
+                                "updatedAt": "2025-10-14T09:15:11.457Z"
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(Srijangram | 1)",
+                        "details": [
+                            {
+                                "id": 57027,
+                                "type": "road",
+                                "name": "NH17 to Kakaijana Ravapara Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Kakaijana Pt-I",
+                                "location": "Kakaijana Ravapara",
+                                "latitude": 26.429311,
+                                "longitude": 90.655379,
+                                "remarks": "SPT Br No 1/1and 1/2 are partially damaged. as per report received from PWRD, Dated 8.10.2025",
+                                "createdAt": "2025-10-14T08:49:01.310Z",
+                                "updatedAt": "2025-10-14T08:49:01.310Z"
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(Bongaigaon | 6)",
+                        "details": [
+                            {
+                                "id": 57025,
+                                "type": "road",
+                                "name": "Betbari Kashidobaraod",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Betbari",
+                                "location": "Betbari",
+                                "latitude": 26.426035,
+                                "longitude": 90.594255,
+                                "remarks": "Shoulder Damaged.as per report received from PWRD, dated 8.10.2025",
+                                "createdAt": "2025-10-14T08:39:22.004Z",
+                                "updatedAt": "2025-10-14T08:39:22.004Z"
+                            },
+                            {
+                                "id": 57024,
+                                "type": "road",
+                                "name": "Chaprakata SSB Firing Range Approach Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Chaparakata Pt-I",
+                                "location": "Chaparakata",
+                                "latitude": 26.474771,
+                                "longitude": 90.599412,
+                                "remarks": "Pothole  and Water logging. as per report received from PWRD, dated 10.10.2025",
+                                "createdAt": "2025-10-14T08:39:22.002Z",
+                                "updatedAt": "2025-10-14T08:39:22.002Z"
+                            },
+                            {
+                                "id": 57023,
+                                "type": "road",
+                                "name": "SH2 to Nigamghola Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Majgaon Nigamghola",
+                                "location": "Majgaon",
+                                "latitude": 26.413395,
+                                "longitude": 90.572646,
+                                "remarks": "Shoulder Damaged.as per report received from PWRD, dated 8.10.2025",
+                                "createdAt": "2025-10-14T08:39:22.000Z",
+                                "updatedAt": "2025-10-14T08:39:22.000Z"
+                            },
+                            {
+                                "id": 57022,
+                                "type": "road",
+                                "name": "SH2 at Buniadi Chowk to Betbari road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Betbari",
+                                "location": "Betbari",
+                                "latitude": 26.444465,
+                                "longitude": 90.568694,
+                                "remarks": "Pothole  and Water logging. as per report received from PWRD, dated 8.10.2025",
+                                "createdAt": "2025-10-14T08:39:21.998Z",
+                                "updatedAt": "2025-10-14T08:39:21.998Z"
+                            },
+                            {
+                                "id": 57021,
+                                "type": "road",
+                                "name": "Bageswari Temple to Chitagaon Road ( Link road)",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Chitkagaon",
+                                "location": "BT Road",
+                                "latitude": 26.466947,
+                                "longitude": 90.569012,
+                                "remarks": "Shoulder Damaged.as per report received from PWRD, dated 8.10.2025",
+                                "createdAt": "2025-10-14T08:39:21.996Z",
+                                "updatedAt": "2025-10-14T08:39:21.996Z"
+                            },
+                            {
+                                "id": 57020,
+                                "type": "road",
+                                "name": "Ulubari Bhakharapara Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Ulubari",
+                                "location": "Ulubari",
+                                "latitude": 26.44004,
+                                "longitude": 90.571327,
+                                "remarks": "Shoulder Damaged.as per report received from PWRD, dated 8.10.2025",
+                                "createdAt": "2025-10-14T08:39:21.995Z",
+                                "updatedAt": "2025-10-14T08:39:21.995Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Cachar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Udharbond | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 3,
+                "details": [
+                    {
+                        "block": "(Gogamukh | 2)",
+                        "details": [
+                            {
+                                "id": 56989,
+                                "type": "road",
+                                "name": "Borbam Balichapari - Kalyanpur Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Kaylanpur",
+                                "location": "Kalyanpur, 2 No Kalynapur NC, Krishnapur",
+                                "latitude": 27.490854,
+                                "longitude": 94.415742,
+                                "remarks": "The road shoulder has been severely damaged at Ch. 2.200 km. A large nallah flows adjacent to the right-hand side (RHS) of the road between Ch. 2.100 km and Ch. 2.200 km. Due to rain extensive erosion along this stretch, undermining the stability of the road embankment.\nDate 03/10/2025",
+                                "createdAt": "2025-10-03T10:10:58.832Z",
+                                "updatedAt": "2025-10-03T10:10:58.832Z"
+                            },
+                            {
+                                "id": 57011,
+                                "type": "road",
+                                "name": "Moromi to Panbari via Joyrampur",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Borbila Chutiakari",
+                                "location": "at Ch-2.1km of Bokulbari village\nat Ch-9.8km of Borbila chutiakari village",
+                                "latitude": 27.432074,
+                                "longitude": 94.433178,
+                                "remarks": "RHS Road shoulder damage.\nDated 04/10/2025",
+                                "createdAt": "2025-10-09T08:56:42.484Z",
+                                "updatedAt": "2025-10-09T08:56:42.484Z"
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(Sissiborgaon | 1)",
+                        "details": [
+                            {
+                                "id": 56993,
+                                "type": "road",
+                                "name": "L093-Lahram kuti to Chekaimajgaon",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "ChekaiMajgaon",
+                                "location": "Ch-3500.00 m to Ch-3800\nCh-4200.00 m to Ch-4400\nCh-5000.00 m to Ch-5200",
+                                "latitude": 27.46523,
+                                "longitude": 94.72986,
+                                "remarks": " Due to heavy rainfall Road submerged and damaged in side shoulder and damaged in road carriageway.  Extends of damaged is 700.m\nDate on 03.10.025",
+                                "createdAt": "2025-10-04T07:50:39.281Z",
+                                "updatedAt": "2025-10-04T07:50:39.281Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Goalpara",
+                "total": 1,
+                "details": [
+                    {
+                        "block": "(Balijana | 1)",
+                        "details": [
+                            {
+                                "id": 57014,
+                                "type": "road",
+                                "name": "Rokhapara to Rangsapara Road",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Rokhapara",
+                                "location": "Near Rangsapara",
+                                "latitude": 26.09216,
+                                "longitude": 90.527202,
+                                "remarks": "As per report submitted by the Executive Engineer, PWRD, Goalpara west and Dudhnoi TR Division, Lakhipur Goalpara, The road has been damaged between chainage 250.00 M and 290.00 M due to continuous seepage from the existing pond adjacent to the left side berm and the incessant rainfall over the past several days from 30.09.2025 to 5.10.2025 has further aggravated the deterioration of the hard crust and side berm in this stretch.",
+                                "createdAt": "2025-10-14T07:27:06.566Z",
+                                "updatedAt": "2025-10-14T07:27:06.566Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Golaghat",
+                "total": 1,
+                "details": [
+                    {
+                        "block": "(Golaghat | 1)",
+                        "details": [
+                            {
+                                "id": 56988,
+                                "type": "road",
+                                "name": "GAR-ALI ROAD AT 40 TH KM",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Lotanpur Torani FV",
+                                "location": "Torani forest village",
+                                "latitude": 0,
+                                "longitude": 0,
+                                "remarks": "Affected due to flash flood of river senijan on 01.10.2025",
+                                "createdAt": "2025-10-03T09:24:45.383Z",
+                                "updatedAt": "2025-10-03T09:24:45.383Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 2,
+                "details": [
+                    {
+                        "block": "(Teok | 1)",
+                        "details": [
+                            {
+                                "id": 56994,
+                                "type": "road",
+                                "name": "Bonai Missing Gaon (Fanijan Arunamukh Connecting Road)",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "2 No Kawoimari",
+                                "location": "Fanijan, Arunamukh, Ouguri Gohain Gaon",
+                                "latitude": null,
+                                "longitude": null,
+                                "remarks": "Due to breach of the Left Ring Bund of Jhanji, flood water entered the area, resulting in severe flooding consequently, the road leading to Arunamukh Tini Ali has been badly damaged, with significant erosion of the road shoulders.",
+                                "createdAt": "2025-10-05T08:46:38.317Z",
+                                "updatedAt": "2025-10-05T08:46:38.317Z"
+                            }
+                        ]
+                    },
+                    {
+                        "block": "(Jorhat West | 1)",
+                        "details": [
+                            {
+                                "id": 56990,
+                                "type": "road",
+                                "name": "Dhekorgorah Road ",
+                                "departmentName": "PWD (Roads)",
+                                "villageName": "Malowpam",
+                                "location": "Near Solmora",
+                                "latitude": null,
+                                "longitude": null,
+                                "remarks": "Due to rise in water level of Bhogdoi River, boiling occured at various location, Also the flood waters overflowed the road and to address Road these issues stacking of sand filled cement bags was done at various locations where the problem occurred",
+                                "createdAt": "2025-10-03T11:05:30.236Z",
+                                "updatedAt": "2025-10-03T11:05:30.236Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gossaigaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Amguri | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "bridgeAffected": [
+            {
+                "district": "Bongaigaon",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Manikpur | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Srijangram | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Bongaigaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Cachar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Udharbond | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Dhemaji",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gogamukh | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Sissiborgaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Goalpara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Balijana | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Golaghat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Golaghat | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Jorhat",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Teok | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Jorhat West | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Kokrajhar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Gossaigaon | 0)",
+                        "details": []
+                    }
+                ]
+            },
+            {
+                "district": "Sivasagar",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Amguri | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ]
+    },
+    "otherDamageDetails": [
+        {
+            "district": "Bongaigaon",
+            "details": [
+                {
+                    "block": "Manikpur",
+                    "damages": []
+                },
+                {
+                    "block": "Srijangram",
+                    "damages": []
+                },
+                {
+                    "block": "Bongaigaon",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Cachar",
+            "details": [
+                {
+                    "block": "Udharbond",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Dhemaji",
+            "details": [
+                {
+                    "block": "Gogamukh",
+                    "damages": [
+                        {
+                            "damageName": "Culvert Approach Road Damaged (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 109881,
+                                    "name": "Latak Gaon Road to Sonali Pathar via Friendship School",
+                                    "departmentName": "PWD (Roads)",
+                                    "villageName": "No.1 Lathiya",
+                                    "location": "at Ch.-400.00m of No. 1 Lathia and Garaimari Assamiya NC Villages",
+                                    "latitude": 27.390583,
+                                    "longitude": 94.344111,
+                                    "remarks": "Culvert Approach Damaged at Ch. 400.00m. Due to rain significant erosion of the culvert approaches.\nDated 03/10/2025",
+                                    "createdAt": "2025-10-03T10:36:18.184Z",
+                                    "updatedAt": "2025-10-03T10:36:18.184Z"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "block": "Sissiborgaon",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Goalpara",
+            "details": [
+                {
+                    "block": "Balijana",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Golaghat",
+            "details": [
+                {
+                    "block": "Golaghat",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Jorhat",
+            "details": [
+                {
+                    "block": "Teok",
+                    "damages": [
+                        {
+                            "damageName": "PWSS Damaged (in Nos)",
+                            "noOfDamage": 2,
+                            "details": [
+                                {
+                                    "id": 109868,
+                                    "name": "Arunamukh Chuk PWSS",
+                                    "departmentName": "PHE",
+                                    "villageName": "2 No Kawoimari",
+                                    "location": "Arunamukh",
+                                    "latitude": 26.897948,
+                                    "longitude": 94.414775,
+                                    "remarks": "Submerged in flood water.",
+                                    "createdAt": "2025-10-02T11:12:24.882Z",
+                                    "updatedAt": "2025-10-02T11:12:24.882Z"
+                                },
+                                {
+                                    "id": 109869,
+                                    "name": "Sonariati PWSS",
+                                    "departmentName": "PHE",
+                                    "villageName": "2 No Kawoimari",
+                                    "location": "Sonariati",
+                                    "latitude": 26.890668,
+                                    "longitude": 94.41619,
+                                    "remarks": "Submerged in flood water.",
+                                    "createdAt": "2025-10-02T11:12:24.896Z",
+                                    "updatedAt": "2025-10-02T11:12:24.896Z"
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Elementary Schools Damaged (in Nos)",
+                            "noOfDamage": 4,
+                            "details": [
+                                {
+                                    "id": 109870,
+                                    "name": "Major Chapori Govt Jr Basic School",
+                                    "departmentName": "Education Deptt.",
+                                    "villageName": "2 No Kawoimari",
+                                    "location": "Arunamukh",
+                                    "latitude": 26.898394,
+                                    "longitude": 94.414294,
+                                    "remarks": "Submerged in flood water.",
+                                    "createdAt": "2025-10-02T11:12:24.892Z",
+                                    "updatedAt": "2025-10-02T11:12:24.892Z"
+                                },
+                                {
+                                    "id": 109872,
+                                    "name": "Sonariati LP School",
+                                    "departmentName": "Education Deptt.",
+                                    "villageName": "2 No Kawoimari",
+                                    "location": "Sonariati",
+                                    "latitude": 26.9023,
+                                    "longitude": 94.398038,
+                                    "remarks": "Submerged in flood water.",
+                                    "createdAt": "2025-10-02T11:12:24.903Z",
+                                    "updatedAt": "2025-10-02T11:12:24.903Z"
+                                },
+                                {
+                                    "id": 109871,
+                                    "name": "Nabajyoti LP School",
+                                    "departmentName": "Education Deptt.",
+                                    "villageName": "Bonai",
+                                    "location": "Kotarikham",
+                                    "latitude": 26.888735,
+                                    "longitude": 94.416907,
+                                    "remarks": "Submerged in flood water.",
+                                    "createdAt": "2025-10-02T11:12:24.900Z",
+                                    "updatedAt": "2025-10-02T11:12:24.900Z"
+                                },
+                                {
+                                    "id": 109873,
+                                    "name": "Ouguri Puroni Gohain Gaon LP School",
+                                    "departmentName": "Education Deptt.",
+                                    "villageName": "2 No Kawoimari",
+                                    "location": "Ouguri Gohain Gaon",
+                                    "latitude": 26.89038,
+                                    "longitude": 94.416907,
+                                    "remarks": "Submerged in flood water.",
+                                    "createdAt": "2025-10-02T11:12:24.910Z",
+                                    "updatedAt": "2025-10-02T11:12:24.910Z"
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Anganwadi Centres Affected (in Nos)",
+                            "noOfDamage": 2,
+                            "details": [
+                                {
+                                    "id": 109874,
+                                    "name": "Ouguri AWC",
+                                    "departmentName": "Women & Child Development",
+                                    "villageName": "Gelekoni",
+                                    "location": "Ouguri Missing Gaon",
+                                    "latitude": 26.893106,
+                                    "longitude": 94.418577,
+                                    "remarks": "Submerged in flood water.",
+                                    "createdAt": "2025-10-02T11:12:24.954Z",
+                                    "updatedAt": "2025-10-02T11:12:24.954Z"
+                                },
+                                {
+                                    "id": 109875,
+                                    "name": "Arunamukh AWC",
+                                    "departmentName": "Women & Child Development",
+                                    "villageName": "2 No Kawoimari",
+                                    "location": "Arunamukh",
+                                    "latitude": 26.898394,
+                                    "longitude": 94.414294,
+                                    "remarks": "Submerged in flood water.",
+                                    "createdAt": "2025-10-02T11:12:24.978Z",
+                                    "updatedAt": "2025-10-02T11:12:24.978Z"
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Agri Bundh Damaged (in Nos)",
+                            "noOfDamage": 2,
+                            "details": [
+                                {
+                                    "id": 109876,
+                                    "name": "Right Ring Bund of river Jhanji",
+                                    "departmentName": "Panchayat and Rural Deptt.",
+                                    "villageName": "2 No Kawoimari",
+                                    "location": "Ouguri Gohain Gaon",
+                                    "latitude": 26.891192,
+                                    "longitude": 94.417136,
+                                    "remarks": "Breached portion approximate length 100 Feets.\nEntire ring bund is affected.",
+                                    "createdAt": "2025-10-02T11:12:24.981Z",
+                                    "updatedAt": "2025-10-02T11:12:24.981Z"
+                                },
+                                {
+                                    "id": 109877,
+                                    "name": "Left Ring Bund of river Jhanji",
+                                    "departmentName": "Panchayat and Rural Deptt.",
+                                    "villageName": "Bonai",
+                                    "location": "Ouguri Nepali Gaon South Part",
+                                    "latitude": 26.891511,
+                                    "longitude": 94.428664,
+                                    "remarks": "Damaged portion approximate length 100 Feets.\nEntire ring bund is affected.",
+                                    "createdAt": "2025-10-02T11:12:24.983Z",
+                                    "updatedAt": "2025-10-02T11:12:24.983Z"
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Fisheries/Pond (in Hect.)",
+                            "noOfDamage": 1.6,
+                            "details": [
+                                {
+                                    "id": 109882,
+                                    "name": "Fishery/ Pond",
+                                    "departmentName": "Fishery",
+                                    "villageName": "2 No Kawoimari",
+                                    "location": "2 No Kawoimari Gaon, Ouguri Missing Gaon, Ouguri Gohain Gaon, Ajarguri",
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Total No of Fish Pond is 10 Nos.",
+                                    "createdAt": "2025-10-03T10:54:21.039Z",
+                                    "updatedAt": "2025-10-03T10:54:21.039Z"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "block": "Jorhat West",
+                    "damages": [
+                        {
+                            "damageName": "Agri Bundh Damaged (in Nos)",
+                            "noOfDamage": 1,
+                            "details": [
+                                {
+                                    "id": 109879,
+                                    "name": "Bormer choladhora Bundh",
+                                    "departmentName": "Water Resource Deptt.",
+                                    "villageName": "Bormer Chapori",
+                                    "location": "Bormer chapori bundh",
+                                    "latitude": null,
+                                    "longitude": null,
+                                    "remarks": "Due to the rise in the water level of the Bhogdoi River, water has started overflowing from the ring bund near Bormer Choladhora village (Solmora). As a result, the low-lying areas of Bormer Choladhora Pathar and Gergeri Pathar under Jorhat West Revenue Circle have been inundated.",
+                                    "createdAt": "2025-10-02T11:15:34.727Z",
+                                    "updatedAt": "2025-10-02T11:15:34.727Z"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "district": "Kokrajhar",
+            "details": [
+                {
+                    "block": "Gossaigaon",
+                    "damages": []
+                }
+            ]
+        },
+        {
+            "district": "Sivasagar",
+            "details": [
+                {
+                    "block": "Amguri",
+                    "damages": []
+                }
+            ]
+        }
+    ],
+    "wildlife": [
+        {
+            "district": "Bongaigaon",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Cachar",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Dhemaji",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Goalpara",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Golaghat",
+            "wildlifeAffected": "(Golaghat - 0)"
+        },
+        {
+            "district": "Jorhat",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Kokrajhar",
+            "wildlifeAffected": ""
+        },
+        {
+            "district": "Sivasagar",
+            "wildlifeAffected": ""
+        }
+    ],
+    "remarks": [
+        {
+            "district": "Bongaigaon",
+            "remarks": ""
+        },
+        {
+            "district": "Cachar",
+            "remarks": "(Udharbond - Due to heavy rainfall on the 12/10/2025, a flash flood occurred in Majhargram Grant Revenue Village under Udharbond Revenue Circle, affecting 140 households. A total of 140 Nos.food kits were distributed to the affected families on 13.10.2025)"
+        },
+        {
+            "district": "Dhemaji",
+            "remarks": ""
+        },
+        {
+            "district": "Goalpara",
+            "remarks": ""
+        },
+        {
+            "district": "Golaghat",
+            "remarks": ""
+        },
+        {
+            "district": "Jorhat",
+            "remarks": "(Teok - Total Chlorine Tablet Distributed 305 Nos. by PHE Department.), (Jorhat West - as per the report received from agriculture dept.19 hectares of crop area have been submerged.)"
+        },
+        {
+            "district": "Kokrajhar",
+            "remarks": ""
+        },
+        {
+            "district": "Sivasagar",
+            "remarks": ""
+        }
+    ]
+}
