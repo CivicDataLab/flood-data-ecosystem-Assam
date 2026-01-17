@@ -1,0 +1,4 @@
+- [ ] Util script to transform state antyodaya JSON file
+- [ ] Typer CLI application
+- [x] DuckDB hookup
+- [ ] Dockerfile and docker-compose setup
