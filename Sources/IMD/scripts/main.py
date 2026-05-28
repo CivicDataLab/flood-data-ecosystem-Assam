@@ -215,12 +215,12 @@ def retrieve_assam_revenue_circle_data(year: int):
 if __name__ == "__main__":
 
     # Takes year as an input from the cli
-    year = 2025#str(sys.argv[1])
+    year = 2026#str(sys.argv[1])
     year = int(year)
 
     # IF the year is current year, specify start and end date
-    start_date = "2025-09-01"
-    end_date = "2025-10-31"
+    start_date = "2026-1-1"
+    end_date = "2026-05-24"
 
     download_data(year, start_date=start_date, end_date=end_date)
     parse_and_format_data(year, start_date=start_date, end_date=end_date)

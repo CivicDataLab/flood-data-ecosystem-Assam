@@ -1,0 +1,275 @@
+{
+    "cwcDetails": {
+        "riversAtWarningLevel": "",
+        "riversAtDangerLevel": "",
+        "riversAtFloodLevel": ""
+    },
+    "affectedDistricts": {
+        "total": 1,
+        "districts": "Goalpara",
+        "districtCodes": "13"
+    },
+    "affectedRevenueCircles": {
+        "total": 2,
+        "districts": [
+            {
+                "district": "Goalpara",
+                "districtCode": "13",
+                "total": 2,
+                "details": "Rongjuli, Balijana"
+            }
+        ]
+    },
+    "affectedVillages": [
+        {
+            "total": 4,
+            "district": "Goalpara",
+            "districtCode": "13",
+            "details": "(Rongjuli | 3), (Balijana | 1)"
+        }
+    ],
+    "affectedPopulation": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalCropArea": 102.9,
+            "district": "Goalpara",
+            "districtCode": "13",
+            "details": "(Rongjuli | Population Affected: 0 | Crop Area Submerged: 97.5), (Balijana | Population Affected: 0 | Crop Area Submerged: 5.4)"
+        }
+    ],
+    "reliefCampsAndCenters": [
+        {
+            "total": 0,
+            "district": "Goalpara",
+            "reliefCamps": "(Rongjuli | 0), (Balijana | 0)",
+            "reliefCenters": "(Rongjuli | 0), (Balijana | 0)",
+            "totalReliefCamp": 0,
+            "totalReliefCenter": 0
+        }
+    ],
+    "campInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalPregnant": 0,
+            "totalDisabled": 0,
+            "district": "Goalpara",
+            "details": "(Rongjuli | 0), (Balijana | 0)"
+        }
+    ],
+    "nonCampInmates": [
+        {
+            "total": 0,
+            "totalMale": 0,
+            "totalFemale": 0,
+            "totalChildren": 0,
+            "totalBigAnimal": 0,
+            "totalSmallAnimal": 0,
+            "totalPoultryAnimal": 0,
+            "district": "Goalpara",
+            "details": "(Rongjuli | 0), (Balijana | 0)"
+        }
+    ],
+    "hllDetails": {
+        "confirmed": [
+            {
+                "district": "Goalpara",
+                "floodDeath": 0,
+                "generalDrowning": 0,
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Rongjuli | 0), (Balijana | 0)"
+            }
+        ],
+        "missing": [
+            {
+                "district": "Goalpara",
+                "total": 0,
+                "totalMale": 0,
+                "totalFemale": 0,
+                "totalChildrenMale": 0,
+                "totalChildrenFemale": 0,
+                "totalOthers": 0,
+                "details": "(Rongjuli | 0), (Balijana | 0)"
+            }
+        ]
+    },
+    "livestocksDetails": {
+        "affected": [
+            {
+                "district": "Goalpara",
+                "noLaBig": 0,
+                "noLaSmall": 0,
+                "noLaPoultry": 0,
+                "total": 0
+            }
+        ],
+        "washedAway": [
+            {
+                "district": "Goalpara",
+                "noLwaBig": 0,
+                "noLwaSmall": 0,
+                "noLwaPoultry": 0,
+                "total": 0
+            }
+        ]
+    },
+    "houseDamagedDetails": {
+        "damage": [
+            {
+                "district": "Goalpara",
+                "noHdFullyKuccha": 0,
+                "noHdFullyPukka": 0,
+                "noHdPartiallyPukka": 0,
+                "noHdPartiallyKuccha": 0,
+                "totalFully": 0,
+                "totalPartially": 0
+            }
+        ],
+        "otherDamage": [
+            {
+                "district": "Goalpara",
+                "noHdOthersHuts": 0,
+                "noHdOthersCattleSheds": 0,
+                "totalOthers": 0
+            }
+        ]
+    },
+    "rescueOperationDetails": [
+        {
+            "district": "Goalpara",
+            "agencies": "",
+            "otherAgencies": "",
+            "totalMedicalTeamsDeployed": 0,
+            "totalBoatsDeployed": 0,
+            "totalPersonEvacuated": 0,
+            "totalAnimalEvacuated": 0,
+            "totalHelicoptersDeployed": 0,
+            "totalHelicoptersEvacuatedPerson": 0
+        }
+    ],
+    "reliefDistributionDetails": {
+        "reliefData": [
+            {
+                "district": "Goalpara",
+                "rice": 0,
+                "dal": 0,
+                "salt": 0,
+                "mOil": 0,
+                "cattleFeedGreenFooder": 0,
+                "cattleFeedWheatBran": 0,
+                "cattleFeedRiceBran": 0
+            }
+        ],
+        "otherReliefData": [
+            {
+                "district": "Goalpara",
+                "babyFoodLiquid": "",
+                "babyFoodSolid": "",
+                "otherItems": ""
+            }
+        ]
+    },
+    "infDamageDetails": {
+        "embBreached": [
+            {
+                "district": "Goalpara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Rongjuli | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Balijana | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "embAffected": [
+            {
+                "district": "Goalpara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Rongjuli | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Balijana | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "roadAffected": [
+            {
+                "district": "Goalpara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Rongjuli | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Balijana | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ],
+        "bridgeAffected": [
+            {
+                "district": "Goalpara",
+                "total": 0,
+                "details": [
+                    {
+                        "block": "(Rongjuli | 0)",
+                        "details": []
+                    },
+                    {
+                        "block": "(Balijana | 0)",
+                        "details": []
+                    }
+                ]
+            }
+        ]
+    },
+    "otherDamageDetails": [
+        {
+            "district": "Goalpara",
+            "details": [
+                {
+                    "block": "Rongjuli",
+                    "damages": []
+                },
+                {
+                    "block": "Balijana",
+                    "damages": []
+                }
+            ]
+        }
+    ],
+    "wildlife": [
+        {
+            "district": "Goalpara",
+            "wildlifeAffected": ""
+        }
+    ],
+    "remarks": [
+        {
+            "district": "Goalpara",
+            "remarks": "(Rongjuli - As per report submitted by Agriculture Development Officer Matia, crop submergence is due to heavy rainfall), (Balijana - As per the report received from the ADO, Dubapara, crop submergence has occurred in Khutamari revenue village due to heavy rainfall.)"
+        }
+    ]
+}
