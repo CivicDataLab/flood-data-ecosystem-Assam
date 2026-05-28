@@ -10,6 +10,6 @@ for year in range(2026,2027):
     for month in range(1,6):        
         month=str(month)
         print(year+'_'+month)
-        subprocess.call([r"/opt/anaconda3/bin/python3", script_path, year, month])
-        #subprocess.call([r"C:\Users\saura\anaconda3\envs\cdl-env\python.exe", script_path, year, month])
+        #subprocess.call([r"/opt/anaconda3/bin/python3", script_path, year, month])
+        subprocess.call([r"C:\Users\saura\anaconda3\envs\cdl-env\python.exe", script_path, year, month])
 
