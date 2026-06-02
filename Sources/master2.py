@@ -10,7 +10,7 @@ variables_data_path = os.getcwd() + '/Sources/master/'
 print(variables_data_path)
 assam_rc = gpd.read_file(r'Maps/Geojson/assam_rc_2024-11.geojson')
 
-date_range = pd.date_range(start="2021-04-01", end="2025-10-31", freq='MS')
+date_range = pd.date_range(start="2021-04-01", end="2026-05-31", freq='MS')
 
 # Format the date values as "YYYY_MM" strings
 formatted_dates = [date.strftime('%Y_%m') for date in date_range]
@@ -28,7 +28,7 @@ print(master_df)
 
 
 # Variables for model input
-monthly_variables = ['total_tender_awarded_value',
+monthly_variables = ['total_tender_awarded_value','erosion_tenders_awarded_value',
                      'SOPD_tenders_awarded_value','SDRF_sanctions_awarded_value', 
                      'SDRF_tenders_awarded_value', 'RIDF_tenders_awarded_value', 'LTIF_tenders_awarded_value', 'CIDF_tenders_awarded_value',
                       'Preparedness Measures_tenders_awarded_value', 'Immediate Measures_tenders_awarded_value', 'Others_tenders_awarded_value','Repair and Restoration_tenders_awarded_value',

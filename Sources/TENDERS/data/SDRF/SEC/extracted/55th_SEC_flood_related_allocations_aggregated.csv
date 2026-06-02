@@ -1,0 +1,26 @@
+meeting_no,date,district,source_pdf,total_amount_lakhs,entries,fund_types_included
+55th SEC,2026-01-28,Bajali,55th_sec_meeting_0.pdf,2045.1239999999998,8,SDMF
+55th SEC,2026-01-28,Baksa,55th_sec_meeting_0.pdf,1185.905,6,SDMF
+55th SEC,2026-01-28,Biswanath,55th_sec_meeting_0.pdf,99.85,1,GR-Flood
+55th SEC,2026-01-28,Bongaigaon,55th_sec_meeting_0.pdf,58.133399999999995,5,SDRF
+55th SEC,2026-01-28,Cachar,55th_sec_meeting_0.pdf,15365.13,10,"GR-Flood,SDMF"
+55th SEC,2026-01-28,Darrang,55th_sec_meeting_0.pdf,6237.2417,6,"SDMF,SDRF"
+55th SEC,2026-01-28,Dhemaji,55th_sec_meeting_0.pdf,210.50300000000001,3,"GR-Cyclone,SDRF"
+55th SEC,2026-01-28,Dhubri,55th_sec_meeting_0.pdf,605.7841999999999,3,"SDMF,SDRF"
+55th SEC,2026-01-28,Dibrugarh,55th_sec_meeting_0.pdf,172.3857,1,SDMF
+55th SEC,2026-01-28,Dima Hasao,55th_sec_meeting_0.pdf,3376.935,6,"GR-Flood,SDMF,SDRF"
+55th SEC,2026-01-28,Golaghat,55th_sec_meeting_0.pdf,2094.5855,7,"GR-Flood,SDMF,SDRF"
+55th SEC,2026-01-28,Hailakandi,55th_sec_meeting_0.pdf,587.731,3,"SDMF,SDRF"
+55th SEC,2026-01-28,Hojai,55th_sec_meeting_0.pdf,11.908,1,SDRF
+55th SEC,2026-01-28,Kamrup,55th_sec_meeting_0.pdf,3410.3777999999998,5,"SDMF,SDRF"
+55th SEC,2026-01-28,Kamrup Metro,55th_sec_meeting_0.pdf,16.42,1,GR-Flood
+55th SEC,2026-01-28,Karimganj,55th_sec_meeting_0.pdf,540.0,1,SDMF
+55th SEC,2026-01-28,Kokrajhar,55th_sec_meeting_0.pdf,5.76,1,SDRF
+55th SEC,2026-01-28,Lakhimpur,55th_sec_meeting_0.pdf,2661.619,9,"SDMF,SDRF"
+55th SEC,2026-01-28,Majuli,55th_sec_meeting_0.pdf,450.0,2,SDMF
+55th SEC,2026-01-28,Morigaon,55th_sec_meeting_0.pdf,24.32,1,SDRF
+55th SEC,2026-01-28,Nagaon,55th_sec_meeting_0.pdf,1303.2,4,"SDMF,SDRF"
+55th SEC,2026-01-28,Sonitpur,55th_sec_meeting_0.pdf,17.49,1,SDRF
+55th SEC,2026-01-28,South Salmara,55th_sec_meeting_0.pdf,1724.05,2,"GR-Flood,SDMF"
+55th SEC,2026-01-28,Tamulpur,55th_sec_meeting_0.pdf,509.3,1,SDMF
+55th SEC,2026-01-28,Udalguri,55th_sec_meeting_0.pdf,3784.2725,16,"SDMF,SDRF"

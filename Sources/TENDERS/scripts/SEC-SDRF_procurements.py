@@ -1,118 +1,160 @@
-# ### SEC-SDRF procurements   
+# ### SEC-SDRF procurements
+#
+# Produces per-revenue-circle SDRF/SDMF sanction values for every SEC meeting
+# for which district-level data is available.
+#
+# Data coverage:
+#   44th SEC  – Jan 2022  (2022_01) PWD Roads + Irrigation, extracted from PDF
+#   45th SEC  – Mar 2022  (2022_03) WRD + PWD Roads, extracted from PDF
+#   46th SEC  – Nov 2022  (2022_11) SDRF tender batch, from 45-50 summary CSV
+#   47th SEC  – Feb 2023  (2023_02) No district breakdown – EXCLUDED
+#   48th SEC  – Mar 2023  (2023_03) PWD Roads, extracted from PDF
+#   49th SEC  – Sep 2023  (2023_09) SDMF + SDRF, extracted from PDF / summary
+#   50th SEC  – Mar 2024  (2024_03) SDRF tender batch, from 45-50 summary CSV only
+#   51st SEC  – Oct 2024  (2024_10) extracted from PDF
+#   52nd SEC  – Feb 2025  (2025_02) extracted from PDF
+#   53rd SEC  – Apr 2025  (2025_04) extracted from PDF
+#   54th SEC  – Oct 2025  (2025_10) extracted from PDF
+#   55th SEC  – Jan 2026  (2026_01) SDMF + SDRF + GR-Flood, extracted from PDF
+#
+# Meetings 39–43 are fully scanned PDFs; OCR would be needed to extract them.
 
-import pandas as pd
-import os
 import glob
-import re
-from dateutil import parser
-import matplotlib
-
+import os
 import geopandas as gpd
-from fuzzywuzzy import fuzz
+import pandas as pd
 from fuzzywuzzy import process
 
+# ──────────────────────────────────────────────
+# Paths
+# ──────────────────────────────────────────────
+EXTRACTED    = r'Sources/TENDERS/data/SDRF/SEC/extracted/'
+SUMMARY_PATH = r'Sources/TENDERS/data/SDRF/SEC/45th to 50th SEC - Summary.csv'
+RC_GDF_PATH  = r'Maps/Geojson/assam_rc_2024-11.geojson'
+OUTPUT_DIR   = r'Sources/TENDERS/data/variables/SDRF_sanctions_awarded_value'
+SEC_SDRF_OUT = r'Sources/TENDERS/data/SDRF/SEC/SEC_SDRF.csv'
 
-sdrf = pd.read_csv(r'Sources/TENDERS/data/SDRF/SEC/45th to 50th SEC - Summary.csv')
-sdrf_51_54 = pd.read_csv(r'Sources/TENDERS/data/SDRF/SEC/extracted/51_to_54th_SEC_flood_related_allocations_aggregated.csv')
-rc_gdf = gpd.read_file(r'Maps/Geojson/assam_rc_2024-11.geojson')
 
-output_dir = r'Sources/TENDERS/data/variables/SDRF_sanctions_awarded_value'
+# ──────────────────────────────────────────────
+# 1. Load all individual meeting aggregated CSVs
+#    (meetings 44–49, 51–55; all share the schema:
+#     meeting_no, date, district, source_pdf,
+#     total_amount_lakhs, entries, fund_types_included)
+# ──────────────────────────────────────────────
+# Match only per-meeting files (e.g. "44th_SEC_...", "55th_SEC_...")
+# Exclude combined/range files that contain "_to_" in the name
+pattern = EXTRACTED + '*_SEC_flood_related_allocations_aggregated.csv'
+individual_files = sorted(
+    f for f in glob.glob(pattern)
+    if '_to_' not in os.path.basename(f)
+)
+
+frames = []
+for fpath in individual_files:
+    df = pd.read_csv(fpath)
+    # Normalise the district column name (some files use 'district', some 'District')
+    df.columns = [c.strip() for c in df.columns]
+    if 'district' in df.columns and 'District' not in df.columns:
+        df = df.rename(columns={'district': 'District'})
+    # Keep only rows with a real district (exclude state-level aggregates)
+    df = df[~df['District'].astype(str).str.startswith('Assam', na=False)]
+    # Derive timeperiod from date where missing
+    if 'timeperiod' not in df.columns:
+        df['timeperiod'] = (
+            pd.to_datetime(df['date'], errors='coerce').dt.strftime('%Y_%m')
+        )
+    # Drop rows where timeperiod or total_amount_lakhs is null
+    df = df.dropna(subset=['timeperiod', 'total_amount_lakhs'])
+    df = df[df['total_amount_lakhs'] > 0]
+    frames.append(df[['District', 'timeperiod', 'total_amount_lakhs']])
+
+all_meetings = pd.concat(frames, ignore_index=True)
+# Convert lakhs → rupees to match the rest of the pipeline
+all_meetings['SDRF funding'] = all_meetings['total_amount_lakhs'] * 100_000
+all_meetings = all_meetings.drop(columns=['total_amount_lakhs'])
 
 
-sdrf = sdrf.rename(columns={'District ':'District'})
-sdrf['District'] = sdrf['District'].str.title()
+# ──────────────────────────────────────────────
+# 2. 50th SEC meeting – from the 45-to-50 summary
+#    (the 50th meeting PDF was not individually
+#     extracted, so the summary is the sole source)
+# ──────────────────────────────────────────────
+summary_raw = pd.read_csv(SUMMARY_PATH)
+summary_raw = summary_raw.rename(columns={'District ': 'District'})
 
-melted_df = sdrf.melt(id_vars=['District'], 
-                    value_vars=['46 SDRF TENDER (lakhs)', '47 SDRF TENDER (lakhs) ', 
-                                '48 SDRF TENDER (lakhs) ', '49 SDRF TENDER (lakhs) ', 
-                                '50 SDRF TENDER (lakhs) '], 
-                    var_name='SDRF Column', value_name='SDRF funding')
+col_50 = '50 SDRF TENDER (lakhs) '   # trailing space is in the original CSV
+sdrf_50 = (
+    summary_raw[['District', col_50]]
+    .rename(columns={col_50: 'SDRF funding'})
+    .query('`SDRF funding` > 0')
+    .copy()
+)
+sdrf_50['SDRF funding'] = sdrf_50['SDRF funding'] * 100_000
+sdrf_50['timeperiod'] = '2024_03'
 
-# Filter out rows where SDRF funding is 0
-melted_df = melted_df[melted_df['SDRF funding'] > 0]
 
-# Create a mapping of SDRF columns to timeperiods
-timeperiod_map = {
-    '46 SDRF TENDER (lakhs)': '2022_03',
-    '47 SDRF TENDER (lakhs) ': '2023_02',
-    '48 SDRF TENDER (lakhs) ': '2023_03',
-    '49 SDRF TENDER (lakhs) ': '2023_09',
-    '50 SDRF TENDER (lakhs) ': '2024_03'
-}
+# ──────────────────────────────────────────────
+# 3. Combine and standardise district names
+# ──────────────────────────────────────────────
+combined = pd.concat([all_meetings, sdrf_50], ignore_index=True)
+combined = combined.dropna(subset=['SDRF funding'])
+combined = combined[combined['SDRF funding'] > 0]
+combined['District'] = combined['District'].str.lower()
 
-# Map the SDRF columns to the corresponding timeperiod
-melted_df['timeperiod'] = melted_df['SDRF Column'].map(timeperiod_map)
-# Drop the SDRF Column as it's no longer needed
-melted_df = melted_df.drop(columns=['SDRF Column'])
-# Reorder the columns for better readability
-melted_df = melted_df[['District','timeperiod', 'SDRF funding']]
-melted_df['SDRF funding'] = melted_df['SDRF funding']*100000
 
-# Standardize district names to title case before concatenating
-melted_df['District'] = melted_df['District'].str.lower()
-sdrf_51_53['District'] = sdrf_51_53['District'].str.lower()
+# ──────────────────────────────────────────────
+# 4. Fuzzy-merge with revenue-circle GeoJSON
+# ──────────────────────────────────────────────
+rc_gdf = gpd.read_file(RC_GDF_PATH)
 
-melted_df = pd.concat([melted_df, sdrf_51_53], ignore_index=True)
 
-def fuzzy_merge(df_1, df_2, key1, key2, threshold=90, limit=2):
-    """
-    :param df_1: the left table to join
-    :param df_2: the right table to join
-    :param key1: key column of the left table
-    :param key2: key column of the right table
-    :param threshold: how close the matches should be to return a match, based on Levenshtein distance
-    :param limit: the amount of matches that will get returned, these are sorted high to low
-    :return: dataframe with boths keys and matches
-    """
-    s = df_2[key2].tolist()
-
-    m = df_1[key1].apply(lambda x: process.extract(x, s, limit=limit))    
-    df_1['matches'] = m
-
-    m2 = df_1['matches'].apply(lambda x: ', '.join([i[0] for i in x if i[1] >= threshold]))
-    df_1['matches'] = m2
-
+def fuzzy_merge(df_1, df_2, key1, key2, threshold=80, limit=1):
+    """Attach the closest matching key from df_2 onto each row of df_1."""
+    targets = df_2[key2].tolist()
+    df_1 = df_1.copy()
+    df_1['matches'] = df_1[key1].apply(
+        lambda x: ', '.join(
+            m[0] for m in process.extract(x, targets, limit=limit)
+            if m[1] >= threshold
+        )
+    )
     return df_1
 
 
-fuzzymatch = fuzzy_merge(rc_gdf, melted_df, 'dtname', 'District', threshold=80,limit=1)
-# Step 1: Merge df1 with the revenue_circle_data
-merged_df = pd.merge(melted_df,fuzzymatch, left_on='District', right_on='matches')
+fuzzymatch = fuzzy_merge(rc_gdf, combined, 'dtname', 'District', threshold=80, limit=1)
 
-# Step 2: Calculate the number of revenue circles for each district
-revenue_circle_count = fuzzymatch.groupby('matches')['revenue_ci'].count().reset_index()
-revenue_circle_count.columns = ['matches', 'num_revenue_circles']
+merged = pd.merge(combined, fuzzymatch, left_on='District', right_on='matches')
 
-# Step 3: Merge the revenue circle count into the merged dataframe
-merged_df = merged_df.merge(revenue_circle_count, on='matches')
+rc_counts = (
+    fuzzymatch.groupby('matches')['revenue_ci']
+    .count()
+    .reset_index()
+    .rename(columns={'revenue_ci': 'num_revenue_circles'})
+)
+merged = merged.merge(rc_counts, on='matches')
 
-# Step 4: Divide the columns 'SDRF_RC' by the number of revenue circles
-merged_df['SDRF_RC'] = merged_df['SDRF funding'] / merged_df['num_revenue_circles']
+merged['SDRF_RC'] = merged['SDRF funding'] / merged['num_revenue_circles']
 
-# Step 5: Drop the unnecessary columns if needed
-interpolated = merged_df.drop(columns=['dtname', 'num_revenue_circles','geometry','HQ','revenue_cr'])
+drop_cols = [c for c in ['dtname', 'num_revenue_circles', 'geometry', 'HQ', 'revenue_cr']
+             if c in merged.columns]
+interpolated = merged.drop(columns=drop_cols)
 interpolated['District'] = interpolated['District'].str.upper()
-interpolated = interpolated.rename(columns={'District':'DISTRICT'})
-interpolated.to_csv(r'Sources/TENDERS/data/SDRF/SEC/SEC_SDRF.csv')
-sdrf_new = interpolated.copy()
-print(sdrf_new.columns)
-# Step 1: Ensure the output directory exists
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir)
-
-# Step 2: Group the data by timeperiod
-for timeperiod in sdrf_new['timeperiod'].unique():
-    # Step 3: Filter the DataFrame for the specific timeperiod and extract the relevant columns
-    filtered_df = sdrf_new[sdrf_new['timeperiod'] == timeperiod][['object_id', 'SDRF_RC']]
-    
-    # Step 4: Rename the 'SDRF_RC' column to 'SDRF_sanctions_awarded_value'
-    filtered_df = filtered_df.rename(columns={'SDRF_RC': 'SDRF_sanctions_awarded_value'})
-    
-    # Step 5: Construct the file name and path
-    filename = f"SDRF_sanctions_awarded_value_{timeperiod}.csv"
-    file_path = os.path.join(output_dir, filename)
-    
-    # Step 6: Save the DataFrame to CSV
-    filtered_df.to_csv(file_path, index=False)
+interpolated = interpolated.rename(columns={'District': 'DISTRICT'})
 
 
+# ──────────────────────────────────────────────
+# 5. Save outputs
+# ──────────────────────────────────────────────
+interpolated.to_csv(SEC_SDRF_OUT, index=False)
+print(f"Saved full table → {SEC_SDRF_OUT}  ({len(interpolated)} rows)")
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+for tp in sorted(interpolated['timeperiod'].unique()):
+    slice_df = (
+        interpolated[interpolated['timeperiod'] == tp][['object_id', 'SDRF_RC']]
+        .rename(columns={'SDRF_RC': 'SDRF_sanctions_awarded_value'})
+    )
+    out_path = os.path.join(OUTPUT_DIR, f"SDRF_sanctions_awarded_value_{tp}.csv")
+    slice_df.to_csv(out_path, index=False)
+    print(f"  {tp}: {len(slice_df)} revenue circles → {out_path}")
