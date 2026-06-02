@@ -1,0 +1,58 @@
+filename,meeting_no,meeting_date,pages,tables_found,decisions_found,financials_found,disaster_mentions,has_ocr_issue,error,attendee_count,attendees_sample
+10th_SEC_Meeting.pdf,10,,27,0,0,0,0,False,,0,
+11th_SEC-SDRF_Meeting_0.pdf,11,,29,0,0,0,0,False,,0,
+12th_SEC_Meeting.pdf,12,,30,0,0,0,0,False,,0,
+13th_SEC_Meeting.pdf,13,,12,0,0,0,0,True,,0,
+14th_SEC_Meeting.pdf,14,,10,0,0,0,0,True,,0,
+15th_SEC_Meeting.pdf,15,,21,0,0,0,0,False,,0,
+16th_SEC_Meeting.pdf,16,,8,0,0,0,0,True,,0,
+17th_SEC_Meeting.pdf,17,,23,0,0,0,0,False,,0,
+18th_SEC_Meeting.pdf,18,,8,0,0,0,0,True,,0,
+19th_SEC_Meeting.pdf,19,,12,0,0,0,0,True,,0,
+1st_SEC_Meeting.pdf,1,,7,0,0,0,0,True,,0,
+20th_SEC_Meeting.pdf,20,,28,0,0,0,0,False,,0,
+21st_SEC_Meeting.pdf,21,,2,0,0,0,0,True,,0,
+22nd_SEC_Meeting.pdf,22,,42,0,0,0,0,False,,0,
+23rd_SEC_Meeting.pdf,23,,6,0,0,0,0,True,,0,
+24th_SEC_Meeting_main.pdf,24,,11,0,0,0,0,True,,0,
+24th_SEC_Minutes_Flood_Memorandum_2015.pdf,24,,4,0,0,0,0,True,,0,
+25th_SEC_Minutes_0.pdf,25,,10,0,0,0,0,True,,0,
+26th_SEC_Meeting_SDRF_0.pdf,26,,2,0,0,0,0,True,,0,
+27th_SEC_Meeting_SDRF.pdf,27,,5,0,0,0,0,True,,0,
+28th_SEC_Meeting.pdf,28,,4,0,0,0,0,True,,0,
+29th_SEC_Meeting_SDRF.pdf,29,,7,0,0,0,0,True,,0,
+2nd_SEC_Meeting.pdf,2,,12,0,0,0,0,True,,0,
+30th_SEC_Meeting_SDRF.pdf,30,,14,0,0,0,0,False,,0,
+31st_sec_meeting.pdf,31,,20,0,0,0,0,False,,0,
+32nd_SEC_Meeting.pdf,32,,29,0,0,0,0,False,,0,
+33rd_SEC_Meeting.pdf,33,,9,0,0,0,0,True,,0,
+34th_SEC_Meeting.pdf,34,,4,0,0,0,0,True,,0,
+35th_sec_meeting_sdrf.pdf,35,,47,0,0,0,0,False,,0,
+36th_sec_meeting_sdrf.pdf,36,,46,0,0,0,0,False,,0,
+37th_sec_meeting.pdf,37,,27,0,0,0,0,False,,0,
+38th_sec_meeting.pdf,38,,48,0,0,0,0,False,,0,
+39th_sec_meeting.pdf,39,,23,0,0,0,0,False,,0,
+3rd_SEC_Meeting.pdf,3,,12,0,0,0,0,True,,0,
+40th_sec_meeting.pdf,40,,75,0,0,0,0,False,,0,
+41st_sec_meeting.pdf,41,,123,0,0,0,0,False,,0,
+42nd_sec_meeting.pdf,42,,57,1,0,0,0,False,,0,
+43rd_sec_meeting.pdf,43,,68,0,0,0,0,False,,0,
+44th_sec_meeting.pdf,44,,48,0,2,104,695,False,,0,
+45th_sec_meeting.pdf,45,,54,0,1,10,1179,False,,0,
+46th_sec_meeting.pdf,46,,10,0,0,14,37,False,,1,"The Chief Secretary cum Chairperson, SEC chaired the meeting. He welcomed"
+46th_sec_meeting_6.12.2022.pdf,46,,9,2,0,15,17,False,,2,"The Chief Secretary & Chairperson, State Executive Committee (SEC) of ASDMA; The first meeting of the 46th meeting of SEC was held on November 4, 2022. The"
+47th_sec_meeting_10.12.2022.pdf,47,,6,0,0,15,4,False,,8,"At the outset of the meeting the Chairperson welcomed the members; Executive Committee (SEC), following resolutions were made.; 47. 1.: Confirmation of minutes of the 46th Meeting of SEC; Resolution: The State Executive Committee conflrmed the minutes of; the 46th meeting of the committee held on November 4, 2022 and."
+48_sec_meeting_29.03.2023_0.pdf,48,,8,0,0,1,65,False,,1,At the outset of the meeting the Chairperson welcomed the
+49th_sec_meeting_07_09_2023_0.pdf,49,,8,0,0,7,7,False,,1,At the outset of the meeting the Chairperson welcomed the members
+4th_SEC_Meeting.pdf,4,,14,0,0,0,0,False,,0,
+50th_sec_meeting.pdf,50,,5,1,1,10,28,False,,1,At the outset of the meeting the Chairperson welcomed the members
+51th_sec_meeting_0.pdf,51,,57,241,3,131,337,False,,1,At the outset of the meeting the Chairperson welcomed the members
+52nd_sec_meeting.pdf,52,,14,11,0,54,135,False,,1,"At the outset of the meeting, the Chairperson of the State Executive"
+53rd_sec_meeting_2.pdf,53,,32,27,0,4,294,False,,20,"following resolutions were made.; 53.1 : Confirmation of minutes of the 52Id Meeting oI SEC; Resotution: The State Executive Committee confirmed the minutes of its 52d; meeting held on February 3,2025.; 51.2: Action Taken Report on the decisions ol 52ld SEC meeting"
+54th_sec_meeting.pdf,54,,41,78,0,25,405,False,,3,"At the outset of the meeting, the Chairperson of the State Executive; The Additional Chief Secretary to the Government of Assam, Revenue &; Disaster Management Department & Chief Executive Officer, ASDMA"
+55th_sec_meeting_0.pdf,55,,97,97,0,35,912,False,,4,"At the outset of the meeting, the Chairperson of the State Executive; The Additional Chief Secretary to the Government of Assam, Revenue &; Disaster Management Department & Chief Executive Officer, ASDMA; necessary direction."
+5th_SEC_Meeting.pdf,5,,15,0,0,0,0,False,,0,
+6th_SEC_Meeting.pdf,6,,14,0,0,0,0,False,,0,
+7th_SEC_Meeting.pdf,7,,26,0,0,0,0,False,,0,
+8th_SEC_Meeting.pdf,8,,26,0,0,0,0,False,,0,
+9th_SEC_Meeting.pdf,9,,8,0,0,0,0,True,,0,

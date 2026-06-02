@@ -2,10 +2,10 @@ import pandas as pd
 import os
 import glob
 
-for year in range(2025,2026):
+for year in range(2026,2027):
     year = str(year)
     
-    for month in range(7,11):        
+    for month in range(1,6):        
         month=str(month)
         if int(month)<10:
             month = '0'+str(month)

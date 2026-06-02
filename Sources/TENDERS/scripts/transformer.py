@@ -47,6 +47,21 @@ for variable in variables:
             variable_df_monthly.to_csv(data_path+'variables/'+variable+'/{}_{}.csv'.format(variable, year_month), index=False)
 
 
+# Erosion tender variable
+variable = 'erosion_tenders_awarded_value'
+erosion_tenders_awarded_value_df = flood_tenders_geotagged_df[flood_tenders_geotagged_df['Erosion'] == True]
+erosion_tenders_awarded_value_df = erosion_tenders_awarded_value_df.groupby(['month', 'object_id'])[['Awarded Value']].sum().reset_index()
+erosion_tenders_awarded_value_df = erosion_tenders_awarded_value_df.rename(columns={'Awarded Value': variable})
+
+for year_month in erosion_tenders_awarded_value_df.month.unique():
+    variable_df_monthly = erosion_tenders_awarded_value_df[erosion_tenders_awarded_value_df.month == year_month]
+    variable_df_monthly = variable_df_monthly[['object_id', variable]]
+    if os.path.exists(data_path+'variables/'+variable):
+        variable_df_monthly.to_csv(data_path+'variables/'+variable+'/{}_{}.csv'.format(variable, year_month), index=False)
+    else:
+        os.mkdir(data_path+'variables/'+variable)
+        variable_df_monthly.to_csv(data_path+'variables/'+variable+'/{}_{}.csv'.format(variable, year_month), index=False)
+
 # Scheme wise tender variables
 variables = flood_tenders_geotagged_df['Response Type'].unique()
 for variable in variables:

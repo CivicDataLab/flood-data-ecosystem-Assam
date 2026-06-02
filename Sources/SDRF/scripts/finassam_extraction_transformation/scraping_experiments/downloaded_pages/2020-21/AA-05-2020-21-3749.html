@@ -1,0 +1,3612 @@
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Public Finance Management System - Government of Assam">
+
+<link href="/assamfinance/resources/icons/favicon.ico" rel="icon" type="image/x-icon">
+<link href="/assamfinance/resources/icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/assamfinance/resources/style/kranstyle.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/style/jquery-ui.css" rel="stylesheet" type="text/css">
+
+<!-- BOOTSTRAP -->
+<link href="/assamfinance/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- CALENDAR  -->
+<link href="/assamfinance/resources/js/calendar/calendar.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+<script src="/assamfinance/resources/js/jquery-1.9.1.js"></script>
+<script src="/assamfinance/resources/js/jquery-ui.js"></script>
+<script src="/assamfinance/resources/bootstrap/js/bootstrap.min.js"></script>
+<!-- TINY-BOX  -->
+<script src="/assamfinance/resources/js/tinybox/tinybox.js" type="text/javascript"></script>
+<script src="/assamfinance/resources/js/calendar/calendar.js"></script>
+
+<script src="/assamfinance/resources/bootstrap/js/bootstrap-datetimepicker.js" type="text/javascript" charset="UTF-8"></script>
+
+<!-- TOOL-TIP  -->
+<link href="/assamfinance/resources/js/menu/css/dropdown/dropdown.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/js/menu/css/dropdown/dropdown.vertical.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/js/menu/css/dropdown/themes/default/default.ultimate.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/js/tooltipster-master/css/tooltipster.css" rel="stylesheet" type="text/css">
+<link href="/assamfinance/resources/js/tooltipster-master/css/themes/tooltipster-noir.css" rel="stylesheet" type="text/css">
+<script src="/assamfinance/resources/js/tooltipster-master/js/jquery.tooltipster.min.js" type="text/javascript"></script>
+<script src="/assamfinance/resources/js/jquery.slimscroll.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="../resources/js/ckeditor/ckeditor.js?version=2" charset="utf-8"></script><style>.cke{visibility:hidden;}</style>
+<script type="text/javascript" src="../resources/js/ckeditor5-build-classic/ckeditor.js" charset="utf-8"></script><style type="text/css">.ck-hidden{display:none!important}.ck.ck-reset,.ck.ck-reset_all,.ck.ck-reset_all *{box-sizing:border-box;height:auto;position:static;width:auto}:root{--ck-color-base-action:#61b045;--ck-color-base-active:#198cf0;--ck-color-base-active-focus:#0e7fe1;--ck-color-base-background:#fff;--ck-color-base-border:#c4c4c4;--ck-color-base-focus:#6cb5f9;--ck-color-base-foreground:#fafafa;--ck-color-base-text:#333;--ck-color-button-action-active-background:#53973b;--ck-color-button-action-active-shadow:#498433;--ck-color-button-action-background:var(--ck-color-base-action);--ck-color-button-action-disabled-background:#7ec365;--ck-color-button-action-hover-background:#579e3d;--ck-color-button-action-text:var(--ck-color-base-background);--ck-color-button-cancel:#db3700;--ck-color-button-default-active-background:#d9d9d9;--ck-color-button-default-active-shadow:#bfbfbf;--ck-color-button-default-background:transparent;--ck-color-button-default-disabled-background:transparent;--ck-color-button-default-hover-background:#e6e6e6;--ck-color-button-on-active-background:#bababa;--ck-color-button-on-active-shadow:#a1a1a1;--ck-color-button-on-background:#dedede;--ck-color-button-on-disabled-background:#dedede;--ck-color-button-on-hover-background:#c4c4c4;--ck-color-button-save:#008a00;--ck-color-dropdown-panel-background:var(--ck-color-base-background);--ck-color-dropdown-panel-border:var(--ck-color-base-border);--ck-color-engine-placeholder-text:#c2c2c2;--ck-color-focus-border:#47a4f5;--ck-color-focus-disabled-shadow:rgba(119,186,248,0.3);--ck-color-focus-shadow:rgba(119,186,248,0.5);--ck-color-input-background:var(--ck-color-base-background);--ck-color-input-border:#c7c7c7;--ck-color-input-disabled-background:#f2f2f2;--ck-color-input-disabled-border:#c7c7c7;--ck-color-input-disabled-text:#5c5c5c;--ck-color-input-text:var(--ck-color-base-text);--ck-color-link-default:#0000f0;--ck-color-link-selected-background:#ebf8ff;--ck-color-list-background:var(--ck-color-base-background);--ck-color-list-button-hover-background:var(--ck-color-base-foreground);--ck-color-list-button-on-background:var(--ck-color-base-active);--ck-color-list-button-on-background-focus:var(--ck-color-base-active-focus);--ck-color-list-button-on-text:var(--ck-color-base-background);--ck-color-panel-background:var(--ck-color-base-background);--ck-color-panel-border:var(--ck-color-base-border);--ck-color-shadow-drop:rgba(0,0,0,0.15);--ck-color-shadow-inner:rgba(0,0,0,0.1);--ck-color-switch-button-inner-background:var(--ck-color-base-background);--ck-color-switch-button-off-background:#b0b0b0;--ck-color-switch-button-on-background:var(--ck-color-button-action-background);--ck-color-text:var(--ck-color-base-text);--ck-color-toolbar-background:var(--ck-color-base-foreground);--ck-color-toolbar-border:var(--ck-color-base-border);--ck-color-tooltip-background:var(--ck-color-base-text);--ck-color-tooltip-text:var(--ck-color-base-background);--ck-color-upload-bar-background:#6cb5f9;--ck-color-upload-infinite-background:rgba(0,0,0,0.1);--ck-disabled-opacity:.5;--ck-focus-disabled-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-disabled-shadow);--ck-focus-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-shadow);--ck-focus-outer-shadow-geometry:0 0 0 3px;--ck-focus-ring:1px solid var(--ck-color-focus-border);--ck-font-face:Helvetica,Arial,Tahoma,Verdana,Sans-Serif;--ck-font-size-base:13px;--ck-font-size-big:1.4em;--ck-font-size-large:1.8em;--ck-font-size-normal:1em;--ck-font-size-small:0.75em;--ck-font-size-tiny:0.7em;--ck-line-height-base:1.84615;--ck-ui-component-min-height:2.3em;--ck-z-default:1;--ck-z-modal:calc(var(--ck-z-default) + 999)}.ck.ck-reset,.ck.ck-reset_all,.ck.ck-reset_all *{background:transparent;border:0;margin:0;padding:0;text-decoration:none;transition:none;vertical-align:middle;word-wrap:break-word}.ck.ck-reset_all,.ck.ck-reset_all *{border-collapse:collapse;color:var(--ck-color-text);cursor:auto;float:none;font:normal normal normal var(--ck-font-size-base)/var(--ck-line-height-base) var(--ck-font-face);text-align:left;white-space:nowrap}.ck.ck-reset_all .ck-rtl *{text-align:right}.ck.ck-reset_all iframe{vertical-align:inherit}.ck.ck-reset_all textarea{white-space:pre-wrap}.ck.ck-reset_all input[type=password],.ck.ck-reset_all input[type=text],.ck.ck-reset_all textarea{cursor:text}.ck.ck-reset_all input[type=password][disabled],.ck.ck-reset_all input[type=text][disabled],.ck.ck-reset_all textarea[disabled]{cursor:default}.ck.ck-reset_all fieldset{border:2px groove #dfdee3;padding:10px}.ck.ck-reset_all button::-moz-focus-inner{border:0;padding:0}:root{--ck-border-radius:2px;--ck-drop-shadow:0 1px 2px 1px var(--ck-color-shadow-drop);--ck-inner-shadow:2px 2px 3px var(--ck-color-shadow-inner) inset;--ck-spacing-extra-tiny:calc(var(--ck-spacing-unit) * 0.16);--ck-spacing-large:calc(var(--ck-spacing-unit) * 1.5);--ck-spacing-medium:calc(var(--ck-spacing-unit) * 0.8);--ck-spacing-small:calc(var(--ck-spacing-unit) * 0.5);--ck-spacing-standard:var(--ck-spacing-unit);--ck-spacing-tiny:calc(var(--ck-spacing-unit) * 0.3);--ck-spacing-unit:0.6em}.ck.ck-editor__editable:not(.ck-editor__nested-editable){border-radius:0}.ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable),.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused{border:var(--ck-focus-ring);box-shadow:var(--ck-inner-shadow),0 0;outline:none}.ck.ck-editor__editable_inline{border:1px solid transparent;overflow:auto;padding:0 var(--ck-spacing-standard)}.ck.ck-editor__editable_inline>:first-child{margin-top:var(--ck-spacing-large)}.ck.ck-editor__editable_inline>:last-child{margin-bottom:var(--ck-spacing-large)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_n]:after{border-bottom-color:var(--ck-color-base-foreground)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_s]:after{border-top-color:var(--ck-color-base-foreground)}.ck.ck-label{display:block}.ck.ck-voice-label{display:none}.ck.ck-label{font-weight:700}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky{position:fixed;top:0;z-index:var(--ck-z-modal)}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky_bottom-limit{position:absolute;top:auto}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky{border-top-left-radius:0;border-top-right-radius:0;border-width:0 1px 1px;box-shadow:var(--ck-drop-shadow),0 0}.ck.ck-toolbar{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;align-items:center;display:flex;flex-flow:row wrap;user-select:none}.ck.ck-toolbar.ck-toolbar_vertical{flex-direction:column}.ck.ck-toolbar.ck-toolbar_floating{flex-wrap:nowrap}.ck.ck-toolbar__separator{display:inline-block}.ck.ck-toolbar__newline{display:block;width:100%}.ck.ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-toolbar,.ck.ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-toolbar{background:var(--ck-color-toolbar-background);border:1px solid var(--ck-color-toolbar-border);padding:0 var(--ck-spacing-small)}.ck.ck-toolbar>*{margin-bottom:var(--ck-spacing-small);margin-right:var(--ck-spacing-small);margin-top:var(--ck-spacing-small)}.ck.ck-toolbar.ck-toolbar_vertical{padding:0}.ck.ck-toolbar.ck-toolbar_vertical>*{border:0;border-radius:0;margin:0;width:100%}.ck.ck-toolbar>:last-child{margin-right:0}.ck-toolbar-container .ck.ck-toolbar{border:0}.ck.ck-toolbar__separator{align-self:stretch;background:var(--ck-color-toolbar-border);margin-bottom:0;margin-top:0;width:1px}.ck.ck-toolbar__newline{margin:0}.ck.ck-editor{position:relative}.ck.ck-editor .ck-editor__top .ck-sticky-panel .ck-toolbar{z-index:var(--ck-z-modal)}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners{border-bottom-left-radius:0;border-bottom-right-radius:0;border-radius:var(--ck-border-radius)}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-bottom-width:0}.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar{border-bottom-width:1px;border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius);border-radius:0}.ck.ck-editor__main>.ck-editor__editable{background:var(--ck-color-base-background);border-radius:0}.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0;border-top-right-radius:0}.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){border-color:var(--ck-color-base-border)}.ck.ck-icon{vertical-align:middle}:root{--ck-icon-size:calc(var(--ck-line-height-base) * var(--ck-font-size-normal))}.ck.ck-icon{font-size:.8333350694em;height:var(--ck-icon-size);width:var(--ck-icon-size);will-change:transform}.ck.ck-icon,.ck.ck-icon *{color:inherit;cursor:inherit}.ck.ck-icon *{fill:currentColor}.ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{-webkit-backface-visibility:hidden;pointer-events:none;position:absolute}.ck-tooltip{display:none;opacity:0;visibility:hidden;z-index:var(--ck-z-modal)}.ck-tooltip .ck-tooltip__text{display:inline-block}.ck-tooltip .ck-tooltip__text:after{content:"";height:0;width:0}:root{--ck-tooltip-arrow-size:5px}.ck.ck-tooltip{left:50%}.ck.ck-tooltip.ck-tooltip_s{bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(100%)}.ck.ck-tooltip.ck-tooltip_s .ck-tooltip__text:after{border-bottom-color:var(--ck-color-tooltip-background);border-bottom-width:var(--ck-tooltip-arrow-size);border-left-color:transparent;border-left-width:var(--ck-tooltip-arrow-size);border-right-color:transparent;border-right-width:var(--ck-tooltip-arrow-size);border-top-color:transparent;border-top-width:0;top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%)}.ck.ck-tooltip.ck-tooltip_n{top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(-100%)}.ck.ck-tooltip.ck-tooltip_n .ck-tooltip__text:after{border-bottom-color:transparent;border-bottom-width:0;border-left-color:transparent;border-left-width:var(--ck-tooltip-arrow-size);border-right-color:transparent;border-right-width:var(--ck-tooltip-arrow-size);border-top-color:var(--ck-color-tooltip-background);border-top-width:var(--ck-tooltip-arrow-size);bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%)}.ck.ck-tooltip .ck-tooltip__text{border-radius:0}.ck-rounded-corners .ck.ck-tooltip .ck-tooltip__text,.ck.ck-tooltip .ck-tooltip__text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-tooltip .ck-tooltip__text{background:var(--ck-color-tooltip-background);color:var(--ck-color-tooltip-text);font-size:.9em;left:-50%;line-height:1.5;padding:var(--ck-spacing-small) var(--ck-spacing-medium);position:relative}.ck.ck-tooltip .ck-tooltip__text:after{border-style:solid;left:50%}.ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{transition:opacity .2s ease-in-out .2s}.ck.ck-button,a.ck.ck-button{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none}.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:block}@media (hover:none){.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:none}}.ck.ck-button,a.ck.ck-button{align-items:center;display:inline-flex;justify-content:left;position:relative}.ck.ck-button.ck-button_with-text .ck-button__label,a.ck.ck-button.ck-button_with-text .ck-button__label{display:inline-block}.ck.ck-button:not(.ck-button_with-text),a.ck.ck-button:not(.ck-button_with-text){justify-content:center}.ck.ck-button:hover .ck-tooltip,a.ck.ck-button:hover .ck-tooltip{opacity:1;visibility:visible}.ck.ck-button .ck-button__label,.ck.ck-button:focus:not(:hover) .ck-tooltip,a.ck.ck-button .ck-button__label,a.ck.ck-button:focus:not(:hover) .ck-tooltip{display:none}.ck.ck-button,a.ck.ck-button{background:var(--ck-color-button-default-background)}.ck.ck-button:not(.ck-disabled):hover,a.ck.ck-button:not(.ck-disabled):hover{background:var(--ck-color-button-default-hover-background)}.ck.ck-button:not(.ck-disabled):active,a.ck.ck-button:not(.ck-disabled):active{background:var(--ck-color-button-default-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-default-active-shadow)}.ck.ck-button.ck-disabled,a.ck.ck-button.ck-disabled{background:var(--ck-color-button-default-disabled-background)}.ck.ck-button,a.ck.ck-button{border-radius:0}.ck-rounded-corners .ck.ck-button,.ck-rounded-corners a.ck.ck-button,.ck.ck-button.ck-rounded-corners,a.ck.ck-button.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-button,a.ck.ck-button{border:1px solid transparent;cursor:default;font-size:inherit;line-height:1;min-height:var(--ck-ui-component-min-height);min-width:var(--ck-ui-component-min-height);padding:var(--ck-spacing-tiny);text-align:center;transition:box-shadow .2s ease-in-out;vertical-align:middle;white-space:nowrap}.ck.ck-button:active,.ck.ck-button:focus,a.ck.ck-button:active,a.ck.ck-button:focus{border:var(--ck-focus-ring);border-color:transparent;box-shadow:var(--ck-focus-outer-shadow),0 0;outline:none}.ck.ck-button.ck-disabled:active,.ck.ck-button.ck-disabled:focus,a.ck.ck-button.ck-disabled:active,a.ck.ck-button.ck-disabled:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),0 0}.ck.ck-button.ck-disabled .ck-button__icon,a.ck.ck-button.ck-disabled .ck-button__icon{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-disabled .ck-button__label,a.ck.ck-button.ck-disabled .ck-button__label{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-button_with-text,a.ck.ck-button.ck-button_with-text{padding:var(--ck-spacing-tiny) var(--ck-spacing-standard)}.ck.ck-button.ck-button_with-text .ck-button__icon,a.ck.ck-button.ck-button_with-text .ck-button__icon{margin-left:calc(-1 * var(--ck-spacing-small));margin-right:var(--ck-spacing-small)}.ck.ck-button.ck-on,a.ck.ck-button.ck-on{background:var(--ck-color-button-on-background)}.ck.ck-button.ck-on:not(.ck-disabled):hover,a.ck.ck-button.ck-on:not(.ck-disabled):hover{background:var(--ck-color-button-on-hover-background)}.ck.ck-button.ck-on:not(.ck-disabled):active,a.ck.ck-button.ck-on:not(.ck-disabled):active{background:var(--ck-color-button-on-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-on-active-shadow)}.ck.ck-button.ck-on.ck-disabled,a.ck.ck-button.ck-on.ck-disabled{background:var(--ck-color-button-on-disabled-background)}.ck.ck-button.ck-button-save,a.ck.ck-button.ck-button-save{color:var(--ck-color-button-save)}.ck.ck-button.ck-button-cancel,a.ck.ck-button.ck-button-cancel{color:var(--ck-color-button-cancel)}.ck.ck-button .ck-button__icon use,.ck.ck-button .ck-button__icon use *,a.ck.ck-button .ck-button__icon use,a.ck.ck-button .ck-button__icon use *{color:inherit}.ck.ck-button .ck-button__label,a.ck.ck-button .ck-button__label{color:inherit;cursor:inherit;font-size:inherit;font-weight:inherit;vertical-align:middle}.ck.ck-button-action,a.ck.ck-button-action{background:var(--ck-color-button-action-background)}.ck.ck-button-action:not(.ck-disabled):hover,a.ck.ck-button-action:not(.ck-disabled):hover{background:var(--ck-color-button-action-hover-background)}.ck.ck-button-action:not(.ck-disabled):active,a.ck.ck-button-action:not(.ck-disabled):active{background:var(--ck-color-button-action-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-action-active-shadow)}.ck.ck-button-action.ck-disabled,a.ck.ck-button-action.ck-disabled{background:var(--ck-color-button-action-disabled-background)}.ck.ck-button-action,a.ck.ck-button-action{color:var(--ck-color-button-action-text)}.ck.ck-button-bold,a.ck.ck-button-bold{font-weight:700}.ck.ck-dropdown{display:inline-block;position:relative}.ck.ck-dropdown .ck-dropdown__arrow{pointer-events:none;z-index:var(--ck-z-default)}.ck.ck-dropdown .ck-button.ck-dropdown__button{width:100%}.ck.ck-dropdown .ck-button.ck-dropdown__button.ck-on .ck-tooltip{display:none}.ck.ck-dropdown .ck-dropdown__panel{-webkit-backface-visibility:hidden;display:none;left:0;position:absolute;transform:translate3d(0,100%,0);z-index:var(--ck-z-modal)}.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel-visible{display:inline-block;will-change:transform}:root{--ck-dropdown-arrow-size:calc(0.5 * var(--ck-icon-size))}.ck.ck-dropdown{font-size:inherit}.ck.ck-dropdown .ck-dropdown__arrow{margin-left:var(--ck-spacing-small);right:var(--ck-spacing-standard);width:var(--ck-dropdown-arrow-size)}.ck.ck-dropdown.ck-disabled .ck-dropdown__arrow{opacity:var(--ck-disabled-opacity)}.ck.ck-dropdown .ck-button.ck-dropdown__button:not(.ck-button_with-text){padding-left:var(--ck-spacing-small)}.ck.ck-dropdown .ck-button.ck-dropdown__button.ck-disabled .ck-button__label{opacity:var(--ck-disabled-opacity)}.ck.ck-dropdown .ck-button.ck-dropdown__button.ck-on{border-bottom-left-radius:0;border-bottom-right-radius:0}.ck.ck-dropdown .ck-button.ck-dropdown__button .ck-button__label{overflow:hidden;text-overflow:ellipsis;width:7em}.ck.ck-dropdown__panel{border-radius:0;box-shadow:var(--ck-drop-shadow),0 0}.ck-rounded-corners .ck.ck-dropdown__panel,.ck.ck-dropdown__panel.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0}.ck.ck-dropdown__panel{background:var(--ck-color-dropdown-panel-background);border:1px solid var(--ck-color-dropdown-panel-border);bottom:0;min-width:100%}.ck.ck-list{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;display:flex;flex-direction:column;user-select:none}.ck.ck-list .ck-list__item,.ck.ck-list .ck-list__separator{display:block}.ck.ck-list .ck-list__item>:focus{position:relative;z-index:var(--ck-z-default)}.ck.ck-list{border-radius:0}.ck-rounded-corners .ck.ck-list,.ck.ck-list.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-list{background:var(--ck-color-list-background);list-style-type:none}.ck.ck-list__item{cursor:default;min-width:12em}.ck.ck-list__item .ck-button{border:0;border-radius:0;min-height:unset;padding:calc(.2 * var(--ck-line-height-base) * var(--ck-font-size-base)) calc(.4 * var(--ck-line-height-base) * var(--ck-font-size-base));text-align:left;width:100%}.ck.ck-list__item .ck-button .ck-button__label{line-height:calc(1.2 * var(--ck-line-height-base) * var(--ck-font-size-base))}.ck.ck-list__item .ck-button:active{box-shadow:none}.ck.ck-list__item .ck-button.ck-on{background:var(--ck-color-list-button-on-background);color:var(--ck-color-list-button-on-text)}.ck.ck-list__item .ck-button.ck-on:hover:not(ck-disabled){background:var(--ck-color-list-button-on-background-focus)}.ck.ck-list__item .ck-button.ck-on:active{box-shadow:none}.ck.ck-list__item .ck-button:hover:not(.ck-disabled){background:var(--ck-color-list-button-hover-background)}.ck.ck-list__item .ck-switchbutton.ck-on{background:var(--ck-color-list-background);color:inherit}.ck.ck-list__item .ck-switchbutton.ck-on:hover:not(ck-disabled){background:var(--ck-color-list-button-hover-background);color:inherit}.ck.ck-list__separator{background:var(--ck-color-base-border);height:1px;width:100%}.ck.ck-button.ck-switchbutton .ck-button__toggle,.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner{display:block}:root{--ck-switch-button-toggle-inner-size:1.0769230769em;--ck-switch-button-toggle-spacing:1px;--ck-switch-button-toggle-width:2.6153846154em}.ck.ck-button.ck-switchbutton .ck-button__label{margin-right:calc(2 * var(--ck-spacing-large))}.ck.ck-button.ck-switchbutton.ck-disabled .ck-button__toggle{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-switchbutton .ck-button__toggle{border-radius:0}.ck-rounded-corners .ck.ck-button.ck-switchbutton .ck-button__toggle,.ck.ck-button.ck-switchbutton .ck-button__toggle.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-button.ck-switchbutton .ck-button__toggle{background:var(--ck-color-switch-button-off-background);margin-left:auto;transition:background .4s ease;width:var(--ck-switch-button-toggle-width)}.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner{border-radius:0}.ck-rounded-corners .ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner,.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner.ck-rounded-corners{border-radius:var(--ck-border-radius);border-radius:calc(.5 * var(--ck-border-radius))}.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner{background:var(--ck-color-switch-button-inner-background);height:var(--ck-switch-button-toggle-inner-size);margin:var(--ck-switch-button-toggle-spacing);transition:transform .3s ease;width:var(--ck-switch-button-toggle-inner-size)}.ck.ck-button.ck-switchbutton.ck-on .ck-button__toggle{background:var(--ck-color-switch-button-on-background)}.ck.ck-button.ck-switchbutton.ck-on .ck-button__toggle .ck-button__toggle__inner{transform:translateX(1.3846153847em)}.ck.ck-toolbar-dropdown .ck-toolbar{flex-wrap:nowrap}.ck.ck-toolbar-dropdown .ck-dropdown__panel .ck-button:focus{z-index:calc(var(--ck-z-default) + 1)}.ck.ck-toolbar-dropdown .ck-toolbar{border:0}.ck.ck-dropdown .ck-dropdown__panel .ck-list{border-radius:0}.ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list,.ck.ck-dropdown .ck-dropdown__panel .ck-list.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0}.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:first-child .ck-button{border-radius:0}.ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:first-child .ck-button,.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:first-child .ck-button.ck-rounded-corners{border-bottom-left-radius:0;border-bottom-right-radius:0;border-radius:var(--ck-border-radius);border-top-left-radius:0}.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:last-child .ck-button{border-radius:0}.ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:last-child .ck-button,.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:last-child .ck-button.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0;border-top-right-radius:0}.text-tiny{font-size:.7em}.text-small{font-size:.85em}.text-big{font-size:1.4em}.text-huge{font-size:1.8em}.ck.ck-splitbutton{font-size:inherit}.ck.ck-splitbutton .ck-splitbutton__action:focus{z-index:calc(var(--ck-z-default) + 1)}.ck.ck-splitbutton.ck-splitbutton_open>.ck-button .ck-tooltip{display:none}:root{--ck-color-split-button-hover-background:#ebebeb;--ck-color-split-button-hover-border:#b3b3b3}.ck.ck-splitbutton>.ck-splitbutton__action{border-radius:0}.ck-rounded-corners .ck.ck-splitbutton>.ck-splitbutton__action,.ck.ck-splitbutton>.ck-splitbutton__action.ck-rounded-corners{border-bottom-right-radius:unset;border-radius:var(--ck-border-radius);border-top-right-radius:unset}.ck.ck-splitbutton>.ck-splitbutton__arrow{border-radius:0;min-width:unset}.ck-rounded-corners .ck.ck-splitbutton>.ck-splitbutton__arrow,.ck.ck-splitbutton>.ck-splitbutton__arrow.ck-rounded-corners{border-bottom-left-radius:unset;border-radius:var(--ck-border-radius);border-top-left-radius:unset}.ck.ck-splitbutton>.ck-splitbutton__arrow svg{width:var(--ck-dropdown-arrow-size)}.ck.ck-splitbutton.ck-splitbutton_open>.ck-button:not(.ck-on):not(:hover),.ck.ck-splitbutton:hover>.ck-button:not(.ck-on):not(:hover){background:var(--ck-color-split-button-hover-background)}.ck.ck-splitbutton.ck-splitbutton_open>.ck-splitbutton__arrow,.ck.ck-splitbutton:hover>.ck-splitbutton__arrow{border-left-color:var(--ck-color-split-button-hover-border)}.ck.ck-splitbutton.ck-splitbutton_open{border-radius:0}.ck-rounded-corners .ck.ck-splitbutton.ck-splitbutton_open,.ck.ck-splitbutton.ck-splitbutton_open.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck-rounded-corners .ck.ck-splitbutton.ck-splitbutton_open>.ck-splitbutton__action,.ck.ck-splitbutton.ck-splitbutton_open.ck-rounded-corners>.ck-splitbutton__action{border-bottom-left-radius:0}.ck-rounded-corners .ck.ck-splitbutton.ck-splitbutton_open>.ck-splitbutton__arrow,.ck.ck-splitbutton.ck-splitbutton_open.ck-rounded-corners>.ck-splitbutton__arrow{border-bottom-right-radius:0}:root{--ck-highlight-marker-blue:#72cdfd;--ck-highlight-marker-green:#63f963;--ck-highlight-marker-pink:#fc7999;--ck-highlight-marker-yellow:#fdfd77;--ck-highlight-pen-green:#180;--ck-highlight-pen-red:#e91313}.marker-yellow{background-color:var(--ck-highlight-marker-yellow)}.marker-green{background-color:var(--ck-highlight-marker-green)}.marker-pink{background-color:var(--ck-highlight-marker-pink)}.marker-blue{background-color:var(--ck-highlight-marker-blue)}.pen-red{color:var(--ck-highlight-pen-red)}.pen-green,.pen-red{background-color:transparent}.pen-green{color:var(--ck-highlight-pen-green)}.ck-content blockquote{border-left:5px solid #ccc;font-style:italic;margin-left:0;overflow:hidden;padding-left:1.5em;padding-right:1.5em}.ck.ck-heading_heading1{font-size:20px}.ck.ck-heading_heading2{font-size:17px}.ck.ck-heading_heading3{font-size:14px}.ck[class*=ck-heading_heading]{font-weight:700}.ck.ck-dropdown.ck-heading-dropdown .ck-dropdown__button .ck-button__label{width:8em}.ck.ck-dropdown.ck-heading-dropdown .ck-dropdown__panel .ck-list__item{min-width:18em}.ck .ck-widget.ck-widget_selectable{position:relative}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{position:absolute;visibility:hidden}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{display:block}.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{visibility:visible}:root{--ck-color-widget-blurred-border:#dedede;--ck-color-widget-drag-handler-icon-color:var(--ck-color-base-background);--ck-color-widget-editable-focus-background:var(--ck-color-base-background);--ck-color-widget-hover-border:#ffc83d;--ck-widget-handler-animation-curve:ease;--ck-widget-handler-animation-duration:200ms;--ck-widget-handler-icon-size:16px;--ck-widget-outline-thickness:3px}.ck .ck-widget{margin:var(--ck-spacing-standard) 0;outline-color:transparent;outline-style:solid;outline-width:var(--ck-widget-outline-thickness);padding:0;transition:outline-color var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve)}.ck .ck-widget.ck-widget_selected,.ck .ck-widget.ck-widget_selected:hover{outline:var(--ck-widget-outline-thickness) solid var(--ck-color-focus-border)}.ck .ck-widget:hover{outline-color:var(--ck-color-widget-hover-border)}.ck .ck-editor__nested-editable{border:1px solid transparent}.ck .ck-editor__nested-editable.ck-editor__nested-editable_focused,.ck .ck-editor__nested-editable:focus{background-color:var(--ck-color-widget-editable-focus-background);border:var(--ck-focus-ring);box-shadow:var(--ck-inner-shadow),0 0;outline:none}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{background-color:transparent;border-radius:var(--ck-border-radius) var(--ck-border-radius) 0 0;box-sizing:border-box;left:calc(0px - var(--ck-widget-outline-thickness));opacity:0;padding:4px;transform:translateY(-100%);transition:background-color var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),visibility var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),opacity var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve)}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler:hover .ck-icon .ck-icon__selected-indicator{opacity:1}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{color:var(--ck-color-widget-drag-handler-icon-color);height:var(--ck-widget-handler-icon-size);width:var(--ck-widget-handler-icon-size)}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{opacity:0;transition:opacity .3s var(--ck-widget-handler-animation-curve)}.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler{background-color:var(--ck-color-focus-border);opacity:1}.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{opacity:1}.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{background-color:var(--ck-color-widget-hover-border);opacity:1}.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover{outline-color:var(--ck-color-widget-blurred-border)}.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected .ck-widget__selection-handler,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected .ck-widget__selection-handler:hover,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover .ck-widget__selection-handler,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover .ck-widget__selection-handler:hover{background:var(--ck-color-widget-blurred-border)}:root{--ck-input-text-width:18em}.ck.ck-input-text{border-radius:0}.ck-rounded-corners .ck.ck-input-text,.ck.ck-input-text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-input-text{background:var(--ck-color-input-background);border:1px solid var(--ck-color-input-border);box-shadow:var(--ck-inner-shadow),0 0;min-height:var(--ck-ui-component-min-height);min-width:var(--ck-input-text-width);padding:var(--ck-spacing-extra-tiny) var(--ck-spacing-medium);transition:.2s ease-in-out;transition-property:box-shadow,border}.ck.ck-input-text:focus{border:var(--ck-focus-ring);box-shadow:var(--ck-focus-outer-shadow),var(--ck-inner-shadow);outline:none}.ck.ck-input-text[readonly]{background:var(--ck-color-input-disabled-background);border:1px solid var(--ck-color-input-disabled-border);color:var(--ck-color-input-disabled-text)}.ck.ck-input-text[readonly]:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),var(--ck-inner-shadow)}.ck.ck-text-alternative-form .ck-labeled-input{display:inline-block}.ck.ck-text-alternative-form .ck-label{display:none}.ck.ck-text-alternative-form{padding:var(--ck-spacing-standard)}.ck.ck-text-alternative-form:focus{outline:none}.ck.ck-text-alternative-form>:not(:first-child){margin-left:var(--ck-spacing-standard)}:root{--ck-balloon-panel-arrow-z-index:calc(var(--ck-z-default) - 3)}.ck.ck-balloon-panel{display:none;position:absolute;z-index:var(--ck-z-modal)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{content:"";position:absolute}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_n]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_n]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_s]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_s]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel.ck-balloon-panel_visible{display:block}:root{--ck-balloon-arrow-half-width:8px;--ck-balloon-arrow-height:10px;--ck-balloon-arrow-offset:2px}.ck.ck-balloon-panel{border-radius:0}.ck-rounded-corners .ck.ck-balloon-panel,.ck.ck-balloon-panel.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-balloon-panel{background:var(--ck-color-panel-background);border:1px solid var(--ck-color-panel-border);box-shadow:var(--ck-drop-shadow),0 0;min-height:15px}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{border-style:solid;height:0;width:0}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-bottom-width:var(--ck-balloon-arrow-height);border-left-width:var(--ck-balloon-arrow-half-width);border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:0}.ck.ck-balloon-panel[class*=arrow_n]:before{border-bottom-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-color:transparent;border-right-color:transparent;border-top-color:transparent}.ck.ck-balloon-panel[class*=arrow_n]:after{border-bottom-color:var(--ck-color-panel-background);margin-top:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-bottom-width:0;border-left-width:var(--ck-balloon-arrow-half-width);border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:var(--ck-balloon-arrow-height)}.ck.ck-balloon-panel[class*=arrow_s]:before{border-top-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-bottom-color:transparent;border-left-color:transparent;border-right-color:transparent}.ck.ck-balloon-panel[class*=arrow_s]:after{border-top-color:var(--ck-color-panel-background);margin-bottom:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:before{right:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:before{bottom:calc(-1 * var(--ck-balloon-arrow-height));left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:before{bottom:calc(-1 * var(--ck-balloon-arrow-height));left:calc(2 * var(--ck-balloon-arrow-half-width))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:before{bottom:calc(-1 * var(--ck-balloon-arrow-height));right:calc(2 * var(--ck-balloon-arrow-half-width))}.ck-content .image{clear:both;text-align:center}.ck-content .image>img{display:block;margin:0 auto;max-width:100%}.ck.ck-placeholder:before,.ck .ck-placeholder:before{color:var(--ck-color-engine-placeholder-text);content:attr(data-placeholder);cursor:text;pointer-events:none}.ck-content .image>figcaption{background-color:#f7f7f7;color:#333;font-size:.75em;outline-offset:-1px;padding:.6em}:root{--ck-image-style-spacing:1.5em}.ck-content .image-style-align-center,.ck-content .image-style-align-left,.ck-content .image-style-align-right,.ck-content .image-style-side{max-width:50%}.ck-content .image-style-side{float:right;margin-left:var(--ck-image-style-spacing)}.ck-content .image-style-align-left{float:left;margin-right:var(--ck-image-style-spacing)}.ck-content .image-style-align-center{margin-left:auto;margin-right:auto}.ck-content .image-style-align-right{float:right;margin-left:var(--ck-image-style-spacing)}.ck-content .image{overflow:hidden;position:relative}.ck-content .image .ck-progress-bar{left:0;position:absolute;top:0}:root{--ck-image-upload-progress-line-width:30px}.ck-content .image.ck-appear{animation:fadeIn .7s}.ck-content .image .ck-progress-bar{background:var(--ck-color-upload-bar-background);height:2px;transition:width .1s;width:0}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.ck-image-upload-complete-icon{border-radius:50%;display:block;position:absolute;right:10px;top:10px}.ck-image-upload-complete-icon:after{content:"";position:absolute}:root{--ck-color-image-upload-icon:#fff;--ck-color-image-upload-icon-background:#008a00;--ck-image-upload-icon-size:20px;--ck-image-upload-icon-width:2px}.ck-image-upload-complete-icon{animation-delay:0ms,3s;animation-duration:.5s,.5s;animation-fill-mode:forwards,forwards;animation-name:ck-upload-complete-icon-show,ck-upload-complete-icon-hide;background:var(--ck-color-image-upload-icon-background);font-size:var(--ck-image-upload-icon-size);height:var(--ck-image-upload-icon-size);opacity:0;width:var(--ck-image-upload-icon-size)}.ck-image-upload-complete-icon:after{animation-delay:.5s;animation-duration:.5s;animation-fill-mode:forwards;animation-name:ck-upload-complete-icon-check;border-right:var(--ck-image-upload-icon-width) solid var(--ck-color-image-upload-icon);border-top:var(--ck-image-upload-icon-width) solid var(--ck-color-image-upload-icon);box-sizing:border-box;height:0;left:25%;opacity:0;top:50%;transform:scaleX(-1) rotate(135deg);transform-origin:left top;width:0}@keyframes ck-upload-complete-icon-show{0%{opacity:0}to{opacity:1}}@keyframes ck-upload-complete-icon-hide{0%{opacity:1}to{opacity:0}}@keyframes ck-upload-complete-icon-check{0%{height:0;opacity:1;width:0}33%{height:0;width:.3em}to{height:.45em;opacity:1;width:.3em}}.ck .ck-upload-placeholder-loader{align-items:center;display:flex;justify-content:center;left:0;position:absolute;top:0}.ck .ck-upload-placeholder-loader:before{content:"";position:relative}:root{--ck-color-upload-placeholder-loader:#b3b3b3;--ck-upload-placeholder-loader-size:32px}.ck .ck-image-upload-placeholder{margin:0;width:100%}.ck .ck-upload-placeholder-loader{height:100%;width:100%}.ck .ck-upload-placeholder-loader:before{animation:ck-upload-placeholder-loader 1s linear infinite;border-radius:50%;border-right:2px solid transparent;border-top:3px solid var(--ck-color-upload-placeholder-loader);height:var(--ck-upload-placeholder-loader-size);width:var(--ck-upload-placeholder-loader-size)}@keyframes ck-upload-placeholder-loader{to{transform:rotate(1turn)}}.ck .ck-link_selected{background:var(--ck-color-link-selected-background)}.ck.ck-link-form .ck-labeled-input{display:inline-block}.ck.ck-link-form .ck-label{display:none}.ck.ck-link-form{padding:var(--ck-spacing-standard)}.ck.ck-link-form:focus{outline:none}.ck.ck-link-form>:not(:first-child){margin-left:var(--ck-spacing-standard)}.ck.ck-link-actions .ck-link-actions__preview{display:inline-block}.ck.ck-link-actions .ck-link-actions__preview .ck-button__label{overflow:hidden}.ck.ck-link-actions{padding:var(--ck-spacing-standard)}.ck.ck-link-actions .ck-button.ck-link-actions__preview{padding-left:0;padding-right:0}.ck.ck-link-actions .ck-button.ck-link-actions__preview,.ck.ck-link-actions .ck-button.ck-link-actions__preview:active,.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus,.ck.ck-link-actions .ck-button.ck-link-actions__preview:hover{background:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:active{box-shadow:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus .ck-button__label{text-decoration:underline}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label{color:var(--ck-color-link-default);cursor:pointer;max-width:var(--ck-input-text-width);min-width:3em;padding:0 var(--ck-spacing-medium);text-align:center;text-overflow:ellipsis}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label:hover{text-decoration:underline}.ck.ck-link-actions:focus{outline:none}.ck.ck-link-actions>:not(:first-child){margin-left:var(--ck-spacing-standard)}:root{--ck-color-table-focused-cell-background:#f5fafe}.ck-widget.table td.ck-editor__nested-editable.ck-editor__nested-editable_focused,.ck-widget.table th.ck-editor__nested-editable.ck-editor__nested-editable_focused{background:var(--ck-color-table-focused-cell-background);border-style:none;outline:1px solid var(--ck-color-focus-border);outline-offset:-1px}:root{--ck-insert-table-dropdown-box-active-background:#c7e5ff;--ck-insert-table-dropdown-box-border-active-color:#53a0e4;--ck-insert-table-dropdown-box-border-color:#bfbfbf;--ck-insert-table-dropdown-box-height:11px;--ck-insert-table-dropdown-box-margin:1px;--ck-insert-table-dropdown-box-width:12px;--ck-insert-table-dropdown-padding:10px}.ck .ck-insert-table-dropdown__grid{display:flex;flex-direction:row;flex-wrap:wrap;padding:var(--ck-insert-table-dropdown-padding) var(--ck-insert-table-dropdown-padding) 0;width:calc(var(--ck-insert-table-dropdown-box-width) * 10 + var(--ck-insert-table-dropdown-box-margin) * 20 + var(--ck-insert-table-dropdown-padding) * 2)}.ck .ck-insert-table-dropdown__label{text-align:center}.ck .ck-insert-table-dropdown-grid-box{border:1px solid var(--ck-insert-table-dropdown-box-border-color);border-radius:1px;height:var(--ck-insert-table-dropdown-box-height);margin:var(--ck-insert-table-dropdown-box-margin);width:var(--ck-insert-table-dropdown-box-width)}.ck .ck-insert-table-dropdown-grid-box.ck-on{background:var(--ck-insert-table-dropdown-box-active-background);border-color:var(--ck-insert-table-dropdown-box-border-active-color)}.ck-content .table{display:table;margin:1em auto}.ck-content .table table{border:1px double #b3b3b3;border-collapse:collapse;border-spacing:0}.ck-content .table table td,.ck-content .table table th{border-color:#d9d9d9;min-width:2em;padding:.4em;text-align:center}.ck-content .table table th{background:#fafafa;font-weight:700}</style>
+
+<script type="text/javascript">
+	window.history.forward();
+	function noBack() {
+		window.history.forward();
+	}
+
+	$(function() {
+		tab = 'administrativeApprovalDept';
+		surveyId = '';
+		seat = '18914';
+
+		if (typeof surveyId !== 'undefined' && surveyId > 0
+				&& tab == "dashboard") {
+			$.ajax({
+				url : "https://fin.assam.gov.in/survey/getMySurveyBanner",
+				data : {
+					surveyId : surveyId,
+					seat : seat
+				}
+			}).then(function(data) {
+				$('#surveyModal .modal-body').html(data);
+			});
+
+			$('#surveyModal').modal('show');
+		}
+
+		if (tab != "") {
+			$("#" + tab).addClass("active");
+		}
+
+		if (tab != "") {
+			subtab = 'aaIssuedDept';
+			if (subtab != "") {
+				$("#" + subtab).attr("class", "active");
+				if (subtab == "man" || subtab == "obl" || subtab == "suo"
+						|| subtab == "oth") {
+					stab = '';
+
+					$("#" + stab).attr("class", "current_page_item");
+					var $el, leftPos, newWidth, $mainNav = $("#example-one");
+
+					$mainNav.append("<li id='magic-line'></li>");
+					var $magicLine = $("#magic-line");
+
+					$magicLine.width($(".current_page_item").width()).css(
+							"left", $(".current_page_item a").position().left)
+							.data("origLeft", $magicLine.position().left).data(
+									"origWidth", $magicLine.width());
+
+					$("#example-one li a").hover(function() {
+						$el = $(this);
+						leftPos = $el.position().left;
+						newWidth = $el.parent().width();
+						$magicLine.stop().animate({
+							left : leftPos,
+							width : newWidth
+						});
+					}, function() {
+						$magicLine.stop().animate({
+							left : $magicLine.data("origLeft"),
+							width : $magicLine.data("origWidth")
+						});
+					});
+				}
+
+				subsubtab = '';
+				if (subsubtab != "") {
+					$("#" + subsubtab).attr("class", "selected");
+				}
+				if (tab != "" && tab == "la" && subsubtab != "") {
+					$("#" + subsubtab).attr("class", "active");
+				}
+			}
+		}
+
+		if (tab != "" && tab == "home") {
+			$('#d3').height($(window).height() - 280);
+			$('#d2').height($(window).height() - 236);
+		}
+
+		if (tab != "" && tab == "reports") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+			$('#pr').height($(window).height() - 180);
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+			}
+		}
+
+		if (tab != "" && subtab == "otherAllowanceSetup") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+			$('#pr').height($(window).height() - 180);
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+			}
+		}
+
+		if (tab != "" && tab == "specialDeductionSetup") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+			$('#pr').height($(window).height() - 180);
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+			}
+		}
+
+		if (tab != "" && subtab == "debtSetup") {
+			$('#p1').height($(window).height() - 100);
+			$('#p2').height($(window).height() - 100);
+
+			stab = '';
+			if (stab != "") {
+				$("#" + stab).attr("class", "selected");
+				/* 	$("#" + stab).css("background-color", "white"); */
+			}
+		}
+
+		$('#3').height($(window).height() - 280);
+		$('#4').height($(window).height() - 350);
+	});
+
+	function viewGraph(year) {
+		if ('aaIssuedDept' == "sfp") {
+			view(document.getElementById("scid").value, year);
+		}
+	}
+
+	function reportCeil() {
+		var s = "Y";
+		TINY.box.show({
+			iframe : 'ceilingDetails?template=Y',
+			width : 750,
+			height : 320,
+			fixed : false,
+			maskid : 'bluemask',
+			maskopacity : 60,
+			openjs : function() {
+				openJS()
+			}
+		});
+	}
+
+	function loadAjaxContent(elemId, action, param) {
+		$.ajax({
+			type : 'GET',
+			url : action,
+			data : param,
+			success : function(msg) {
+				$('#' + elemId).html(msg);
+			}
+		});
+	}
+
+	function goToFinVault(param1, param2, param3) {
+		window.open("https://fin.assam.gov.in/finvault/goToFinVault?q=" + q);
+	}
+
+	$(document)
+			.ready(
+					function() {
+						if ('D' == "O"
+								&& '' != null) {
+							var justificationSurrender = '';
+							if (justificationSurrender == "true") {
+
+								TINY.box.show({
+									iframe : 'surrenderInitiationStatus',
+									closejs : function() {
+										window.parent.document.location
+												.reload();
+									},
+									width : window.innerWidth - 900,
+									height : window.innerHeight - 350,
+									boxid : 'frameless'
+								});
+
+							}
+						}
+						
+// 						const tokenInput = document.querySelector('input[name="token"]');
+
+// 						// Get the value of the hidden input field
+// 						const sessionId = tokenInput ? tokenInput.value : null;
+// 						    localStorage.setItem("whatsapp-session", JSON.stringify({ loggedIn: true, sessionId }));
+						    
+						    
+// 								debugger
+// 							    const checkSessionInterval = setInterval(function () {
+// 							        const tokenInput = document.querySelector('input[name="token"]');
+// 							        const sessionId = tokenInput ? tokenInput.value : null;
+
+// 							        if (sessionId) {
+// 							            const currentSession = JSON.parse(localStorage.getItem("whatsapp-session"));
+
+// 							            if (!currentSession || currentSession.sessionId !== sessionId) {
+// 							                // Update the localStorage if sessionId changes
+// 							                alert("Another session is being started on a different tab.")
+// 							            }
+// 							        }
+// 							    }, 1000); // Check every 1 second
+
+// 							    });
+						
+					});
+	
+	
+	
+
+</script>
+
+<title>Administrative Approval, Technical and Financial Sanctions</title>
+
+<style type="text/css">
+.header-part .nav-tabs {
+	border-bottom: none;
+}
+
+ul.header-part {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+ul.header-part li {
+	display: inline;
+}
+
+ul.header-part li .mainLink {
+	background-color: #F8C301;
+	color: #000000;
+	margin: -1px;
+	padding: 3px 6px 4px 6px;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-left: 3px solid #F9CC32;
+	border-right: 3px solid #F9CC32;
+	border-top: 3px solid #F9CC32;
+}
+
+ul.header-part li .mainLink:hover {
+	background-color: #2666AB;
+	border: 3px solid #1A60AB;
+	border-bottom: none;
+	color: #FFFFFF;
+}
+
+ul.header-part li .mainLink.active {
+	background-color: #01458E;
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 3px 8px 4px 8px;
+	outline: none;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-left: 3px solid #01458E;
+	border-right: 3px solid #01458E;
+	border-top: 3px solid #01458E;
+}
+
+.header-part .dropdown-menu {
+	transition: all 0.5s;
+	overflow: hidden;
+	transform-origin: top center;
+	transform: scale(1, 0);
+	display: block;
+	opacity: 0.97;
+}
+
+.header-part .dropdown-menu a .row {
+	padding: 3px 8px 4px 14px;
+}
+
+.header-part .dropdown:hover>.dropdown-menu {
+	transform: scale(1);
+}
+
+.header-part .dropdown:hover>.dropdown-menu a:hover .row {
+	color: #28a745;
+	background-color: #f5f5f5;
+}
+
+.header-part .dropdown-menu a {
+	color: #000;
+	font-size: 12px;
+	line-height: 1.8;
+}
+
+.header-part .dropdown-menu .dropdown-item {
+	background-color: none;
+}
+
+.header-part .dropdown-menu .dropdown-item-disable {
+	display: none;
+}
+</style>
+
+<link rel="stylesheet" href="https://finanalytics.assam.gov.in/botpress/assets/modules/channel-web/inject.css"><link rel="stylesheet" type="text/css" id="u0" href="https://fin.assam.gov.in/assamfinance/webjars/tinymce/5.0.9/skins/ui/oxide/skin.min.css"></head>
+
+<body onload="noBack();" onpageshow="if(event.persisted) noBack();">
+
+	<table class="layoutStyle">
+		<tbody><tr>
+			<td colspan="3">
+
+
+<link rel="stylesheet" type="text/css" href="../resources/js/anylinkmenu.css">
+<script type="text/javascript" src="../resources/js/anylinkmenu.js"></script>
+<script type="text/javascript" src="../resources/js/jQuery-idle/jquery-idle.min.js"></script>
+<script src="https://finanalytics.assam.gov.in/botpress/assets/modules/channel-web/inject.js"></script> 
+
+ <script type="text/javascript">
+	anylinkmenu.init("menuanchorclass")
+	var anylinkmenu4 = { 
+		divclass : 'anylinkmenu',
+		inlinestyle : 'width:150px; background:#ffffff',
+		linktarget : '_self'
+	}
+
+	anylinkmenu4.items = [
+			[
+				"Profile",
+				"javascript: editProfile()" ],
+			[
+					"Change Password",
+					"javascript:TINY.box.show({iframe:'/assamfinance/changePasswd',width:650,height:500,boxid : 'frameless' })" ],
+			[ "Password History", "javascript: passwordHistory()" ],
+			[
+				"Deactivate Account",
+				"javascript:TINY.box.show({iframe:'deleteProfile',width:600,height:450,boxid : 'frameless' })" ]]
+
+	function passwordHistory() {
+		window.location.href = "passwordHistory";
+	}
+	
+	function editProfile() {
+		window.location.href = "editProfile";
+	}
+
+	$(function() {
+		if ('Y' == "N") {
+			TINY.box
+					.show({
+						iframe : '/assamfinance/changePasswd',
+						closejs : function() {
+							window.parent.document.location.reload();
+						},
+						width : 650,
+						height : 300,
+						boxid : 'frameless'
+					});
+		}
+	});
+
+	$(document).on('click', '.forceLogout', function(event) {
+		forceLogout();
+	});
+
+	$(document).on('click', '.keepAlive', function(event) {
+		keepAlive();
+	});
+
+	$(document).idle({
+		onIdle : function() {
+			$("#notifyLogout").modal('show');
+			countdown();
+		},
+		idle : 1000000
+	})
+
+	var timeoutHandle;
+	function countdown() {
+		var seconds = 60;
+		function tick() {
+			var counter = document.getElementById("countdowntimer");
+			seconds--;
+			counter.innerHTML = "(" + (seconds < 10 ? "0" : "")
+					+ String(seconds) + ")";
+			if (seconds > 0) {
+				timeoutHandle = setTimeout(tick, 1000);
+			} else {
+				forceLogout();
+			}
+		}
+		tick();
+	}
+
+	function forceLogout() {
+		window.location.href = '/cas/logout';
+	}
+
+	function keepAlive() {
+		$.ajax({
+			url : 'keepSessionAlive',
+			complete : function() {
+				$("#notifyLogout").modal('hide');
+			}
+		});
+	}
+
+	function viewSupportNumbers() {
+		$.ajax({
+			type : "GET",
+			url : "viewSupportNumbers",
+			beforeSend : function() {
+				$('#supportModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#supportModal .modal-body').html(msg);
+			}
+		});
+		$('#supportModal').modal('show');
+	}
+</script>
+<table>
+	<tbody><tr>
+		<td class="headerband" height="60px" width="300px" style="background-image: url('../resources/images/Assam_Logo_Header.png'); background-repeat: no-repeat; border: none; vertical-align: middle; margin: 10px 10px 10px 10px">
+		</td>
+		<td class="headerband" height="56" style="vertical-align: middle;">
+			<img src="../resources/images/AssamFinance_Logo_Header.png" align="right">
+		</td>
+	</tr>
+
+	<tr class="band">
+		<td style="width: 60%; padding-top: 5px; padding-left: 5px;">
+			<div align="left">
+				<span style="color: white; font-size: 12px;"> Mr.&nbsp;Assistant&nbsp;rdm,&nbsp;Assistant Department,&nbsp;Revenue and Disaster Management Department
+				</span> <a href="#" class="menuanchorclass" rel="anylinkmenu4"> <img src="../resources/images/arr.png" height="10px" width="10px" border="0"></a>
+				
+					<span style="color: #FFF;"> Last Log In : Friday, 21 March 2025, 12:17 AM</span>
+					<a href="loginHistory" style="color: #F8C301;">Show More</a>
+				
+			</div>
+		</td>
+		<td height="22px;" style="padding-top: 5px; padding-left: 5px">
+			<div align="right">
+				<span color="#FFFFFF;" style="font-weight: lighter;"> <a href="gotoMyInbox" title="Home Page" style="text-decoration: none;">
+						<span style="color: white; font-weight: normal; font-size: 12px;">
+							<i class="fa fa-home"></i>&nbsp;Home&nbsp;|
+					</span>
+				</a>  <a id="userManualLink" href="javascript:void(0);" onclick="gotoUserManuals();" title="User Manuals" style="text-decoration: none;"> <span style="color: white; font-size: 12px; font-weight: lighter;">
+							<i class="fa fa-book"></i> Manuals &amp; Tutorials |
+					</span>
+				</a> 
+					<a href="changeAccountDetails" title="Home Page" style="text-decoration: none;"> <span style="color: white; font-weight: normal; font-size: 12px;">
+							<i class="fa fa-user-circle-o"></i>&nbsp;Change Account&nbsp;|
+					</span>
+				</a> <a href="/cas/logout" title="logout" style="text-decoration: none;">
+						<span style="color: white; font-size: 12px; font-weight: lighter; padding-right: 10px;">
+							<i class="fa fa-sign-out"></i>&nbsp;Logout
+					</span>
+				</a>
+				</span>
+			</div>
+		</td>
+	</tr>
+</tbody></table>
+
+<!-- GENERAL-USER-IDLE-STATUS -->
+<div class="modal fade in" id="notifyLogout" tabindex="-1" role="dialog" aria-labelledby="notifyLogoutLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title" id="notifyLogoutLabel" style="color: #444;">Session
+					Timeout</h4>
+			</div>
+			<div class="modal-body" style="font-size: 14px; line-height: 20px;">You're
+				being timed out due to inactivity. Please choose to stay signed in
+				or to logout. Otherwise, you will be logged out automatically.</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-sm btn-danger forceLogout">Logout</button>
+				<button type="button" class="btn btn-sm btn-primary keepAlive" data-dismiss="modal">
+					Stay Logged In <span id="countdowntimer"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="supportModal" role="dialog" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-body" style="background-color: #f5f5f5;"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="updatePasswordModal" role="dialog" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header" style="display: flex;">
+				<h4 class="modal-title" style="color: #fff; width: 95%; text-align: left;">Update
+					Password</h4>
+				<button type="button" class="close" data-dismiss="modal" style="width: 5%">
+					<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+				</button>
+			</div>
+			<div class="modal-body" id="updatePasswordModalBody" style="height: 375px;"></div>
+		</div>
+	</div>
+</div>
+
+ <script>
+	let webchatOpen = false
+	window.botpressWebChat.init({
+		host : 'https://finanalytics.assam.gov.in/botpress',
+		botId : 'helpdesk',
+		userId : "18914",
+		botName : 'Helpdesk',
+		enableTranscriptDownload : false,
+		showConversationsButton : false,
+		hideWidget : true,
+		useSessionStorage: true
+	})
+
+	window.addEventListener('message', function(event) {
+		if (event.data.name === 'webchatReady') {
+			window.botpressWebChat.sendEvent({
+				type : 'proactive-trigger',
+				text : 'Hi',
+				channel : "web",
+				payload : {
+					token : "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZC5yZG0iLCJuYmYiOjE3NDI0OTcwOTMsImlkIjoiMTg5MTQiLCJleHAiOjE3NDI1ODM0OTMsInVzZXJuYW1lIjoiYWQucmRtIn0.pFm8Te2T9_lat_CH_zjNNHL5YlzYuO4eYP1fknBYafoKxlmwWIPq4G3ChHcCJghrdYPIrnZxKJRN6i7qZLBXytlQU5aWEyCMUT2wtrJl3CvXLLsZZqNmdNew9JRXRPvtx8NWAYRm7k0GMI26JvQdxOgSnx_szRglHjf05h4n28sfdqT3dCZzn0FkbxMsgYSgkKJMbC7inWqDZLkpw1IB33AxNuy2uTQEoby2Bpx1TU6Z6pr4Wp5lrUAHIHuvGBUUHulpc3JACbM-B_T0lcn5bhG0mY8GXFhLkqEgz0Ek6zLyItEUYXP8CPTHGn1XGcIyOoSz0VIYC_I4REOa_f-dSA",
+				},
+			})
+		}
+		if (event.data.name === 'webchatOpened') {
+			webchatOpen = true
+		}
+
+		if (event.data.name === 'webchatClosed') {
+			webchatOpen = false
+		}
+	})
+</script>
+</td>
+		</tr>
+
+		<tr>
+			<td colspan="3" style="padding: 0px 4px 0px 4px" bgcolor="#FFFFFF">
+				<div align="left">
+					<ul class="header-part">
+
+						
+						
+							<li title="Inbox" class="nav-item"><a id="inbox" href="gotoDebtInbox" class="nav-link mainLink">Inbox</a></li>
+						
+						
+
+						<!-- ====================== -->
+
+						<!-- === FOR BUDGET === -->
+						
+						<!-- === FOR BUDGET END === -->
+
+						<!-- === FOR CEILING === -->
+						
+						<!-- === FOR CEILING END === -->
+
+						<!-- === FOR AATSFS === -->
+						
+						<!-- === FOR AATSFS END === -->
+
+						<!-- === FOR BILLS === -->
+						
+
+						<!-- === FOR BILLS END === -->
+
+
+						<!-- === FOR DEBT === -->
+						
+						<!-- === FOR DEBT END === -->
+						<!-- === FOR RIDF === -->
+						
+						<!-- === FOR RIDF END === -->
+
+						<!-- === FOR EIS === -->
+						
+						<!-- === FOR EIS END === -->
+
+						<!-- === FOR WORKS ACCOUNT === -->
+						
+
+						
+
+
+						<!-- === FOR WORKS ACCOUNT END === -->
+
+						<!-- === FOR AUDIT === -->
+						
+						<!-- === FOR AUDIT END === -->
+
+						<!-- === FOR DASHBOARD === -->
+						
+						
+						<!-- === FOR CASH-PLANNING  === -->
+						
+						<!-- === FOR CASH-PLANNING END === -->
+
+						<!-- === FOR TEMPORARY  === -->
+						
+
+						<!-- Master Data -->
+						
+
+						
+					</ul>
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td width="4px"></td>
+			<td id="bodypart">
+				<table>
+					
+					
+					
+
+					
+					
+					
+					
+					
+					
+					
+
+					
+
+					
+
+
+					
+
+					
+					
+					
+					
+					
+					
+
+					
+					
+					
+					
+
+					
+
+					
+
+
+
+					
+
+
+
+					
+
+					
+
+					
+
+
+
+					
+
+					
+					
+
+					
+
+					
+
+					
+
+
+					
+					
+					
+					
+
+					
+
+					
+
+					
+					
+					  
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+						<tbody><tr>
+							<td>
+								<ul class="dropdown dropdown-horizontal">
+									<li title="Received Administrative Approvals (Held By You)">
+										<a id="aaReceivedDept" href="administrativeApprovalDeptReceived"> Received </a>
+									</li>
+									<li title="Create a new Administrative Approval"><a id="aaRequestDept" href="administrativeApprovalDept">Pending</a>
+									</li>
+									<li title="Inter And Intra Department Forwarded"><a id="aaInterAndIntraForwarded" href="aaInterAndIntraDeptForwarded">Forwarded (Dept)</a></li>
+									<li title="Forwarded To Finance"><a id="aaDeptForwarded" href="administrativeApprovalDeptForwarded">Forwarded
+											(Finance)</a></li>
+									<li title="Forwarded To Finance"><a id="aaFinReturnedDept" href="getAaFinanceReturnedInDept">Finance Returned </a></li>
+									<li title="Queried"><a id="aaDeptQueried" href="administrativeApprovalDeptQueried">Queried</a></li>
+									<li title="Issued (Manual+System Generated) Administrative Approvals">
+										<a id="aaIssuedDept" href="aaIssuedDept" class="active">Issued</a>
+									</li>
+									<li title="Ongoing + Proposals need to be revalidated"><a id="aaOngoing" href="aaOngoing">Manually Approved</a></li>
+									<li><a id="aaRejectedDEpt" href="aaRejectedDept">Rejected</a></li>
+									<li><a id="aaCanceledDept" href="aaCanceledDept">Cancelled</a></li>
+									<li><a id="verifyAa" href="getAdministrativeApprovalListForVerification">Verify
+											AA</a></li>
+									<li title="Administrative Approval Summary"><a id="aaSummaryDept" href="administrativeApprovalSummaryDept">Search</a>
+									</li>
+									<li style="background-color: #338ad7;"><a id="getAaGIS" title="District Wise Administrative Approval" href="getAaGIS">AA-GIS</a>
+									</li>
+									<li style="background-color: #338ad7;"><a id="getAaReport" title="Administrative Approval Report" href="getAaReport">Money
+											Flow-Report</a></li>
+									<li><a id="getAaGeneralReportsDept" title="Administrative Approval General Reports" href="getAaGeneralReportsDept">Reports </a></li>
+									<li><a id="getAaWildCardReportsDept" title="Financial Sanction Wild Card Reports" href="getAaWildCardReportsDept">Wild Card Reports </a></li>
+								</ul>
+							</td>
+						</tr>
+					
+
+					
+
+					
+					
+					
+
+					
+
+					
+
+					
+
+					<!-- SUBTAB FOR BILLS -->
+					
+
+					
+
+					
+
+					
+
+					
+
+		
+		
+		<!-- Sub tab for GeM -->
+					  
+
+					
+
+					
+
+					
+
+					
+
+					
+					<!-- SUBTAB FOR TREASURY -->
+					
+					
+					
+
+					
+
+					
+
+					
+					
+
+					
+
+					
+
+					
+
+					
+
+
+					
+
+					
+ 					 
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+
+					
+
+					
+
+					
+					
+
+					
+
+					
+					
+						<tr>
+							<td>
+
+
+
+
+<script type="text/javascript" src="../resources/js/ckeditor/ckeditor.js?version=2" charset="utf-8"></script>
+<script type="text/javascript" src="../webjars/tinymce/5.0.9/tinymce.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+	var displayMessage = '';
+	$(document).ready(function() {
+		if (displayMessage != null && displayMessage != "") {
+			$("#confirmAlertTitle").html(displayMessage);
+			$('#confirmAlert').modal('show');
+		}
+		var sum = 0;
+		$('.allottedAmount').each(function() {
+			sum += Number($(this).val());
+		});
+		$('#totBudgetctFY').val(sum);
+
+		CentralShare = $('#CentralShare').val();
+		if (CentralShare == 'C') {
+			$("#centralDiv").show();
+		} else {
+			$("#centralDiv").hide();
+
+		}
+	});
+
+	function viewSignedChecklist(sanctionId) {
+		window.open(
+				"viewSignedChecklistAdministrativeApproval?q="
+						+ sanctionId, "_blank");
+		return false;
+	}
+	function showQueryBox() {
+		$('#myModal2').find('.modal-title').find('.label').html("Query HoD");
+		$('#querySaveBtn')
+				.prop("name", "action:addAdministrativeApprovalQuery");
+		$('#parentId').val('');
+		$('#myModal2').modal('show');
+		return false;
+	}
+	function showReplyBox(queryId) {
+		$('#myModal2').find('.modal-title').find('.label').html(
+				"Query Reply To Finance");
+		$('#querySaveBtn').prop("name",
+				"action:addAdministrativeApprovalQueryReply");
+		$('#parentId').val(queryId);
+		$('#myModal2').modal('show');
+		return false;
+	}
+	function sendQuery(elem, queryId, approvalId, status) {
+		$
+				.ajax({
+					type : "GET",
+					url : "sendAdministrativeApprovalQuery",
+					data : {
+						'id' : queryId,
+						'administrativeApproval.approvalId' : approvalId,
+						'administrativeApproval.finQueryStatus' : status
+					},
+					beforeSend : function() {
+						$(elem).prop('class',
+								'glyphicon glyphicon-option-horizontal');
+					},
+					success : function(msg) {
+						if (msg) {
+							location.reload();
+							$(elem)
+									.closest('td')
+									.html(
+											'<i title="Sent" class="fa fa-share" aria-hidden="true" style="font-size: 16px; color: green;"></i>');
+						}
+					}
+				});
+	}
+	function sendQueryDept(elem, queryId, approvalId, status) {
+		$
+				.ajax({
+					type : "GET",
+					url : "sendAdministrativeApprovalQueryDept",
+					data : {
+						'id' : queryId,
+						'administrativeApproval.approvalId' : approvalId,
+						'administrativeApproval.finQueryStatus' : status
+					},
+					beforeSend : function() {
+						$(elem).prop('class',
+								'glyphicon glyphicon-option-horizontal');
+					},
+					success : function(msg) {
+						if (msg) {
+							location.reload();
+							$(elem)
+									.closest('td')
+									.html(
+											'<i title="Sent" class="fa fa-share" aria-hidden="true" style="font-size: 16px; color: green;"></i>');
+						}
+					}
+				});
+	}
+	function deleteQuery(elem, queryId) {
+		$
+				.ajax({
+					type : "GET",
+					url : "deleteAdministrativeApprovalQuery",
+					data : {
+						'id' : queryId
+					},
+					beforeSend : function() {
+						$(elem).prop('class',
+								'glyphicon glyphicon-option-horizontal');
+					},
+					success : function(msg) {
+						if (msg) {
+							location.reload();
+							$(elem).closest('tr').remove();
+							if ($('#queryTable tr').length == 1) {
+								$('#queryTable')
+										.append(
+												'<tr><td colspan="3" style="text-align:center">--No Queries Found--</td></tr>');
+							}
+							var i = 1;
+							$('#queryTable').find(".slno").each(function() {
+								$(this).html(i);
+								i++;
+							});
+						}
+					}
+				});
+	}
+	function proposalReport(approvalId) {
+		window.open("downloadAAChecklist?q="
+				+ approvalId, "_blank");
+		return false;
+	}
+
+	function uploadSignedChecklist(elem, approvalId) {
+		$('#myModal3 #modalTitle').html("Upload Signed Checklist");
+		$
+				.ajax({
+					type : "GET",
+					url : "uploadSignedChecklistAdministrativeApproval",
+					data : {
+						'administrativeApproval.approvalId' : approvalId
+					},
+					beforeSend : function() {
+						$('#myModal3 .modal-body').html('Loading..');
+					},
+					success : function(msg) {
+						$('#myModal3 .modal-body').html(msg);
+						$('#checklist')
+								.change(
+										function(event) {
+											var ext = this.value
+													.match(/\.(.+)$/)[1];
+											switch (ext) {
+											case 'pdf':
+												var tmppath = URL
+														.createObjectURL(event.target.files[0]);
+												$("#uploads").attr('src',
+														tmppath);
+												break;
+											case 'PDF':
+												var tmppath = URL
+														.createObjectURL(event.target.files[0]);
+												$("#uploads").attr('src',
+														tmppath);
+												break;
+											default:
+												alert('Please upload PDF file.');
+												this.value = '';
+											}
+										});
+					}
+				});
+		$('#myModal3').modal('show');
+		return false;
+	}
+	function showHistoryAmount(approvalId) {
+		$('#myModal4 #modalTitle').html("Amount Edit History");
+		$.ajax({
+			type : "GET",
+			url : "showHistoryAmount",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$('#myModal4 .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#myModal4 .modal-body').html(msg);
+			}
+		});
+		$('#myModal4').modal('show');
+	}
+	//rejection note
+	function addAANotes(approvalId) {
+		$('#administrativeNoteModal #modalTitle').html(
+				"Administrative Approval Notes");
+		$.ajax({
+			type : "GET",
+			url : "addAANotes",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$('#administrativeNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativeNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativeNoteModal').modal('show');
+		return false;
+	}
+	function validateSchemeWise(approvalId){ 
+		var a=getIssuedDetails(approvalId);
+		$('#issueAdministrativeApprovalModal').modal('hide');
+		$('#SchemeWiseValidationModal').modal('show');
+		 return false;
+	}
+	function getIssuedDetails(approvalId) {
+	    var result = vaidateHoaWiseBudgetLimit();
+	    var budgetProvisions = result.budgetProvisions;
+	    var aaIssuedAmount = JSON.parse($('#aaIssuedAmount').val());
+	    var aaExpenditureAmount = JSON.parse($('#aaExpenditureAmount').val());
+	    var eligibleAAAmounts = [];
+	    var allEligible = true;
+
+	    for (var i = 0; i < budgetProvisions.length; i++) {
+	        var Budgetprovision = budgetProvisions[i];
+	        var aaIssued = aaIssuedAmount[i];
+	        var aaExpenditure = aaExpenditureAmount[i];
+	        var EligibleAAAmount = Budgetprovision - (aaIssued - aaExpenditure);
+	        eligibleAAAmounts.push(EligibleAAAmount);
+
+	        var elementId = 'eligibleAAAmount' + i;
+	        var element = document.getElementById(elementId);
+	        if (element) {
+	            element.innerText = formatAmount(EligibleAAAmount);
+	        }
+      	 $('#eligibleAAAmountscheck'+i).text(formatAmount(EligibleAAAmount));
+	        
+	    }
+
+	    var totalEligibleAAAmount = eligibleAAAmounts.reduce((acc, amount) => acc + amount, 0);
+
+	    var proceedButton = document.getElementById('proceedButton');
+	    var saveButton = document.getElementById('saveButton');
+	    var additionalInfo = document.getElementById('additionalInfo');
+		var attachment = '';
+	    if (totalEligibleAAAmount <= 0 && !attachment) {
+	    	proceedButton.style.display = "none";
+	     	additionalInfo.style.display = "block";
+	        document.getElementById('alertId').innerText = "The AA cannot be issued, as the outstanding liabilities are more than double the budget provision for the current financial year.";
+		 } 
+		 else if(attachment!=null && attachment !== ""){
+			additionalInfo.style.display = "block";
+		 		$('#SchemeWiseValidationModal').modal('hide');
+		 		issueAdministrativeApprovalDFP(approvalId);
+		 	   }
+		 else {
+	    	saveButton.style.display = "none";
+	    	additionalInfo.style.display = "none";
+	        document.getElementById('alertId').innerText = "";
+	        $('#SchemeWiseValidationModal').modal('hide');
+	        issueAdministrativeApprovalDFP(approvalId);
+	    }
+	}
+
+	function formatAmount(amount) {
+	    var formattedString = '₹ ' + amount.toFixed(2); 
+	    if (amount >= 10000000) {
+	        formattedString += ' crore';
+	    } else if (amount >= 100000) {
+	        formattedString += ' lakh';
+	    }
+
+	    return formattedString;
+	}
+	function issueAdministrativeApprovalDFP(approvalId) {
+		$('#issueAdministrativeApprovalModal #modalTitle').html(
+		"Administrative Approval Issue (Under DFP)");
+		var abbreviationforAA = $("#abbreviationforAA").val();
+		var aaValidationExempted = $("#aaValidationExempted").val();
+		if(!aaValidationExempted){
+		if (abbreviationforAA == "undefined" || (abbreviationforAA != "SOPD-EE-SSA" && abbreviationforAA != "SOPD-FDR" && abbreviationforAA != "SOPD-G" && abbreviationforAA != "SOPD-GSP" && abbreviationforAA != "SOPD-ODS" && abbreviationforAA != "SOPD-SCSP" && abbreviationforAA != "SOPD-SCSP SS" && abbreviationforAA != "SOPD-SS" && abbreviationforAA != "SOPD-TSP")) {
+		var isValidationSuccess = vaidateHoaWiseBudgetLimit();
+		if (!isValidationSuccess.responseObj.statusFlag && Number(isValidationSuccess.responseObj.param) > 0) {
+			alert('Proposal cannot be issued since the overall project cost against the HoA is exceeding the ' + isValidationSuccess.responseObj.param + 'x budget provision of HoA(s)');
+		return false;
+			}
+		}
+	}
+		var theTotalAAAmount = $("#theTotalAAAmount").val();
+		if (theTotalAAAmount > 0) {
+			var totalHoaAmount = $("#totalHoaAmount").val();
+			if (isNaN(totalHoaAmount)) {
+				alert("Invalid Financial Details");
+				return false;
+			} else {
+				if (totalHoaAmount > 0) {
+					$('#issueAdministrativeApprovalModal #modalTitle').html(
+							"Administrative Approval Issue (Under DFP)");
+					$.ajax({
+						type : "GET",
+						url : "issueAdministrativeApprovalDFP",
+						data : {
+							'administrativeApproval.approvalId' : approvalId
+						},
+						beforeSend : function() {
+							$('#issueAdministrativeApprovalModal .modal-body')
+									.html('Loading..');
+						},
+						success : function(msg) {
+							$('#issueAdministrativeApprovalModal .modal-body')
+									.html(msg);
+						}
+					});
+					$('#issueAdministrativeApprovalModal').modal('show');
+					return false;
+
+				} else {
+					alert("Invalid Financial Details");
+					return false;
+				}
+			}
+		} else {
+			alert("Invalid Amount");
+			return false;
+		}
+	}
+	function back() {
+		var tab = 'aaIssuedDept';
+		if (tab != "" && tab == "aaIssuedDept") {
+			window.location.href = "aaIssuedDept";
+		}
+		if (tab != "" && tab == "aaRequestDept") {
+			window.location.href = "administrativeApprovalDept";
+		}
+		if (tab != "" && tab == "aaRejectedDept") {
+			window.location.href = "aaRejectedDept";
+		}
+		if (tab != "" && tab == "aaDeptForwarded") {
+			window.location.href = "administrativeApprovalDeptForwarded";
+		}
+		if (tab != "" && tab == "aaInterAndIntraForwarded") {
+			window.location.href = "aaInterAndIntraDeptForwarded";
+		}
+		if (tab != "" && tab == "aaReceivedDept") {
+			window.location.href = "administrativeApprovalDeptReceived";
+		}
+		return false;
+	}
+	function addNewCondition(elem) {
+		var rowLen = $('#conditionTable').find('tr').length;
+		rowLen = rowLen - 5;
+		var rowData = $('#dynamicRow').html();
+		rowData = rowData.replace(/counterIndex/g, rowLen);
+		rowData = rowData.replace(/counter/g, rowLen - 1);
+		$(elem).before($('<tr></tr>').append(rowData));
+	}
+	function addConcurencePoints(approvalId) {
+		$('#predefinedAAConcurenceModal #modalTitle').html(
+				"Administrative Predefined Concurence");
+		$
+				.ajax({
+					type : "GET",
+					url : "getpredefinedAAConcurence",
+					data : {
+						'administrativeApproval.approvalId' : approvalId
+					},
+					beforeSend : function() {
+						$('#predefinedAAConcurenceModal .modal-body').html(
+								'Loading..');
+					},
+					success : function(msg) {
+						$('#predefinedAAConcurenceModal .modal-body').html(msg);
+					}
+				});
+		$('#predefinedAAConcurenceModal').modal('show');
+		return false;
+	}
+	function acceptProposalDept(approvalId) {
+		$('#selectedAaId').val(approvalId);
+		$
+				.ajax({
+					type : "POST",
+					url : "acceptProposalDept",
+					data : $('#aaDetailsId').serialize(),
+					success : function(msg) {
+						alert('The Proposal is added to your Received Tab');
+						location.reload();
+					}
+				});
+	}
+	function validateNumAndTotCost(elem) {
+		if (isNaN(elem.value)) {
+			alert('Invalid numeric value');
+			elem.value = "";
+			elem.focus();
+		} else if (elem.value == "") {
+			alert('This field can not be blank!');
+			elem.value = "";
+		} else if (elem.value == 0) {
+			alert('Amount must be greater than zero');
+			elem.value = "";
+		} else {
+			var sum = 0;
+			var aaSum = 0;
+			var concurredAmount = '857.666';
+			concurredAmount = Number(concurredAmount);
+			$('.amt').each(function() {
+				sum += Number($(this).val());
+			});
+			$('#totalHoaAmount').val(sum);
+			if (sum != null && sum != "") {
+				var benShareAmount = $("#benShareAmount").val();
+				if (benShareAmount != null && benShareAmount != "") {
+					aaSum = Number(sum) + Number(benShareAmount);
+				} else {
+					aaSum = sum;
+				}
+			}
+			//validating the edited amount with the concurred amount
+			if (aaSum > concurredAmount) {
+				alert('New amount( '
+						+ aaSum.toFixed(5)
+						+ 'L ) should not exceed the concurred amount. Which is, '
+						+ concurredAmount.toFixed(5) + 'L');
+				//reloading the form to reset the amount to previous(actual) one
+				location.reload();
+			} else {
+				$('#theTotalAAAmount').val(aaSum.toFixed(5));
+			}
+		}
+	}
+	function calculateAaAmount(elem) {
+		if (isNaN(elem.value)) {
+			alert('Invalid numeric value');
+			elem.value = "";
+			elem.focus();
+		} else {
+			var sum = 0;
+			var aaSum = 0;
+			$('.amt').each(function() {
+				sum += Number($(this).val());
+			});
+			$('#totalHoaAmount').val(sum.toFixed(5));
+			if (sum != null && sum != "") {
+				var benShareAmount = $("#benShareAmount").val();
+				if (benShareAmount != null && benShareAmount != "") {
+					aaSum = Number(sum) + Number(benShareAmount);
+				} else {
+					aaSum = sum;
+				}
+			}
+			$('#theTotalAAAmount').val(aaSum.toFixed(5));
+		}
+	}
+
+	function validateCFYAmount(elem) {
+		var txt_bAmt = $(elem).parent('td').find(".amt").val();
+		if (isNaN(elem.value)) {
+			alert('Invalid numeric value');
+			elem.value = "";
+			elem.focus();
+		} else if (elem.value == "") {
+			alert('This field can not be blank!');
+			elem.value = "";
+		} else if (elem.value == 0) {
+			alert('Amount must be greater than zero');
+			elem.value = "";
+		} else {
+			var sum = 0;
+			$('.eeCFYAmount').each(function() {
+				sum += Number($(this).val());
+			});
+			$('#totEstimatedctFY').val(sum);
+		}
+	}
+	function validateUpdate() {
+		if (confirm('Do you really want to update the modifications?') == true) {
+			if ($('#costOfProject').val() == ""
+					|| $('#costOfProject').val() == 0) {
+				alert('Project cost value can not be blank/zero');
+				$('#costOfProject').val("").css('border', '1px solid red');
+				return false;
+			}
+			if ($('#estimatedAmount').val() == ""
+					|| $('#estimatedAmount').val() == 0) {
+				alert('Estimated cost value can not be blank/zero');
+				$('#estimatedAmount').val("").css('border', '1px solid red');
+				return false;
+			}
+			return true;
+		}
+		return false;
+	}
+	function validateBasicDetails() {
+		if (confirm('Do you want to continue?') == true) {
+			var totalHoaAmount = $("#totalHoaAmount").val();
+			if (isNaN(totalHoaAmount)) {
+				alert("Invalid Financial Details");
+				return false;
+			} else {
+				if (totalHoaAmount > 0) {
+					return true;
+				} else {
+					alert("Invalid Financial Details");
+					return false;
+				}
+			}
+			return false;
+		}
+		return false;
+	}
+
+	function addAADeptForwardNotes(approvalId) {
+		$('#administrativeNoteModal #modalTitle').html(
+				"Forward Administrative Approval");
+		$.ajax({
+			type : "GET",
+			url : "addAADeptForwardNotes",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$('#administrativeNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativeNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativeNoteModal').modal('show');
+		return false;
+	}
+
+	function saveAdministrativeApprovalNotes(approvalId) {
+		if (tinyMCE.get('kraneditorD').getContent() == "") {
+			alert("Enter Forward Notes!");
+			return false;
+		} else {
+			tinyMCE.triggerSave();
+			$.ajax({
+				type : "POST",
+				url : "saveAdministrativeApprovalNotes",
+				data : $('#approvalNotes').serialize(),
+				success : function(result) {
+					if (result)
+						alert('Notes Saved');
+				}
+			});
+			return false;
+		}
+	}
+	function getdprDetails() {
+		$('#administrativeNoteModal #modalTitle').html("Scheme Details");
+		var dprId = $("#dprId").val();
+		$.ajax({
+			type : "GET",
+			url : "getdprDetails",
+			data : {
+				id : dprId
+			},
+			beforeSend : function() {
+				$('#administrativeNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativeNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativeNoteModal').modal('show');
+		return false;
+	}
+
+	var clicked_val=false;
+	function financialProgressDetails(approvalId){
+		if(!clicked_val){
+			clicked_val=true;
+		$.ajax({
+			type : "GET",
+			url : "getFinancialProgressDetailsOfAa",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$("#removedCommitmentHistory").html('Loading...Please Wait...    '+'<i class="fa fa-circle-o-notch fa-spin"></i>')
+			},
+			success : function(result) {
+				$("#removedCommitmentHistory").html(result)
+			}
+		 });
+		}
+	 }
+	$(document).on('keyup', '.amount', function() {
+		var breakUpSum = 0;
+		var aaTotalProjectCost = $('#theTotalAAAmount').val();
+		aaTotalProjectCost = parseFloat(Number(aaTotalProjectCost).toFixed(5));
+		
+		$('.amount').each((index, element)=> {
+			breakUpSum += parseFloat(element.value);
+			breakUpSum = parseFloat(breakUpSum.toFixed(5));
+			if (breakUpSum > aaTotalProjectCost) {
+				alert('Break-up amount exceeds total approval amount!');
+				element.value = "";
+			}
+		});
+	});
+
+	function pullBack(approvalId) {
+		$('#administrativepullNoteModal #modalTitle').html(
+				"Pull Back Notes");
+		$.ajax({
+			type : "GET",
+			url : "pullBack",
+			data : {
+				'administrativeApproval.approvalId' : approvalId
+			},
+			beforeSend : function() {
+				$('#administrativepullNoteModal .modal-body').html('Loading..');
+			},
+			success : function(msg) {
+				$('#administrativepullNoteModal .modal-body').html(msg);
+			}
+		});
+		$('#administrativepullNoteModal').modal('show');
+		return false;
+	}
+	function validateAttachmentSize(element) {
+		var file = element.files[0];
+		if((file.size/1000) > 10000) {
+			alert('File size exceeds maximum limit');
+			element.value = "";
+		}
+	}
+</script>
+<style>
+#proposalTable1 {
+	font-size: 12px;
+}
+
+#proposalTable1 tr>td, #proposalTable1 tr>th {
+	vertical-align: middle;
+}
+
+#accordion .panel-heading {
+	padding: 0;
+}
+
+#accordion .panel-title>a {
+	display: block;
+	padding: 0.4em 0.6em;
+	outline: none;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#accordion .panel-title {
+	text-align: left;
+}
+
+#accordion .panel-title>a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before
+	{
+	content: "\e113";
+	float: left;
+	font-family: 'Glyphicons Halflings';
+	margin-right: 1em;
+}
+
+#accordion .panel-title>a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::before
+	{
+	content: "\e114";
+}
+
+@media ( min-width : 768px) {
+	.modal-xl {
+		width: 90%;
+		max-width: 1200px;
+	}
+}
+
+div .col-sm-3, div .col-sm-6, div .col-sm-12 {
+	margin: 5px 0px 5px 0px;
+}
+
+.active {
+	border: none;
+	border-left: 2px solid #76c1ff;
+	font-weight: bold;
+}
+
+.panel-body {
+	background-color: #d9edf733;
+}
+
+.row {
+	margin-bottom: 15px;
+}
+</style>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-23">
+			<h4>
+				<span class="label label-primary">Administrative Approval</span>
+				
+			</h4>
+		</div>
+		<div class="col-xs-1" style="margin-bottom: 5px;">
+		
+				
+				
+			<button type="button" class="btn btn-labeled btn-primary btn-sm" onclick="return back()" style="float: right;">
+				<span class="btn-label"> <i class="glyphicon glyphicon-chevron-left" title="Back to List"></i></span>Go
+				Back
+			</button>
+			
+			
+		</div>
+	</div>
+	
+		<input type="hidden" name="CentralShare" value="C" id="CentralShare">
+	
+	<input type="hidden" name="" value="[33252.950170000004]" id="aaIssuedAmount">
+	<input type="hidden" name="" value="[77975.3143]" id="aaExpenditureAmount">
+	<input type="hidden" name="" value="false" id="aaValidationExempted">
+	<input type="hidden" name="" value="2" id="validationParameter">
+	
+	
+	
+	
+		
+	
+	
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="row">
+			<div class="col-xs-24">
+				<form id="aaDetailsId" name="proposal" action="/assamfinance/secure/administrativeApprovalDetailsDept" method="post" enctype="multipart/form-data" class="form-inline">
+					<input type="hidden" name="struts.token.name" value="token">
+<input type="hidden" name="token" value="3MPM0KD377T9NMZXG0RKZTT7OPAP76XD">
+					<input type="hidden" name="administrativeApproval.approvalId" value="72777" id="approvalId">
+					<input name="administrativeApprovalNotes.administrativeApproval.approvalId" id="selectedAaId" type="hidden">
+					
+						<input type="hidden" name="administrativeApproval.deptHeldBy.allotId" value="32138" id="aaDetailsId_administrativeApproval_deptHeldBy_allotId">
+					
+					
+
+					
+					
+
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Administrative
+									Approval Details </a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 active">Name of the Scheme/Project
+										proposed</div>
+									<div class="col-sm-18">
+										Immediate measures for restoration of flood damages by river Brahmaputra at Mulukgaon area (From Dinjan Army Cantonment to Tengabari ghat) for 2020-21
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Whether scheme/project is
+										new/ongoing</div>
+									<div class="col-sm-6">
+										
+										
+											<span style="font-style: italic; color: green; font-size: 12px;">
+												New project</span>
+										
+										<div>
+											
+										</div>
+									</div>
+									<div class="col-sm-6 active">Whether the scheme is funded
+										by NABARD</div>
+									<div class="col-sm-6">
+										
+											
+											
+											No
+											
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Proposal Number</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											AA-05-2020-21-3749
+										</div>
+									</div>
+									<div class="col-sm-6 active">Proposal Date</div>
+									<div class="col-sm-6">
+										22-02-2021
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Issued Number</div>
+									<div class="col-sm-6" style="color: blue;">
+										<div class="form-group">
+											
+												
+													AA/05_2020-21(I)_2655
+												
+												
+											
+											
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">
+										Valid Upto <span style="font-style: italic; color: green;">(Auto
+											generated after Issue)</span>
+									</div>
+									<div class="col-sm-6">
+										
+											22-02-2026
+										
+										
+
+									</div>
+									<div class="col-sm-6 active">Admin Department File Number
+									</div>
+									<div class="col-sm-6">
+										RGR(RRR)240/2020/1
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Detailed Project Report
+										(DPR) / Project Estimate approved by the Competent Authority</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											AS ATTACHED.
+											
+												<div style="padding-top: 3px;">
+													<span class="glyphicon glyphicon-paperclip" style="color: #01458E"></span> <a style="color: #01458E; cursor: pointer;" onclick="window.open('viewProjectReportAttachment?q=47da1fd0-161e-4487-a244-a72f64a6e991', '_blank')" title="View Attachment"> A_1.pdf</a>
+												</div>
+											
+										</div>
+									</div>
+									<div class="col-sm-6 active">Brief nature of the
+										scheme/project and the time period required for
+										implementation/execution</div>
+									<div class="col-sm-6">
+											FDR Scheme for the year 2020-21
+									</div>
+								</div>
+								<div class="row borderbelowtall">
+									<div class="col-sm-6 active">Aim, objectives and benefit
+										expected from the scheme/project</div>
+									<div class="col-sm-6">
+										Immediate measures for restoration of flood damages by river Brahmaputra at Mulukgaon area
+									</div>
+									<div class="col-sm-6 active">Whether included in the
+										priority list approved by the Departmental Minister</div>
+									<div class="col-sm-6">
+										
+											
+											No
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Ddo Details</div>
+									<div class="col-sm-6">
+										
+										
+											DIB/GAD/001
+										
+									</div>
+									<div class="col-sm-6 active">
+										Common Proposal<span style="font-style: italic; color: red;">
+											(If the documents in the Proposal Needs a Referance in other
+											Proposals)</span>
+									</div>
+									<div class="col-sm-6">
+										
+										
+									No
+									
+									</div>
+
+
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Project Profile Id:</div>
+									<div class="col-sm-6">
+
+										
+
+
+										
+
+										
+									</div>
+
+									<div class="col-sm-6 active">Project Classification :</div>
+									<div class="col-sm-6" style="margin-top: 5px;">
+										
+											
+												<div class="col-lg-6">
+													
+													<input type="hidden" name="heads.headScheme.planCategory.abbreviation" value="SOPD-GSP" id="abbreviationforAA">
+														<span class="text-warning h6"> SOPD-GSP&nbsp;-
+														</span>
+													
+													
+												</div>
+												<div class="col-lg-18">
+													
+														<span class="text-success h6"> State Own Priority Scheme-GOI Special Scheme
+														</span>
+													
+													
+												</div>
+											
+										
+										
+									</div>
+
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Type of the project:</div>
+									<div class="col-lg-12">
+										
+											
+											
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Opening and Closing dates:</div>
+									<div class="col-sm-6">
+										<div class="col-sm-6">
+											
+											
+															--
+														
+										</div>
+										<div class="col-sm-6">
+											
+											
+															--
+														
+										</div>
+									</div>
+									<div class="col-sm-6 active">Project Beneficiary :</div>
+									<div class="col-sm-6" style="margin-top: 10px;">
+										
+										
+											<span>--Not Available--</span>
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Procurement Activity Type:</div>
+									<div class="col-sm-8" style="margin-top: 10px;">
+										
+										
+											<span>--Not Available--</span>
+										
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingYearWise">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseYearWise" aria-expanded="true" aria-controls="collapseYearWise">Year-Wise
+										Breakup</a>
+								</h4>
+							</div>
+							<div id="collapseYearWise" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingYearWise">
+								<div class="panel-body">
+									<div class="row borderbelow">
+										
+											<div class="col-xs-24">
+												<table class="table table-hover table-bordered">
+													<tbody><tr class="info">
+														<th colspan="4">Year-Wise Breakup</th>
+													</tr>
+													<tr>
+														<th style="text-align: center;">Sl.No</th>
+														<th style="text-align: center;">HOA</th>
+														<th style="text-align: center;">Year-wise breakup</th>
+													</tr>
+													
+													
+														<tr id="rowt0">
+															
+															<td style="text-align: center;"><input type="hidden" name="administrativeApprovalHeadsList[].Id" value="" id="aaDetailsId_administrativeApprovalHeadsList___Id"> 1
+															</td>
+															<td>
+																<div id="ajaxDiv79153" style="float: center;">
+
+
+<style>
+.labelBtn {
+	min-width: 24px;
+	font-size: 10px;
+	font-weight: bold;
+}
+</style>
+
+<span style="color: #1000FF; font-weight: bold;" title="Relief on account of Natural Calamities">2245</span>
+-
+<span style="color: #CA2525;" title="Floods, Cyclones etc"> 02</span>
+-
+<span style="color: green;" title="Repairs and Restoration of Damaged Irrigation &amp; Flood Control Works"> 122</span>
+-
+<span style="color: #800080;" title="Repairs and Restoration of damaged Flood Control Works (WRD)">0999 </span>
+-
+<span style="color: #993300;" title="NULL">000</span>
+-
+<span style="color: #003366;" title="Maintenance">17 </span>
+-
+<span style="color: #003366;" title="Asset Maintenance">05 </span>
+&nbsp;-&nbsp;
+
+	&nbsp;<button type="button" class="btn btn-xs btn-danger labelBtn help" title="State Own Priority Scheme-GOI Special Scheme">
+		SOPD-GSP
+	</button>
+
+
+&nbsp;
+<button type="button" class="btn btn-xs btn-info labelBtn help" title="General Area">
+	GA
+</button>
+&nbsp;
+<button type="button" class="btn btn-xs btn-success labelBtn help" title="Voted">
+	V
+</button></div> <script type="text/javascript">
+																	loadAjaxContent(
+																	'ajaxDiv79153',
+																	'getHeadDetailsAjaxForAlloctn',
+																	'heads.headId=46623&pageView=4');
+															</script> <input type="hidden" class="head46623" name="heads.headId" value="46623">
+															</td>
+															<td><input type="hidden" value="857.666" id="amount46623">
+																<table class="table table-hover table-bordered">
+																	
+																	<tbody><tr>
+																		<th style="text-align: center;">Year</th>
+																		<th style="text-align: center;">Amount (In Lakhs)</th>
+																	</tr>
+																	<tr>
+																		
+																			</tr><tr>
+																				
+																				<td><span>2024-25</span></td>
+																				<td> -- No data found --</td>
+																			</tr>
+																		
+																			<tr>
+																				
+																				<td><span>2025-26</span></td>
+																				<td> -- No data found --</td>
+																			</tr>
+																		
+																			<tr>
+																				
+																				<td><span>2026-27</span></td>
+																				<td> -- No data found --</td>
+																			</tr>
+																		
+																			<tr>
+																				
+																				<td><span>2027-28</span></td>
+																				<td> -- No data found --</td>
+																			</tr>
+																		
+																			<tr>
+																				
+																				<td><span>2028-29</span></td>
+																				<td> -- No data found --</td>
+																			</tr>
+																		
+																</tbody></table></td>
+														</tr>
+													
+												</tbody></table>
+											</div>
+										
+
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Financial
+										Details </a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<table class="table table-bordered" id="proposalTable1">
+										<tbody><tr>
+											<th class="active">Head of Account</th>
+											<td>
+												<table id="hoaTable" class="table table-bordered">
+													<tbody><tr class="panel panel-info">
+														<th>SI No.</th>
+														<th>Head Of Account</th>
+														<th>Grant No.</th>
+														<th>Current Year's Budget Provision (In Lakhs)</th>
+														<th>Total Estimated Cost of the Project (In Lakhs)</th>
+														<th>Estimated Expenditure in (Ct FY) (In Lakhs)</th>
+														<th width="20%" colspan="2" style="text-align: center">Green Budget Tag</th>
+													</tr>
+													
+													
+													
+														
+															 <input type="hidden" class="headId" name="heads.headId" value="46623">
+															
+																
+															
+															
+															 <input type="hidden" id="amounts" name="administrativeApprovalHeadsList[%{#h.index}].amount" value="857.666">
+															<tr style="margin: 15px;">
+																<td style="text-align: center;">1</td>
+																<td>2245-02-122-0999-000-17-05-SOPD-GSP-V-GA <br> <br>
+																	
+																		<label style="color: #01458E;"> Relief on account of Natural Calamities-Floods, Cyclones etc-Repairs and Restoration of Damaged Irrigation &amp; Flood Control Works-Repairs and Restoration of damaged Flood Control Works (WRD)-NULL-Maintenance-Asset Maintenance
+																		</label>
+																	</td>
+																<td>41</td>
+																<td>27125</td>
+																<td>857.666</td>
+																<td>857.666</td>
+																<td width="10%" style="background-color: ;"></td>
+																<td width="10%"></td>
+															</tr>
+														
+														<tr>
+															<th class="active" colspan="4">Total<span style="font-style: italic;">(In Lakhs)</span></th>
+															<td>
+																	<input type="hidden" name="totalHoaAmount" value="857.666" id="totalHoaAmount">
+																	857.66600
+																</td>
+															<td>857.66600</td>
+														</tr>
+
+													
+												</tbody></table>
+											</td>
+										</tr>
+									</tbody></table>
+									<div class="row">
+										<div class="col-sm-6 active">
+											Beneficiary Share Amount <span style="font-style: italic;">(In
+												Lakhs)</span>
+										</div>
+										<div class="col-sm-12">
+											
+											-N/A-
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-6 active">Beneficiary Name</div>
+										<div class="col-sm-12">
+											
+												
+											
+											
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-6 active">Whether the scheme is
+											centrally sponsored scheme</div>
+										<div class="col-sm-12">
+											
+											
+												Yes
+														
+												
+												
+											
+											
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6 active" title="Beneficiary share amount + HOA Sum amount">
+											Total Administrative Approval Amount (Project Cost) <span style="font-style: italic; color: green;"> (In Lakhs)
+											</span>
+										</div>
+										<div class="col-sm-12">
+											
+												<input type="hidden" name="administrativeApproval.amount" value="857.666" id="theTotalAAAmount">
+												857.66600&nbsp;&nbsp;<i class="fa fa-history" style="color: #01458E; font-size: 16px; cursor: pointer;" title="History" onclick="showHistoryAmount('b900bb9f-bd44-4366-a487-86bb5d97b02c')"></i>
+											
+											
+										</div>
+									</div>
+								</div>
+								<!-- loads dashboard content -->
+								<div class="row">
+									<div class="col-sm-12 col-md-24 col-lg-24">
+										<div class="panel panel-warning dataListing">
+											<div class="panel-heading" role="tab" id="headingBudget">
+												<h4 class="panel-title">
+													<a class="collapsed text-danger" role="button" data-toggle="collapse" id="anchorBudget" onclick="getBudgetDetails()" data-parent="#accordion" href="#collapseBudget" aria-expanded="true" aria-controls="collapseTwo">Head of Account wise
+														Budget details (C.F.Y)</a>
+												</h4>
+											</div>
+											<div id="collapseBudget" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBudget">
+												<div class="panel-body" style="background-color: #feffe133;">
+													<div id="dashboardContainer"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingDdoDet">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseDdoDet" aria-expanded="true" aria-controls="collapseDdoDet">Drawing
+									&amp; Disbursing Details</a>
+							</h4>
+						</div>
+						<div id="collapseDdoDet" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDdoDet">
+							<div class="panel-body">
+								<div class="row borderbelow">
+									<div class="col-sm-6 active">DDO Code</div>
+									<div class="col-sm-6">
+										DIB/GAD/001
+									</div>
+									<div class="col-sm-6 active">
+										Treasury Name <span style="font-style: italic; color: green;">(Auto
+											generated)</span>
+									</div>
+									<div class="col-sm-6 ">
+										<label class="ddoTreasuryName"></label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">
+										DDO Office Name <span style="font-style: italic; color: green;">(Auto
+											generated)</span>
+									</div>
+									<div class="col-sm-18">
+										<label class="ddoOfficeName"></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingProDet">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseProDet" aria-expanded="true" aria-controls="collapseProDet">Procurement
+										Activity </a>
+								</h4>
+							</div>
+							<div id="collapseProDet" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingProDet">
+								<div class="panel-body">
+									<div class="row borderbelow">
+										<div class="col-sm-6 active" style="width: 10%;">Unique Number</div>
+										<input type="hidden" name="administrativeApproval.procurementActivityHeadMapping.id" value="" id="procurementActivityId"> <input type="text" class="form-control input-sm" id="uniqueName" value="" style="width: 30%;" readonly="readonly">
+									</div>
+									<br>
+									<table class="table table-bordered table-responsive procurementTable">
+										<tbody><tr class="active">
+											<th width="5%">SI No.</th>
+											<th width="5%">Unique Number</th>
+											<th width="5%">Estimated Cost</th>
+										</tr>
+										
+										<tr>
+											<td>1</td>
+											<td><input type="text" class="form-control input-sm" id="uniqueName" value="" style="width: 60%;" readonly="readonly"></td>
+											<td><input type="text" class="form-control input-sm" id="uniqueName" value="" style="width: 60%;" readonly="readonly"></td>
+										</tr>
+									</tbody></table>
+								</div>
+							</div>
+						</div>
+					
+						<div class="panel panel-success">
+							<div class="panel-heading" role="tab" id="headingOneFP" onclick="financialProgressDetails('5430a9f7-3995-4055-9fbf-1ee8b8da61cf')">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEightFP" aria-expanded="true" aria-controls="collapseEightFP">
+										Financial Progress Of The Project</a>
+								</h4>
+							</div>
+							<div id="collapseEightFP" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneFP">
+								<div class="panel-body" id="removedCommitmentHistory"></div>
+							</div>
+						</div>
+					
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Statutory
+									/ Necessary Clearances</a>
+							</h4>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 active">Permission from local bodies
+										for construction/establishment wherever necessary</div>
+									<div class="col-sm-18" style="padding-top: 10px;">
+										
+											
+											No<br>
+												
+											
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Non-Objection certificate</div>
+									<div class="col-sm-18" style="padding-top: 10px;">
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Non-Duplicity certificate</div>
+									<div class="col-sm-18" style="padding-top: 10px;">
+										
+											<table class="table_style0">
+												<tbody><tr>
+													<th>Attached Documents</th>
+												</tr>
+												
+													<tr>
+														<td><a style="color: #01458E; cursor: pointer;" onclick="window.open('viewECAttachment?q=dd89ab1d-7d1e-4799-bc15-70aeffcde210', '_blank')" title="View Attachment"> DIBRUGARH WATER RESOURCE  DIVISION, DIBRUGARH</a>
+														</td>
+													</tr>
+												
+											</tbody></table>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Inter-Departmental
+									Views </a>
+							</h4>
+						</div>
+						<div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 active">Views of Department</div>
+									<div class="col-sm-18">
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Details information in case
+										of observation made by T&amp;D in last year's endorsement</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											
+											
+											---
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-info">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Departmental
+									Views </a>
+							</h4>
+						</div>
+						<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 active">Departments view on the
+										feasibility of the proposal by the Departmental Authority</div>
+									<div class="col-sm-18">
+										<div class="col-sm-18">
+											AS ATTACHED.
+										</div>
+										<div class="col-sm-6">
+											
+												<div style="padding-top: 3px;">
+													<span class="glyphicon glyphicon-paperclip" style="color: #01458E; cursor: pointer;"></span> <a style="color: #01458E;" onclick="window.open('viewDeptViewAttachment?q=fafeb2d4-f0ce-4e67-9966-ab7f5cfae36f', '_blank');" title="View Attachment"> R_1.pdf</a>
+												</div>
+											
+											
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Specific View of F.A/Sr.F.A
+										and Checklist of F.A</div>
+									<div class="col-sm-18">
+										
+											AS ATTACHED.
+										
+										
+											<div style="padding-top: 3px;">
+												<span class="glyphicon glyphicon-paperclip" style="color: #01458E"></span> <a style="color: #01458E; cursor: pointer;" onclick="window.open('viewFaViewAttachment?q=bbbcff22-1fdc-439e-96b3-d1c6d5b906b1', '_blank')" title="View Attachment"> Note_&amp;_FA_view.pdf</a>
+											</div>
+
+										
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-6 active">Sanction letter copy of GOI
+										in case of Central Sector Schemes</div>
+									<div class="col-sm-18">
+										
+											
+											
+												<div class="col-sm-6">No</div>
+												<div class="col-sm-18">
+													
+												</div>
+											
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Views of Sr.F.A/F.A for
+										non-admissibility of the instant project under DFPR</div>
+									<div class="col-sm-18">
+										
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 active">Views of Senior Most
+										Secretary in the Department</div>
+									<div class="col-sm-18">
+										AS ATTACHED.
+										
+											<div style="padding-top: 3px;">
+												<span class="glyphicon glyphicon-paperclip" style="color: #01458E;"></span> <a style="color: #01458E; cursor: pointer;" onclick="window.open('viewDeptSecretaryAttachment?q=1c27c1f5-5876-4d9c-b837-47ce627d44f2', '_blank');" title="View Attachment"> Note_&amp;_FA_view.pdf</a>
+											</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+						<div class="panel panel-primary" id="centralDiv" hidden="true" style="display: block;">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">Funding
+										Details(Whether the scheme is centrally sponsored scheme) </a>
+								</h4>
+							</div>
+							<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-sm-6 active">Funding pattern of the
+											scheme</div>
+										<div class="col-sm-6">
+											
+										</div>
+										<div class="col-sm-6 active">The year from which the
+											scheme is being implemented</div>
+										<div class="col-sm-6">
+											
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6 active">The quantum of central
+											share allocated/released for the year along with the
+											supporting document</div>
+										<div class="col-sm-6">
+											
+											
+										</div>
+										<div class="col-sm-6 active">The criteria of proposing
+											the amount of state share</div>
+										<div class="col-sm-6">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					<!-- 	other doc -->
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOtherDoc">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOtherDoc" aria-expanded="true" aria-controls="collapseOtherDoc">Other
+										Documents</a>
+								</h4>
+							</div>
+							<div id="collapseOtherDoc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOtherDoc">
+								<div class="panel-body">
+									<div class="row borderbelow">
+										<div class="col-sm-6 active" style="margin-bottom: 15px;">
+											Other Documents<span style="font-style: italic; color: green;"> ( if
+												required )</span>
+										</div>
+										<div class="col-sm-18">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">Approval
+										Conditions </a>
+								</h4>
+							</div>
+							<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<table class="table table-bordered table-hover" id="aaConditionsNoteTable">
+										<tbody><tr class="active">
+											<th style="text-align: center; width: 20%;">#</th>
+											<th style="text-align: center; width: 50%;">Condition
+												Description</th>
+										</tr>
+										
+											<tr>
+												<td style="text-align: center;">1</td>
+												<td style="text-align: center;">All the procedures laid down at Assam Financial Rules, Condition and Codal provisions of AFRBM Act 2005 and CVC guidelines is to be strictly followed invariably.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">2</td>
+												<td style="text-align: center;">The admissible deductions can be deducted and deposited into the Govt. Account by the Concerned Authority as per rule/ Govt. Instructions.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">3</td>
+												<td style="text-align: center;">Work to be completed within the estimated cost in all respect without involving cost and time over run.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">4</td>
+												<td style="text-align: center;">Executing department must complete the assigned works within 9(NINE) months from the date of issue of administrative approval and no extension beyond the stipulated period will be allowed. The claims for fund must reach the department of Revenue &amp; D.M. through concerned Deputy Commissioner within 3(three) months from the date of completion of the scheme / project.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">5</td>
+												<td style="text-align: center;">The works shall be executed by the W.R. Department. The works will be monitored by the Deputy Commissioner concerned who will ensure that the execution of the works have been done strictly as per plan and estimate before submitting the work completion report to the authority concerned.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">6</td>
+												<td style="text-align: center;">As per SDRF norms only repairing / restoration of immediate nature can be taken up so that relief and essential commodities can be taken to the site. No up gradation of the pre-damaged period is admissible.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">7</td>
+												<td style="text-align: center;">No works shall be executed before issue of technical sanction by the competent authority.</td>
+											</tr>
+										
+											<tr>
+												<td style="text-align: center;">8</td>
+												<td style="text-align: center;">Availability of fund under the relevant head of account during 2020-21.</td>
+											</tr>
+										
+									</tbody></table>
+								</div>
+							</div>
+						</div>
+					
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">Issued
+										Details</a>
+								</h4>
+							</div>
+							<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<!-- SETTING LABELS FOR THE ATTACHMENT -->
+									
+									
+										
+									
+									
+									
+									<table class="table table-bordered table-condensed table-hover">
+										<tbody><tr class="info">
+											<th colspan="4">
+												<h4 style="margin: 0; text-align: center; padding: 2px;">
+													<span class="label label-primary">Issued DFP Details</span>
+												</h4>
+											</th>
+										</tr>
+										<tr>
+											<th style="text-align: center; width: 15%;">DFP</th>
+											<th style="text-align: left;">Remarks</th>
+											<th style="text-align: left;">DFP Attachment</th>
+											<th style="text-align: center;">Standing Finance Committee - MoM Attachment</th>
+										</tr>
+										<tr>
+											<td style="text-align: center; vertical-align: middle; width: 20%">
+												<div style="font-size: 15px; font-style: italic; padding-top: 5px; color: #006d8e;">
+													DFP Rule :
+													29
+												</div>
+											</td>
+											<td>
+												<div style="font-size: 15px; padding-top: 5px;">
+													<p>AA Issue</p>
+												</div>
+												<div style="font-size: 12px; font-style: italic; padding-top: 5px; color: #01458E;">
+													Issued By
+													
+													
+														Subhash Chandra Das
+														,
+														Senior Financial Advisor
+														On
+														22-02-2021
+													
+												</div>
+											</td>
+											<td style="text-align: center; vertical-align: middle; cursor: pointer;">
+												 
+													<i style="font: 10px; color: red;">- Attachment Not
+														Available -</i>
+												
+											</td>
+											<td style="text-align: center; vertical-align: middle; cursor: pointer;">
+												 
+													<i style="font: 10px; color: red;">- Attachment Not
+														Available -</i>
+												
+											</td>
+										</tr>
+										
+									</tbody></table>
+								</div>
+							</div>
+						</div>
+					
+					
+					
+					
+					
+						<div class="panel panel-info">
+							<div class="panel-heading" role="tab" id="headingRep">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseRep" aria-expanded="true" aria-controls="collapseRep">Reference
+										Notes and Queries</a>
+								</h4>
+							</div>
+							<div id="collapseRep" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingRep">
+								<div class="panel-body">
+
+									<div class="panel panel-info">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">Reference
+													Notes </a>
+											</h4>
+										</div>
+										<div id="collapseTwelve" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<table class="table table-bordered table-condensed table-hover" id="notesTable">
+													<tbody><tr>
+														<td colspan="2" style="text-align: right;"> 
+																<a title="Download this document" style="cursor: pointer;" onclick="window.open('generateAaFinanceWorkBookReport?q=af622485-10ad-4b82-b800-b99b3964dbf0', '_blank');">
+																	<span class="glyphicon glyphicon-save-file" style="font-size: 25px; color: red;"></span>
+																</a>
+															</td>
+													</tr>
+													
+														
+															<tr>
+																<td style="text-align: center; vertical-align: middle; width: 5%" class="slno">1</td>
+																<td>
+																	<div>
+																		Forwarded
+																	</div>
+																	<div style="font-size: 9px; font-style: italic; padding-top: 5px; color: #01458E;">
+																		Assistant rdm
+																		,
+																		Assistant Department
+																		On
+																		20-02-2021
+																	</div>
+																</td>
+															</tr>
+														
+													
+													
+												</tbody></table>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-info">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">Queries</a>
+											</h4>
+										</div>
+										<div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<table class="table table-bordered table-condensed table-hover" id="queryTable">
+													<tbody><tr>
+														<td colspan="3" style="text-align: right;">
+														<h4 style="margin: 0; text-align: left; padding: 2px;">
+														<span class="label label-primary">Query From
+															Finance </span>
+													</h4>
+														 
+																<a title="Download this document" style="cursor: pointer;" onclick="window.open('generateAaFinanceWorkBookReport?q=4aa33d31-fc7f-427c-9af9-ee1c4adf318c', '_blank');">
+																	<span class="glyphicon glyphicon-save-file" style="font-size: 25px; color: red;"></span>
+																</a>
+															</td>
+													</tr>
+													
+													
+														<tr>
+															<td colspan="3" style="text-align: center">--No
+																Queries Found--</td>
+														</tr>
+													
+												</tbody></table>
+												
+												
+													
+														
+															
+														
+													
+												
+											</div>
+										</div>
+									</div>
+
+									
+
+								</div>
+							</div>
+						</div>
+					
+					<div class="row">
+						<div class="col-xs-24" style="text-align: center; padding: 8px;">
+							
+							
+							
+
+							
+								
+								
+								
+								
+									
+										
+									
+								
+							
+
+							
+							
+								
+								
+									
+										
+									
+								
+							
+						</div>
+					</div>
+			</form></div>
+		</div>
+	</div>
+</div>
+
+
+
+	<div class="modal fade" id="myModal2" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title">
+						<span class="label label-primary">Query To HoD</span>
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-24">
+							<textarea placeholder="Type your Query here.." name="administrativeApprovalQuery.query" id="kraneditor" style="display: none;" aria-hidden="true"></textarea><div role="application" class="tox tox-tinymce" style="visibility: hidden; height: 300px;"><div class="tox-editor-container"><div role="menubar" data-alloy-tabstop="true" class="tox-menubar"><button aria-haspopup="true" role="menuitem" type="button" unselectable="on" tabindex="-1" class="tox-mbtn tox-mbtn--select" style="user-select: none;" aria-expanded="false"><span class="tox-mbtn__select-label">File</span><div class="tox-mbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-haspopup="true" role="menuitem" type="button" unselectable="on" tabindex="-1" class="tox-mbtn tox-mbtn--select" style="user-select: none;" aria-expanded="false"><span class="tox-mbtn__select-label">Edit</span><div class="tox-mbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-haspopup="true" role="menuitem" type="button" unselectable="on" tabindex="-1" class="tox-mbtn tox-mbtn--select" style="user-select: none;" aria-expanded="false"><span class="tox-mbtn__select-label">View</span><div class="tox-mbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-haspopup="true" role="menuitem" type="button" unselectable="on" tabindex="-1" class="tox-mbtn tox-mbtn--select" style="user-select: none;" aria-expanded="false"><span class="tox-mbtn__select-label">Insert</span><div class="tox-mbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-haspopup="true" role="menuitem" type="button" unselectable="on" tabindex="-1" class="tox-mbtn tox-mbtn--select" style="user-select: none;" aria-expanded="false"><span class="tox-mbtn__select-label">Format</span><div class="tox-mbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button aria-haspopup="true" role="menuitem" type="button" unselectable="on" tabindex="-1" class="tox-mbtn tox-mbtn--select" style="user-select: none;" aria-expanded="false"><span class="tox-mbtn__select-label">Table</span><div class="tox-mbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div><div role="group" class="tox-toolbar"><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Undo" title="Undo" type="button" tabindex="-1" class="tox-tbtn" disabled="disabled"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M6.4 8H12c3.7 0 6.2 2 6.8 5.1.6 2.7-.4 5.6-2.3 6.8a1 1 0 0 1-1-1.8c1.1-.6 1.8-2.7 1.4-4.6-.5-2.1-2.1-3.5-4.9-3.5H6.4l3.3 3.3a1 1 0 1 1-1.4 1.4l-5-5a1 1 0 0 1 0-1.4l5-5a1 1 0 0 1 1.4 1.4L6.4 8z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Redo" title="Redo" type="button" tabindex="-1" class="tox-tbtn" disabled="disabled"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M17.6 10H12c-2.8 0-4.4 1.4-4.9 3.5-.4 2 .3 4 1.4 4.6a1 1 0 1 1-1 1.8c-2-1.2-2.9-4.1-2.3-6.8.6-3 3-5.1 6.8-5.1h5.6l-3.3-3.3a1 1 0 1 1 1.4-1.4l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.4-1.4l3.3-3.3z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Bold" title="Bold" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M7.8 19c-.3 0-.5 0-.6-.2l-.2-.5V5.7c0-.2 0-.4.2-.5l.6-.2h5c1.5 0 2.7.3 3.5 1 .7.6 1.1 1.4 1.1 2.5a3 3 0 0 1-.6 1.9c-.4.6-1 1-1.6 1.2.4.1.9.3 1.3.6s.8.7 1 1.2c.4.4.5 1 .5 1.6 0 1.3-.4 2.3-1.3 3-.8.7-2.1 1-3.8 1H7.8zm5-8.3c.6 0 1.2-.1 1.6-.5.4-.3.6-.7.6-1.3 0-1.1-.8-1.7-2.3-1.7H9.3v3.5h3.4zm.5 6c.7 0 1.3-.1 1.7-.4.4-.4.6-.9.6-1.5s-.2-1-.7-1.4c-.4-.3-1-.4-2-.4H9.4v3.8h4z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Italic" title="Italic" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M16.7 4.7l-.1.9h-.3c-.6 0-1 0-1.4.3-.3.3-.4.6-.5 1.1l-2.1 9.8v.6c0 .5.4.8 1.4.8h.2l-.2.8H8l.2-.8h.2c1.1 0 1.8-.5 2-1.5l2-9.8.1-.5c0-.6-.4-.8-1.4-.8h-.3l.2-.9h5.8z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Underline" title="Underline" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M16 5c.6 0 1 .4 1 1v5.5a4 4 0 0 1-.4 1.8l-1 1.4a5.3 5.3 0 0 1-5.5 1 5 5 0 0 1-1.6-1c-.5-.4-.8-.9-1.1-1.4a4 4 0 0 1-.4-1.8V6c0-.6.4-1 1-1s1 .4 1 1v5.5c0 .3 0 .6.2 1l.6.7a3.3 3.3 0 0 0 2.2.8 3.4 3.4 0 0 0 2.2-.8c.3-.2.4-.5.6-.8l.2-.9V6c0-.6.4-1 1-1zM8 17h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 0 1 0-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Strikethrough" title="Strikethrough" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><g fill-rule="evenodd"><path d="M15.6 8.5c-.5-.7-1-1.1-1.3-1.3-.6-.4-1.3-.6-2-.6-2.7 0-2.8 1.7-2.8 2.1 0 1.6 1.8 2 3.2 2.3 4.4.9 4.6 2.8 4.6 3.9 0 1.4-.7 4.1-5 4.1A6.2 6.2 0 0 1 7 16.4l1.5-1.1c.4.6 1.6 2 3.7 2 1.6 0 2.5-.4 3-1.2.4-.8.3-2-.8-2.6-.7-.4-1.6-.7-2.9-1-1-.2-3.9-.8-3.9-3.6C7.6 6 10.3 5 12.4 5c2.9 0 4.2 1.6 4.7 2.4l-1.5 1.1z"></path><path d="M5 11h14a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2z" fill-rule="nonzero"></path></g></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button title="Fonts" aria-label="Fonts" aria-haspopup="true" type="button" unselectable="on" tabindex="-1" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" style="user-select: none;" aria-expanded="false"><span class="tox-tbtn__select-label"></span><div class="tox-tbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button title="Font sizes" aria-label="Font sizes" aria-haspopup="true" type="button" unselectable="on" tabindex="-1" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" style="user-select: none;" aria-expanded="false"><span class="tox-tbtn__select-label"></span><div class="tox-tbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button title="Blocks" aria-label="Blocks" aria-haspopup="true" type="button" unselectable="on" tabindex="-1" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" style="user-select: none;" aria-expanded="false"><span class="tox-tbtn__select-label">Paragraph</span><div class="tox-tbtn__select-chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Align left" title="Align left" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm0 4h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2zm0-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Align center" title="Align center" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm3 4h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 1 1 0-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 0 1 0-2zm-3-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Align right" title="Align right" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm6 4h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 0 1 0-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 0 1 0-2zm-6-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Justify" title="Justify" type="button" tabindex="-1" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 1 1 0-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 0 1 0-2z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Decrease indent" title="Decrease indent" type="button" tabindex="-1" class="tox-tbtn" disabled="disabled"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 1 1 0-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 0 1 0-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 0 1 0-2zm-5 4h12a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2zm1.6-3.8a1 1 0 0 1-1.2 1.6l-3-2a1 1 0 0 1 0-1.6l3-2a1 1 0 0 1 1.2 1.6L6.8 12l1.8 1.2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Increase indent" title="Increase indent" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 1 1 0-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 0 1 0-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 0 1 0-2zm-5 4h12a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2zm-2.6-3.8L6.2 12l-1.8-1.2a1 1 0 0 1 1.2-1.6l3 2a1 1 0 0 1 0 1.6l-3 2a1 1 0 1 1-1.2-1.6z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><div aria-pressed="false" aria-label="Text color" title="Text color" role="button" aria-haspopup="true" tabindex="-1" class="tox-split-button" aria-expanded="false" aria-describedby="aria_7746718831571742497210247"><span role="presentation" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><g fill-rule="evenodd"><path id="tox-icon-text-color__color" d="M3 18h18v3H3z"></path><path d="M8.7 16h-.8a.5.5 0 0 1-.5-.6l2.7-9c.1-.3.3-.4.5-.4h2.8c.2 0 .4.1.5.4l2.7 9a.5.5 0 0 1-.5.6h-.8a.5.5 0 0 1-.4-.4l-.7-2.2c0-.3-.3-.4-.5-.4h-3.4c-.2 0-.4.1-.5.4l-.7 2.2c0 .3-.2.4-.4.4zm2.6-7.6l-.6 2a.5.5 0 0 0 .5.6h1.6a.5.5 0 0 0 .5-.6l-.6-2c0-.3-.3-.4-.5-.4h-.4c-.2 0-.4.1-.5.4z"></path></g></svg></span></span><span role="presentation" tabindex="-1" class="tox-tbtn tox-split-button__chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" style="display: none;" id="aria_7746718831571742497210247">To open the popup, press Shift+Enter</span></div><div aria-pressed="false" aria-label="Background color" title="Background color" role="button" aria-haspopup="true" tabindex="-1" class="tox-split-button" aria-expanded="false" aria-describedby="aria_6509047621591742497210248"><span role="presentation" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><g fill-rule="evenodd"><path id="tox-icon-highlight-bg-color__color" d="M3 18h18v3H3z"></path><path fill-rule="nonzero" d="M7.7 16.7H3l3.3-3.3-.7-.8L10.2 8l4 4.1-4 4.2c-.2.2-.6.2-.8 0l-.6-.7-1.1 1.1zm5-7.5L11 7.4l3-2.9a2 2 0 0 1 2.6 0L18 6c.7.7.7 2 0 2.7l-2.9 2.9-1.8-1.8-.5-.6"></path></g></svg></span></span><span role="presentation" tabindex="-1" class="tox-tbtn tox-split-button__chevron"><svg width="10" height="10"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 0 1 0-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" style="display: none;" id="aria_6509047621591742497210248">To open the popup, press Shift+Enter</span></div><button aria-label="Clear formatting" title="Clear formatting" type="button" tabindex="-1" class="tox-tbtn"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24"><path d="M13.2 6a1 1 0 0 1 0 .2l-2.6 10a1 1 0 0 1-1 .8h-.2a.8.8 0 0 1-.8-1l2.6-10H8a1 1 0 1 1 0-2h9a1 1 0 0 1 0 2h-3.8zM5 18h7a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2zm13 1.5L16.5 18 15 19.5a.7.7 0 0 1-1-1l1.5-1.5-1.5-1.5a.7.7 0 0 1 1-1l1.5 1.5 1.5-1.5a.7.7 0 0 1 1 1L17.5 17l1.5 1.5a.7.7 0 0 1-1 1z" fill-rule="evenodd"></path></svg></span></button></div></div><div class="tox-anchorbar"></div><div class="tox-sidebar-wrap"><div class="tox-edit-area"><iframe id="kraneditor_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press ALT-0 for help." class="tox-edit-area__iframe"></iframe></div><div role="complementary" class="tox-sidebar"><div data-alloy-tabstop="true" tabindex="-1" class="tox-sidebar__slider tox-sidebar--sliding-closed" style="width: 0px;"><div class="tox-sidebar__pane-container"></div></div></div></div></div><div class="tox-statusbar"><div class="tox-statusbar__text-container"><div role="navigation" data-alloy-tabstop="true" class="tox-statusbar__path"></div><span class="tox-statusbar__branding"><a href="https://www.tiny.cloud/?utm_campaign=editor_referral&amp;utm_medium=poweredby&amp;utm_source=tinymce&amp;utm_content=v5" rel="noopener" target="_blank" tabindex="-1" aria-label="Powered by Tiny">Powered by Tiny</a></span></div></div><div aria-hidden="true" class="tox-throbber" style="display: none;"></div></div>
+							<script type="text/javascript">
+													tinymce.remove('#kraneditor');
+													tinymce
+															.init({
+																selector : '#kraneditor',
+																resize : false,
+																plugins : "table",
+																toolbar : 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent | forecolor backcolor removeformat',
+																table_appearance_options : true,
+																statusbar : true,
+																height : 300,
+															});
+	
+													function validateQuery() {
+														if (tinyMCE.get(
+																'kraneditor')
+																.getContent() == "") {
+															alert("Enter Query");
+															return false;
+														} else {
+															return true;
+														}
+													}
+												</script>
+						</div>
+					</div>
+					<div style="margin: 10px; padding: 8px; border: 1px solid #01458E;">
+						<label style="color: #01458E; text-decoration: underline;">Add
+							Attachment</label>
+						<input type="file" name="administrativeApprovalQuery.file" accept="application/pdf" id="aaDetailsId_administrativeApprovalQuery_file" onchange="validateAttachmentSize(this)">
+						<p class="help-block">Upload PDF file only.</p>
+					</div>
+					<div align="center" style="margin: 10px;">
+						<input type="submit" value="Save" id="querySaveBtn" name="action:addAdministrativeApprovalQuery" class="btn btn-primary" onclick="return validateQuery();">
+
+						<input type="hidden" name="administrativeApprovalQuery.parentId" value="" id="parentId">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<div class="modal fade" id="myModal3" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal4" role="dialog">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="administrativeNoteModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="reloadPageForRefreshToken()">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="issueAdministrativeApprovalModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="reloadPageForRefreshToken()">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="predefinedAAConcurenceModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div id="confirmAlert" class="modal fade" role="dialog">
+	<div class="modal-dialog" id="modal-confirmAlert">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="fa fa-exclamation"></i>
+				</div>
+				<h4 class="modal-title" id="confirmAlertTitle">Message !</h4>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="administrativepullNoteModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">
+					<span class="label label-primary" id="modalTitle"></span>
+				</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="SchemeWiseValidationModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title"><b>AA Pool Balance For SOPD Scheme</b>
+                    <span class="label label-primary" id="modalTitle"></span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                
+                    
+						<br><table class="table table-hover table-bordered">
+							<tbody><tr class="active">
+								<td>
+									<div id="ajaxDiv1" style="text-align: center; font-size: 13px">
+
+
+<style>
+.labelBtn {
+	min-width: 24px;
+	font-size: 10px;
+	font-weight: bold;
+}
+</style>
+
+<span style="color: #1000FF; font-weight: bold;" title="Relief on account of Natural Calamities">2245</span>
+-
+<span style="color: #CA2525;" title="Floods, Cyclones etc"> 02</span>
+-
+<span style="color: green;" title="Repairs and Restoration of Damaged Irrigation &amp; Flood Control Works"> 122</span>
+-
+<span style="color: #800080;" title="Repairs and Restoration of damaged Flood Control Works (WRD)">0999 </span>
+-
+<span style="color: #993300;" title="NULL">000</span>
+-
+<span style="color: #003366;" title="Maintenance">17 </span>
+-
+<span style="color: #003366;" title="Asset Maintenance">05 </span>
+&nbsp;-&nbsp;
+
+	&nbsp;<button type="button" class="btn btn-xs btn-danger labelBtn help" title="State Own Priority Scheme-GOI Special Scheme">
+		SOPD-GSP
+	</button>
+
+
+&nbsp;
+<button type="button" class="btn btn-xs btn-info labelBtn help" title="General Area">
+	GA
+</button>
+&nbsp;
+<button type="button" class="btn btn-xs btn-success labelBtn help" title="Voted">
+	V
+</button></div>
+									<script type="text/javascript">
+                                        loadAjaxContent(
+                                            'ajaxDiv1',
+                                            'getHeadDetailsAjaxForAlloctn',
+                                            'heads.headId=46623&pageView=4'
+                                        );
+                                    </script>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+										<table class="table table-hover table-bordered">
+											<tbody><tr>
+												<th style="text-align: center;">Financial Year</th>
+												<th style="text-align: center;">Budget Provision (In
+													Lakhs)</th>
+												<th style="text-align: center; width: 150px">AA limit</th>
+												<th style="text-align: center;">AA Issued Amount (In
+													Lakhs)</th>
+												<th style="text-align: center;">Expenditure against AA
+													(In Lakhs)</th>
+												<th style="text-align: center;">Year wise Liability</th>
+												<th style="text-align: center;">Cummulative Liabilities</th>
+											</tr>
+											<tr>
+												<th style="text-align: center;">(I)</th>
+												<th style="text-align: center;">(II)</th>
+												<th style="text-align: center;">(III)<br>= (2 X
+													II) - (Total of (IV) - Total of (V))
+												</th>
+												<th style="text-align: center;">(IV)</th>
+												<th style="text-align: center;">(V)</th>
+												<th style="text-align: center;">(VI)<br>= IV - V
+												</th>
+												<th style="text-align: center;">(VII)<br>= Total
+													of (IV) - Total of (V)
+												</th>
+											</tr>
+											
+												<tr>
+													<td style="text-align: center;">2022-23</td>
+													<td style="text-align: center;">55655</td>
+													<td style="text-align: center;">111310</td>
+													<td style="text-align: center;">32888.55517</td>
+													<td style="text-align: center;">32515.52193</td>
+													<td style="text-align: center;">373.03324</td>
+													<td style="text-align: center;">373.03324</td>
+												</tr>
+											
+												<tr>
+													<td style="text-align: center;">2023-24</td>
+													<td style="text-align: center;">11374274.17076</td>
+													<td style="text-align: center;">22748175.30828</td>
+													<td style="text-align: center;">2241.395</td>
+													<td style="text-align: center;">45459.79237</td>
+													<td style="text-align: center;">-43218.39737</td>
+													<td style="text-align: center;">-42845.36413</td>
+												</tr>
+											
+												<tr>
+													<td style="text-align: center;">2024-25</td>
+													<td style="text-align: center;">3010099.3</td>
+													<td style="text-align: center;">6063043.96413</td>
+													<td style="text-align: center;">2615.91</td>
+													<td style="text-align: center;">1734.88452</td>
+													<td style="text-align: center;">881.02548</td>
+													<td style="text-align: center;">-41964.33865</td>
+												</tr>
+											
+										</tbody></table>
+										</td></tr><tr class="active">
+											<th style="text-align: left; font-size: 13px">Eligible
+												Amount for this Year's AA
+											</th><td style="text-align: center; font-weight: bold; font-size: 13px" id="eligibleAAAmountscheck0"></td>
+											
+										</tr>
+										
+									
+							
+						</tbody></table>
+					
+                    <div id="alertId" style="font-weight: bold; font-size: 17px; text-align: center">
+                        The AA cannot be issued, as the outstanding liabilities are more than
+                        double the budget provision for the current financial year.
+                    </div><br>
+                
+			</div>
+			<div class="row" id="additionalInfo" style="display: none;">
+				<div style="text-align: center; font-size: 12px; font-weight: bold;">If
+					the concerned proposal is exempted from this validation, as per
+					clause 21.3 of DFPR 2022, then please attach a justification
+					document for the same in the provided field and submit the proposal
+					to the Finance Department for Concurrence</div>
+				<br>
+				<div class="col-sm-6 active" style="margin-left: 20px;">
+					SOPD Justification Document<span style="font-style: regular; color: red; font-size: 15px;">
+						* </span><br>
+				</div>
+				<div class="col-sm-6">
+					
+					
+						<input type="file" name="administrativeApproval.sopdFile" id="sopdFileAttach" onchange="validateAttachmentSize(this)">
+						<span style="color: #d25656; font-style: italic;">Maximum
+							upload file size is 10MB</span>
+						<p class="help-block">Upload PDF file only.</p>
+					
+				</div>
+				<div class="col-sm-6">
+					<textarea name="administrativeApproval.sopdJustifyRemark" cols="54" rows="" id="sopdJustifyRemark" class="form-control" style="resize: true;" onkeyup="validateStringOnly($(this))" placeholder="Type your Remarks here."></textarea>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" onclick="return aaSaveDetails('72777');" id="saveButton">Save Details</button>
+				<button type="button" class="btn btn-primary" onclick="return getIssuedDetails('d4b68e80-8ae9-48fc-b9b6-f965b427488f');" id="proceedButton">Proceed</button>
+			</div>
+		</div>
+    </div>
+</div>
+<script type="text/javascript">
+	var uri = window.location.toString();
+	if (uri.indexOf("?") > 0) {
+		var clean_uri = uri.substring(0, uri.indexOf("&"));
+		window.history.replaceState({}, document.title, clean_uri);
+	}
+
+	//for budget variance dashboard
+	var head = '';
+	function getSelectedHead(headId) {
+		head += headId + '_';
+		getBudgetDetailsByHeadOfAccount(head, null);
+	}
+	function getBudgetDetailsByHeadOfAccount(headIds, approvalId) {
+		$.ajax({
+			type : 'GET',
+			url : 'getBudgetDetailsForAdministrativeApprovalByHeadOfAccount',
+			data : {
+				'headIdsForBudgetVarianceView' : headIds,
+				'administrativeApproval.approvalId' : approvalId,
+			},
+			beforeSend : function() {
+				$('#dashboardContainer').html('<h5 align = "center">Loading...</h5>');
+			},
+			success : function(data) {
+				$('#dashboardContainer').html(data);
+			}
+		});
+	}
+	
+	function getBudgetDetails() {
+		classNames = $('#anchorBudget').attr('class');
+		if (classNames.split(' ').includes('collapsed')) {
+			approvalId = '72777';
+			if (typeof approvalId != 'undefined' && approvalId > 0) {
+				getBudgetDetailsByHeadOfAccount(null, approvalId);
+			}
+		}
+	}
+
+	// FOR AA CANCEL
+	function addCancelNotes(q) {
+		$('#myModal .modal-title').html('Update Cancel Remarks');
+		$.ajax({
+			type: 'GET',
+			url: 'addAANotes',
+			data: {
+				'q':q
+			},
+			beforeSend: ()=> {
+				$('#myModal .modal-body').html('Loading..');
+			},
+			success: (result)=> {
+				$('#myModal .modal-body').html(result);
+			}
+		});
+		$('#myModal').modal('show');
+		return false;
+	}
+
+	// For retrieviing all details of AA by ID
+	function getAllDetailsByApprovalId(q) {
+		$('#myModal .modal-title').html('Cancel Administrative Approval');
+		$('#modalDialog').removeClass('modal-lg');
+		$('#modalDialog').addClass('modal-xl');
+		$.ajax({
+			type: 'GET',
+			url: 'findAllApprovalDetailsById',
+			data: {
+				'q' : q
+			},
+			beforeSend: ()=> {
+				$('#myModal .modal-body').html('Loading..');
+			},
+			success: (response)=> {
+				$('#myModal .modal-body').html(response);
+			}
+		});
+		$('#myModal').modal('show');
+		return false;
+	}
+	function reloadPageForRefreshToken(){
+		location.reload();
+	}
+
+	function vaidateHoaWiseBudgetLimit(){
+		var responseObj = {};
+	var budgetProvisions = [];
+		$('.headId').each((index, element)=>{ 
+			if(element.value != ""){
+				$.ajax({
+					type: "GET",
+					url: "vaidateHoaWiseBudgetLimit",
+					async: false,
+					data:{
+						"hoaId": element.value
+					},
+					success: (response)=>{
+						responseObj = {statusFlag: true, param: 0};
+						var isExempted = response[0];
+						var currentYearBudget = response[1];
+						currentYearBudget = parseAndFormatFloats(currentYearBudget);
+						var amountApprovedTillDate = response[2];
+						var validationParameter = response[3];
+						amountApprovedTillDate = parseAndFormatFloats(amountApprovedTillDate);
+						currentYearBudgetprovision = currentYearBudget * validationParameter;
+						budgetProvisions.push(currentYearBudgetprovision);
+						$('#currentBudgetProvision').val(currentYearBudgetprovision);
+						
+						if(!isExempted){							 
+							var amountRequestingFromTheHead = $('#amounts').val();
+							amountRequestingFromTheHead = parseAndFormatFloats(amountRequestingFromTheHead);
+							amountApprovedTillDate = amountApprovedTillDate + amountRequestingFromTheHead;
+							amountApprovedTillDate = parseAndFormatFloats(amountApprovedTillDate);
+							
+							if(validationParameter!=null){
+								if(amountApprovedTillDate > (currentYearBudget*validationParameter)){
+									responseObj.param = validationParameter;
+									responseObj.statusFlag = false;
+								} 
+							} 
+						}
+					}
+				});
+			}
+			if(!responseObj.statusFlag){
+				return false;
+			}
+		});
+		return { responseObj, budgetProvisions,validationParameter };
+	}
+	
+	function parseAndFormatFloats(value){
+		var floatValue = parseFloat(value);
+		floatValue = parseFloat(floatValue.toFixed(5));
+		return floatValue;
+	}
+	
+	function aaSaveDetails(approvalId) {
+		var token = '3MPM0KD377T9NMZXG0RKZTT7OPAP76XD';
+		var formData = new FormData();
+	    var attachment = document.getElementById('sopdFileAttach').files[0];
+	    var remark = document.getElementById('sopdJustifyRemark').value;
+
+	    if (!attachment) {
+	        alert("Please upload the SOPD Justification document.");
+	        return false;
+	    }
+	    if (!remark) {
+	        alert("Please provide your remarks.");
+	        return false;
+	    }
+
+	    formData.append('administrativeApproval.sopdFile', attachment);
+	    formData.append('administrativeApproval.sopdJustifyRemark', remark);
+	    formData.append('administrativeApproval.approvalId', approvalId);
+	    formData.append("struts.token.name", "token");
+		formData.append("token", token);
+	    
+	    $.ajax({
+			type: "POST",
+			url: "saveSopdAttachment",
+			contentType: false,
+			processData: false,
+			data: formData,
+			success: (response)=>{
+				alert("Details saved successfully.");
+				location.reload();
+			}
+		});
+	    return true;
+	}
+	
+</script>
+</td>
+						</tr>
+					
+				</tbody></table>
+			</td>
+			<td width="4px"></td>
+		</tr>
+		<tr>
+			<td colspan="3" style="height: 15px;">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="background-color: #01458E;">
+
+<table>
+	<tbody><tr>
+		<td width="80%" height="22" valign="baseline" background="../resources/images/th.jpg" bgcolor="#CCCCCC">
+			<div align="left" style="padding: 10px 5px 5px 5px; color: #FFFFFF;">
+				Version 17.7.43
+			</div>
+		</td>
+
+		<td width="20%" height="20%" valign="baseline" background="../resources/images/th.jpg" bgcolor="#CCCCCC">
+			<div align="right">
+				 <button type="button" class="btn btn-helpdesk btn-sm" id="toggle-bp" title="Chatbot">
+					<i class="fa fa-comments-o fa-lg" aria-hidden="true"></i>
+				</button>   
+				 <button type="button" class="btn btn-success btn-sm" title="User Manual" onclick="gotoUMDownload()"><i class="fa fa-book"></i>  UM
+				</button> 
+				
+				<button type="button" class="btn btn-helpdesk btn-sm" title="Technical Support" onclick="gotoHelpDisk('ad.rdm')">
+					<span class="glyphicon glyphicon-question-sign"></span> TSG
+				</button>
+
+				<a href="http://kran.co.in" target="_blank" rel="noopener noreferrer"><img alt="KRAN" align="middle" src="../resources/images/kranitlogo.png"></a>
+			</div>
+		</td>
+	</tr>
+</tbody></table>
+
+<!-- By Sujith -- For Help Desk -->
+<div id="myModalTSG" class="custom-modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+	<div class="custom-modal-dialog" style="width: 90%;">
+		<!-- Modal content -->
+		<div class="custom-modal-content">
+			<div class="custom-modal-header" style="background-color: #13498d;">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<img src="../resources/images/header.png"> <img src="../resources/images/assured_logo.png" style="width: 12%; float: right;">
+			</div>
+			<div class="custom-modal-body" style="overflow: auto; height: 650px;">
+				<iframe width="100%" height="100%" id="modalframe" src="about:blank" frameborder="0" style="height: 535px;"></iframe>
+			</div>
+			<div class="custom-modal-footer" style="background-color: #13498d;">
+				<img alt="KRAN" align="middle" src="../resources/images/kranitlogo.png">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="userManualModal" class="modal fade" style="display: none;" role="dialog" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color: #1469A0; color: #FFF;">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">Manuals &amp; Tutorials</h4>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="userManualModalBS4">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Manuals &amp; Tutorials</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+ 	document.getElementById("toggle-bp").addEventListener("click", function() {
+		window.botpressWebChat.sendEvent({
+			type : webchatOpen ? "hide" : "show"
+		})
+	}) 
+
+	var bootstrap_enabled = (typeof $().emulateTransitionEnd == 'function');
+	if (!bootstrap_enabled) {
+		$("#userManualLink").hide();
+		$.getScript('../resources/bootstrap/js/bootstrap.min.js');
+	}
+
+	$(document).ready(function() {
+		$('#myModalTSG #modalframe').height($(window).height() - 200);
+	});
+
+	function gotoHelpDisk(hierarchyCode) {
+		var pageTitle = document.title;
+		var titleName = "Mr.";
+		var empName = "Assistant";
+		var lastName = "rdm";
+		if (lastName != null) {
+			var userName = titleName + ' ' + empName + ' ' + lastName;
+		} else {
+			var userName = titleName + ' ' + empName;
+		}
+		var seatName = "Assistant Department";
+		var controllingOffice = "Revenue and Disaster Management Department";
+		var seatUserAllotId = "18914";
+		var mobile = "9707133011";
+		var email = "";
+
+		var myJSON = {
+			"userName" : userName,
+			"seatName" : seatName,
+			"controllingOffice" : controllingOffice,
+			"seatUserAllotId" : seatUserAllotId,
+			"hierarchyCode" : hierarchyCode,
+			"pageTitle" : pageTitle,
+			"mobile" : mobile,
+			"email" : email,
+			"finassam" :'finassam'
+		};
+		var strJSON = encodeURIComponent(JSON.stringify(myJSON));
+		$('#modalframe').attr('src',
+				'/helpdesk/gotoHDeskFromApp?strJSON=' + strJSON);
+		$('#myModalTSG').modal('show');
+	}
+
+	function gotoUserManuals() {
+		var subtab = 'aaIssuedDept';
+		if (subtab == 'dashboardDDO') {
+			$.ajax({
+				type : "GET",
+				url : "getUserManualList",
+				beforeSend : function() {
+					$('#userManualModalBS4 .modal-body').html('Loading..');
+				},
+				success : function(msg) {
+					$('#userManualModalBS4 .modal-body').html(msg);
+				}
+			});
+			$('#userManualModalBS4').modal('show');
+		} else {
+			$.ajax({
+				type : "GET",
+				url : "getUserManualList",
+				beforeSend : function() {
+					$('#userManualModal .modal-body').html('Loading..');
+				},
+				success : function(msg) {
+					$('#userManualModal .modal-body').html(msg);
+				}
+			});
+			$('#userManualModal').modal('show');
+		}
+		return false;
+	}
+	
+	function gotoUMDownload() {
+			$.ajax({
+				type : "GET",
+				url : "gotoUMDownload",
+				beforeSend : function() {
+					
+
+					$('#userManualModal .modal-body').html('Loading..');
+				},
+				success : function(msg) {
+					$('#userManualModal .modal-body').html(msg);
+				}
+			});
+			$('#userManualModal').modal('show');
+	}
+	
+	function gotoFeedbackForm() {
+		window.open("https://forms.gle/V2rio69ugYZS3zR68","_blank");
+	}
+</script>
+
+<script type="text/javascript">
+function gotoHelpDisk(hierarchyCode) {
+		var pageTitle = document.title;
+		var titleName = "Mr.";
+		var empName = "Assistant";
+		var lastName = "rdm";
+		if (lastName != null) {
+			var userName = titleName + ' ' + empName + ' ' + lastName;
+		} else {
+			var userName = titleName + ' ' + empName;
+		}
+		var seatName = "Assistant Department";
+		var controllingOffice = "Revenue and Disaster Management Department";
+		var seatUserAllotId = "18914";
+		var mobile = "9707133011";
+		var email = "";
+
+		var myJSON = {
+			"userName" : userName,
+			"seatName" : seatName,
+			"controllingOffice" : controllingOffice,
+			"seatUserAllotId" : seatUserAllotId,
+			"hierarchyCode" : hierarchyCode,
+			"pageTitle" : pageTitle,
+			"mobile" : mobile,
+			"email" : email,
+			"finassam" :'finassam'
+		};
+		var strJSON = encodeURIComponent(JSON.stringify(myJSON));
+		$('#modalframe').attr('src',
+				'/helpdesk/gotoHDeskFromApp?strJSON=' + strJSON);
+		$('#myModalTSG').modal('show');
+	}
+
+</script>
+
+<style>
+.btnhelpdesk-sm, .btnhelpdesk-group-sm>.btnhelpdesk {
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+.btnhelpdesk {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.custom-modal-body {
+	position: relative;
+	padding: 15px;
+}
+
+.custom-modal-content {
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.custom-modal-content {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: 0;
+}
+
+.custom-modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.custom-modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+
+.custom-modal-header {
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.custom-modal-header .close {
+	margin-top: -2px;
+}
+
+.custom-modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+}
+
+button.close {
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
+}
+
+.close {
+	float: right;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: 1;
+	filter: alpha(opacity = 20);
+}
+
+.custom-modal-dialog {
+	margin: 30px auto;
+}
+
+.custom-modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 5%;
+}
+
+.custom-modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.custom-modal-backdrop.in {
+	opacity: .5;
+	filter: alpha(opacity = 50);
+}
+
+.custom-modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+}
+</style>
+<!-- By Sujith -- For Help Desk --></td>
+		</tr>
+	</tbody></table><div id="bp-web-widget"><iframe id="bp-widget" title="Helpdesk" frameborder="0" src="https://finanalytics.assam.gov.in/botpress/lite/helpdesk/?m=channel-web&amp;v=Embedded&amp;options=%7B%22config%22%3A%7B%22host%22%3A%22https%3A%2F%2Ffinanalytics.assam.gov.in%2Fbotpress%22%2C%22botId%22%3A%22helpdesk%22%2C%22userId%22%3A%2218914%22%2C%22botName%22%3A%22Helpdesk%22%2C%22enableTranscriptDownload%22%3Afalse%2C%22showConversationsButton%22%3Afalse%2C%22hideWidget%22%3Atrue%2C%22useSessionStorage%22%3Atrue%7D%7D" class="bp-widget-web bp-widget-widget bp-widget-hidden"></iframe></div>
+
+	<div class="modal fade centered-modal" id="surveyModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body"></div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="anylinkmenu" style="width: 150px; background: rgb(255, 255, 255);"><ul>
+<li><a href="javascript: editProfile()" target="_self">Profile</a></li>
+<li><a href="javascript:TINY.box.show({iframe:'/assamfinance/changePasswd',width:650,height:500,boxid : 'frameless' })" target="_self">Change Password</a></li>
+<li><a href="javascript: passwordHistory()" target="_self">Password History</a></li>
+<li><a href="javascript:TINY.box.show({iframe:'deleteProfile',width:600,height:450,boxid : 'frameless' })" target="_self">Deactivate Account</a></li>
+
+</ul></div><div class="anylinkshadow" style="width: 150px; height: 92px; opacity: 0.3;"></div><div class="tox tox-silver-sink tox-tinymce-aux" style="position: relative;"></div></body></html>
