@@ -1,0 +1,522 @@
+source,name,designation,department
+10th_SEC_Meeting,Shri Sushil Das,Finance Officer,
+10th_SEC_Meeting,Shri Kusumbar Choudhury,Project Officer,
+10th_SEC_Meeting,Shri Ananta Samanta,Project Officer,
+10th_SEC_Meeting,Shri Bijayanta Goswami,Project Officer,
+10th_SEC_Meeting,Shri Pran Krishna Gogoi,Project Officer,
+10th_SEC_Meeting,Shri Lohit Gogoi,Project Officer,
+10th_SEC_Meeting,Shri Dhanjit Kr. Das,Project Officer,
+10th_SEC_Meeting,Smt. Minakshi Das,Project Officer,
+10th_SEC_Meeting,Shri Siju Das,Project Officer,
+10th_SEC_Meeting,Shri Ronney P. Rajkumar,Project Officer,
+10th_SEC_Meeting,Shri Kaustav Talukdar,Project Officer,
+10th_SEC_Meeting,Shri Sanjib Das,Project Officer,
+10th_SEC_Meeting,Shri Shamim Ahmed Laskar,Project Officer,
+10th_SEC_Meeting,Smt. Smita Chetia,Project Officer,
+10th_SEC_Meeting,Smt. Ruby Gogoi,Project Officer,
+10th_SEC_Meeting,Shri Jayanta Dutta,Project Officer,
+10th_SEC_Meeting,Shri Hemant Baishya,Project Officer,
+10th_SEC_Meeting,Mohammed Ahmed,Project Officer,
+10th_SEC_Meeting,Shri Rupamjyoti Bora,Project Officer,
+10th_SEC_Meeting,Vacant,Project Officer,
+10th_SEC_Meeting,Vacant,Project Officer,
+40th_sec_meeting,"Shri Anok Kumar Tiwari, IAS","Chief Secretary, Govt. of Assam",
+40th_sec_meeting,"Shri M.S. Manivannan, IAS",Additional Chief Secretary,
+40th_sec_meeting,"Shri Sudhakar Singh, IAS",Commissioner & Secretary,
+40th_sec_meeting,"Shri Debashis Kumar, IAS, JRB",Secretary,
+40th_sec_meeting,Shri Kuladhar Saikia,Secretary,
+40th_sec_meeting,Shri Alexander Prasad Sinha,Secretary & SPC,
+40th_sec_meeting,Shri P.K. Das,Joint Secretary,
+40th_sec_meeting,Shri Pradip Kumar Dutta,Under Secretary,
+40th_sec_meeting,Shri P.K. Laha Choudhury,Under Secretary,
+40th_sec_meeting,Shri D. K. Borkakoty,City Engineer,
+40th_sec_meeting,Shri M. R. Das,Secy. DLS,
+40th_sec_meeting,Shri Nandita Regon Borah,"Nodal Officer, DM",
+40th_sec_meeting,Shri Ranjit Sharma,Ass. P. Planner,
+40th_sec_meeting,Shri R. K. Patowary,Assistant Engineer,
+40th_sec_meeting,Shri Paban Terang,,
+41st_sec_meeting,"Shri Kumar Sanjay Krishna, IAS",Chief Secretary,Assam
+41st_sec_meeting,"Shri Jishnu Barua, IAS",Addl. Chief Secretary,
+41st_sec_meeting,"Shri S. Abbasi, IAS",Addl. Chief Secretary,
+41st_sec_meeting,"Shri A.K. Sinha Casshyap, IPS",DG CD & HG,
+41st_sec_meeting,Shri Avinash Joshi,,E&F
+41st_sec_meeting,Shri Y.K. Gautam,ADGP/Director F&ES,
+41st_sec_meeting,Shri Niraj Verma,Principal Secretary,Power
+41st_sec_meeting,Shri B. Kalyan C,Principal Secretary,Education
+41st_sec_meeting,Shri Samir Kr. Sinha,Principal Secretary,"Finance, T&D Deptt."
+41st_sec_meeting,Shri Preetam Saikia,Commissioner & Secretary,Education
+41st_sec_meeting,Shri M.S. Manivannan,"Commissioner & Secretary (Revenue & DM) & CEO, ASDMA",
+41st_sec_meeting,Shri Gaurav Bothra,Commissioner & Secretary,Handloom & Sericulture
+41st_sec_meeting,Shri R. Kemprai,Commissioner & Special Secretary,Water Resources
+41st_sec_meeting,Shri Kulendra Talukdar,Commissioner & Secretary,Agriculture
+41st_sec_meeting,Shri Rakesh Kumar,Secretary,Irrigation
+41st_sec_meeting,Shri Ananda Kr. Das,Joint Secretary,Revenue & DM
+41st_sec_meeting,Shri B. Rongpi,C.E.,Water Resources
+41st_sec_meeting,Shri Palashjyoti Goswami,Deputy Secretary,WR Deptt.
+41st_sec_meeting,Smt. Jayshree Khersa,"Deputy Director, F&E Service",
+41st_sec_meeting,Shri Shantanoo Bhattacharyya,PW B&NH Deptt.,
+41st_sec_meeting,Shri Prafulla Mahanta,,Agriculture
+41st_sec_meeting,Deputy Commissioner,Chairperson,
+41st_sec_meeting,"CEO, DDMA",Member,
+41st_sec_meeting,"D.I.O, NIC",Member,
+41st_sec_meeting,D.F.O,Member,
+41st_sec_meeting,Representative of ASDMA,Member,
+42nd_sec_meeting,"Shri Jishnu Barua, IAS",Chief Secretary,Assam
+42nd_sec_meeting,"Shri Syedain Abbasi, IAS",Addl. Chief Secretary,Water Resources
+42nd_sec_meeting,"Dr. Y.K. Gautam, IPS",ADGP cum Director,F& ES
+42nd_sec_meeting,"Shri Avinash Joshi, IAS",Principal Secretary,Revenue & DM
+42nd_sec_meeting,"Shri B. Kalyan Chakravarthy, IAS",Principal Secretary,Education
+42nd_sec_meeting,"Shri Rajesh Prasad, IAS",Principal Secretary and Administrator,BTC
+42nd_sec_meeting,"Shri Akash Deep, IAS",Commissioner & Secretary,Agriculture
+42nd_sec_meeting,Shri Rajesh Kempari,Commissioner & Spl. Secretary,PWD
+42nd_sec_meeting,"Smt. Jolly Das Brahma, ACS",Commissioner & Secretary,P&RD
+42nd_sec_meeting,"Shri Rakesh Kumar, IAS",Commissioner & Secretary,Fishery Dept.
+42nd_sec_meeting,Shri Ghanshyam Das,Commissioner,GMC
+42nd_sec_meeting,Shri Gautam Das,Director,IWT
+42nd_sec_meeting,Shri Narayan Prasad Das,Secretary,Public Health Engineering
+42nd_sec_meeting,Shri Partha P. Majumdar,Secretary,Social Welfare
+42nd_sec_meeting,Shri Subrata Roy Bardhan,Joint Secretary,Health & Family Welfare
+42nd_sec_meeting,Shri M.A. Ahmed,Deputy Secretary,PW(B&NH)
+42nd_sec_meeting,Shri Bhaben Hazarika,Deputy Secretary,Public Health Engineering
+42nd_sec_meeting,Shri Palashjyoti Goswami,Deputy Secretary,Water Resources
+42nd_sec_meeting,Smt. Madhumita Nath,Deputy Secretary,UDD
+42nd_sec_meeting,Shri Sachindra Das,Under Secretary,Health & Family Welfare
+42nd_sec_meeting,Shri Rabindra Ch. Kalita,Under Secretary,
+42nd_sec_meeting,Shri Borsing Rongpi,Chief Engineer,Water Resources
+42nd_sec_meeting,Shri Dilip Kr. Talukdar,SE,Public Health Engineering
+42nd_sec_meeting,Shri Bimal Kalita,Executive Engineer,Irrigation
+42nd_sec_meeting,Shri Apurba Kr. Hazarika,Executive Engineer,Public Health Engineering
+44th_sec_meeting,Shri Rajesh Dutta,Engineering Consultant,Water Resources
+44th_sec_meeting,Shri Mukta Ram Deka,Project Manager (DRR),Water Resources
+44th_sec_meeting,Mirza Mahammad Irshad,Project Manager (Response),Water Resources
+44th_sec_meeting,Shri Biren Baishya,GIS Expert,Water Resources
+44th_sec_meeting,Shri Abhijit Deka,Systems Expert,Water Resources
+44th_sec_meeting,"Shri Jishnu Barua, IAS",Chief Secretary,Assam
+44th_sec_meeting,P K Borthakur,Addl.CS,T&D
+44th_sec_meeting,Avinash Joshi,PS,R & D M
+44th_sec_meeting,S N Singh,Spl. DGP (Comm),
+44th_sec_meeting,Krishna Das,Assam Police HQRS AIG(R),
+44th_sec_meeting,Dr.Sadique Ali Ahmed,"Fire &ES,Assam,SP,Fire&ES",
+44th_sec_meeting,"Hiren Das, Deputy Sey PWB (B&NH)",PW(B&NH) Department,
+44th_sec_meeting,Abhijit Baruah,Secretary,Soil Conservation
+44th_sec_meeting,"Rita Gogoi, Joint Secretary",Secondary Education,
+44th_sec_meeting,"Sangita Saikia, OSD",Samagra Siksha,Samagra Siksha
+44th_sec_meeting,Gyanendra Tripathi,CEO,ASDMA
+44th_sec_meeting,Prasanta Saikia DP(C),APRO,
+44th_sec_meeting,"Aswini Neog, SP (CA) Assam",APRO,
+44th_sec_meeting,"Mayuri Cheita, Joint Secretary",Finance,
+44th_sec_meeting,Roopjyoti Saharia,Agriculture,
+44th_sec_meeting,"Esther Kathar, Addl. Secy.",P & R D,
+44th_sec_meeting,"Indrani Laskar, Joint Secretary",Health & F.W,
+44th_sec_meeting,"Omar Sharif, Joint Secy",Housing & Urban Affairs Department,
+44th_sec_meeting,"S C Das, AHGS, Sr. S.O HG (G)","O/O Dir CD & HG, Assam",
+44th_sec_meeting,"H. Talukdar, Jr Staff Officer (CD)","O/O the DGCD & DGHG, Assam",
+44th_sec_meeting,Leena Das,"Additional Secretary, FCS & CA Deptt",
+44th_sec_meeting,Partha P Majumdar,Secretary,Social Welfare Deptt
+44th_sec_meeting,"Borsingh Rongpi, Chief Engineer",W.R Deptt.,
+44th_sec_meeting,"Nagendra Karmakar, Dep, Secy",W.R Deptt.,
+44th_sec_meeting,"Bijoy Kr. Sarma, Dy. Secy",Irrigation Deptt.,
+44th_sec_meeting,Bijoy Kr. Swarnakar,PHE/Chief Engineer Sanitation,
+44th_sec_meeting,"Dibyajyoti Daurah, Dy Secy",PHE Deptt,
+44th_sec_meeting,"Partha P Baruah, State Co-ordinator",SBM-G/ PHE Deptt,
+44th_sec_meeting,Prasanta Goswami,Irrigation,
+44th_sec_meeting,Sunil Kr Paul,P.W.D (Roads),
+44th_sec_meeting,Monjoy Karigapse,WRD,
+44th_sec_meeting,Kapil Bayan S.E(P),P.W.R.D,
+46th_sec_meeting,Shri Paban Kumar Borthakur,Chief Secretary to the Govt. of Assam,
+46th_sec_meeting,Shri S. Abbasi,Additional Chief Secretary to the Govt. of Assam,
+46th_sec_meeting,Shri Avinash Joshi,"Principal Secretary, Health & Family Welfare, Assam",
+46th_sec_meeting,Shri Mukesh Agarwal,"Special DGP-cum-Director, Fire & Emergency Services, Assam",
+46th_sec_meeting,Shri Gyanendra Dev Tripathi,"CEO, ASDMA/ Commissioner & Secretary",
+46th_sec_meeting,Dr Karuna Kumari,"Secretary, Revenue & DM, Govt. of Assam",
+46th_sec_meeting,Smt. Varshaty Das,"Secretary, Soil Conservation Department, Govt. of Assam",
+46th_sec_meeting,Sri Debajit Bhuyan,"Spl. Secretary, PWRD Department, Govt. of Assam",
+46th_sec_meeting,Shri Kausar Jamil Hilaly,"Chief Executive Officer, Guwahati Metropolitan Development Authority",
+46th_sec_meeting,Shri Rajesh Kemprai,"Spl. Commissioner & Spl. Secretary, PWRD",
+46th_sec_meeting,Shri Raj Chakravarty,"Spl. Commissioner & Spl. Secretary, PWRD",
+46th_sec_meeting,Shri Tej Prasad Bhusal,"Additional Secretary, Agriculture",
+46th_sec_meeting,Shri Deba Kumar Kalita,ACS,"Additional Secretary, Women & Child Development Department"
+46th_sec_meeting,Sri Hriday Ranjan Das,Joint Director,"Tourism, Assam"
+46th_sec_meeting,Shri Krishna Das,APS,"AIGP (Re-Org), Assam"
+46th_sec_meeting,Shri N.K. Debnath,ACS,"Joint Secretary, Fishery"
+46th_sec_meeting,Shri Gadadhar Kalita,Executive Engineer,P&RD Department
+46th_sec_meeting,Shri Dibajyoti Duarah,Additional Chief Engineer,Public Health Engineering
+46th_sec_meeting,Shri Ranadhar Ranjan Paul,Executive Engineer,PWD
+46th_sec_meeting,Shri Chandana Deka,Deputy Architect,CCO
+46th_sec_meeting,Shri Gautam Talukdar,ACS,Power
+46th_sec_meeting,Smti. Sangita Saikia,OSD SSA,Samagra Siksha Abhiyan
+46th_sec_meeting,Shri Hiren Das,Deputy Secretary,PW(B&NH)
+46th_sec_meeting,Shri Tapan Kr. Gogoi,Technical Director,NIC Assam
+46th_sec_meeting_6.12.2022,"Shri Paban Kr. Borthakur, IAS",Chief Secretary,Assam
+46th_sec_meeting_6.12.2022,"Shri Syedain Abbasi, IAS",Additional. Chief Secretary,
+46th_sec_meeting_6.12.2022,"Shri Prasanta Kumar Bhuyan, IPS",IGP(L&O),
+46th_sec_meeting_6.12.2022,"Avinash Joshi, IAS",PS H&FW,
+46th_sec_meeting_6.12.2022,"Gyanendra Dev Tripathi, IAS","C&S, (R&D)",
+46th_sec_meeting_6.12.2022,"Dr. Om Prakash, IAS",MD SSA,
+46th_sec_meeting_6.12.2022,Dr. K Kumari,Secretary,R&DM
+46th_sec_meeting_6.12.2022,Dilip Kumar Borah,Secretary,Handloom Textiles
+46th_sec_meeting_6.12.2022,Bhaskar Phukan,Secretary,Co ordinator Office of the C.S
+46th_sec_meeting_6.12.2022,Prakash Gharphalia,Secretary,Urban Development
+46th_sec_meeting_6.12.2022,Munindra Sharma,Secretary,P&RD Dept
+46th_sec_meeting_6.12.2022,Nagendra Karmakar,Dep. Secretary,Water Resources
+46th_sec_meeting_6.12.2022,Lakshya Jyoti Hazarika,Deputy Secretary,Agriculture
+46th_sec_meeting_6.12.2022,Dr. Sadique Ali Ahmed,SP cum Fire Service Adviser,Fire & Emergency Services
+46th_sec_meeting_6.12.2022,M M Das,Sr Engineer,PWD
+46th_sec_meeting_6.12.2022,Deba Kr. Kalita,Addl. Secretary,Women and Child Development Dept.
+46th_sec_meeting_6.12.2022,Tej Prasad Bhusal,Addl. Secretary,Agriculture
+46th_sec_meeting_6.12.2022,Jogen Baishya,Irrigation,"C.E, M.I"
+46th_sec_meeting_6.12.2022,Tridiv Bora,E.E Irrigation,
+46th_sec_meeting_6.12.2022,Varshaty Das,Soil Conservation Dept.,
+46th_sec_meeting_6.12.2022,Anasur Dutta Barua,FCS & CA Dept,
+46th_sec_meeting_6.12.2022,Bijoy Sarma,PWRD,U/S (Com)
+46th_sec_meeting_6.12.2022,Diganta Kumar Baruah,PHED,CE (W)
+46th_sec_meeting_6.12.2022,N.K Debnath,Fishery Dept.,
+46th_sec_meeting_6.12.2022,Tapan Kr. Gogoi,Sr. Technical Director,NIC
+46th_sec_meeting_6.12.2022,Borsing Rongpi,CE,Water Resources
+46th_sec_meeting_6.12.2022,P. Saikia,DP(I),Assam
+46th_sec_meeting_6.12.2022,A. Narzary,SP(Comm),Assam
+46th_sec_meeting_6.12.2022,Chandana Deka,"Capital Construction Division, Deputy Architecture",
+46th_sec_meeting_6.12.2022,R. C Borthakur,C.C Division Dispur,
+46th_sec_meeting_6.12.2022,A. K Das,Division Secretary,GAD
+46th_sec_meeting_6.12.2022,A K Das,"Fisheries, Nodal Officer (DM)",
+46th_sec_meeting_6.12.2022,Papul Sakia,"PWRD, o/o CE PWD ®",
+46th_sec_meeting_6.12.2022,Er. Saleh Ahmed Choudhury,Addl. CE PWRD Assam,
+47th_sec_meeting_10.12.2022,Shri Paban Kumar Borthakur,Chief Secretary,Govt. of Assam
+47th_sec_meeting_10.12.2022,Avinash Joshi,Principal Secretary,Health & Family Welfare
+47th_sec_meeting_10.12.2022,Gyanendra Dev Tripathi,CEO,ASDMA
+47th_sec_meeting_10.12.2022,Binod Kumar,IGP (F&ES),
+47th_sec_meeting_10.12.2022,Dr. Om Prakash,MD,SSA
+47th_sec_meeting_10.12.2022,Rahul Javir,Joint Secretary,GAD
+47th_sec_meeting_10.12.2022,Ranjit Swargiary,Addl. Commissioner,GMC
+47th_sec_meeting_10.12.2022,Anasua Dutta Barua,Secretary,FCS & CA
+47th_sec_meeting_10.12.2022,Varshaty Das,Secretary,SCD
+47th_sec_meeting_10.12.2022,Kavyashree Mahanta,Secretary,Fishery
+47th_sec_meeting_10.12.2022,Dibyajyoti Durrah,Addl. Chief Engineer,Public Health Engineering
+47th_sec_meeting_10.12.2022,Deba Kumar Kalita,Secretary,Woman and Child Dev.
+47th_sec_meeting_10.12.2022,Subrata Roy Bardhan,Secretary,Agriculture
+47th_sec_meeting_10.12.2022,R.D. Choudhury,Director,Agriculture
+47th_sec_meeting_10.12.2022,Lakshya Jyoti Hazarika,Dy. Secretary,Agriculture
+47th_sec_meeting_10.12.2022,Hemanga Talukdar,JSO,"CD & HG, Assam"
+47th_sec_meeting_10.12.2022,S.C Das,AHGS,"SSO (HG), CD & HG, Assam"
+47th_sec_meeting_10.12.2022,Sanjiv Shyam,Chief Engineer,PWD
+47th_sec_meeting_10.12.2022,Debajit Bhuyan,Spl Secretary,Water Resources
+47th_sec_meeting_10.12.2022,Hiren Das,Deputy Secretary,DW (B & NH) Dept.
+47th_sec_meeting_10.12.2022,Moti Lal Sarkar,Jt. Director Finance,
+47th_sec_meeting_10.12.2022,Achitra Sonowal,Dy. Secretary,P&R&D
+47th_sec_meeting_10.12.2022,Alakananda Medhi,SPC,ASDMA
+47th_sec_meeting_10.12.2022,Deep Pegu,Director Design,Water Resources
+47th_sec_meeting_10.12.2022,Tridiv Bora,Executive Engineer,Irrigation
+47th_sec_meeting_10.12.2022,Dhiraj Saikia,Chief Engineer,Irrigation
+47th_sec_meeting_10.12.2022,P.K. Khaund,Secretary,Irrigation
+47th_sec_meeting_10.12.2022,P. Saikia,DP,c
+47th_sec_meeting_10.12.2022,A. Narzari,SP,C
+47th_sec_meeting_10.12.2022,Krishna Das,AK,R
+47th_sec_meeting_10.12.2022,Dr. Sadique Ali Ahmed,SP,"F & ES, Assam"
+47th_sec_meeting_10.12.2022,Jeherul Islam,Junior Engineer,SSA
+47th_sec_meeting_10.12.2022,Anil Kr Das,Dy. Secretary,GAD
+47th_sec_meeting_10.12.2022,R.N. Das,i/c,HDSC (RNP)
+47th_sec_meeting_10.12.2022,Bikramaditya Choudhury,H. Director(T),IWT Assam
+47th_sec_meeting_10.12.2022,Rajib Gogoi,i/c,Water Resources
+47th_sec_meeting_10.12.2022,Pradip Upadhyaya,AEE(M),Water Resources
+47th_sec_meeting_10.12.2022,Dhrubajyoti Baishya,Executive Engineer,Irrigation
+47th_sec_meeting_10.12.2022,Bedanta Bora,Junior Engineer,Irrigation
+47th_sec_meeting_10.12.2022,R.K. Gowsami,Dy Chief Engineer,Water Resources
+47th_sec_meeting_10.12.2022,Kamal Kalita,Station Officer,"F&ES, Assam"
+48_sec_meeting_29.03.2023_0,"Paban Kumar Borthakur, IAS",Chief Secretary,Govt. of Assam
+48_sec_meeting_29.03.2023_0,"S. Abbasi, IAS",Additional Chief Secretary,Govt. of Assam
+48_sec_meeting_29.03.2023_0,"S N Singh, IPS","Special DGP & Director, F & ES",Govt. of Assam
+48_sec_meeting_29.03.2023_0,"Harmeet Singh, IPS",Special DGP,Govt. of Assam
+48_sec_meeting_29.03.2023_0,"Manish Thakur, IAS",Principal Secretary to the Govt.,of Assam
+48_sec_meeting_29.03.2023_0,"Gyanendra Dev Tripathi, IAS",CEO,ASDMA
+48_sec_meeting_29.03.2023_0,"Dr. OM Prakash, IAS",MD,SSA
+48_sec_meeting_29.03.2023_0,"Narsing Pawar, IAS",Secretary,Finance Department
+48_sec_meeting_29.03.2023_0,"Narayan Konwar, IAS",Secretary,Education
+48_sec_meeting_29.03.2023_0,"Dr. K Kumari, IAS",Secretary,Revenue & DM
+48_sec_meeting_29.03.2023_0,A.D. Barua,Secretary,F CS & CA Department
+48_sec_meeting_29.03.2023_0,Varshaty Das,Secretary,Soil Conservation
+48_sec_meeting_29.03.2023_0,Pushpanjali Das,Secretary,P & RD Department
+48_sec_meeting_29.03.2023_0,B. Sharma,Secretary,H & FW Department
+48_sec_meeting_29.03.2023_0,Dipima B malakar,Secretary,T & D Department
+48_sec_meeting_29.03.2023_0,"P,K Khaund",Secretary,Irrigation
+48_sec_meeting_29.03.2023_0,S. Baruah,Secretary,HAD
+48_sec_meeting_29.03.2023_0,D.K. Borah,Secretary,HTSS Department
+48_sec_meeting_29.03.2023_0,M. Chetia,Addl. Secretary,Finance Department
+48_sec_meeting_29.03.2023_0,S.R. Bardhan,Secretary,Agriculture
+48_sec_meeting_29.03.2023_0,"S,K. Gogoi",Joint Secretary,Revenue & DM
+48_sec_meeting_29.03.2023_0,A. Baruah,Chief Engineer,Irrigation
+48_sec_meeting_29.03.2023_0,Sanjiv Shyam,Chief Engineer,PWD
+48_sec_meeting_29.03.2023_0,Debajit Bhuyan,Special Secretary,Water Resources
+48_sec_meeting_29.03.2023_0,Hiren Das,Dy. Secretary,PW (B & NH) Department
+48_sec_meeting_29.03.2023_0,D. Daurah,Chief Engineer,Public Health Engineering
+48_sec_meeting_29.03.2023_0,Papul Saikia,AEE,Water Resources
+48_sec_meeting_29.03.2023_0,A. Narzari,SP (Co),AISG
+48_sec_meeting_29.03.2023_0,Hemanga Talukdar,JSO,"CD & HG, Assam"
+48_sec_meeting_29.03.2023_0,S.C Das,AHGS,"CD & HG, Assam"
+48_sec_meeting_29.03.2023_0,Deep Pegu,ACE (EAP),Water Resources
+48_sec_meeting_29.03.2023_0,Nagendra Karmakar,ACE,Water Resources
+48_sec_meeting_29.03.2023_0,Bijoy Sarma,Under Secretary,Water Resources
+49th_sec_meeting_07_09_2023_0,Shri Paban Kumar Borthakur,Chief Secretary,Assam
+49th_sec_meeting_07_09_2023_0,Shri Syedain Abbasi,Addl. Chief Secretary,Water Resources
+49th_sec_meeting_07_09_2023_0,Shri Ravi Shankar Prasad,Add. Chief Secretary,Soil Conservation
+49th_sec_meeting_07_09_2023_0,Gyanendra Pratap Singh,Director General of Police (DGP),Assam
+49th_sec_meeting_07_09_2023_0,S N Singh,Director,Fire & Emergency Services
+49th_sec_meeting_07_09_2023_0,Gyanendra Dev Tripathi,"Principal Secretary, R & DM Dept. & CEO",ASDMA
+49th_sec_meeting_07_09_2023_0,Dr. Om Prakash,Mission Director,SSA
+49th_sec_meeting_07_09_2023_0,P. Saikia,DP (I),Assam
+49th_sec_meeting_07_09_2023_0,Anant Lal Gyani,"Secretary, R & DM Dept. & Addl. CEO",ASDMA
+49th_sec_meeting_07_09_2023_0,Karuna Kumari,Secretary,R & DM Dept.
+49th_sec_meeting_07_09_2023_0,Varshaty Das,Secretary,Soil Conservation
+49th_sec_meeting_07_09_2023_0,Shri Pabitra Ram Khaund,Secretary,Irrigation
+49th_sec_meeting_07_09_2023_0,Malavika Choudhury,Secretary,Finance
+49th_sec_meeting_07_09_2023_0,Deba Kr. Kalita,Secretary,Women and Child Development
+49th_sec_meeting_07_09_2023_0,Dilip Kr. Borah,Secretary,"Handloom, Textiles & Sericulture Department"
+49th_sec_meeting_07_09_2023_0,Barnali Sharma,Secretary,Health & Family Welfare
+49th_sec_meeting_07_09_2023_0,Anil Ch. Deori,Secretary,Animal Husbandry & Veterinary
+49th_sec_meeting_07_09_2023_0,Kavyashree Mahanta,Secretary,Fishery
+49th_sec_meeting_07_09_2023_0,"Smt. Dipshikha Dey, ACS",Addl. Secretary,Agriculture
+49th_sec_meeting_07_09_2023_0,"Shri Shyamal Kshetra Gogoi, ACS",Joint Secretary,R & DM Dept.
+49th_sec_meeting_07_09_2023_0,Kishor Kr. Talukdar,Joint Secretary,PWD
+49th_sec_meeting_07_09_2023_0,"Dulal Debnath, ACS",Joint Secretary,Power
+49th_sec_meeting_07_09_2023_0,Debajit Bhuyan,Special Secretary,Water Resources
+49th_sec_meeting_07_09_2023_0,"Aditi Barman, ACS",Deputy Secretary,Education
+49th_sec_meeting_07_09_2023_0,Shri Bipul Bhattacharyya,Deputy Secretary,Water Resources
+49th_sec_meeting_07_09_2023_0,P K Tumung,Chief Engineer (QC),Water Resources
+49th_sec_meeting_07_09_2023_0,A.M Chowdhury,Addl. Chief Engineer,Water Resources
+49th_sec_meeting_07_09_2023_0,Manas Pratim Borgohain,Addl. Chief Engineer,Public Health Engineering
+49th_sec_meeting_07_09_2023_0,"N. Anand, IFS",Chief Conservator of Forests,Forest
+49th_sec_meeting_07_09_2023_0,Sudip Mitra,Head,"Centre for Disaster Management & Research (CDMR), IITG"
+49th_sec_meeting_07_09_2023_0,Arunasis Chakraborty,Professor,IITG
+49th_sec_meeting_07_09_2023_0,Sandip Das,Associate Professor,IITG
+49th_sec_meeting_07_09_2023_0,S. C. Das,Sr. Staff Officer,"HG, CD & HG, Assam"
+49th_sec_meeting_07_09_2023_0,Dr. M. K. Choudhury,ED,Health & Family Welfare
+51th_sec_meeting_0,"Dr. Ravi Kota, IAS",Chief Secretary,Assam
+51th_sec_meeting_0,"GP Singh, IPS",DGP,Assam
+51th_sec_meeting_0,"Dr JB Ekka, IAS",Addl CS P& RD,
+51th_sec_meeting_0,"Harmeet Singh, IPS",DGCD/Director F & ES,
+51th_sec_meeting_0,"G D Tripathi, IAS",Principal Secy. R & DM,
+51th_sec_meeting_0,"Kavitha Padmanabhan, IAS",Commissioner & Secretary,DoHUA
+51th_sec_meeting_0,"Dr. K Kumari, IAS",Secretary,R&DM Deptt.
+51th_sec_meeting_0,"Meenakshi Das Nath, ACS",Secy Rev & Addl CEO,ASDMA
+51th_sec_meeting_0,Bidit Das,"Joint Secy, Environvent & Forest",
+51th_sec_meeting_0,Dr. Cauvery B Sharma,"Addl. Secy, Soil Conservation",
+51th_sec_meeting_0,Dipak Kr. Bora,"Jt. Secy, Soil Conservation",
+51th_sec_meeting_0,Paban Terang,"Secy, PWD (Roads)",
+51th_sec_meeting_0,Jayanta Goswami,"Jt. Secy, PW D (B& NH)",
+51th_sec_meeting_0,Nabajit Deori,Dy. Director,Archaeology
+51th_sec_meeting_0,P.R Khaund,Secy,Water Resources
+51th_sec_meeting_0,Bhaskar J Sarmah,Chief Engineer,Water Resources
+51th_sec_meeting_0,FM Siddique,Chief Engineer,Irrigation
+51th_sec_meeting_0,Dr. Diganta Barman,Head,WR Division NESAC
+51th_sec_meeting_0,Indrajit Phukan,"SE (PHE), o/o the CE (PHE)",
+51th_sec_meeting_0,Bibha Medak,"Jt. Secy, Deptt. Of School Education",
+51th_sec_meeting_0,Ratan Daimari,Deputy Secretary,Power
+51th_sec_meeting_0,Arunasis Chakraborty,Professor & HEAD CDMR IITG,
+51th_sec_meeting_0,Sandip Das,Associate,HEAD CDMR IITG
+51th_sec_meeting_0,Sanjib Kr Bhatacharya,N.O (DM) Irrigation,
+51th_sec_meeting_0,K Mahanta,Secretary,Fishery
+51th_sec_meeting_0,Poorvi Nath,DGM,Power
+51th_sec_meeting_0,Dr. Prabitra Patar,,
+51th_sec_meeting_0,Sanjoy Dutta,Add Secy Education & EDSSL,
+51th_sec_meeting_0,Tripurendra Patar,Add Secy Agriculture Deptt,
+51th_sec_meeting_0,Ghanshyam Das,Secretary,Power
+51th_sec_meeting_0,Dilip kr Borah,Secretary,Finance Handloom Textile
+51th_sec_meeting_0,Deba Kumar Kalita,Secretary,WCD
+51th_sec_meeting_0,Jadav Saikia,Secretary,Personal Deptt.
+51th_sec_meeting_0,Ripunjoy Kakati,AIGP,
+51th_sec_meeting_0,Biraj Das,SP(),Assam Police
+51th_sec_meeting_0,Dr. Sadique Ali Ahmed,SP,Fire & Emergency Services
+51th_sec_meeting_0,Prasanta Baruah,MS,Cultural Affairs Dept
+51th_sec_meeting_0,M N Dahal,Commissioner,GMC
+51th_sec_meeting_0,Anbamuthan MP,CEO,GMDA
+51th_sec_meeting_0,Sudip Kr. Roy,AEE (EDRT),Water Resources
+51th_sec_meeting_0,Abhoy Kr. Deka,AEE,Golaghat Sarupathar
+51th_sec_meeting_0,FM Siddique,Chief Engineer,Irrigation
+51th_sec_meeting_0,Dr. Diganta Barman,Head,WR Division NESAC
+51th_sec_meeting_0,Biswajit Kalita,U/Secretary,PNRD
+51th_sec_meeting_0,Mukul Barman,"NO, DM, DAO",Assam
+51th_sec_meeting_0,Indrani Laskar,Joint Secretary,Health & Family Welfare
+51th_sec_meeting_0,Rakesh Das,Inspector,Assam Police
+51th_sec_meeting_0,Himagshu Baruah,D.O. (T),"F&ES, Assam"
+51th_sec_meeting_0,Kirti Nath Talukdar,AEE,GMDA
+51th_sec_meeting_0,Seema Rabha,AEE,GMDA
+52nd_sec_meeting,"Dr. Ravi Kota, IAS","Chief Secretary, Assam",
+52nd_sec_meeting,"Shri Harmeet Singh, IPS",Director General of Police (DGP),
+52nd_sec_meeting,"Shri Manish Thakur, IAS","Principal Secretary, Animal Husbandry & Veterinary Dept.",
+52nd_sec_meeting,"Shri Gyanendra Dev Tripathi, IAS","Principal Secretary, Revenue & Disaster Management",
+52nd_sec_meeting,"Shri M. C. Sahu, IAS","Principal Secretary, Water Resource Dept.",
+52nd_sec_meeting,"Dr. Binod Kumar, IPS","Inspector-General of Police, F & ES",
+52nd_sec_meeting,"Shri Anbamuthan M P, IAS",PWD & Department of Housing & Urban Affairs,
+52nd_sec_meeting,"Shri R.S. Bharti, IFS",Deputy Conservator of Forests (Forest Conservation Act),
+52nd_sec_meeting,Bhaskar J. Sarmah,"Chief Engineer, Water Resources Dept.",
+52nd_sec_meeting,Gayatri Bhattacharya,"Chief Engineer, (PHE) Water",
+52nd_sec_meeting,"S.N. Chowdhury, ACS","Secretary, School Education",
+52nd_sec_meeting,"Dilip Kumar Borah, ACS","Secretary, Finance, Handloom Textiles etc.",
+52nd_sec_meeting,"Anasua Dutta Barua, ACS","Secretary, Food, Public Distribution and Consumer Affairs",
+52nd_sec_meeting,"Smti Meenakshi Das Nath, ACS","Secretary & Additional CEO, ASDMA",
+52nd_sec_meeting,Pranab Borah,"Director, Design, Water Resource Dept.",
+52nd_sec_meeting,"Varshaty Das, ACS","Secretary, Soil Conservation Dept.",
+52nd_sec_meeting,"Paban Terang, ACS","Secretary, Public Works Roads Dept.",
+52nd_sec_meeting,"Dr. Sadnek Singh, ACS","Secretary, Animal Husbandry & Veterinary Dept.",
+52nd_sec_meeting,"Tej Prasad Bhusal, ACS","Secretary, Agriculture Dept.",
+52nd_sec_meeting,Sanjoy Dutta,Executive Director,SSA
+52nd_sec_meeting,S.M. Zahid Chistie,Additional Secretary,Power
+52nd_sec_meeting,Dr. N.S. Borkala,Deputy Director,"F & ES, Assam"
+52nd_sec_meeting,Sanjib K. Bhattacharya,Deputy Director,Irrigation
+52nd_sec_meeting,Deepak Singh Raghuvansi,Deputy Director,"CWC, M&A, BBO"
+52nd_sec_meeting,Seema Rabha,Executive Engineer (I/C),GMDA
+52nd_sec_meeting,Dr. S. A. Ahmed,Superintendent of Police,Fire & Emergency Services
+52nd_sec_meeting,Biraj Das,Superintendent of Police,Communication
+52nd_sec_meeting,Pooravi Nath,Deputy General Manager,Power
+52nd_sec_meeting,Himangshu Baruah,Division Officer (T),"F & ES, Assam"
+52nd_sec_meeting,Ruth Lienthang,Joint Secretary,Personnel
+52nd_sec_meeting,Smti Indrani Laskar,Joint Secretary,Health & Family Welfare
+52nd_sec_meeting,Kajal M. Das,Joint Secretary (I/C),PW (B&NH) Dept.
+52nd_sec_meeting,Biswajit Kalita,Under Secretary,PWD
+52nd_sec_meeting,Siddartha S. Sarmah,Under Secretary,PWD
+52nd_sec_meeting,Indrajit Phukan,Superintendent Engineer,Public Health Engineering
+52nd_sec_meeting,D.J. Borgohain,Consultant,Water Resources
+53rd_sec_meeting_2,"Dr. Ravi Kota, IAS","Chief Secretary, Assam",
+53rd_sec_meeting_2,"Dr. Binod Kumar , IPS",IGP (F & ES),
+53rd_sec_meeting_2,"Dr. Om Prakash, IAS","Commissioner & Secretary, Revenue & Disaster Management Dept.",
+53rd_sec_meeting_2,"Shri. Narsing Pawar, IAS","Secretary, Finance",
+53rd_sec_meeting_2,"Shri Jadav Saikia, IAS","Secretary, Power Dept.",
+53rd_sec_meeting_2,"Shri. Anant Lal Gyani, IAS","Secretary, Revenue & Disaster Management Department",
+53rd_sec_meeting_2,"Smti. Meenakshi Das Nath, ACS","Secretary, Revenue & Disaster Management Department & Additional CEO, ASDMA",
+53rd_sec_meeting_2,"Monita Borgohain, ACS",Secretary Personnel,
+53rd_sec_meeting_2,R. R. Bora,"Secretary, Soil Conservation",
+53rd_sec_meeting_2,"P. R. Khaund, IAS",Secretary,Irrigation
+53rd_sec_meeting_2,"Varshaty Das, IAS",Secretary,Soil Conservation
+53rd_sec_meeting_2,"Kavyashree Mahanta, IAS",Secretary,Fishery
+53rd_sec_meeting_2,"Dr. Sadnek Singh, IAS",Secretary,Animal Husbandry & Veterinary
+53rd_sec_meeting_2,"Madhu Sudhan Nath, ACS",Secretary,W&CD Dept.
+53rd_sec_meeting_2,Gayatri Bhattacharya,Secretary,Public Health Engineering
+53rd_sec_meeting_2,"Indrani Laskar, ACS",Addl. Secretary,Health & Family Welfare
+53rd_sec_meeting_2,"Pranati Majumdar, ACS",Addl. Secretary,Agriculture
+53rd_sec_meeting_2,Dr. Sadique Ali Ahmed,SP,Fire & Emergency Services
+53rd_sec_meeting_2,"Biraj Das, APTS",Superintendent of Police (C),"Assam Police, APRO"
+53rd_sec_meeting_2,"Shri Shyamal Kshetra Gogoi, ACS",Joint Secretary,Revenue & DM
+53rd_sec_meeting_2,"Dilip Kr. Bothra, ACS",Jt. Secretary,Home & Political Dept.
+53rd_sec_meeting_2,Dipak Kr. Bora,Jt. Secretary,Soil Conservation
+53rd_sec_meeting_2,Trailukya Deori,Jt. Secretary,Education
+53rd_sec_meeting_2,Sachindra Das,Jt. Secretary,Forest
+53rd_sec_meeting_2,Paban Terang,Commissioner & Spl. Secretary,Water Resources
+53rd_sec_meeting_2,Munindra Sharma,Spl. Secretary,P&RD Dept.
+53rd_sec_meeting_2,Siddhartha S. Sarmah,U/Secretary,PWD
+53rd_sec_meeting_2,Sanjib Kr. Bhattacharya,Deputy Director cum Nodal Officer,Irrigation
+53rd_sec_meeting_2,B. J. Sarmah,Chief Engineer,Water Resources
+53rd_sec_meeting_2,F. M. Siddique,Chief Engineer,Irrigation
+53rd_sec_meeting_2,"Himangshu Baruah, APS",Divisional Officer(T),Assam
+53rd_sec_meeting_2,"Shri Alakananda Medhi, ACS",Deputy Secretary,Revenue & DM
+53rd_sec_meeting_2,Biswajit Kalita,Deputy Secretary,Water Resources
+53rd_sec_meeting_2,Irfan Khan,Sr. S. O,
+53rd_sec_meeting_2,Rakesh Das,Inspector (T),APRO
+53rd_sec_meeting_2,Jyotirmoy Kalita,Executive Engineer (PHE),
+53rd_sec_meeting_2,Sudip Kr. Roy,"AEE(EDRT),WRD",
+53rd_sec_meeting_2,Modhusmita Kumari,"Asst. Executive Engineer (TC), O/O The Secretary, ASBVFC Board WR Dept",
+54th_sec_meeting,"Dr. Ravi Kota, IAS",Chief Secretary,Assam
+54th_sec_meeting,"Ajay Tewari, IAS",Addl. Chief Secretary,Home & Political
+54th_sec_meeting,"L.S. Changsang, IAS",Addl. Chief Secretary,ASDMA
+54th_sec_meeting,"Surendra Kumar, IPS",Director,Fire & Emergency Services
+54th_sec_meeting,"D. Mukherjee, IPS",IGP,F&ES
+54th_sec_meeting,"Arabinda Kalita, IPS",IGP,CD & HG
+54th_sec_meeting,"Dr. Sadique Ali Ahmed, IPS",SSP,Fire & Emergency Services
+54th_sec_meeting,Biraj Das,"SSP (C), Assam Police, APRO",
+54th_sec_meeting,Paban Terang,Commissioner & Special Secretary,Water Resources
+54th_sec_meeting,"Meenakshi Das Nath, ACS",Secretary,ASDMA
+54th_sec_meeting,"R. R. Bora, ACS",Secretary,Soil Conservation
+54th_sec_meeting,Oinam Saran Kumar,Secretary,Water Resources
+54th_sec_meeting,Richand Ahmed,Secretary,FPD&CA
+54th_sec_meeting,Anasua Dutta Barua,Secretary,FPD & CA
+54th_sec_meeting,Mauchumi Barua,Secretary,Finance
+54th_sec_meeting,G. Phukan,Secretary,Public Health Engineering
+54th_sec_meeting,Arup Kr. Sarma,Additional Secretary,P&RD
+54th_sec_meeting,Bibha Medok,Additional Secretary,T&D Dept.
+54th_sec_meeting,Sanjay Dutta,Additional Secretary,Education
+54th_sec_meeting,Pranati Majumdar,Additional Secretary,Agriculture
+54th_sec_meeting,Madhumita Bhagwati,Additional Secretary,Education
+54th_sec_meeting,Rahul Dev Basumatary,Joint Secretary,PW(B&H)
+54th_sec_meeting,"Lakhimi Dutta, ACS","Secretary, Health & FW Deptt.",
+54th_sec_meeting,Poorvi Nath,"DGM, NO, APDCL",
+54th_sec_meeting,C. R. Das,Director,Soil Conservation
+54th_sec_meeting,Pranab Borah,"Director Design, (Water Resources Dept.)",
+54th_sec_meeting,Pradip Dutta,Joint Director,Soil Conservation
+54th_sec_meeting,Bhaskar J. Sarmah,Chief Engineer,Water Resources
+54th_sec_meeting,D. Roy Chowdhury,Chief Engineer,Irrigation
+54th_sec_meeting,Deepjyoti Gogoi,Senior Geologist,"GS, Assam, Guwahati"
+54th_sec_meeting,Biswajit Kalita,Under Secretary,Water Resources
+54th_sec_meeting,Badan Ch. Goswami,Executive Engineer,Water Resources
+54th_sec_meeting,Mrinal Bora,Executive Engineer,PWD
+54th_sec_meeting,Jeeten Das,Executive Engineer,Water Resources
+54th_sec_meeting,Chandan Deka,"AEE, PWD (R), O/o the C.E. PWD (R)",
+54th_sec_meeting,Rouf Ahmed,"AEE, PWD (R), N.BRBRTRD, Nagaon",
+54th_sec_meeting,Priskily Lalsim,ASCO,Soil Conservation
+54th_sec_meeting,Deepanjali Brahma,DSCO,Soil Conservation
+54th_sec_meeting,Dr. Chirag Gupta,In-charge UAV Lab/Facility,"NESAC, Umiam"
+54th_sec_meeting,Gobinda Sinha,SE,PWD
+54th_sec_meeting,Sudip Kr. Roy,Asstt. Executive Engineer,"EDRT, W.R Dept."
+54th_sec_meeting,Khuman Kalita,E.E.,Water Resources
+54th_sec_meeting,Jayanta Kr. Das,A.E. Darrang Water Resource Division,
+54th_sec_meeting,Uttam Bhowmik,Superintendent Engineer,Water Resources
+54th_sec_meeting,Hemanga Talukdar,JSO,"Civil Defence, Assam"
+54th_sec_meeting,Jyotirmay Kalita,E.E (PHE),
+54th_sec_meeting,Sanjib Kr. Bhattacharya,N.O. (DM),Irrigation
+54th_sec_meeting,Anamika Tamuli,Planning Officer O/o DSC,
+54th_sec_meeting,Jugal Jyoti Das,O/o Directorate of S.C. Assam,
+55th_sec_meeting_0,"Dr. Ravi Kota, IAS","Chief Secretary, Assam & Chairperson",ASDMA
+55th_sec_meeting_0,"L. Sweety Changsang, IAS",Chief Executive Officer,Assam State Disaster Management Authority
+55th_sec_meeting_0,"Dr. Ravi Kota, IAS",Chief Secretary to the Govt. of Assam,
+55th_sec_meeting_0,"Smt. L. Sweety Changsang, IAS","Additional Chief Secretary & CEO, ASDMA",
+55th_sec_meeting_0,"Surendra Kumar, IPS","Director, F&ES",
+55th_sec_meeting_0,"D. Mukherjee, IPS",IGP Border and F&ES,
+55th_sec_meeting_0,"Mridul Shivhare, IAS",SO to Chief Secretary,
+55th_sec_meeting_0,"R.R. Bora, IAS","Commissioner & Secretary, Soil Conservation Department",
+55th_sec_meeting_0,"Dr. Sadnek Singh, IAS","Secretary, AH&V Department",
+55th_sec_meeting_0,"Ambunath M.P., IAS","CEO, GMDA",
+55th_sec_meeting_0,"Smt. Meenakshi Das Nath, ACS","Secretary & Additional CEO, ASDMA",
+55th_sec_meeting_0,"Madhumita Bhagawad, ACS","Secretary, School Education Department",
+55th_sec_meeting_0,Nivedita Laskar,"Secretary, Home & Political Department",
+55th_sec_meeting_0,D. Roy Choudhury,"Secretary, Irrigation Department",
+55th_sec_meeting_0,Debajit Bhuyan,"Special Secretary, PWRD",
+55th_sec_meeting_0,Sangita Saikia,"Additional Secretary, F, PD & CA",
+55th_sec_meeting_0,Sibha Medak,"Additional Secretary, I&D Deptt",
+55th_sec_meeting_0,Abhijit Sinha,"Additional Secretary, WCD Department",
+55th_sec_meeting_0,Rahul Dev Basumatary,"Joint secretary, PWD (B&NH)",
+55th_sec_meeting_0,Dr. Sanjay O' Neill Shaw,"Head, IMD Guwahati",
+55th_sec_meeting_0,"Alakananda Medhi, ACS","Deputy Secretary & SPC, ASDMA",
+55th_sec_meeting_0,Hari Charan Dami,"Deputy Secretary, Soil Conservation Department",
+55th_sec_meeting_0,Anamika Tamuly,"P.O. O/O SCD, Ghy-05",
+55th_sec_meeting_0,A Z Zaman,"PE, Samagra Siksha",
+55th_sec_meeting_0,Samiran Das,"PO, DoSE",
+55th_sec_meeting_0,Er. Rajesh Dutta,Engg. Consultant (EQ Risk Mitigation),
+55th_sec_meeting_0,Mirza Md. Irshad,"Project Manager, ASDMA",
+55th_sec_meeting_0,Manik Lal Dev,"FO, ASDMA",
+55th_sec_meeting_0,Rakesh Das,"Inspector, Assam Police",
+55th_sec_meeting_0,Monjoy Karigassa,"AEE, WRD",
+55th_sec_meeting_0,Seema Rabha,"FE, GMDA",
+55th_sec_meeting_0,Amar Teron,"Deputy Director, EDRT, WRD",
+55th_sec_meeting_0,Suleman Ali Ahmed,"EE, S. Salmara Mancangachar WR Division",
+55th_sec_meeting_0,Nil Ratan Sarkar,"AEE, S. Salmara Mancangachar WR Division",
+55th_sec_meeting_0,Sanjib Kr. Bhttacharya,Deputy Director cum N.O. (DM),
+55th_sec_meeting_0,Dhaneshwar Boro,"EE, Udalguri Mazbat Division, Irrigation",
+55th_sec_meeting_0,Santanu Sarmah,"AEE, Udalguri Mazbat Division, Irrigation",
+55th_sec_meeting_0,Praneshwar Narzary,"Executive Engineer, Irrigation Dhansiri Project Division (I)",
+55th_sec_meeting_0,Pooravi Nath,"DGM, N.O. APDCL",
+55th_sec_meeting_0,Manash Jyoti Das,"Under Secretary to the Govt. of Assam, HED",
+55th_sec_meeting_0,Pulin Bhuyan,"SSP (Communication) APRO, Guwahati",
+55th_sec_meeting_0,Bhaskar Jyoti Talukdar,"Additional Chief Engineer, PHE Department",
+55th_sec_meeting_0,Abidur Rahman,"AEE, PWD (Bldg.) Assam",
+55th_sec_meeting_0,Jyotimoy Kalita,EE (PHE),
+55th_sec_meeting_0,F.M. Siddique,CEI,
+55th_sec_meeting_0,Anurag Dutta,"AE, PWRD, Dhakuakhana and Nawbichak TRD",
+55th_sec_meeting_0,Biswajit Kalita,"Under Secretary, PWRD",
+55th_sec_meeting_0,Pranab Borah,"Director Design, WR Department",
+55th_sec_meeting_0,Siba Kanta Sarma,Range Officer,
+55th_sec_meeting_0,R.N. Das,"D.S.C.O. Soil Conservation, Udalguri",
+55th_sec_meeting_0,K K Kalita,"SPO, Samagra Siksha, Assam",
+55th_sec_meeting_0,Himangshu Baruah,"Divisional Officer (Tech) F&ES, Assam",
+55th_sec_meeting_0,S.J. Rahman,"Divisional Officer, Soil Conservation, Golaghat",
+55th_sec_meeting_0,Tafikur Rahman,"Divisional Officer, Baksa Soil Conservation Division",
+55th_sec_meeting_0,Jayanta Kr. Das,"AE, Darrang WRD",
+55th_sec_meeting_0,Su dip Kr. Roy,AEE (EDRT) WRD,
+55th_sec_meeting_0,Jeeten Das,"EE, Darrang WR Division",
+55th_sec_meeting_0,Abdul Matin,"AEE, WRD",

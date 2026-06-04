@@ -11,7 +11,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-year="2016"
+year="2026"
 
 class WorldPopDataFetcher:
     def __init__(self, base_url="https://api.worldpop.org/v1"):

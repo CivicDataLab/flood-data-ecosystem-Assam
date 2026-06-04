@@ -1,0 +1,22 @@
+source,meeting_number,meeting_date,fund,title,date_inferred,fiscal_year,year
+10th_SEC_Meeting,10.0,2013-05-03,unknown,,False,2013-14,2013
+11th_SEC-SDRF_Meeting_0,,2013-06-07,SDRF,,False,2013-14,2013
+12th_SEC_Meeting,12.0,2013-08-29,SDRF,,False,2013-14,2013
+39th_sec_meeting,39.0,2019-06-10,SDRF,,False,2019-20,2019
+40th_sec_meeting,40.0,2019-11-27,SDRF,Ex-Post Facto approval of RG fund for flood sanctioned during 2019-20,False,2019-20,2019
+41st_sec_meeting,41.0,2020-04-29,SDRF,,False,2020-21,2020
+42nd_sec_meeting,42.0,2020-12-01,SDRMF,,False,2020-21,2020
+43rd_sec_meeting,43.0,2021-02-13,SDRF,,False,2020-21,2021
+44th_sec_meeting,44.0,2022-01-11,SDRF,,False,2021-22,2022
+45th_sec_meeting,45.0,2022-03-23,SDRF,,False,2021-22,2022
+46th_sec_meeting,46.0,2022-11-04,SDRF,,False,2022-23,2022
+46th_sec_meeting_6.12.2022,46.0,2022-12-06,SDRF,,False,2022-23,2022
+47th_sec_meeting_10.12.2022,47.0,2022-12-10,SDRF,,False,2022-23,2022
+48_sec_meeting_29.03.2023_0,48.0,2023-03-29,SDRF,,False,2022-23,2023
+49th_sec_meeting_07_09_2023_0,49.0,2023-09-07,SDRF,,False,2023-24,2023
+50th_sec_meeting,50.0,2024-03-01,SDRF,,False,2023-24,2024
+51th_sec_meeting_0,51.0,2024-10-01,SDRF,,False,2024-25,2024
+52nd_sec_meeting,52.0,2025-02-03,SDRF,,False,2024-25,2025
+53rd_sec_meeting_2,53.0,2025-04-09,SDRF,,False,2025-26,2025
+54th_sec_meeting,54.0,2025-10-09,SDMF,,False,2025-26,2025
+55th_sec_meeting_0,55.0,2026-01-28,XV FC,,False,2025-26,2026

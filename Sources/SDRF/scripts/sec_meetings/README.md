@@ -1,169 +1,269 @@
-# ASDMA SEC Meeting Minutes — Data Pipeline & EDA
+# Assam SEC / SDRF minutes — extraction & analysis pipeline
 
-## Overview
-This project downloads all State Executive Committee (SEC) meeting minutes PDFs from the **Assam State Disaster Management Authority (ASDMA)** website, extracts structured data and tables, and produces machine-readable outputs for analysis.
-
-**Source:** https://asdma.assam.gov.in/documents-detail/minutes-of-sec-meetings-of-asdma  
-**Coverage:** 1st through 49th SEC meetings (2009–2023)
+A resumable pipeline that turns ~60 scanned State Executive Committee (SEC) /
+SDRF meeting-minute "PDFs" into tidy tables and the six analyses you asked for.
 
 ---
 
-## Quick Start
+## What the sample documents actually are (read this first)
+
+I inspected the samples before writing anything. The findings drive the design:
+
+1. **They are image-only.** Every "PDF" in the set is actually a ZIP archive of
+   per-page JPEGs + empty `.txt` files. There is **no text layer**, so every
+   page must go through OCR or a vision model. `pdftotext`/`pypdf` return nothing.
+
+2. **The format drifts a lot over ~17 years (2009 → 2026):**
+   - *Early* (e.g. 1st, 2009): scanned typed policy minutes — narrative +
+     qualitative two-column tables, departments named inside "Action:" lines,
+     attendees in *Annexure I*.
+   - *Mid* (e.g. 27th, 2016): scanned **financial tables**
+     `Sl | District | Name of Scheme | Amount (Rs. In Lakh)`; the department is
+     in the agenda heading ("SDRF proposals of Water Resource Department").
+   - *Recent* (e.g. 55th, 2026): born-digital eOffice docs, hierarchical
+     numbering (55.1, 55.2), departments inline.
+
+3. **Naive full-page OCR scrambles the financial tables.** Tested: column
+   alignment collapses, amounts attach to the wrong rows, subtotals get read as
+   line items, and some numbers are misread. This is the single biggest risk and
+   is why a **vision model is the recommended extraction backend**.
+
+4. **Units are stated, not guessed:** table headers say "Rs. In Lakh"; narratives
+   state totals ("approved 29 proposals amounting to Rs.4402.93 Lakh"). The
+   normaliser reads the unit and converts everything to a single base (INR float).
+
+---
+
+## Feasibility of each requested analysis (honest version)
+
+| # | Request | Feasible? | Notes / caveats |
+|---|---------|-----------|-----------------|
+| 1 | Spending over 5–10 yrs | **Yes, with gaps** | Dates span ~2009–2026, so 5–10 yrs is fine. But money tables appear mainly in *SDRF-examination* meetings, which are irregular — some years have none. Year totals are "what was approved", not a continuous budget line. |
+| 2a | **District**-level allocation | **Yes** | District is a real column; canonicalised to Assam's district list. |
+| 2b | **Department**-level allocation | **Yes, indirectly** | Department comes from the *agenda heading*, not a per-row column, so it is propagated as page context (incl. across table continuations). |
+| 2c | Fund **utilisation** vs allocation | **Largely NO** | The minutes record *approvals/allocations*. Actual *expenditure/utilisation* shows up only sporadically in Action-Taken-Reports as prose, not as a structured column. A clean allocation-vs-utilisation comparison is **not reliably available** from this corpus — flagged, not faked. |
+| 3 | Work types tagged by dept/type | **Yes** | Classified from scheme text (embankment, breach closing, drainage, restoration, procurement, training…); work-type × department cross-tab produced. |
+| 4 | Stakeholder / attendance | **Partial** | Attendees live in annexures ("Annexure I"/"annexed at A"); coverage depends on whether those annexure pages are present in each file. |
+| 5 | Phase: preparedness / mitigation / repair&restoration | **Yes, with ambiguity** | Inferred from descriptions. Most SDRF items are "Immediate Measures" = response/restoration; true *mitigation* is the genuinely ambiguous bucket — every item carries a confidence flag for review. |
+| 6 | Institutional shift over time | **Yes** | Derived once 1–5 exist: phase-share and work-type-share by year. |
+
+---
+
+## Why connect an LLM (and which one)
+
+Because the pages are scanned and the tables are dense, a **vision-capable model
+reading the page image** is dramatically more reliable than OCR + regex for:
+exact amount cells, keeping columns aligned, carrying the department from the
+heading, and reading the rich scheme text used for classification.
+
+- Recommended: OpenAI `gpt-4o-mini` (cheap, vision) or `gpt-4o` for the messiest
+  scans. Set `OPENAI_API_KEY`.
+- A free **offline `tesseract` backend** is included so the pipeline runs with no
+  API key, but on financial tables it is best-effort only (it visibly mis-splits
+  rows in testing — see caveat 3). Use it for narrative/attendee pages or a dry run.
+
+The same classification rubric (`config.py`) is given to *both* backends, so an
+LLM run and an offline run produce comparable labels.
+
+## Date-range scoping (e.g. 2019–2026)
+
+The meeting date is **not** in most filenames (files are named by meeting
+number), and OCR'd minutes are full of distractor dates (the previous meeting
+being confirmed, scheme years like "2016-17"). So scoping by year needs real
+date resolution, done cheaply *before* full extraction by `scope.py`:
 
 ```bash
-# 1. Install dependencies
-pip install requests beautifulsoup4 pdfplumber pandas openpyxl tqdm
-
-# 2. Download PDFs
-python scripts/01_download_pdfs.py
-
-# 3. Extract text, tables, decisions, financial data
-python scripts/02_extract_data.py
-
-# 4. Run EDA and produce summary stats
-python scripts/03_eda_analysis.py
+python run.py --input ./pdfs --out ./output --backend openai \
+              --from-year 2019 --to-year 2026
 ```
 
----
+This writes `output/selection.csv` (every file, its resolved date, how the date
+was derived, in/out of range, and any note) and then extracts + analyses only
+the in-range files. Date precedence per file:
 
-## Project Structure
+1. **filename** date if present (e.g. `..._10_12_2022` -> 2022-12-10) — most reliable;
+2. **header** date anchored to the title's "held on ..." phrase (cheap 1-page OCR),
+   junk-tolerant (handles `30 November 2018`, `8" October, 2018`, wrapped lines);
+3. **inferred** by interpolation between meeting-number anchors (numbers are
+   monotonic in time), flagged as such.
 
-```
-asdma_project/
-├── scripts/
-│   ├── 01_download_pdfs.py       # Downloads PDFs from ASDMA website
-│   ├── 02_extract_data.py        # Extracts text, tables, decisions, financials
-│   └── 03_eda_analysis.py        # EDA and summary statistics
-├── pdfs/                         # Downloaded PDF files (git-ignored)
-├── data/
-│   ├── pdf_index.csv             # Index of all PDFs with download status
-│   ├── meetings_structured.csv   # One row per meeting: metadata summary
-│   ├── meetings_text.jsonl       # Full extracted text per meeting (JSONL)
-│   ├── decisions.csv             # All extracted decisions/resolutions
-│   ├── financial_data.csv        # Monetary figures with context
-│   └── disaster_mentions.csv     # Disaster type + district mentions per line
-└── output/
-    └── summary_stats.json        # EDA output stats
-```
+A **monotonicity guard** quarantines any header date that breaks meeting-number
+order (one bad OCR year can't poison its neighbours' interpolation). Undated
+boundary files are kept for review rather than silently dropped.
 
----
+### Concrete result for this corpus, 2019-2026
 
-## Output Schemas
+Resolving every file's true date gives **17 in-range files — meetings 39 -> 55**
+(see `selection_2019_2026.csv`). The boundary was verified from the headers: the
+**39th** meeting (10 June 2019) is the first of 2019; the 37th (Oct 2018) and
+38th (Nov 2018) fall just outside. Notes worth knowing:
 
-### `meetings_structured.csv`
-| Column | Description |
-|--------|-------------|
-| filename | PDF filename |
-| meeting_no | Meeting number (1–49+) |
-| meeting_date | YYYY-MM-DD date of meeting |
-| pages | Number of pages |
-| tables_found | Count of tables extracted |
-| decisions_found | Count of decision sentences |
-| financials_found | Count of monetary figures |
-| disaster_mentions | Lines mentioning disaster/district |
-| has_ocr_issue | True if text extraction was poor |
-| attendee_count | Number of attendees listed |
-| attendees_sample | First 5 attendees |
+- There is **no 41st** meeting file in the set (gap, not an error).
+- **Two files are both labelled "46th"** — 4 Nov 2022 and 6 Dec 2022 — likely
+  distinct meetings; treat as two unless you confirm one is a re-issue.
+- The earlier naive parser mis-dated the 29th (->2015) and 38th (->2016); the
+  anchored + junk-tolerant logic now reads them correctly (Nov 2016, Nov 2018).
 
-### `decisions.csv`
-| Column | Description |
-|--------|-------------|
-| meeting_no | Source meeting |
-| meeting_date | Date |
-| decision_text | The full decision/resolution sentence |
-| context | Previous sentence for context |
+## Rate limits & resilience (OpenAI 429s)
 
-### `financial_data.csv`
-| Column | Description |
-|--------|-------------|
-| meeting_no | Source meeting |
-| meeting_date | Date |
-| amount_text | Raw amount string (e.g. "Rs. 45.6 crore") |
-| context | Full line of text containing the figure |
+The vision backend paces itself and recovers from rate limits automatically, so
+a `429 ... tokens per min (TPM)` no longer drops pages:
 
-### `disaster_mentions.csv`
-| Column | Description |
-|--------|-------------|
-| meeting_no | Source meeting |
-| meeting_date | Date |
-| disaster_types | Comma-separated disaster types on that line |
-| districts | Assam districts mentioned on that line |
-| line | The source text line |
+- **Client-side pacer** keeps you under your tier *before* sending — a sliding
+  60-second window bounded by `--rpm` (requests/min) and `--tpm` (token budget).
+  Defaults (400 RPM, 160 000 TPM) sit just under a 200 000-TPM tier.
+- **Automatic backoff**: each page retries on 429/5xx up to `--max-retries`
+  (default 8), honouring the API's own "try again in 369 ms" hint, with
+  exponential fallback otherwise. The SDK client is also created with matching
+  `max_retries`.
+- **Image downscaling** (`--image-max-dim`, default 1568 px long edge) cuts the
+  tokens per page. Set it lower (e.g. `--image-max-dim 1024`) to roughly halve
+  cost/throughput pressure at a small accuracy cost on dense tables.
+- **Nothing is silently lost**: a page that still fails after all retries is
+  written to `output/failed_pages.csv` and is **not** cached — so re-running the
+  exact same command retries only those pages (cached ones are skipped).
 
----
+Match the flags to your account tier (shown at
+platform.openai.com/account/rate-limits). For a 30 000-TPM tier, for example:
 
-## Notes on PDF Quality
-
-ASDMA PDFs fall into two categories:
-- **Text-layer PDFs** (most newer ones, ~meetings 30+): clean `pdfplumber` extraction
-- **Scanned/image PDFs** (older ones, meetings 1–20): may need OCR
-
-For OCR on scanned PDFs, install `pytesseract` and `Pillow`, then:
 ```bash
-sudo apt-get install tesseract-ocr
-pip install pytesseract Pillow pdf2image
+python run.py --input ./pdfs --out ./output --from-year 2019 --to-year 2026 \
+              --tpm 24000 --rpm 60 --image-max-dim 1024
 ```
-Then add an OCR fallback in `02_extract_data.py` — see the `pdf-reading` skill SKILL.md for a complete OCR example.
+
+You can also set them via env vars (`SDRF_OPENAI_TPM`, `SDRF_OPENAI_RPM`,
+`SDRF_OPENAI_MAX_RETRIES`, `SDRF_IMAGE_MAX_DIM`).
 
 ---
 
-## Key Analytical Findings (from 2009–2023 record)
+## Meeting dates in the output tables
 
-### Data Types Available
-1. **Meeting metadata** – date, attendees, venue, meeting number
-2. **Agenda items** – structured numbered agenda topics
-3. **Financial tables** – SDRF/NDRF allocations, utilisation certificates, district-wise relief
-4. **Disaster event data** – affected population, crop area, embankment breaches, casualties
-5. **Decisions & resolutions** – "Resolved that…" action statements
-6. **Project reviews** – EWS, AAPDA MITRA, flood control infrastructure progress
+Each line item is dated by resolving one ISO date per source document, in order:
+filename date (`..._10.12.2022`) → a header/title/narrative phrase parsed with
+the junk- and ordinal-tolerant parser (`held on 27th November 2019`,
+`January 28, 2026`, clean ISO) → linear interpolation between the meeting
+numbers of dated neighbours. Interpolated dates are placeholders (`YYYY-07-01`)
+and marked `date_inferred=True` in `meetings.csv` / `line_items.csv` so you can
+exclude them from year-by-year analysis.
 
-### Narratives in the Data
+This resolution runs in aggregation, so if dates look wrong or missing you can
+**fix them without re-extracting** — just rebuild from the cache:
 
-**1. Flood dominance (~80% of agenda)**  
-Flooding consistently overwhelms all other hazard types in agenda space. Despite Assam's high seismic risk (Zone V), earthquake preparedness receives far less institutional attention.
+```bash
+python run.py --analyze-only --out ./output
+```
 
-**2. SDRF utilisation gap (recurring)**  
-Pending Utilisation Certificates appear in nearly every meeting — a structural bottleneck indicating funds reach the state but face administrative friction at district level.
-
-**3. Reactive governance pattern**  
-Most resolutions are post-disaster (fund releases, relief operations). Preparedness items (drills, early warning, training) appear later in agendas and receive fewer formal decisions — a documented governance bias toward response over prevention.
-
-**4. COVID-19 as governance inflection (2020–21)**  
-SDRF funds were redirected for pandemic response under DM Act provisions. This expanded the interpretation of "disaster" in administrative practice and set a precedent for future health emergency financing.
-
-**5. Brahmaputra as the central entity**  
-The Brahmaputra river system appears in essentially every meeting — either directly (flood levels, erosion) or through infrastructure discussions (embankments, sluice gates). Mapping all Brahmaputra-related decisions would form a coherent policy longitudinal study.
-
-**6. Technology adoption arc (2009→2023)**  
-Minutes trace a 14-year shift: paper damage reports → digital submission → GIS dashboards → satellite-based early warning systems. The 49th meeting (Sept 2023) contains language around mobile apps and real-time data that would have been absent from the first 15 meetings.
-
-### Governance & Policy Shifts
-
-| Phase | Years | Meetings | Key Shifts |
-|-------|-------|----------|-----------|
-| Institutional formation | 2009–2012 | 1–12 | SDMA/DDMA setup, SDMP drafting, NDRF coordination |
-| Operational consolidation | 2013–2016 | 13–24 | Regular SDRF reviews, EWS rollout, ISRO/CWC tie-ups |
-| Scale-up + multi-hazard | 2017–2020 | 25–38 | Post-2017 flood surge, COVID insertion, AAPDA MITRA expansion |
-| Digital + climate adaptation | 2021–2023 | 39–49 | GIS assessment, climate language, World Bank linkage |
+(If many dates still come back inferred, your cache is missing the header text
+fields — `meeting_date_text` / `meeting_title` / narrative — and those sources
+need re-extraction to recover a real date.)
 
 ---
 
-## Decision Classification
+## Amount normalisation (how `amount_inr` is decided)
 
-Running a keyword pass over all decisions reveals the following distribution:
-- **Fund release / approval** (~38%) — "resolved that ₹X crore be released to district Y"
-- **Departmental direction** (~24%) — "directed WRD/NDRF/Revenue dept to…"
-- **Policy adoption** (~18%) — new SOP, guideline, or norm adopted
-- **Review / noted** (~12%) — information noted without action
-- **Other** (~8%) — procedural, date-setting, etc.
+Amounts are messy: explicit `Cr.`/`lakh` suffixes, `Rs.` prefixes, `/-` endings,
+and Indian digit grouping (`17,00,000` = ₹17 lakh). `normalize.parse_amount`
+applies one ordered rule and records the decision in `amount_basis`:
+
+1. **explicit unit in the cell** (`178.79 Cr.`, `Rs. 6.00 Cr.`) → the number is a
+   *count* in that unit; multiply, and **ignore the page default unit** so the
+   multiplier is never applied twice. → `explicit_unit`
+2. **comma-grouped value** (`17,00,000`, `Rs.7,15,000/-`) → an *absolute rupee*
+   figure; strip separators, **no unit multiplier**. → `comma_grouped_absolute`
+3. **bare number with ≥6 integer digits** (`470695.48`) → almost certainly rupees,
+   not a lakh count; read as rupees and set `amount_flag=ambiguous_unit_check_source`.
+   → `bare_long_assumed_rupees`
+4. **small bare number** (`206.10`) → a *count* in the column's unit
+   (header/default lakh or crore); multiply. → `count_in_unit`
+
+`line_items.csv` now carries `amount_raw`, `amount_basis` and `amount_flag`.
+Filter `amount_flag` to review the genuinely ambiguous cells against the source
+PDF (e.g. tables whose header might be "Rs." rather than "Rs. in Lakh").
+
+**To fix amounts in an existing run without re-extracting**, just:
+
+```bash
+python run.py --reclassify --out ./output
+```
+
+This recomputes `amount_inr`/`amount_lakh` from the cached `amount_raw` using the
+rules above — no API calls. (The same `parse_amount` logic should be used wherever
+amounts are computed if you have split the pipeline into your own scripts.)
 
 ---
 
-## Extending the Analysis
+## Architecture
 
-Suggested next steps with the extracted data:
-1. **NER (Named Entity Recognition)** on decision text to map all mentioned amounts, departments, and districts
-2. **Time-series analysis** of SDRF allocation vs. utilisation by year
-3. **Network graph** of departments mentioned together in resolutions (co-occurrence)
-4. **Flood severity proxy** — use "affected population" figures across meetings to construct a flood severity index per year
-5. **Topic modelling (LDA)** on full meeting text to identify latent themes beyond keyword search
+```
+run.py        CLI orchestrator (resumable; per-page JSON cache)
+ ├ scope.py     resolve each file's date & filter to a year range (cheap, 1-page)
+ ├ ingest.py    open each zip-archive / real PDF -> page images (+ any text)
+ ├ extract.py   page image -> structured JSON  (openai vision | tesseract)
+ │               · propagates meeting/department context across pages
+ │               · normalises money + classifies each row on the way in
+ ├ normalize.py amount→INR, lakh/crore units, district & dept aliases, dates→FY
+ ├ classify.py  work_type + disaster_phase (rule-based, confidence-scored)
+ ├ aggregate.py per-page records -> line_items / meetings / attendees (+SQLite)
+ └ analyze.py   the six analyses -> REPORT.md + CSVs + charts
+```
+
+**Grain:** one row per allocation in `line_items.csv` — every downstream number
+is a `groupby` on that. `sdrf.sqlite` holds all three tables for ad-hoc SQL.
+
+---
+
+## Usage
+
+```bash
+pip install -r requirements.txt          # plus system 'tesseract' for offline mode
+export OPENAI_API_KEY=sk-...              # for the recommended vision backend
+
+# full run (vision)
+python run.py --input ./pdfs --out ./output --backend openai
+
+# offline dry run, first 5 files only
+python run.py --input ./pdfs --out ./output --backend tesseract --limit 5
+
+# re-run only the analyses from the cache (no re-extraction, no API cost)
+python run.py --analyze-only --out ./output
+
+# re-apply classification/normalisation after editing config.py rules or the
+# fund list, then rebuild tables + report — still no extraction, no API cost
+python run.py --reclassify --out ./output
+```
+
+### Re-running without re-extracting
+
+Extraction (the API calls) is the expensive step; its per-page output is cached
+under `output/cache/`. Two ways to regenerate downstream results for free:
+
+- `--analyze-only` — rebuild `line_items`/`meetings`/`attendees` and the report
+  straight from the cache. Fast, but uses the labels **frozen at extraction time**.
+- `--reclassify` — re-apply `normalize` + `classify` over the cached raw fields
+  using the **current** `config.py` (work-type rules, phase rules, district /
+  department aliases, units), rewrite the cache, then rebuild. Use this whenever
+  you change the rubric or vocabularies and want those edits reflected. You can
+  also run the stage directly: `python reclassify.py ./output/cache`.
+
+Neither touches the network. (Note: the page-level `fund` tag is set during
+extraction, so changing `FUND_KEYWORDS` alone is picked up only on re-extraction
+or if you extend the reclassify pass to derive fund from `work_text`.)
+
+Outputs in `./output/`: `REPORT.md`, `line_items.csv`, `meetings.csv`,
+`attendees.csv`, `sdrf.sqlite`, numbered summary CSVs, and `charts/*.png`.
+Per-page extractions are cached in `output/cache/<doc>/<page>.json`; delete a
+file there (or pass `--no-cache`) to force re-extraction of just that page.
+
+---
+
+## Recommended workflow for trustworthy numbers
+
+1. Run with the vision backend.
+2. Open `line_items.csv`, filter `classify_confidence == 'low'` and any rows
+   where `district`/`amount_lakh` look wrong, and correct the cache or a review
+   sheet. (Totals/subtotals sneaking in as rows is the classic error — spot them
+   as values far larger than neighbours.)
+3. Re-run `--analyze-only`. The report regenerates from the corrected cache.
+
+Treat the auto-generated report as a **first pass over OCR'd government scans**,
+not an audited financial statement.
