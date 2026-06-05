@@ -41,6 +41,10 @@ def run(line_items: pd.DataFrame, meetings: pd.DataFrame, attendees: pd.DataFram
     charts = os.path.join(out_dir, "charts"); os.makedirs(charts, exist_ok=True)
     md = ["# Assam SEC / SDRF minutes — analysis\n"]
     li = line_items.copy()
+    n_summary = 0
+    if "is_line_item" in li.columns and not li.empty:
+        n_summary = int((~li["is_line_item"].fillna(True)).sum())
+        li = li[li["is_line_item"].fillna(True)].copy()
     has_money = not li.empty and li["amount_inr"].notna().any()
 
     # ---- coverage / health -------------------------------------------------
@@ -53,6 +57,14 @@ def run(line_items: pd.DataFrame, meetings: pd.DataFrame, attendees: pd.DataFram
         md.append(f"- Meetings with a parseable date: "
                   f"**{meetings['meeting_date'].notna().sum()}/{len(meetings)}**")
     md.append(f"- Allocation line-items extracted: **{len(li)}**")
+    if n_summary:
+        md.append(f"- Summary/total/header rows excluded from sums: **{n_summary}** "
+                  f"(see `row_kind` in `line_items.csv`)")
+    if has_money and "amount_outlier" in li.columns:
+        nout = int(li["amount_outlier"].fillna(False).sum())
+        if nout:
+            md.append(f"- Line-items above the per-item ceiling flagged for review: "
+                      f"**{nout}** (`amount_outlier=True`)")
     if has_money:
         md.append(f"- Total allocation captured: **₹{_cr(li['amount_inr'].sum())} crore**")
         low = (li['classify_confidence'] == 'low').mean() if 'classify_confidence' in li else 0
@@ -169,6 +181,23 @@ def run(line_items: pd.DataFrame, meetings: pd.DataFrame, attendees: pd.DataFram
                   "Many SDRF items are 'Immediate Measures' which are inherently "
                   "response/restoration; genuinely preventive 'mitigation' spend is the "
                   "harder, more ambiguous bucket — verify low-confidence rows.")
+    md.append("")
+
+    # ---- 5b. disaster type --------------------------------------------------
+    md.append("## 5b. Disaster type (notified hazards)\n")
+    if not li.empty and "disaster_type" in li.columns:
+        dt = li.groupby("disaster_type").agg(
+            items=("work_text", "size"),
+            allocation_cr=("amount_inr", lambda s: _cr(s.sum())))
+        dt = dt.sort_values("allocation_cr", ascending=False)
+        dt.to_csv(os.path.join(out_dir, "05b_disaster_type.csv"))
+        md.append(_table(dt.reset_index()))
+        md.append("\n> Disaster type is inferred from each row's text against the "
+                  "SDRF/NDRF notified-disaster list plus Assam's locally-notified "
+                  "hazards (storm/Bordoisila, river erosion, lightning). Rows whose "
+                  "text names no hazard (e.g. a bare school name) fall in "
+                  "'Unspecified / Multi-hazard'; the hazard there sits in the table "
+                  "header/narrative, not the row.")
     md.append("")
 
     # ---- 6. institutional shift -------------------------------------------

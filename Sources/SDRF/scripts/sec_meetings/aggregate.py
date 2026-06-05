@@ -16,6 +16,7 @@ from typing import List
 
 import pandas as pd
 import normalize as N
+import config
 
 
 def _iter_cached(cache_dir: str):
@@ -101,17 +102,29 @@ def build_tables(records: List[dict]):
             meta["title"] = rec["meeting_title"]
 
         for it in rec.get("line_items", []):
+            dist_canon, dist_level = N.snap_district(it.get("district") or "")
+            kind = N.classify_row_kind(it.get("work_text"), it.get("sl_no"),
+                                       it.get("district"))
+            is_li = kind == "line_item"
+            amt = it.get("amount_inr")
             line_rows.append({
                 "source": src, "page": rec.get("_page"),
                 "sl_no": it.get("sl_no"),
-                "district": it.get("district_canon") or it.get("district"),
+                "district": dist_canon or it.get("district"),
+                "district_level": dist_level,
                 "department": it.get("department_canon") or it.get("department"),
                 "work_text": it.get("work_text"),
                 "work_type": it.get("work_type"),
                 "disaster_phase": it.get("disaster_phase"),
+                "disaster_type": it.get("disaster_type"),
                 "classify_confidence": it.get("classify_confidence"),
-                "amount_inr": it.get("amount_inr"),
+                "row_kind": kind,
+                "is_line_item": is_li,
+                "amount_inr": amt,
                 "amount_lakh": it.get("amount_lakh"),
+                "allocation_inr": amt if is_li else None,
+                "amount_outlier": bool(is_li and amt is not None
+                                       and amt > config.PER_ITEM_CEILING_INR),
                 "amount_raw": it.get("amount_raw"),
                 "amount_basis": it.get("amount_basis"),
                 "amount_flag": it.get("amount_flag"),
@@ -125,10 +138,11 @@ def build_tables(records: List[dict]):
                               or a.get("department"),
             })
 
-    LINE_COLS = ["source", "page", "sl_no", "district", "department", "work_text",
-                 "work_type", "disaster_phase", "classify_confidence",
-                 "amount_inr", "amount_lakh", "amount_raw", "amount_basis",
-                 "amount_flag", "fund"]
+    LINE_COLS = ["source", "page", "sl_no", "district", "district_level",
+                 "department", "work_text", "work_type", "disaster_phase",
+                 "disaster_type", "classify_confidence", "row_kind", "is_line_item",
+                 "amount_inr", "amount_lakh", "allocation_inr", "amount_outlier",
+                 "amount_raw", "amount_basis", "amount_flag", "fund"]
     MEET_COLS = ["source", "meeting_number", "meeting_date", "fund", "title",
                  "date_inferred"]
     ATT_COLS = ["source", "name", "designation", "department"]

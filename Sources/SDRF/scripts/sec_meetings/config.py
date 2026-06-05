@@ -49,6 +49,27 @@ UNIT_MULTIPLIERS = {
 # minutes almost always tabulate in lakh.
 DEFAULT_UNIT = "lakh"
 
+# --- amount sanity thresholds -----------------------------------------------
+# A bare "count" in lakh/crore this large is implausible for a single line item
+# (e.g. 96500 as a lakh-count = Rs 965 cr for one bamboo bridge) and is almost
+# certainly an absolute rupee figure on a table whose unit was mis-detected.
+COUNT_AS_RUPEES_THRESHOLD = 10000
+# A single (non-summary) line item above this rupee value is flagged for review.
+PER_ITEM_CEILING_INR = 1_000_000_000   # Rs 100 crore
+
+# --- summary / header row detection -----------------------------------------
+# Work-action words that mark a row as a REAL work item (so it is NOT a header).
+ACTION_WORDS = {
+    "restoration", "restore", "repair", "repairing", "construction",
+    "constructing", "protection", "protecting", "embankment", "breach",
+    "erosion", "procurement", "procure", "training", "raising", "strengthening",
+    "immediate", "drainage", "desilting", "de-silting", "supply", "providing",
+    "closing", "rejuvenation", "reconstruction", "renovation", "recoupment",
+    "widening", "installation", "anti", "improvement", "maintenance",
+    "dredging", "excavation", "relief", "assistance", "rescue", "evacuation",
+}
+
+
 # ---------------------------------------------------------------------------
 # Districts of Assam (canonical) + common OCR / spelling aliases.
 # Used to snap noisy district strings to a controlled list.
@@ -74,6 +95,32 @@ DISTRICT_ALIASES = {
     "goalpara": "Goalpara", "chirang": "Chirang", "tamulpur": "Tamulpur",
     "bajali": "Bajali",
 }
+
+# Canonical Assam district list (for fuzzy snapping of OCR spelling variants).
+ASSAM_DISTRICTS = sorted(set(DISTRICT_ALIASES.values()))
+
+# Confident sub-district / town -> parent district mappings seen in the data.
+# Conservative: only well-known places. Unlisted non-matches stay 'unmapped'.
+SUBDISTRICT_TO_DISTRICT = {
+    "bilasipara": "Dhubri", "bilaspara": "Dhubri", "abhayapuri": "Bongaigaon",
+    "bijni": "Chirang", "bijini": "Chirang", "bokajan": "Karbi Anglong",
+    "bokakhat": "Golaghat", "bihpuria": "Lakhimpur", "amguri": "Sivasagar",
+    "bilasipara east": "Dhubri", "bilasipara west": "Dhubri",
+    "bhergaon": "Udalguri", "barpathar": "Golaghat", "sarupathar": "Golaghat",
+    "rangia": "Kamrup", "badarpur": "Cachar", "lakhipur": "Cachar",
+    "mangaldoi": "Darrang", "gohpur": "Biswanath", "dhekiajuli": "Sonitpur",
+    "rangapara": "Sonitpur", "lala": "Hailakandi",
+}
+
+# Patterns that indicate a state-wide / multi-district / agency scope, not one
+# district. Routed to a 'state_wide' bucket instead of being treated as a place.
+STATEWIDE_PATTERNS = [
+    "all district", "all the district", "29 flood", "various district",
+    "multiple district", "state wide", "state-wide", "statewide", "entire state",
+    "state level", "across assam", "asdma", "state share", "different district",
+    "several district", "flood prone district",
+]
+
 
 # ---------------------------------------------------------------------------
 # Departments / implementing agencies + aliases. Department is usually carried
@@ -147,16 +194,16 @@ WORK_TYPE_RULES = [
 # Note the inherent ambiguity, documented in README.
 # ---------------------------------------------------------------------------
 PHASE_RULES = [
-    ("Preparedness",
+    ("Long-term Preparedness",
         ["training", "capacity building", "mock drill", "awareness", "procurement",
          "equipment", "early warning", "preparedness", "stockpil", "pre-position",
-         "rescue", "boat", "workshop"]),
+         "rescue", "boat", "workshop","long term", "long-term"]),
     ("Mitigation",
         ["anti-erosion", "anti erosion", "raising and strengthening", "new embankment",
          "construction of embankment", "guide bund", "spur", "porcupine",
          "geo bag", "protection", "mitigation", "permanent", "drainage scheme",
-         "long term", "long-term"]),
-    ("Response, Repair & Restoration",
+         ]),
+    ("Repair and Restoration",
         ["immediate measure", "i.m.", "im ", "breach closing", "breach",
          "restoration", "repair", "recoupment", "relief", "gratuitous", "ex-gratia",
          "rescue and relief", "emergent", "emergency", "recoup"]),
@@ -165,6 +212,64 @@ PHASE_RULES = [
 # Canonical phase used when nothing matches.
 PHASE_DEFAULT = "Unclassified"
 WORK_TYPE_DEFAULT = "Other / Unclassified"
+
+# ---------------------------------------------------------------------------
+# DISASTER TYPE rubric. Labels follow the disasters notified under SDRF/NDRF
+# norms (Govt of India) plus the locally-notified disasters Assam uses its
+# SDRF for (storm/Bordoisila, river erosion, lightning). Ordered: more specific
+# first so a row mentioning both (e.g. "flood and storm") takes the primary one.
+# Keyword match is substring on lowercased text; keep tokens >=4 chars where
+# possible to avoid false hits.
+# ---------------------------------------------------------------------------
+DISASTER_TYPE_RULES = [
+    ("Erosion (river/bank)",
+        ["erosion", "anti-erosion", "anti erosion", "bank erosion",
+         "riverbank", "river bank"]),
+    ("Earthquake", ["earthquake", "seismic"]),
+    ("Landslide", ["landslide", "landslip", "mudslide", "slope failure", "debris flow"]),
+    ("Cyclone", ["cyclone", "hurricane", "typhoon"]),
+    ("Cloudburst", ["cloudburst", "cloud burst"]),
+    ("Hailstorm", ["hailstorm", "hail storm", "hailstone", "hail"]),
+    ("Lightning / Thunderstorm",
+        ["lightning", "thunderbolt", "thunderstorm", "thunder squall"]),
+    ("Cold wave / Frost", ["cold wave", "coldwave", "frost", "cold-wave"]),
+    ("Pest attack", ["pest attack", "locust", "pest"]),
+    ("Tsunami", ["tsunami"]),
+    ("Drought", ["drought", "dry spell"]),
+    ("Flood", ["flood", "inundation", "deluge", "submerge", "breach",
+               "embankment", "spill", "waterlogg", "water logg", "overflow"]),
+    ("Storm / Wind (Bordoisila)",
+        ["storm", "bordoisila", "windstorm", "wind storm", "gale", "squall",
+         "kalbaisakhi", "norwester", "nor'wester"]),
+    ("Fire", ["fire", "conflagration", "burnt"]),
+]
+DISASTER_TYPE_DEFAULT = "Unspecified / Multi-hazard"
+
+# ---------------------------------------------------------------------------
+# District labels EXACTLY as they appear in the standard GeoJSON, so cleaned
+# output joins to it directly. snap_district() returns one of these strings.
+# ---------------------------------------------------------------------------
+GEOJSON_DISTRICTS = [
+    'TINSUKIA', 'DHUBRI', 'BARPETA', 'MAJULI', 'HAILAKANDI', 'TAMULPUR',
+    'SIVASAGAR', 'BAKSA', 'KAMRUP', 'DHEMAJI', 'SOUTH SALMARA MANCACHAR',
+    'CHIRANG', 'SONITPUR', 'UDALGURI', 'WEST KARBI ANGLONG', 'JORHAT',
+    'GOALPARA', 'CHARAIDEO', 'BONGAIGAON', 'GOLAGHAT', 'KARIMGANJ', 'NAGAON',
+    'BISWANATH', 'KARBI ANGLONG', 'KOKRAJHAR', 'DIBRUGARH', 'LAKHIMPUR',
+    'HOJAI', 'MORIGAON', 'BAJALI', 'CACHAR', 'KAMRUP METRO', 'NALBARI',
+    'DIMA HASAO', 'DARRANG',
+]
+# Variant / alias -> GeoJSON label (handles renames, spellings, sub-districts).
+GEOJSON_DISTRICT_ALIASES = {
+    "kamrup metropolitan": "KAMRUP METRO", "kamrup (m)": "KAMRUP METRO",
+    "kamrup m": "KAMRUP METRO", "kamrup metro": "KAMRUP METRO",
+    "kamrup (r)": "KAMRUP", "kamrup rural": "KAMRUP",
+    "south salmara-mankachar": "SOUTH SALMARA MANCACHAR",
+    "south salmara mankachar": "SOUTH SALMARA MANCACHAR",
+    "south salmara": "SOUTH SALMARA MANCACHAR", "mankachar": "SOUTH SALMARA MANCACHAR",
+    "sibsagar": "SIVASAGAR", "sivsagar": "SIVASAGAR",
+    "n c hills": "DIMA HASAO", "north cachar hills": "DIMA HASAO",
+    "marigaon": "MORIGAON", "sribhumi": "KARIMGANJ",
+}
 
 # Tokens that signal which fund a meeting / agenda item draws on.
 FUND_KEYWORDS = ["sdrf", "sdmf", "ndrf", "ndmf", "cidf", "xv fc", "15th fc",

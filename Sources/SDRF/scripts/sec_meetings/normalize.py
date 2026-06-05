@@ -74,6 +74,11 @@ def parse_amount(raw, unit_hint: str = "") -> dict:
     if len(int_digits) >= 6:
         return {"inr": value, "basis": "bare_long_assumed_rupees",
                 "flag": "ambiguous_unit_check_source"}
+    # bare count in the column's unit -- but a "count" this large in lakh/crore
+    # is implausible for one item and almost always a mis-detected rupee figure.
+    if value >= config.COUNT_AS_RUPEES_THRESHOLD:
+        return {"inr": value, "basis": "count_too_large_assumed_rupees",
+                "flag": "unit_corrected_check_source"}
     return {"inr": value * _unit_mult(unit_hint or config.DEFAULT_UNIT),
             "basis": "count_in_unit", "flag": None}
 
@@ -114,6 +119,94 @@ def canon_district(value: str) -> Optional[str]:
 
 def canon_department(value: str) -> Optional[str]:
     return _snap(value, config.DEPARTMENT_ALIASES)
+
+
+def snap_district(value: str) -> tuple:
+    """Map a raw 'district' cell to (GEOJSON_LABEL, level).
+
+    Returns the district spelled EXACTLY as in the standard GeoJSON so cleaned
+    output joins to it directly. level is one of:
+      'district'   -> resolved to a GeoJSON district (incl. fuzzy spelling fixes
+                      and known town/sub-district -> parent mappings)
+      'state_wide' -> all-districts / multi-district / agency scope
+      'unmapped'   -> a place we can't safely resolve (kept verbatim)
+      None         -> empty
+    """
+    import difflib
+    if not value or not str(value).strip():
+        return (None, None)
+    raw = re.sub(r"\s+", " ", str(value).strip())
+    key = raw.lower().strip(" .,:-()")
+    # 1) state-wide / agency scope
+    for p in config.STATEWIDE_PATTERNS:
+        if p in key:
+            return ("STATE-WIDE / MULTIPLE", "state_wide")
+    if key in ("assam", "state"):
+        return ("STATE-WIDE / MULTIPLE", "state_wide")
+    # 2) explicit alias -> GeoJSON label (metro, salmara, renames, spellings)
+    for alias, label in config.GEOJSON_DISTRICT_ALIASES.items():
+        if alias in key:
+            return (label, "district")
+    # 3) curated sub-district / town -> parent district, then to GeoJSON label
+    for town, dist in config.SUBDISTRICT_TO_DISTRICT.items():
+        if key.startswith(town):
+            return (_to_geojson(dist), "district")
+    # 4) exact / fuzzy match against the GeoJSON district names
+    base = re.split(r"[(,]", key)[0].strip()
+    norm = {re.sub(r"[^a-z]", "", d.lower()): d for d in config.GEOJSON_DISTRICTS}
+    bkey = re.sub(r"[^a-z]", "", base)
+    if bkey in norm:
+        return (norm[bkey], "district")
+    cand = difflib.get_close_matches(bkey, list(norm.keys()), n=1, cutoff=0.86)
+    if cand:
+        return (norm[cand[0]], "district")
+    # 5) give up: keep original, mark unresolved
+    return (raw, "unmapped")
+
+
+def _to_geojson(name: str) -> str:
+    """Map a title-case district name to its exact GeoJSON label."""
+    k = re.sub(r"[^a-z]", "", name.lower())
+    for d in config.GEOJSON_DISTRICTS:
+        if re.sub(r"[^a-z]", "", d.lower()) == k:
+            return d
+    return name.upper()
+
+
+def classify_row_kind(work_text, sl_no=None, district=None) -> str:
+    """Distinguish a real allocation line item from a summary/total/header row.
+
+    Returns 'line_item' | 'summary_total' | 'summary_dept' | 'header_orphan'
+    | 'blank'. Summary rows duplicate the detail rows beneath them and must be
+    excluded from allocation sums.
+    """
+    t = ("" if work_text is None else str(work_text)).strip()
+    if not t:
+        return "blank"
+    if re.match(r"(?i)^\s*(grand\s+|sub[\s-]?)?total\b", t):
+        return "summary_total"
+    low = t.lower()
+    words = re.findall(r"[a-z]+", low)
+    has_action = any(w in config.ACTION_WORDS for w in words)
+    no_sl = sl_no is None or str(sl_no).strip() in ("", "nan")
+    no_dist = district is None or str(district).strip() in ("", "nan")
+    # aggregate subtotal lines, e.g. "75 schemes", "166 nos. schemes"
+    if not has_action and re.search(r"\b\d{1,4}\s+(nos?\.?\s+)?schemes?\b", low) \
+            and len(words) <= 6:
+        return "summary_aggregate"
+    # agenda-section headers captured with a total, e.g.
+    # "SDRF proposals of Irrigation Department for the year ..."
+    if re.search(r"\bproposals?\s+of\b.*\bdepartment\b", low) or \
+       re.search(r"\bproposals?\s+of\b.*\bfor\s+the\s+(year|period)\b", low):
+        return "summary_aggregate"
+    # a row that is essentially just a department name, with no serial/district
+    if (not has_action and len(words) <= 6 and canon_department(t)
+            and (no_sl or no_dist)):
+        return "summary_dept"
+    # an amount with no serial, no district, short label and no action verb
+    if no_sl and no_dist and not has_action and len(t) < 35:
+        return "header_orphan"
+    return "line_item"
 
 
 # ---------------------------------------------------------------------------

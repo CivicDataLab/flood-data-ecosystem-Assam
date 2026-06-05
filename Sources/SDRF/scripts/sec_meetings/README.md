@@ -136,6 +136,57 @@ You can also set them via env vars (`SDRF_OPENAI_TPM`, `SDRF_OPENAI_RPM`,
 
 ---
 
+## Cleaning: summary rows, unit correction, district snapping
+
+Raw extraction over-counts and mis-units in three systematic ways; the cleaner
+(`clean.py`, also folded into aggregation) addresses each and **keeps every row**
+with explanatory columns rather than deleting anything:
+
+1. **Summary / total / header rows** that duplicate the detail beneath them
+   (`TOTAL`, a bare department name, `"166 schemes"`, `"SDRF proposals of X
+   Department for the year"`). Tagged in `row_kind`
+   (`summary_total` / `summary_dept` / `summary_aggregate` / `header_orphan`);
+   only `row_kind == line_item` rows feed allocation sums (`allocation_inr`).
+2. **Mis-detected table units.** A bare count ≥ `COUNT_AS_RUPEES_THRESHOLD`
+   that was multiplied as lakh/crore (e.g. `96500` → ₹965 cr for one footbridge)
+   is re-read as rupees; correctly rupee-denominated tables are left untouched.
+   Any single line item above `PER_ITEM_CEILING_INR` (₹100 cr) gets
+   `amount_outlier=True` for review (this also surfaces genuine large NDRF /
+   programme approvals, which are real but worth separating).
+3. **District snapping.** `district_canon` resolves OCR spelling variants
+   (`Sibsagar`→`SIVASAGAR`) and known towns (`Bilasipara`→`DHUBRI`) to the 35
+   Assam districts **spelled exactly as in the standard GeoJSON**
+   (`KAMRUP METRO`, `SOUTH SALMARA MANCACHAR`, `CHARAIDEO`, …) so the table joins
+   to it directly; `district_level` buckets `state_wide` (all-districts/agency)
+   and `unmapped` (a place we won't guess).
+4. **Re-classification.** Work type, disaster phase and a new **disaster type**
+   are re-derived from each row's text with the current rubric. Disaster phases
+   are labelled *Long-term Preparedness / Mitigation / Repair and Restoration*.
+   Disaster type follows the SDRF/NDRF notified-disaster list plus Assam's
+   locally-notified hazards (storm/Bordoisila, river erosion, lightning).
+5. **Department override.** A row whose text names a school (LPS, MES, JBS, MEM,
+   H.S., vidyalaya, madrassa, college, …) is re-assigned to **Education** even
+   when the agenda context wrongly carried a different department; the original
+   is preserved in `department_orig` and the decision in `department_source`.
+
+Clean an existing CSV directly:
+
+```bash
+python clean.py line_items.csv line_items_clean.csv
+```
+
+Or regenerate clean tables from the cache (also recomputes amounts):
+
+```bash
+python run.py --reclassify --out ./output
+```
+
+On the full corpus this brought the captured total from ₹47,807 cr (raw, with
+double-counting and unit inflation) down to ≈₹11,900 cr of genuine line-item
+allocations, with per-year figures in a believable SDRF/SDMF/NDRF range.
+
+---
+
 ## Meeting dates in the output tables
 
 Each line item is dated by resolving one ISO date per source document, in order:
