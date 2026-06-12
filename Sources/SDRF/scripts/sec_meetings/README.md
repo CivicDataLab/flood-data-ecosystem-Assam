@@ -1,17 +1,15 @@
 # Assam SEC / SDRF minutes — extraction & analysis pipeline
 
-A resumable pipeline that turns ~60 scanned State Executive Committee (SEC) /
-SDRF meeting-minute "PDFs" into tidy tables and the six analyses you asked for.
+A pipeline that turns scanned State Executive Committee (SEC) /
+SDRF meeting-minute PDFs into tables, with additional analysis pipelines.
 
 ---
 
-## What the sample documents actually are (read this first)
-
-I inspected the samples before writing anything. The findings drive the design:
+## Nature of the Source Documents:
 
 1. **They are image-only.** Every "PDF" in the set is actually a ZIP archive of
    per-page JPEGs + empty `.txt` files. There is **no text layer**, so every
-   page must go through OCR or a vision model. `pdftotext`/`pypdf` return nothing.
+   page must go through OCR or a vision model. 
 
 2. **The format drifts a lot over ~17 years (2009 → 2026):**
    - *Early* (e.g. 1st, 2009): scanned typed policy minutes — narrative +
@@ -20,36 +18,14 @@ I inspected the samples before writing anything. The findings drive the design:
    - *Mid* (e.g. 27th, 2016): scanned **financial tables**
      `Sl | District | Name of Scheme | Amount (Rs. In Lakh)`; the department is
      in the agenda heading ("SDRF proposals of Water Resource Department").
-   - *Recent* (e.g. 55th, 2026): born-digital eOffice docs, hierarchical
-     numbering (55.1, 55.2), departments inline.
+   - *Recent* (e.g. 55th, 2026): digital eOffice docs, hierarchical
+     numbering (55.1, 55.2), departments are mentioned inline.
 
-3. **Naive full-page OCR scrambles the financial tables.** Tested: column
-   alignment collapses, amounts attach to the wrong rows, subtotals get read as
-   line items, and some numbers are misread. This is the single biggest risk and
-   is why a **vision model is the recommended extraction backend**.
-
-4. **Units are stated, not guessed:** table headers say "Rs. In Lakh"; narratives
+3. **Financial Units Derivation:** table headers say "Rs. In Lakh"; narratives
    state totals ("approved 29 proposals amounting to Rs.4402.93 Lakh"). The
    normaliser reads the unit and converts everything to a single base (INR float).
 
 ---
-
-## Feasibility of each requested analysis (honest version)
-
-| # | Request | Feasible? | Notes / caveats |
-|---|---------|-----------|-----------------|
-| 1 | Spending over 5–10 yrs | **Yes, with gaps** | Dates span ~2009–2026, so 5–10 yrs is fine. But money tables appear mainly in *SDRF-examination* meetings, which are irregular — some years have none. Year totals are "what was approved", not a continuous budget line. |
-| 2a | **District**-level allocation | **Yes** | District is a real column; canonicalised to Assam's district list. |
-| 2b | **Department**-level allocation | **Yes, indirectly** | Department comes from the *agenda heading*, not a per-row column, so it is propagated as page context (incl. across table continuations). |
-| 2c | Fund **utilisation** vs allocation | **Largely NO** | The minutes record *approvals/allocations*. Actual *expenditure/utilisation* shows up only sporadically in Action-Taken-Reports as prose, not as a structured column. A clean allocation-vs-utilisation comparison is **not reliably available** from this corpus — flagged, not faked. |
-| 3 | Work types tagged by dept/type | **Yes** | Classified from scheme text (embankment, breach closing, drainage, restoration, procurement, training…); work-type × department cross-tab produced. |
-| 4 | Stakeholder / attendance | **Partial** | Attendees live in annexures ("Annexure I"/"annexed at A"); coverage depends on whether those annexure pages are present in each file. |
-| 5 | Phase: preparedness / mitigation / repair&restoration | **Yes, with ambiguity** | Inferred from descriptions. Most SDRF items are "Immediate Measures" = response/restoration; true *mitigation* is the genuinely ambiguous bucket — every item carries a confidence flag for review. |
-| 6 | Institutional shift over time | **Yes** | Derived once 1–5 exist: phase-share and work-type-share by year. |
-
----
-
-## Why connect an LLM (and which one)
 
 Because the pages are scanned and the tables are dense, a **vision-capable model
 reading the page image** is dramatically more reliable than OCR + regex for:
@@ -90,19 +66,6 @@ the in-range files. Date precedence per file:
 A **monotonicity guard** quarantines any header date that breaks meeting-number
 order (one bad OCR year can't poison its neighbours' interpolation). Undated
 boundary files are kept for review rather than silently dropped.
-
-### Concrete result for this corpus, 2019-2026
-
-Resolving every file's true date gives **17 in-range files — meetings 39 -> 55**
-(see `selection_2019_2026.csv`). The boundary was verified from the headers: the
-**39th** meeting (10 June 2019) is the first of 2019; the 37th (Oct 2018) and
-38th (Nov 2018) fall just outside. Notes worth knowing:
-
-- There is **no 41st** meeting file in the set (gap, not an error).
-- **Two files are both labelled "46th"** — 4 Nov 2022 and 6 Dec 2022 — likely
-  distinct meetings; treat as two unless you confirm one is a re-issue.
-- The earlier naive parser mis-dated the 29th (->2015) and 38th (->2016); the
-  anchored + junk-tolerant logic now reads them correctly (Nov 2016, Nov 2018).
 
 ## Rate limits & resilience (OpenAI 429s)
 
@@ -318,3 +281,7 @@ file there (or pass `--no-cache`) to force re-extraction of just that page.
 
 Treat the auto-generated report as a **first pass over OCR'd government scans**,
 not an audited financial statement.
+___
+
+Assisted-by: Claude: Claude Opus 4.8 
+Signed-off-by Saurabh Levin
