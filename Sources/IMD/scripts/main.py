@@ -219,8 +219,8 @@ if __name__ == "__main__":
     year = int(year)
 
     # IF the year is current year, specify start and end date
-    start_date = "2026-1-1"
-    end_date = "2026-05-24"
+    start_date = "2026-06-01"
+    end_date = "2026-06-30"
 
     download_data(year, start_date=start_date, end_date=end_date)
     parse_and_format_data(year, start_date=start_date, end_date=end_date)

@@ -5,7 +5,7 @@ import glob
 for year in range(2026,2027):
     year = str(year)
     
-    for month in range(1,6):        
+    for month in range(1,7):        
         month=str(month)
         if int(month)<10:
             month = '0'+str(month)
