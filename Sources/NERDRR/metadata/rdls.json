@@ -1,0 +1,62 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/nerdrr-embankments",
+  "title": "NER-DRR Embankment Infrastructure — Assam Revenue Circles",
+  "description": "Total embankment length and count per Revenue Circle in Assam, sourced from the North Eastern Regional Node for Disaster Risk Reduction (NER-DRR) embankment layer, used as a flood-protection infrastructure exposure input to the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["exposure"],
+  "version": "0.1.0-draft",
+  "purpose": "Flood-protection infrastructure exposure covariate for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "License terms for redistributing NER-DRR WMS layer data have not been confirmed — treat 'license' as a placeholder. Source dataset contains 792 embankment features for the region; lengths are per-Revenue-Circle sums. THREE-WAY INCONSISTENCY TO FLAG: (1) Sources/NERDRR/README.md and the actual master/embankment_length.csv describe this as embankment length + count; (2) the top-level Sources/README.md instead describes NERDRR's variable as 'Proximity to embankment' (a distance measure, not length/count); (3) the risk model's data_dictionary.csv does not mention NERDRR, embankment length, or embankment proximity as a model indicator at all. This file follows (1) since that is what the actual data in this repo contains, but the discrepancy with (2) and the absence in (3) should be resolved with the team rather than assumed away.",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "nerdrr-geoserver",
+      "name": "NER-DRR embankment layer (NERDRR_NEW:embank)",
+      "url": "https://apps.nesdr.gov.in:442/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?1&filter=false",
+      "type": "dataset",
+      "component": "exposure"
+    }
+  ],
+  "license": "unspecified",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "exposure": {
+    "category": "infrastructure",
+    "metrics": [
+      { "id": "embankment_length", "dimension": "structure", "quantity_kind": "length" },
+      { "id": "num_embankments", "dimension": "structure", "quantity_kind": "count" }
+    ]
+  },
+  "resources": [
+    {
+      "id": "nerdrr-embankment-geojson",
+      "title": "Embankment features (Assam)",
+      "description": "Embankment line features for Assam, sourced from the NER-DRR geoserver.",
+      "format": "geojson",
+      "media_type": "application/geo+json",
+      "coordinate_system": "EPSG:4326",
+      "access_url": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/blob/main/Sources/NERDRR/data/embankment.geojson"
+    },
+    {
+      "id": "nerdrr-embankment-master-csv",
+      "title": "Harmonized embankment length variable (master)",
+      "description": "Harmonized embankment_length, num_embankments per Revenue Circle (object_id), used directly as an IDS-DRR model input.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/embankment_length.csv"
+    }
+  ]
+}

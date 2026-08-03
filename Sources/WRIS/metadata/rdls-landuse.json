@@ -1,0 +1,66 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/sentinel2-landcover",
+  "title": "Sentinel-2 Land Cover Fractions — Assam Revenue Circles (Annual)",
+  "description": "Annual land-cover class area fractions (water, trees, flooded vegetation, crops, built area, bare ground, clouds, rangeland) per Revenue Circle in Assam, used as hazard-conditioning covariates in the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["hazard"],
+  "version": "0.1.0-draft",
+  "purpose": "Land-cover hazard-conditioning covariate for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "CORRECTION vs the previous draft of this file: the risk model's data dictionary attributes these 8 indicators (water, trees, flooded-vegetation, crops, built-area, bare-ground, clouds, rangeland) to a datasource named 'SENTINEL-2 Land Cover' — a distinct entry from both 'WRIS' (which only covers distance-from-river; see rdls-distance-and-drainage.json) and 'SENTINEL' (which covers mean-ndvi/mean-ndbi; see Sources/SENTINEL/metadata/). This dataset's data physically lives under Sources/WRIS/data/variables/landuse in this repo, which is why the file stays in this folder, but the source attribution below reflects Sentinel-2, not WRIS/India-WRIS. The dictionary also classifies all 8 as 'Hazard' category (not 'Exposure' as an earlier draft of this file assumed), so risk_data_type is 'hazard' here; RDLS's hazard object has no per-metric 'metrics' list the way exposure does, so the 8 land-cover classes are described in the resource rather than as structured hazard sub-objects. License confirmed as 'Creative Commons CC BY-SA 3.0 IGO' per the same dictionary, recorded as 'CC-BY-SA-3.0-IGO' to match RDLS's dash convention. Exact underlying product (e.g. Dynamic World vs ESA WorldCover) is not documented in this repo and should be confirmed with the team.",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "sentinel-2-land-cover",
+      "name": "SENTINEL-2 Land Cover (exact product unconfirmed)",
+      "type": "dataset",
+      "component": "hazard"
+    }
+  ],
+  "license": "CC-BY-SA-3.0-IGO",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal_resolution": "P1Y",
+  "hazard": {
+    "event_sets": [
+      {
+        "id": "sentinel2-landcover-rc-annual",
+        "hazards": [
+          {
+            "id": "flood-landcover-conditioning",
+            "type": "flood",
+            "processes": ["fluvial_flood", "pluvial_flood"],
+            "intensity_measure": "land_cover_fraction"
+          }
+        ],
+        "analysis_type": "empirical",
+        "calculation_method": "observed",
+        "spatial": { "countries": ["IND"], "scale": "sub-national" },
+        "temporal": { "start": "2021", "end": "2023" }
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "sentinel2-landcover-master-csv",
+      "title": "Harmonized land-cover class area fractions (master)",
+      "description": "Harmonized annual water, trees, flooded_vegetation, crops, built_area, bare_ground, clouds, rangeland area fractions per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1Y",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/final_lu.csv"
+    }
+  ]
+}

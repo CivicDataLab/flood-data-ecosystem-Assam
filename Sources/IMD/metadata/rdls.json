@@ -1,0 +1,104 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/imd-rainfall",
+  "title": "IMD Gridded Rainfall — Assam Revenue Circles (Monthly)",
+  "description": "Monthly rainfall statistics (max, mean, sum) per Revenue Circle in Assam, derived from IMD's 0.25° gridded daily rainfall product, used as a hazard input to the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["hazard"],
+  "version": "0.1.0-draft",
+  "purpose": "Input covariate for the IDS-DRR Assam flood risk score model, capturing rainfall as a flood hazard driver.",
+  "project": "IDS-DRR Assam",
+  "details": "Per the risk model's data dictionary (IDS-DRR-Assam-Risk-Model/RiskScoreModel/data/data_dictionary.csv): max_rain and mean_rain are licensed 'GODL' (Government Open Data License – India, IMD's own terms); sum_rain is separately marked 'CC BY 4.0' there, reflecting its republication via civicdataspace.in rather than a different upstream license. RDLS has one license field per dataset, so 'GODL' (the upstream/majority license) is used here. Temporal coverage reflects Sources/master/rainfall.csv (2018-01 to 2026-05); the raw .grd cache in Sources/IMD/data only retains a recent rolling window used for incremental updates.",
+  "publisher": {
+    "name": "CivicDataLab",
+    "email": "info@civicdatalab.in",
+    "url": "https://civicdatalab.in"
+  },
+  "creator": {
+    "name": "CivicDataLab",
+    "email": "info@civicdatalab.in",
+    "url": "https://civicdatalab.in"
+  },
+  "contact_point": {
+    "name": "CivicDataLab",
+    "email": "info@civicdatalab.in"
+  },
+  "sources": [
+    {
+      "id": "imd-pune-gridded-rainfall",
+      "name": "IMD Gridded Rainfall Data (0.25° daily), accessed via imdlib",
+      "url": "https://www.imdpune.gov.in/",
+      "type": "dataset",
+      "component": "hazard"
+    }
+  ],
+  "license": "GODL",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal_resolution": "P1M",
+  "hazard": {
+    "event_sets": [
+      {
+        "id": "imd-rc-monthly-rainfall-2018-2026",
+        "hazards": [
+          {
+            "id": "flood-rainfall-driver",
+            "type": "flood",
+            "processes": ["fluvial_flood", "pluvial_flood"],
+            "intensity_measure": "rainfall_depth"
+          }
+        ],
+        "analysis_type": "empirical",
+        "calculation_method": "observed",
+        "spatial": {
+          "countries": ["IND"],
+          "scale": "sub-national"
+        },
+        "temporal": {
+          "start": "2018-01",
+          "end": "2026-05"
+        }
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "imd-rain-tiff-monthly",
+      "title": "Monthly gridded rainfall rasters (resampled)",
+      "description": "Monthly summed rainfall raster for Assam, resampled from IMD's 0.25° gridded daily rainfall product to ~0.01° (~1.1km) via gdalwarp.",
+      "format": "geotiff",
+      "media_type": "image/tiff",
+      "spatial_resolution": 1113,
+      "coordinate_system": "EPSG:4326",
+      "temporal_resolution": "P1M",
+      "access_url": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Sources/IMD/data/rain/tiff"
+    },
+    {
+      "id": "imd-rain-rc-csv",
+      "title": "Revenue Circle monthly rainfall zonal statistics",
+      "description": "Zonal statistics (count, mean, max, sum) of monthly rainfall per Revenue Circle in Assam, one CSV per month, computed from the resampled raster.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1M",
+      "access_url": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Sources/IMD/data/rain/csv"
+    },
+    {
+      "id": "imd-rain-master-csv",
+      "title": "Harmonized rainfall variable (master)",
+      "description": "Harmonized monthly max_rain, mean_rain, sum_rain per Revenue Circle (object_id), used directly as an IDS-DRR model input.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1M",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/rainfall.csv"
+    }
+  ]
+}
