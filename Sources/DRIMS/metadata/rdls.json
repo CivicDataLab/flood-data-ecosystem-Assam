@@ -1,0 +1,263 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/drims-flood-damage",
+  "title": "DRIMS Flood Damage Reports — Assam Revenue Circles (Monthly)",
+  "description": "Monthly flood damage counts (houses, human lives, population affected, crops, embankments, roads and bridges) per Revenue Circle in Assam, reported through ASDMA's Disaster Reporting and Information Management System (DRIMS, formerly FRIMS), used as loss data in the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["loss"],
+  "version": "0.1.0-draft",
+  "purpose": "Observed flood loss/damage data for the IDS-DRR Assam flood risk score model, and for validating the model's risk scores against reported outcomes.",
+  "project": "IDS-DRR Assam",
+  "details": "MAJOR TAXONOMY NOTE: the risk model's data dictionary (IDS-DRR-Assam-Risk-Model/RiskScoreModel/data/data_dictionary.csv) classifies every one of these DRIMS indicators under its own 'Vulnerability' pillar, not a separate 'loss' pillar — IDS-DRR's composite-risk-index taxonomy (Hazard/Exposure/Vulnerability/Government-Response) uses 'Vulnerability' broadly to include realized damage/impact data, which is conceptually different from RDLS's dedicated 'loss' object (damage caused by a hazard) and RDLS's narrower 'vulnerability' object (physical fragility/damage functions, which do not exist in this repo). risk_data_type='loss' is used here because it is the structurally correct RDLS type for damage/impact data; do not read this as contradicting IDS-DRR's own pillar labelling. RDLS also requires a monetary 'cost' (dimension + ISO 4217 currency unit) on every loss record; DRIMS reports physical counts, not monetary values, so 'cost.unit' is set to 'XXX' (ISO 4217 'no currency involved') throughout, with the count itself captured under 'impact'. Slugs below match the data dictionary's indicatorSlug exactly for traceability. Per the dictionary, license is 'CC BY 4.0' for the actively-used indicators (population-affected-total, human-live-lost, crop-area, embankments-affected, roads, bridge, embankment-breached, relief-camps); the not-currently-used ones (total-animal-washed-away, total-animal-affected, relief-camp-inmates, total-house-fully-damaged) have no license recorded there. RDLS has one license field per dataset, so 'CC BY 4.0' is used at dataset level. NOT REPRESENTED, with reasons: total-animal-washed-away/total-animal-affected/crop-area's category (agriculture/livestock — RDLS's metric_dimension codelist of structure/content/product/disruption/population has no clean fit; crop-area is included below anyway using 'content' as a flagged best-effort, since it is an actively-used model indicator, but the animal variables are used_for_model=n in the dictionary and are omitted); Relief_Distribution_*/Rescue_Operation_* (response actions, not losses); SDRF_sanctions_awarded_value (financial — catalogued instead under Government Response, out of RDLS's scope, see Sources/SDRF); total-infrastructure-damage (a computed rollup of roads+bridge+embankments, not new raw data); total-house-partially-damaged (present in this repo's master data but not listed as a distinct indicator in the risk model's data dictionary at all — kept below as it is real, legitimate data, but flagged as dictionary-unlisted).",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "asdma-drims",
+      "name": "ASDMA Disaster Reporting and Information Management System (DRIMS)",
+      "url": "http://www.asdma.gov.in/reports.html",
+      "type": "dataset",
+      "component": "loss"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal_resolution": "P1M",
+  "loss": {
+    "losses": [
+      {
+        "id": "total-house-fully-damaged",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of houses fully damaged by flooding. Dictionary-listed but used_for_model=n and no license recorded there.",
+        "category": "buildings",
+        "cost": { "id": "total-house-fully-damaged-cost", "dimension": "structure", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "houses", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation"
+      },
+      {
+        "id": "total-house-partially-damaged",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of houses partially damaged by flooding. Not listed as a distinct indicator in the risk model's data dictionary (dictionary-unlisted).",
+        "category": "buildings",
+        "cost": { "id": "total-house-partially-damaged-cost", "dimension": "structure", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "houses", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation"
+      },
+      {
+        "id": "human-live-lost",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of human lives lost due to flooding.",
+        "category": "population",
+        "cost": { "id": "human-live-lost-cost", "dimension": "population", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "persons", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation",
+        "exposure_id": "https://drr.civicdatalab.in/assam/datasets/worldpop-population"
+      },
+      {
+        "id": "population-affected-total",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Total population affected by flooding.",
+        "category": "population",
+        "cost": { "id": "population-affected-total-cost", "dimension": "population", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "persons", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation",
+        "exposure_id": "https://drr.civicdatalab.in/assam/datasets/worldpop-population"
+      },
+      {
+        "id": "relief-camp-inmates",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of relief camp inmates housed due to flooding. Dictionary-listed but used_for_model=n and no license recorded there.",
+        "category": "population",
+        "cost": { "id": "relief-camp-inmates-cost", "dimension": "population", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "persons", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation",
+        "exposure_id": "https://drr.civicdatalab.in/assam/datasets/worldpop-population"
+      },
+      {
+        "id": "relief-camps",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of relief camps established due to flooding.",
+        "category": "population",
+        "cost": { "id": "relief-camps-cost", "dimension": "population", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "camps", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation"
+      },
+      {
+        "id": "crop-area",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Total crop area affected by flooding. RDLS's metric_dimension codelist (structure/content/product/disruption/population) has no clean fit for agricultural land; 'content' is used as a flagged best-effort since this is an actively-used model indicator.",
+        "category": "agriculture",
+        "cost": { "id": "crop-area-cost", "dimension": "content", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "area", "unit": "hectares", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation",
+        "exposure_id": "https://drr.civicdatalab.in/assam/datasets/antyodaya-household-access"
+      },
+      {
+        "id": "embankments-affected",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of embankments affected by flooding.",
+        "category": "infrastructure",
+        "cost": { "id": "embankments-affected-cost", "dimension": "structure", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "embankments", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation",
+        "exposure_id": "https://drr.civicdatalab.in/assam/datasets/nerdrr-embankments"
+      },
+      {
+        "id": "embankment-breached",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of embankments breached by flooding.",
+        "category": "infrastructure",
+        "cost": { "id": "embankment-breached-cost", "dimension": "structure", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "embankments", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation",
+        "exposure_id": "https://drr.civicdatalab.in/assam/datasets/nerdrr-embankments"
+      },
+      {
+        "id": "roads",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of roads damaged by flooding.",
+        "category": "infrastructure",
+        "cost": { "id": "roads-cost", "dimension": "structure", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "roads", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation",
+        "exposure_id": "https://drr.civicdatalab.in/assam/datasets/bharatmaps-infrastructure"
+      },
+      {
+        "id": "bridge",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of bridges damaged by flooding.",
+        "category": "infrastructure",
+        "cost": { "id": "bridge-cost", "dimension": "structure", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "bridges", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation"
+      },
+      {
+        "id": "total-animal-washed-away",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of animals washed away by flooding. NOT actively used_for_model per the dictionary, and RDLS's metric_dimension codelist has no clean fit for livestock — omitted from cost/impact modelling here beyond this note; see Sources/DRIMS/data/variables for the raw data.",
+        "category": "agriculture",
+        "cost": { "id": "total-animal-washed-away-cost", "dimension": "content", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "animals", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation"
+      },
+      {
+        "id": "total-animal-affected",
+        "hazard_type": "flood",
+        "hazard_process": "fluvial_flood",
+        "description": "Number of animals affected by flooding. NOT actively used_for_model per the dictionary; see note on total-animal-washed-away above.",
+        "category": "agriculture",
+        "cost": { "id": "total-animal-affected-cost", "dimension": "content", "unit": "XXX" },
+        "impact": { "type": "direct", "metric": "count", "unit": "animals", "base_data_type": "observed" },
+        "type": "count",
+        "approach": "empirical",
+        "hazard_analysis_type": "empirical",
+        "hazard_id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "drims-api-output",
+      "title": "Raw DRIMS API output",
+      "description": "Raw daily/monthly disaster damage reports pulled from the DRIMS API.",
+      "format": "json",
+      "media_type": "application/json",
+      "access_url": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Sources/DRIMS/data/DRIMS_api_output"
+    },
+    {
+      "id": "drims-house-damage-master-csv",
+      "title": "Harmonized house damage variables (master)",
+      "description": "Harmonized monthly Total_House_Fully_Damaged, Total_House_Partially_Damaged per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1M",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/Total_House_Fully_Damaged.csv"
+    },
+    {
+      "id": "drims-population-affected-master-csv",
+      "title": "Harmonized population affected variable (master)",
+      "description": "Harmonized monthly Population_affected_Total per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1M",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/Population_affected_Total.csv"
+    },
+    {
+      "id": "drims-crop-area-master-csv",
+      "title": "Harmonized crop area affected variable (master)",
+      "description": "Harmonized monthly Crop_Area per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1M",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/Crop_Area.csv"
+    },
+    {
+      "id": "drims-infrastructure-damage-master-csv",
+      "title": "Harmonized infrastructure damage variables (master)",
+      "description": "Harmonized monthly Embankments affected, Embankment breached, Bridge, and roads-damaged counts per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1M",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/Embankments%20affected.csv"
+    }
+  ]
+}

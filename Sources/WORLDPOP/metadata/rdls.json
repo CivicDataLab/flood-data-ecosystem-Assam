@@ -1,0 +1,122 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/worldpop-population",
+  "title": "WorldPop Population & Demographic Structure — Assam Revenue Circles (Annual)",
+  "description": "Annual population count, sex ratio, and age-structure statistics per Revenue Circle in Assam, derived from WorldPop 100m gridded population and age-sex structure rasters, used as an exposure input to the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["exposure"],
+  "version": "0.1.0-draft",
+  "purpose": "Exposure covariate (population at risk) for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "2016-2020 values are sourced directly from WorldPop; 2021 onward are extrapolated using linear regression on the 2015-2020 growth rate (see Sources/WORLDPOP/scripts/projections.py) and are therefore modelled, not observed, estimates. Per the risk model's data dictionary, sum_population is 'Exposure' category there while mean_sex_ratio/sum_aged_population/sum_young_population are 'Vulnerability' category — IDS-DRR's own composite-risk-index taxonomy differs from RDLS's hazard/exposure/vulnerability/loss object types, and all four are still catalogued here as RDLS 'exposure' (population counts/ratios describing who is in the hazard-prone area), which is the correct RDLS type regardless of IDS-DRR's internal pillar labelling. The dictionary also lists a fifth indicator, total-female-population (Vulnerability, CC BY 4.0, currently used_for_model=n), which has no corresponding file anywhere under Sources/master in this repo — it does not appear to be implemented yet, so it is not represented here.",
+  "publisher": {
+    "name": "CivicDataLab",
+    "email": "info@civicdatalab.in",
+    "url": "https://civicdatalab.in"
+  },
+  "creator": {
+    "name": "CivicDataLab",
+    "email": "info@civicdatalab.in",
+    "url": "https://civicdatalab.in"
+  },
+  "contact_point": {
+    "name": "CivicDataLab",
+    "email": "info@civicdatalab.in"
+  },
+  "sources": [
+    {
+      "id": "worldpop-unconstrained-ind-100m",
+      "name": "WorldPop unconstrained individual countries 2000-2020, UN-adjusted (100m)",
+      "url": "https://hub.worldpop.org/geodata/listing?id=29",
+      "type": "dataset",
+      "component": "exposure"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal_resolution": "P1Y",
+  "exposure": {
+    "category": "population",
+    "metrics": [
+      {
+        "id": "sum_population",
+        "dimension": "population",
+        "quantity_kind": "count"
+      },
+      {
+        "id": "mean_sex_ratio",
+        "dimension": "population",
+        "quantity_kind": "ratio"
+      },
+      {
+        "id": "sum_aged_population",
+        "dimension": "population",
+        "quantity_kind": "count"
+      },
+      {
+        "id": "sum_young_population",
+        "dimension": "population",
+        "quantity_kind": "count"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "worldpop-population-raster",
+      "title": "WorldPop population count rasters (Assam extent)",
+      "description": "Unconstrained, UN-adjusted population count rasters at 100m resolution, cropped to Assam extent, for 2016-2020 with growth-rate extrapolation for later years.",
+      "format": "geotiff",
+      "media_type": "image/tiff",
+      "spatial_resolution": 100,
+      "coordinate_system": "EPSG:4326",
+      "temporal_resolution": "P1Y",
+      "access_url": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Sources/WORLDPOP/data"
+    },
+    {
+      "id": "worldpop-sum-population-csv",
+      "title": "Sum population per Revenue Circle (master)",
+      "description": "Harmonized annual total population per Revenue Circle (object_id); 2021 onward values are projected.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1Y",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/sum_population.csv"
+    },
+    {
+      "id": "worldpop-sex-ratio-csv",
+      "title": "Mean sex ratio per Revenue Circle (master)",
+      "description": "Harmonized annual mean sex ratio (females per 1000 males) per Revenue Circle.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1Y",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/mean_sex_ratio.csv"
+    },
+    {
+      "id": "worldpop-aged-population-csv",
+      "title": "Sum aged population per Revenue Circle (master)",
+      "description": "Harmonized annual aged-population count per Revenue Circle.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1Y",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/sum_aged_population.csv"
+    },
+    {
+      "id": "worldpop-young-population-csv",
+      "title": "Sum young population per Revenue Circle (master)",
+      "description": "Harmonized annual young-population count per Revenue Circle.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1Y",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/sum_young_population.csv"
+    }
+  ]
+}

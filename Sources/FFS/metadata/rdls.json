@@ -1,0 +1,76 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/ffs-river-water-level",
+  "title": "CWC Flood Forecast Station River Water Levels — Assam Revenue Circles (Monthly)",
+  "description": "Monthly river water level statistics (mean, min, max) per Revenue Circle in Assam, derived from Central Water Commission Flood Forecast Station gauge readings, used as a hazard input to the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["hazard"],
+  "version": "0.1.0-draft",
+  "purpose": "Input covariate for the IDS-DRR Assam flood risk score model, capturing river stage as a fluvial flood hazard driver.",
+  "project": "IDS-DRR Assam",
+  "details": "License terms for redistributing CWC FFS gauge data have not been confirmed — treat 'license' as a placeholder. Temporal coverage reflects Sources/master/riverlevel.csv (2016-01 to 2024-05). Stations are grouped in three CWC divisions: Upper Brahmaputra (Dibrugarh), Middle Brahmaputra (Guwahati), Lower Brahmaputra (Jalpaiguri).",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "cwc-ffs",
+      "name": "Central Water Commission — Flood Forecast Stations",
+      "url": "https://ffs.india-water.gov.in/",
+      "type": "dataset",
+      "component": "hazard"
+    }
+  ],
+  "license": "unspecified",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal_resolution": "P1M",
+  "hazard": {
+    "event_sets": [
+      {
+        "id": "ffs-rc-monthly-river-level-2016-2024",
+        "hazards": [
+          {
+            "id": "flood-river-stage",
+            "type": "flood",
+            "processes": ["fluvial_flood"],
+            "intensity_measure": "water_level"
+          }
+        ],
+        "analysis_type": "empirical",
+        "calculation_method": "observed",
+        "spatial": { "countries": ["IND"], "scale": "sub-national" },
+        "temporal": { "start": "2016-01", "end": "2024-05" }
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "ffs-riverlevel-daily-csv",
+      "title": "Daily river water level readings",
+      "description": "Daily gauge water level readings for CWC Flood Forecast Stations in Assam.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1D",
+      "access_url": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Sources/FFS/data/variables/riverlevel_daily.csv"
+    },
+    {
+      "id": "ffs-riverlevel-master-csv",
+      "title": "Harmonized river water level variable (master)",
+      "description": "Harmonized monthly riverlevel_mean, riverlevel_min, riverlevel_max per Revenue Circle (object_id), used directly as an IDS-DRR model input.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1M",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/riverlevel.csv"
+    }
+  ]
+}

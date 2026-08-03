@@ -1,0 +1,57 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/antyodaya-household-access",
+  "title": "Mission Antyodaya Household Infrastructure Access — Assam Revenue Circles",
+  "description": "Village-level household access to electricity, telecom, piped water and sanitation, aggregated to Revenue Circle in Assam from Mission Antyodaya 2020 survey data, used as a household-infrastructure-access exposure/vulnerability input to the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["exposure"],
+  "version": "0.1.0-draft",
+  "purpose": "Household infrastructure-access exposure covariate for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "This is a single 2020 survey snapshot, not a time series. 'total_hhd' (a household/population count, not an infrastructure-access measure) is present in the same master file but is catalogued separately in Sources/ANTYODAYA/metadata/rdls-households.json (category=population), since RDLS's exposure object takes one 'category' per dataset. 'net_sown_area_in_hac' (agriculture) is included below despite the category mismatch (metric_dimension has no clean fit for agricultural land — 'content' is used as the least-inaccurate option), to keep it discoverable rather than silently dropped. Per the risk model's data dictionary, avg_electricity/rc_piped_hhds_pct/rc_nosanitation_hhds_pct/net_sown_area_in_hac are licensed 'CC BY 4.0' there, while avg_tele is separately marked 'GODL' (and is flagged used_for_model=n, i.e. not currently feeding the model); RDLS has one license field per dataset, so the majority value (CC BY 4.0) is used here. That same dictionary also classifies all five of these under its own 'Vulnerability' pillar (not 'Exposure') — IDS-DRR's own composite-risk-index taxonomy is distinct from RDLS's hazard/exposure/vulnerability/loss object types and the two should not be assumed to align 1:1; 'exposure' is used here per RDLS's own definition (assets/access levels in a hazard-prone area). Villages were tagged to Revenue Circles using lat-lon and LGD codes (see Sources/ANTYODAYA/README.md).",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "mission-antyodaya-2020",
+      "name": "Mission Antyodaya 2020",
+      "url": "https://docs.google.com/spreadsheets/d/1jVhsf9N410T2LwIN9-GJ0wNI1r_SEbKp/edit",
+      "type": "dataset",
+      "component": "exposure"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal": { "start": "2020", "end": "2020" },
+  "exposure": {
+    "category": "infrastructure",
+    "metrics": [
+      { "id": "avg_electricity", "dimension": "structure", "quantity_kind": "percentage" },
+      { "id": "avg_tele", "dimension": "structure", "quantity_kind": "percentage" },
+      { "id": "rc_piped_hhds_pct", "dimension": "structure", "quantity_kind": "percentage" },
+      { "id": "rc_nosanitation_hhds_pct", "dimension": "structure", "quantity_kind": "percentage" },
+      { "id": "net_sown_area_in_hac", "dimension": "content", "quantity_kind": "area" }
+    ]
+  },
+  "resources": [
+    {
+      "id": "antyodaya-master-csv",
+      "title": "Harmonized household infrastructure-access variables (master)",
+      "description": "Harmonized avg_electricity, avg_tele, rc_piped_hhds_pct, rc_nosanitation_hhds_pct, net_sown_area_in_hac per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/antyodaya_variables.csv"
+    }
+  ]
+}

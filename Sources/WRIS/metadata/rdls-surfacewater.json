@@ -1,0 +1,75 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/wris-surface-water",
+  "title": "Satellite-derived Surface Water Extent — Assam Revenue Circles (Annual)",
+  "description": "Annual permanent and seasonal surface water area per Revenue Circle in Assam, used as a hazard-proxy covariate (flood-prone surface water dynamics) in the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["hazard"],
+  "version": "0.1.0-draft",
+  "purpose": "Surface-water-dynamics covariate for the IDS-DRR Assam flood risk score model; seasonal (as opposed to permanent) water extent is a proxy for historically flood-prone area.",
+  "project": "IDS-DRR Assam",
+  "details": "This source folder (Sources/WRIS) has no README describing its exact provenance or processing methodology — the exact satellite product and licence could not be confirmed this session and should be verified with the team before treating this metadata as final. Data available for 2021-2023 (Sources/WRIS/data/variables/permanent_water, seasonal_water). CAUTION: permanent_water_area and seasonal_water_area do not appear anywhere in the risk model's data dictionary (IDS-DRR-Assam-Risk-Model/RiskScoreModel/data/data_dictionary.csv) — the dictionary's only WRIS-attributed indicator is distance-from-river (see Sources/WRIS/metadata/rdls-distance-and-drainage.json). These two variables are real data produced by this repo's pipeline, but appear to not currently feed the risk model; confirm with the team whether they are experimental/deprecated before relying on this file downstream.",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "wris-surface-water-source",
+      "name": "Satellite-derived surface water extent (exact source product unconfirmed)",
+      "type": "dataset",
+      "component": "hazard"
+    }
+  ],
+  "license": "unspecified",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal_resolution": "P1Y",
+  "hazard": {
+    "event_sets": [
+      {
+        "id": "wris-rc-surface-water-2021-2023",
+        "hazards": [
+          {
+            "id": "flood-surface-water-dynamics",
+            "type": "flood",
+            "processes": ["fluvial_flood", "pluvial_flood"],
+            "intensity_measure": "water_extent_area"
+          }
+        ],
+        "analysis_type": "empirical",
+        "calculation_method": "observed",
+        "spatial": { "countries": ["IND"], "scale": "sub-national" },
+        "temporal": { "start": "2021", "end": "2023" }
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "wris-permanent-water-master-csv",
+      "title": "Harmonized permanent water area variable (master)",
+      "description": "Harmonized annual permanent_water_area per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1Y",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/permanenent.csv"
+    },
+    {
+      "id": "wris-seasonal-water-master-csv",
+      "title": "Harmonized seasonal water area variable (master)",
+      "description": "Harmonized annual seasonal_water_area per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1Y",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/seasonal.csv"
+    }
+  ]
+}
