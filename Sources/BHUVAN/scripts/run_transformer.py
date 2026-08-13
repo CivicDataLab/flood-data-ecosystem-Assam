@@ -11,7 +11,7 @@ print(path)
 for year in [2026]:
     print(year)
     year = str(year)
-    for month in ["06","07","08","09"]:
+    for month in ["06", "07"]:
         files1 = glob.glob(path + f"data/tiffs/removed_watermarks/{year}_??_{month}*.tif")
         files2 = glob.glob(path + f"data/tiffs/removed_watermarks/{year}_??-??_{month}*.tif")
         files = files1 + files2
