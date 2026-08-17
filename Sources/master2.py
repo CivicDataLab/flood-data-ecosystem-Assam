@@ -8,9 +8,9 @@ warnings.filterwarnings("ignore")
 
 variables_data_path = os.getcwd() + '/Sources/master/'
 print(variables_data_path)
-assam_rc = gpd.read_file(r'Maps/Geojson/assam_rc_2024-11.geojson')
+assam_rc = gpd.read_file('Maps/Geojson/assam_rc_2024-11.geojson')
 
-date_range = pd.date_range(start="2021-04-01", end="2026-05-31", freq='MS')
+date_range = pd.date_range(start="2021-04-01", end="2026-07-31", freq='MS')
 
 # Format the date values as "YYYY_MM" strings
 formatted_dates = [date.strftime('%Y_%m') for date in date_range]

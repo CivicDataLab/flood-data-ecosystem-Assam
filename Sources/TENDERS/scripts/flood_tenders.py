@@ -196,13 +196,13 @@ for csv in csvs:
             sub_head_dict = {k: v for k, v in preparedness_measures_dict.items() if v is not False}
             idea_frm_tenders_df.loc[index, "Flood Response - Subhead"] = str(sub_head_dict)   # type: ignore
 
-    idea_frm_tenders_df.to_csv(os.getcwd()+r'/Sources/TENDERS/data/flood_tenders/'+filename,
+    idea_frm_tenders_df.to_csv(os.getcwd()+ '/Sources/TENDERS/data/flood_tenders/'+filename,
                             encoding='utf-8',
                             index=False)
     
 
-data_path = os.getcwd() + r'/Sources/TENDERS/data/'
-csvs = glob.glob(data_path+r'/flood_tenders/*.csv')
+data_path = os.getcwd() + '/Sources/TENDERS/data/'
+csvs = glob.glob(data_path+ '/flood_tenders/*.csv')
 dfs=[]
 for csv in csvs:
     csv = csv.replace("//", "/")

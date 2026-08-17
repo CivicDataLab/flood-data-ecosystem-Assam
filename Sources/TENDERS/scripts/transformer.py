@@ -2,10 +2,10 @@ import pandas as pd
 import os
 import geopandas as gpd
 
-data_path = os.getcwd()+r'/Sources/TENDERS/data/'
-assam_rc_gdf = gpd.read_file(os.getcwd()+r'/Maps/Geojson/assam_rc_2024-11.geojson')
+data_path = os.getcwd()+ '/Sources/TENDERS/data/'
+assam_rc_gdf = gpd.read_file(os.getcwd()+ '/Maps/Geojson/assam_rc_2024-11.geojson')
 
-flood_tenders_geotagged_df = pd.read_csv(data_path + r'floodtenders_RCgeotagged.csv')
+flood_tenders_geotagged_df = pd.read_csv(data_path + 'floodtenders_RCgeotagged.csv')
 flood_tenders_geotagged_df = flood_tenders_geotagged_df.merge(assam_rc_gdf,
                                  left_on = ['DISTRICT_FINALISED', 'REVENUE_CIRCLE_FINALISED'],
                                  right_on = ['dtname', 'revenue_ci'],

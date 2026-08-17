@@ -222,6 +222,14 @@
             "details": "(Sapekhati | Population Affected: 22 | Crop Area Submerged: 15), (Mahmora | Population Affected: 113 | Crop Area Submerged: 3), (Sonari | Population Affected: 3420 | Crop Area Submerged: 171.9)"
         },
         {
+            "total": 5897,
+            "totalMale": 2065,
+            "totalFemale": 2016,
+            "totalChildren": 1816,
+            "totalCropArea": 150.6,
+            "district": "Chirang",
+            "districtCode": "09",
+            "details": "(Sidli | Population Affected: 4324 | Crop Area Submerged: 0), (Bijni | Population Affected: 783 | Crop Area Submerged: 71.6), (Bengtal | Population Affected: 790 | Crop Area Submerged: 79)"
             "total": 5114,
             "totalMale": 1747,
             "totalFemale": 1713,
@@ -382,12 +390,12 @@
             "totalReliefCenter": 12
         },
         {
-            "total": 7,
+            "total": 9,
             "district": "Chirang",
             "reliefCamps": "(Sidli | 0), (Bijni | 0), (Bengtal | 0)",
-            "reliefCenters": "(Sidli | 4), (Bijni | 2), (Bengtal | 1)",
+            "reliefCenters": "(Sidli | 4), (Bijni | 4), (Bengtal | 1)",
             "totalReliefCamp": 0,
-            "totalReliefCenter": 7
+            "totalReliefCenter": 9
         },
         {
             "total": 30,
@@ -710,15 +718,15 @@
             "details": "(Sapekhati | 0), (Mahmora | 0), (Sonari | 1212)"
         },
         {
-            "total": 5117,
-            "totalMale": 1750,
-            "totalFemale": 1713,
-            "totalChildren": 1654,
+            "total": 5900,
+            "totalMale": 2068,
+            "totalFemale": 2016,
+            "totalChildren": 1816,
             "totalBigAnimal": 142,
             "totalSmallAnimal": 40,
             "totalPoultryAnimal": 0,
             "district": "Chirang",
-            "details": "(Sidli | 4327), (Bijni | 0), (Bengtal | 790)"
+            "details": "(Sidli | 4327), (Bijni | 783), (Bengtal | 790)"
         },
         {
             "total": 54904,
@@ -1969,10 +1977,10 @@
             },
             {
                 "district": "Chirang",
-                "rice": 82.128,
-                "dal": 15.341999999999999,
-                "salt": 4.6026,
-                "mOil": 460.26,
+                "rice": 95.25,
+                "dal": 17.692,
+                "salt": 5.3526,
+                "mOil": 530.76,
                 "cattleFeedGreenFooder": 14,
                 "cattleFeedWheatBran": 9.06,
                 "cattleFeedRiceBran": 0
@@ -2117,9 +2125,9 @@
             },
             {
                 "district": "Chirang",
-                "babyFoodLiquid": "0-Kg, 0-L",
+                "babyFoodLiquid": "0-Kg, 25-Pieces, 0-L",
                 "babyFoodSolid": "0-Kg",
-                "otherItems": "Tarpaulin-13-Pcs"
+                "otherItems": "Tarpaulin-155-Pcs"
             },
             {
                 "district": "Dhemaji",
@@ -6480,6 +6488,36 @@
                                     "remarks": "This report is received from office of the SDFDO,Bajali- 0.07 hct.",
                                     "createdAt": "2026-06-25T11:35:09.965Z",
                                     "updatedAt": "2026-06-25T11:35:09.965Z"
+                                },
+                                {
+                                    "id": 110210,
+                                    "name": "pond",
+                                    "departmentName": "Fishery",
+                                    "villageName": "BAN GAON",
+                                    "location": "bangaon",
+                                    "latitude": 26.434757,
+                                    "longitude": 91.201368,
+                                    "remarks": "This report is received from office of the SDFDO,Bajali- 0.25 hct.",
+                                    "createdAt": "2026-06-25T11:35:09.961Z",
+                                    "updatedAt": "2026-06-25T11:35:09.961Z"
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Power Dept. Conductors (in Km)",
+                            "noOfDamage": 0.2,
+                            "details": [
+                                {
+                                    "id": 110215,
+                                    "name": "conductor",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Maripur",
+                                    "location": "maripur",
+                                    "latitude": 26.54092,
+                                    "longitude": 91.213936,
+                                    "remarks": "This report is received from office of the SDE,APDCL,Pathsala",
+                                    "createdAt": "2026-06-25T11:35:09.975Z",
+                                    "updatedAt": "2026-06-25T11:35:09.975Z"
                                 }
                             ]
                         }
@@ -6715,6 +6753,138 @@
                                     "remarks": "As per repoted by BDO Sidli-Chirang, a RCC Bridge was damage due to erosion from heavy rainfall at Moigaon (Dodoraguri) on 19/06/2026",
                                     "createdAt": "2026-06-19T10:12:27.596Z",
                                     "updatedAt": "2026-06-19T10:12:27.596Z"
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Power Dept. Poles (in Nos)",
+                            "noOfDamage": 5,
+                            "details": [
+                                {
+                                    "id": 110248,
+                                    "name": "8.5 m Pole",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.5721,
+                                    "longitude": 90.551254,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 01 No. of Pole(8.5m) was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.722Z",
+                                    "updatedAt": "2026-06-29T09:09:09.722Z"
+                                },
+                                {
+                                    "id": 110250,
+                                    "name": "8.5 m Pole",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.589023,
+                                    "longitude": 90.538271,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 01 No. of Pole(8.5m) was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.725Z",
+                                    "updatedAt": "2026-06-29T09:09:09.725Z"
+                                },
+                                {
+                                    "id": 110249,
+                                    "name": "8.5 m Pole",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.578023,
+                                    "longitude": 90.546251,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 01 No. of Pole(8.5m) was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.709Z",
+                                    "updatedAt": "2026-06-29T09:09:09.709Z"
+                                },
+                                {
+                                    "id": 110247,
+                                    "name": "8.5 m Pole",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.568024,
+                                    "longitude": 90.556252,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 01 No. of Pole(8.5m) was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.712Z",
+                                    "updatedAt": "2026-06-29T09:09:09.712Z"
+                                },
+                                {
+                                    "id": 110246,
+                                    "name": "8.5 m Pole",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.578023,
+                                    "longitude": 90.546251,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 01 No. of Pole(8.5m) was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.706Z",
+                                    "updatedAt": "2026-06-29T09:09:09.706Z"
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Power Dept. Conductors (in Km)",
+                            "noOfDamage": 0.92,
+                            "details": [
+                                {
+                                    "id": 110255,
+                                    "name": "Conductor(Weasel)",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.589023,
+                                    "longitude": 90.538271,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 0.200km Weasel conductor was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.748Z",
+                                    "updatedAt": "2026-06-29T09:09:09.748Z"
+                                },
+                                {
+                                    "id": 110252,
+                                    "name": "Conductor(Weasel)",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.578023,
+                                    "longitude": 90.546251,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 0.150km Weasel conductor was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.743Z",
+                                    "updatedAt": "2026-06-29T09:09:09.743Z"
+                                },
+                                {
+                                    "id": 110254,
+                                    "name": "Conductor(Weasel)",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.5721,
+                                    "longitude": 90.551254,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 0.190km Weasel conductor was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.746Z",
+                                    "updatedAt": "2026-06-29T09:09:09.746Z"
+                                },
+                                {
+                                    "id": 110253,
+                                    "name": "Conductor(Weasel)",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.568024,
+                                    "longitude": 90.556252,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 0.180km Weasel conductor was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.744Z",
+                                    "updatedAt": "2026-06-29T09:09:09.744Z"
+                                },
+                                {
+                                    "id": 110251,
+                                    "name": "Conductor(Weasel)",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Debarbil",
+                                    "location": "Vill - Debarbil",
+                                    "latitude": 26.578023,
+                                    "longitude": 90.546251,
+                                    "remarks": "As per reported by Bongaigaon ESD II, 0.200km Weasel conductor was damaged at Debarbil on 29/06/2026",
+                                    "createdAt": "2026-06-29T09:09:09.733Z",
+                                    "updatedAt": "2026-06-29T09:09:09.733Z"
                                 }
                             ]
                         }
@@ -7091,6 +7261,12 @@
                     "block": "Lakhipur",
                     "damages": [
                         {
+                            "damageName": "Power Dept. Conductors (in Km)",
+                            "noOfDamage": 0.5,
+                            "details": [
+                                {
+                                    "id": 110222,
+                                    "name": "HT Conductor",
                             "damageName": "Power Dept. Poles (in Nos)",
                             "noOfDamage": 3,
                             "details": [
@@ -7102,6 +7278,19 @@
                                     "location": "Gumaijhar(Kaimari)",
                                     "latitude": 25.961594,
                                     "longitude": 90.211439,
+                                    "remarks": "As per report submitted by, SDE, Lakhipur Electrical Sub-Division, APDCL, LAR, Lakhipur 0.5 KM HT Conductor damage at the revenue village Gumaijhar(Kaimari) due to rising water level of Ghagua River on dated 26.06.2026",
+                                    "createdAt": "2026-06-26T08:34:48.545Z",
+                                    "updatedAt": "2026-06-26T08:34:48.545Z"
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Power Dept. Poles (in Nos)",
+                            "noOfDamage": 3,
+                            "details": [
+                                {
+                                    "id": 110221,
+                                    "name": "HT Pole",
                                     "remarks": "As per report submitted by, SDE, Lakhipur Electrical Sub-Division, APDCL, LAR, Lakhipur 3 Nos HT Pole damage at the revenue village Gumaijhar(Kaimari) due to rising water level of Ghagua River on dated 26.06.2026",
                                     "createdAt": "2026-06-26T08:34:48.542Z",
                                     "updatedAt": "2026-06-26T08:34:48.542Z"
@@ -7120,6 +7309,9 @@
                                     "location": "Gumaijhar(Kaimari)",
                                     "latitude": 25.961594,
                                     "longitude": 90.211439,
+                                    "remarks": "As per report submitted by, SDE, Lakhipur Electrical Sub-Division, APDCL, LAR, Lakhipur 3 Nos HT Pole damage at the revenue village Gumaijhar(Kaimari) due to rising water level of Ghagua River on dated 26.06.2026",
+                                    "createdAt": "2026-06-26T08:34:48.542Z",
+                                    "updatedAt": "2026-06-26T08:34:48.542Z"
                                     "remarks": "As per report submitted by, SDE, Lakhipur Electrical Sub-Division, APDCL, LAR, Lakhipur 0.5 KM HT Conductor damage at the revenue village Gumaijhar(Kaimari) due to rising water level of Ghagua River on dated 26.06.2026",
                                     "createdAt": "2026-06-26T08:34:48.545Z",
                                     "updatedAt": "2026-06-26T08:34:48.545Z"
@@ -7140,6 +7332,18 @@
                             "damageName": "Agri Bundh Damaged (in Nos)",
                             "noOfDamage": 2,
                             "details": [
+                                {
+                                    "id": 110066,
+                                    "name": "Left Ring Bund of rivulet Mudoijan or Puthinadi",
+                                    "departmentName": "P&RD",
+                                    "villageName": "Bailung (Lot No. 4)",
+                                    "location": "Duwarah Gaon",
+                                    "latitude": 26.774675,
+                                    "longitude": 94.418406,
+                                    "remarks": "Date 11-06-2026\nLength Approx 20 Feets.",
+                                    "createdAt": "2026-06-11T12:18:26.110Z",
+                                    "updatedAt": "2026-06-11T12:18:26.110Z"
+                                },
                                 {
                                     "id": 110067,
                                     "name": "Left Ring Bund of rivulet Mudoijan or Puthinadi",
@@ -7830,6 +8034,16 @@
                             "noOfDamage": 9,
                             "details": [
                                 {
+                                    "id": 110047,
+                                    "name": "Badarpur Bazar PWSS",
+                                    "departmentName": "PHE",
+                                    "villageName": "Badarpur Town Jum Part-VII",
+                                    "location": "Nadarpur Bazar",
+                                    "latitude": 24.875,
+                                    "longitude": 92.5635,
+                                    "remarks": "As reported by AEE, PHE, Badarpur Sub-Division due to heavy rainfall on 15.05. 2026 the suction delivery with raw water pumping was damaged.",
+                                    "createdAt": "2026-06-07T09:05:24.259Z",
+                                    "updatedAt": "2026-06-07T09:05:24.259Z"
                                     "id": 110046,
                                     "name": "Nayapathan PWSS",
                                     "departmentName": "PHE",
@@ -7878,6 +8092,16 @@
                                     "updatedAt": "2026-06-07T09:05:24.266Z"
                                 },
                                 {
+                                    "id": 110046,
+                                    "name": "Nayapathan PWSS",
+                                    "departmentName": "PHE",
+                                    "villageName": "Masly Part -I, Sheet No. 116",
+                                    "location": "Nayapathan",
+                                    "latitude": 24.8651,
+                                    "longitude": 92.478,
+                                    "remarks": "As reported by AEE, PHE, Badarpur Sub-Division due to heavy rainfall on 15.05. 2026 the barge was damaged.",
+                                    "createdAt": "2026-06-07T09:05:24.257Z",
+                                    "updatedAt": "2026-06-07T09:05:24.257Z"
                                     "id": 110047,
                                     "name": "Badarpur Bazar PWSS",
                                     "departmentName": "PHE",
@@ -8069,6 +8293,7 @@
         },
         {
             "district": "Chirang",
+            "remarks": "(Sidli - As per repoted by BDO Sidli-Chirang, a RCC Bridge was damage due to erosion from heavy rain at Moigaon(Dodoraguri)., Date of Occurrence - 29/06/2026), (Bijni - Date of occurrence 22.06.2026, Date of occurrence 29.06.2026, Cattle feed (White Bran) was provided to the affected family), (Bengtal - Date of Occurrence 28/06/2026.)"
             "remarks": "(Sidli - As per repoted by BDO Sidli-Chirang, a RCC Bridge was damage due to erosion from heavy rain at Moigaon(Dodoraguri).), (Bijni - Date of occurrence 22.06.2026, Cattle feed (White Bran) was provided to the affected family), (Bengtal - Date of Occurrence 28/06/2026.)"
         },
         {
