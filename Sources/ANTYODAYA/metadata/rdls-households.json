@@ -1,0 +1,53 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/antyodaya-households",
+  "title": "Mission Antyodaya Total Households — Assam Revenue Circles",
+  "description": "Total number of households per Revenue Circle in Assam, from Mission Antyodaya 2020 survey data, used as a population exposure input to the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["exposure"],
+  "version": "0.1.0-draft",
+  "purpose": "Household-count exposure covariate for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "This is a single 2020 survey snapshot, not a time series. Catalogued separately from Sources/ANTYODAYA/metadata/rdls.json (which covers electricity/telecom/piped-water/sanitation/net-sown-area access) because total_hhd is 'Exposure' category per the risk model's data dictionary — a clean fit with RDLS's own exposure/population category — whereas the other Antyodaya indicators are 'Vulnerability' category there. License confirmed as 'CC BY 4.0' per the same dictionary.",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "mission-antyodaya-2020",
+      "name": "Mission Antyodaya 2020",
+      "url": "https://docs.google.com/spreadsheets/d/1jVhsf9N410T2LwIN9-GJ0wNI1r_SEbKp/edit",
+      "type": "dataset",
+      "component": "exposure"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal": { "start": "2020", "end": "2020" },
+  "exposure": {
+    "category": "population",
+    "metrics": [
+      { "id": "total_hhd", "dimension": "population", "quantity_kind": "count" }
+    ]
+  },
+  "resources": [
+    {
+      "id": "antyodaya-households-master-csv",
+      "title": "Harmonized total households variable (master)",
+      "description": "Harmonized total_hhd per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/antyodaya_variables.csv"
+    }
+  ]
+}

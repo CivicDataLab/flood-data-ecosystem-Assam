@@ -1,0 +1,54 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/bharatmaps-infrastructure",
+  "title": "BHARAT MAPS Transport Infrastructure — Assam Revenue Circles",
+  "description": "Length of road and rail networks per Revenue Circle in Assam, sourced from the BHARAT MAPS GIS service, used as a lifeline-infrastructure exposure input to the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["exposure"],
+  "version": "0.1.0-draft",
+  "purpose": "Transport infrastructure exposure covariate for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "This is a snapshot as of September 2023, not a time series. License confirmed as 'CC BY 4.0' per the risk model's data dictionary. Note: that dictionary classifies road_length and rail_length under its own 'Vulnerability' pillar (not 'Exposure') — see the crosswalk note in Sources/BHARATMAPS/metadata/rdls-buildings.json for why RDLS's 'exposure' type is still used here. Health centres and schools from the same source are catalogued separately in Sources/BHARATMAPS/metadata/rdls-buildings.json.",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "bharatmaps-gis",
+      "name": "BHARAT MAPS GIS Service",
+      "url": "https://bharatmaps.gov.in/newversion/map.aspx",
+      "type": "dataset",
+      "component": "exposure"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal": { "start": "2023-09", "end": "2023-09" },
+  "exposure": {
+    "category": "infrastructure",
+    "metrics": [
+      { "id": "road_length", "dimension": "structure", "quantity_kind": "length" },
+      { "id": "rail_length", "dimension": "structure", "quantity_kind": "length" }
+    ]
+  },
+  "resources": [
+    {
+      "id": "bharatmaps-infrastructure-master-csv",
+      "title": "Harmonized road and rail length (master)",
+      "description": "Harmonized road_length and rail_length per Revenue Circle (object_id).",
+      "format": "csv",
+      "media_type": "text/csv",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/BHARATMAPS/data/BharatMaps_variables.csv"
+    }
+  ]
+}

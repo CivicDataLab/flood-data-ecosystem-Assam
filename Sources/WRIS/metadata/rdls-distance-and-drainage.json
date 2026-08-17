@@ -1,0 +1,71 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/wris-distance-and-drainage",
+  "title": "WRIS Distance from River & Drainage Density — Assam Revenue Circles",
+  "description": "Average distance from river and drainage density per Revenue Circle in Assam, used as hazard-conditioning covariates in the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["hazard"],
+  "version": "0.1.0-draft",
+  "purpose": "River-proximity and drainage covariates for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "This dataset was missing entirely from the first draft of this repo's RDLS metadata; added after cross-checking against the risk model's data dictionary and this repo's own Sources/README.md (which lists 'Distance from rivers' and 'Drainage density' together under a 'WRIS' row, One Time / static). CONFLICT TO RESOLVE WITH THE TEAM: the risk model's data_dictionary.csv attributes drainage-density's datasource as 'NASADEM' instead (methodologically plausible, since drainage density is commonly derived from a DEM via flow-accumulation analysis), while this repo's own top-level Sources/README.md groups it under WRIS alongside distance-from-river. Both master/distance_from_river_polygon.csv and master/drainage_density.csv are computed as 'onetime_variables' in Sources/master2.py, consistent with them being a related pair — this file follows that repo-internal grouping (WRIS) rather than the model dictionary's NASADEM attribution, but the discrepancy should be resolved rather than silently picked one way. distance-from-river has no license recorded in the data dictionary; drainage-density likewise has none recorded there.",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "wris-distance-drainage-source",
+      "name": "WRIS-derived river proximity and drainage density (exact source product unconfirmed; drainage density's methodology suggests DEM-derived, possibly from NASADEM — see 'details')",
+      "type": "dataset",
+      "component": "hazard"
+    }
+  ],
+  "license": "unspecified",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "hazard": {
+    "event_sets": [
+      {
+        "id": "wris-rc-distance-drainage",
+        "hazards": [
+          {
+            "id": "flood-river-proximity-drainage",
+            "type": "flood",
+            "processes": ["fluvial_flood"],
+            "intensity_measure": "distance_from_river"
+          }
+        ],
+        "analysis_type": "empirical",
+        "calculation_method": "observed",
+        "spatial": { "countries": ["IND"], "scale": "sub-national" }
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "wris-distance-from-river-master-csv",
+      "title": "Harmonized distance from river variable (master)",
+      "description": "Harmonized distance_from_river per Revenue Circle (object_id). Static/one-time, per Sources/README.md.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/distance_from_river_polygon.csv"
+    },
+    {
+      "id": "wris-drainage-density-master-csv",
+      "title": "Harmonized drainage density variable (master)",
+      "description": "Harmonized drainage_density per Revenue Circle (object_id). Static/one-time, per Sources/README.md.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/drainage_density.csv"
+    }
+  ]
+}

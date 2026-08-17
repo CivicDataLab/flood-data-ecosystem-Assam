@@ -1,0 +1,78 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/bhuvan-flood-inundation",
+  "title": "BHUVAN Flood Inundation — Assam Revenue Circles (Monthly)",
+  "description": "Monthly flood inundation extent and intensity per Revenue Circle in Assam, derived from BHUVAN disaster-services inundation maps, used as a hazard input to the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["hazard"],
+  "version": "0.1.0-draft",
+  "purpose": "Input covariate for the IDS-DRR Assam flood risk score model, capturing observed flood inundation extent and intensity.",
+  "project": "IDS-DRR Assam",
+  "details": "Per the risk model's data dictionary: inundation_pct, inundation_intensity_mean, and inundation_intensity_mean_nonzero are licensed 'GNU General Public License' there (an unusual choice for a data product — GPL is a software license — worth confirming with the team), while inundation_intensity_sum is separately marked 'CC BY 4.0' (its republication license via open-contracting.in). RDLS has one license field per dataset, so the majority value (GPL) is used here. Temporal coverage reflects Sources/master/inundation.csv (2015-06 to 2025-09); 'intensity' is defined by the source as pixel inundation count divided by the maximum pixel inundation count in the given month (a normalized index, not a physical unit).",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "bhuvan-disaster-services",
+      "name": "BHUVAN Disaster Services — Flood inundation maps",
+      "url": "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php?id=flood",
+      "type": "dataset",
+      "component": "hazard"
+    }
+  ],
+  "license": "GNU General Public License",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal_resolution": "P1M",
+  "hazard": {
+    "event_sets": [
+      {
+        "id": "bhuvan-rc-monthly-inundation-2015-2025",
+        "hazards": [
+          {
+            "id": "flood-inundation",
+            "type": "flood",
+            "processes": ["fluvial_flood", "pluvial_flood"],
+            "intensity_measure": "inundation_frequency_index"
+          }
+        ],
+        "analysis_type": "empirical",
+        "calculation_method": "observed",
+        "spatial": { "countries": ["IND"], "scale": "sub-national" },
+        "temporal": { "start": "2015-06", "end": "2025-09" }
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "bhuvan-inundation-tiff-monthly",
+      "title": "Monthly stitched flood inundation rasters",
+      "description": "Monthly stitched flood inundation maps for Assam, watermark-removed and geo-referenced, at native BHUVAN resolution (~19m).",
+      "format": "geotiff",
+      "media_type": "image/tiff",
+      "spatial_resolution": 19,
+      "coordinate_system": "EPSG:4326",
+      "temporal_resolution": "P1M",
+      "access_url": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Sources/BHUVAN/data"
+    },
+    {
+      "id": "bhuvan-inundation-master-csv",
+      "title": "Harmonized inundation variable (master)",
+      "description": "Harmonized monthly inundation_pct, inundation_intensity_mean, inundation_intensity_sum per Revenue Circle (object_id), used directly as an IDS-DRR model input.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1M",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/inundation.csv"
+    }
+  ]
+}

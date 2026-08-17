@@ -136,10 +136,10 @@
             "details": "(Sapekhati | 6), (Mahmora | 8), (Sonari | 26)"
         },
         {
-            "total": 18,
+            "total": 14,
             "district": "Chirang",
             "districtCode": "09",
-            "details": "(Sidli | 6), (Bengtal | 1), (Bijni | 11)"
+            "details": "(Sidli | 6), (Bengtal | 1), (Bijni | 7)"
         },
         {
             "total": 4,
@@ -230,6 +230,14 @@
             "district": "Chirang",
             "districtCode": "09",
             "details": "(Sidli | Population Affected: 4324 | Crop Area Submerged: 0), (Bijni | Population Affected: 783 | Crop Area Submerged: 71.6), (Bengtal | Population Affected: 790 | Crop Area Submerged: 79)"
+            "total": 5114,
+            "totalMale": 1747,
+            "totalFemale": 1713,
+            "totalChildren": 1654,
+            "totalCropArea": 130.51999999999998,
+            "district": "Chirang",
+            "districtCode": "09",
+            "details": "(Sidli | Population Affected: 4324 | Crop Area Submerged: 0), (Bijni | Population Affected: 0 | Crop Area Submerged: 51.519999999999996), (Bengtal | Population Affected: 790 | Crop Area Submerged: 79)"
         },
         {
             "total": 49625,
@@ -6382,6 +6390,24 @@
                             ]
                         },
                         {
+                            "damageName": "Power Dept. Conductors (in Km)",
+                            "noOfDamage": 0.2,
+                            "details": [
+                                {
+                                    "id": 110215,
+                                    "name": "conductor",
+                                    "departmentName": "APDCL",
+                                    "villageName": "Maripur",
+                                    "location": "maripur",
+                                    "latitude": 26.54092,
+                                    "longitude": 91.213936,
+                                    "remarks": "This report is received from office of the SDE,APDCL,Pathsala",
+                                    "createdAt": "2026-06-25T11:35:09.975Z",
+                                    "updatedAt": "2026-06-25T11:35:09.975Z"
+                                }
+                            ]
+                        },
+                        {
                             "damageName": "Power Dept. Poles (in Nos)",
                             "noOfDamage": 1,
                             "details": [
@@ -6403,6 +6429,18 @@
                             "damageName": "Fisheries/Pond (in Hect.)",
                             "noOfDamage": 1.13,
                             "details": [
+                                {
+                                    "id": 110210,
+                                    "name": "pond",
+                                    "departmentName": "Fishery",
+                                    "villageName": "BAN GAON",
+                                    "location": "bangaon",
+                                    "latitude": 26.434757,
+                                    "longitude": 91.201368,
+                                    "remarks": "This report is received from office of the SDFDO,Bajali- 0.25 hct.",
+                                    "createdAt": "2026-06-25T11:35:09.961Z",
+                                    "updatedAt": "2026-06-25T11:35:09.961Z"
+                                },
                                 {
                                     "id": 110213,
                                     "name": "POND",
@@ -7229,6 +7267,12 @@
                                 {
                                     "id": 110222,
                                     "name": "HT Conductor",
+                            "damageName": "Power Dept. Poles (in Nos)",
+                            "noOfDamage": 3,
+                            "details": [
+                                {
+                                    "id": 110221,
+                                    "name": "HT Pole",
                                     "departmentName": "APDCL",
                                     "villageName": "Gumaijhar",
                                     "location": "Gumaijhar(Kaimari)",
@@ -7247,6 +7291,19 @@
                                 {
                                     "id": 110221,
                                     "name": "HT Pole",
+                                    "remarks": "As per report submitted by, SDE, Lakhipur Electrical Sub-Division, APDCL, LAR, Lakhipur 3 Nos HT Pole damage at the revenue village Gumaijhar(Kaimari) due to rising water level of Ghagua River on dated 26.06.2026",
+                                    "createdAt": "2026-06-26T08:34:48.542Z",
+                                    "updatedAt": "2026-06-26T08:34:48.542Z"
+                                }
+                            ]
+                        },
+                        {
+                            "damageName": "Power Dept. Conductors (in Km)",
+                            "noOfDamage": 0.5,
+                            "details": [
+                                {
+                                    "id": 110222,
+                                    "name": "HT Conductor",
                                     "departmentName": "APDCL",
                                     "villageName": "Gumaijhar",
                                     "location": "Gumaijhar(Kaimari)",
@@ -7255,6 +7312,9 @@
                                     "remarks": "As per report submitted by, SDE, Lakhipur Electrical Sub-Division, APDCL, LAR, Lakhipur 3 Nos HT Pole damage at the revenue village Gumaijhar(Kaimari) due to rising water level of Ghagua River on dated 26.06.2026",
                                     "createdAt": "2026-06-26T08:34:48.542Z",
                                     "updatedAt": "2026-06-26T08:34:48.542Z"
+                                    "remarks": "As per report submitted by, SDE, Lakhipur Electrical Sub-Division, APDCL, LAR, Lakhipur 0.5 KM HT Conductor damage at the revenue village Gumaijhar(Kaimari) due to rising water level of Ghagua River on dated 26.06.2026",
+                                    "createdAt": "2026-06-26T08:34:48.545Z",
+                                    "updatedAt": "2026-06-26T08:34:48.545Z"
                                 }
                             ]
                         }
@@ -7295,6 +7355,18 @@
                                     "remarks": "Date 11-06-2026\nLength Approx 45 Feets.",
                                     "createdAt": "2026-06-11T12:18:26.115Z",
                                     "updatedAt": "2026-06-11T12:18:26.115Z"
+                                },
+                                {
+                                    "id": 110066,
+                                    "name": "Left Ring Bund of rivulet Mudoijan or Puthinadi",
+                                    "departmentName": "P&RD",
+                                    "villageName": "Bailung (Lot No. 4)",
+                                    "location": "Duwarah Gaon",
+                                    "latitude": 26.774675,
+                                    "longitude": 94.418406,
+                                    "remarks": "Date 11-06-2026\nLength Approx 20 Feets.",
+                                    "createdAt": "2026-06-11T12:18:26.110Z",
+                                    "updatedAt": "2026-06-11T12:18:26.110Z"
                                 }
                             ]
                         }
@@ -7972,6 +8044,16 @@
                                     "remarks": "As reported by AEE, PHE, Badarpur Sub-Division due to heavy rainfall on 15.05. 2026 the suction delivery with raw water pumping was damaged.",
                                     "createdAt": "2026-06-07T09:05:24.259Z",
                                     "updatedAt": "2026-06-07T09:05:24.259Z"
+                                    "id": 110046,
+                                    "name": "Nayapathan PWSS",
+                                    "departmentName": "PHE",
+                                    "villageName": "Masly Part -I, Sheet No. 116",
+                                    "location": "Nayapathan",
+                                    "latitude": 24.8651,
+                                    "longitude": 92.478,
+                                    "remarks": "As reported by AEE, PHE, Badarpur Sub-Division due to heavy rainfall on 15.05. 2026 the barge was damaged.",
+                                    "createdAt": "2026-06-07T09:05:24.257Z",
+                                    "updatedAt": "2026-06-07T09:05:24.257Z"
                                 },
                                 {
                                     "id": 110048,
@@ -8020,6 +8102,16 @@
                                     "remarks": "As reported by AEE, PHE, Badarpur Sub-Division due to heavy rainfall on 15.05. 2026 the barge was damaged.",
                                     "createdAt": "2026-06-07T09:05:24.257Z",
                                     "updatedAt": "2026-06-07T09:05:24.257Z"
+                                    "id": 110047,
+                                    "name": "Badarpur Bazar PWSS",
+                                    "departmentName": "PHE",
+                                    "villageName": "Badarpur Town Jum Part-VII",
+                                    "location": "Nadarpur Bazar",
+                                    "latitude": 24.875,
+                                    "longitude": 92.5635,
+                                    "remarks": "As reported by AEE, PHE, Badarpur Sub-Division due to heavy rainfall on 15.05. 2026 the suction delivery with raw water pumping was damaged.",
+                                    "createdAt": "2026-06-07T09:05:24.259Z",
+                                    "updatedAt": "2026-06-07T09:05:24.259Z"
                                 },
                                 {
                                     "id": 110045,
@@ -8202,6 +8294,7 @@
         {
             "district": "Chirang",
             "remarks": "(Sidli - As per repoted by BDO Sidli-Chirang, a RCC Bridge was damage due to erosion from heavy rain at Moigaon(Dodoraguri)., Date of Occurrence - 29/06/2026), (Bijni - Date of occurrence 22.06.2026, Date of occurrence 29.06.2026, Cattle feed (White Bran) was provided to the affected family), (Bengtal - Date of Occurrence 28/06/2026.)"
+            "remarks": "(Sidli - As per repoted by BDO Sidli-Chirang, a RCC Bridge was damage due to erosion from heavy rain at Moigaon(Dodoraguri).), (Bijni - Date of occurrence 22.06.2026, Cattle feed (White Bran) was provided to the affected family), (Bengtal - Date of Occurrence 28/06/2026.)"
         },
         {
             "district": "Dhemaji",

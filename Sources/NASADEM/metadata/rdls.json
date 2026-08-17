@@ -1,0 +1,74 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/nasadem-terrain",
+  "title": "NASADEM Elevation & Slope — Assam Revenue Circles",
+  "description": "Mean elevation and slope per Revenue Circle in Assam, derived from NASADEM (SRTM-derived) global elevation data, used as a hazard-conditioning covariate in the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["hazard"],
+  "version": "0.1.0-draft",
+  "purpose": "Terrain covariate for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "RDLS's hazard object models hazard footprints/intensity directly; elevation and slope are static terrain covariates rather than hazard intensity measurements, so 'intensity_measure' is used loosely here to fit these covariates into the schema. Elevation/slope are static (not time-varying), so no meaningful 'temporal' coverage is set. Note: the risk model's data dictionary lists a third NASADEM-attributed indicator, drainage-density (used_for_model=y) — however this repo's own top-level Sources/README.md groups drainage density with WRIS instead (see Sources/WRIS/metadata/rdls-distance-and-drainage.json, which follows the repo's own grouping and flags this same conflict).",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "nasadem-nasa",
+      "name": "NASADEM — NASA/USGS SRTM-derived global elevation",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_NASADEM_HGT_001",
+      "type": "dataset",
+      "component": "hazard"
+    }
+  ],
+  "license": "unspecified",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "hazard": {
+    "event_sets": [
+      {
+        "id": "nasadem-rc-terrain",
+        "hazards": [
+          {
+            "id": "flood-terrain-conditioning",
+            "type": "flood",
+            "processes": ["fluvial_flood", "pluvial_flood"],
+            "intensity_measure": "elevation"
+          }
+        ],
+        "analysis_type": "empirical",
+        "calculation_method": "observed",
+        "spatial": { "countries": ["IND"], "scale": "sub-national" }
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "nasadem-dem-tiff",
+      "title": "Elevation raster (Assam extent)",
+      "description": "NASADEM elevation raster at 30m resolution, exported for Assam.",
+      "format": "geotiff",
+      "media_type": "image/tiff",
+      "spatial_resolution": 30,
+      "coordinate_system": "EPSG:4326",
+      "access_url": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Sources/NASADEM/data"
+    },
+    {
+      "id": "nasadem-elevation-master-csv",
+      "title": "Harmonized elevation & slope variable (master)",
+      "description": "Harmonized elevation_mean, slope_mean per Revenue Circle (object_id), used directly as an IDS-DRR model input.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/elevation.csv"
+    }
+  ]
+}

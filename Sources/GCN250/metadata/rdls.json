@@ -1,0 +1,65 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/gcn250-curve-number",
+  "title": "GCN250 Curve Number — Assam Revenue Circles",
+  "description": "Mean gridded curve number (a rainfall-runoff potential parameter) per Revenue Circle in Assam, sourced from the GCN250 global 250m curve number product, used as a hazard-conditioning covariate in the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["hazard"],
+  "version": "0.1.0-draft",
+  "purpose": "Runoff-potential covariate for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "RDLS's hazard object models hazard footprints/intensity directly; curve number is a hazard-conditioning covariate (runoff potential) rather than a hazard intensity measurement itself, so 'intensity_measure' here is used loosely to fit this covariate into the schema. License recorded as 'MIT' per the risk model's data dictionary — an unusual choice for a geospatial dataset (MIT is a software license), but that is what is declared there; worth double-checking with the team rather than assuming it is a data-licensing error.",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "gcn250-gee-community-catalog",
+      "name": "GCN250 — Global gridded curve numbers (250m)",
+      "url": "https://gee-community-catalog.org/projects/gcn250/",
+      "type": "dataset",
+      "component": "hazard"
+    }
+  ],
+  "license": "MIT",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal_resolution": "P1M",
+  "hazard": {
+    "event_sets": [
+      {
+        "id": "gcn250-rc-curve-number",
+        "hazards": [
+          {
+            "id": "flood-runoff-potential",
+            "type": "flood",
+            "processes": ["fluvial_flood", "pluvial_flood"],
+            "intensity_measure": "curve_number"
+          }
+        ],
+        "analysis_type": "empirical",
+        "calculation_method": "inferred",
+        "spatial": { "countries": ["IND"], "scale": "sub-national" }
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "gcn250-average-master-csv",
+      "title": "Harmonized curve number variable (master)",
+      "description": "Harmonized mean_cn per Revenue Circle (object_id), used directly as an IDS-DRR model input.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/gcn250_average.csv"
+    }
+  ]
+}

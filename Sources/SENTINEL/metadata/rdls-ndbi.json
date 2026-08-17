@@ -1,0 +1,54 @@
+{
+  "id": "https://drr.civicdatalab.in/assam/datasets/sentinel-ndbi",
+  "title": "Sentinel-2 Mean NDBI — Assam Revenue Circles (Monthly)",
+  "description": "Mean Normalised Difference Building Index per Revenue Circle in Assam, derived from Sentinel-2 imagery, used as a built-up-area exposure covariate in the IDS-DRR Assam flood risk model.",
+  "risk_data_type": ["exposure"],
+  "version": "0.1.0-draft",
+  "purpose": "Built-up-area exposure covariate for the IDS-DRR Assam flood risk score model.",
+  "project": "IDS-DRR Assam",
+  "details": "License confirmed as 'Creative Commons CC BY-SA 3.0 IGO' per the risk model's data dictionary; recorded here as 'CC-BY-SA-3.0-IGO' (open codelist, custom value) to match RDLS's dash-separated convention.",
+  "publisher": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "creator": { "name": "CivicDataLab", "email": "info@civicdatalab.in", "url": "https://civicdatalab.in" },
+  "contact_point": { "name": "CivicDataLab", "email": "info@civicdatalab.in" },
+  "sources": [
+    {
+      "id": "sentinel-2-copernicus",
+      "name": "Copernicus Sentinel-2 Surface Reflectance (Harmonized)",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED",
+      "type": "dataset",
+      "component": "exposure"
+    }
+  ],
+  "license": "CC-BY-SA-3.0-IGO",
+  "spatial": {
+    "countries": ["IND"],
+    "scale": "sub-national",
+    "bbox": [89.6986, 24.1362, 96.0178, 27.9716],
+    "gazetteer_entries": [
+      {
+        "id": "ASSAM-RC",
+        "scheme": "IDS-DRR-RC",
+        "description": "Assam Revenue Circles administrative boundaries (the object_id used across IDS-DRR variables) — a custom scheme, not yet a registered RDLS gazetteer.",
+        "uri": "https://github.com/CivicDataLab/flood-data-ecosystem-Assam/tree/main/Maps/Assam_Revenue_Circles"
+      }
+    ]
+  },
+  "temporal_resolution": "P1M",
+  "exposure": {
+    "category": "buildings",
+    "metrics": [
+      { "id": "mean_ndbi", "dimension": "structure", "quantity_kind": "ndbi_index" }
+    ]
+  },
+  "resources": [
+    {
+      "id": "sentinel-ndbi-master-csv",
+      "title": "Harmonized mean NDBI variable (master)",
+      "description": "Harmonized monthly ndbi_mean per Revenue Circle (object_id), used directly as an IDS-DRR model input.",
+      "format": "csv",
+      "media_type": "text/csv",
+      "temporal_resolution": "P1M",
+      "download_url": "https://raw.githubusercontent.com/CivicDataLab/flood-data-ecosystem-Assam/main/Sources/master/mean_ndbi.csv"
+    }
+  ]
+}
