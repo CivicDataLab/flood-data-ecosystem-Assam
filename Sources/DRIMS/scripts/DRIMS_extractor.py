@@ -22,10 +22,6 @@ import pandas as pd
 import geopandas as gpd
 from fuzzywuzzy import process
 
-# -----------------------------------------------------------------------------
-# Config — edit these three paths for your machine
-# -----------------------------------------------------------------------------
-
 DATA_DIR = os.path.join(os.getcwd(), "Sources", "DRIMS", "data", "DRIMS_api_output")
 GEOJSON_PATH = os.path.join(os.getcwd(), "Maps", "Geojson", "assam_rc_2024-11.geojson")
 OUTPUT_DIR = os.path.join(os.getcwd(), "Sources", "DRIMS", "data", "variables")
