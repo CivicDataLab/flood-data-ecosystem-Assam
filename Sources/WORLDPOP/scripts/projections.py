@@ -1,57 +1,54 @@
-import pandas as pd
 import glob
-import numpy as np
-from sklearn.linear_model import LinearRegression
 import os
-path = os.getcwd()+'/Sources/WORLDPOP/'
 import sys
-global projected_variable
+
+import numpy as np
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+path = os.getcwd() + "/Sources/WORLDPOP/"
+
+if len(sys.argv) < 2:
+    sys.exit("Usage: python Sources/WORLDPOP/scripts/projections.py <variable>  e.g. sum_female_population")
 projected_variable = sys.argv[1]
 
-def flatten(l):
-    return [item for sublist in l for item in sublist]
+PROJECTION_YEARS = [2021, 2022, 2023, 2024, 2025, 2026]
 
-files = glob.glob(path+'data/worldpopstats_*.csv')
+files = glob.glob(path + "data/worldpopstats_*.csv")
 dfs = []
 for file in files:
     df = pd.read_csv(file)
-    df['year'] = int(file.split('_')[-1][:-4])
-    dfs.append(df)
+    df["year"] = int(file.split("_")[-1][:-4])
+    if projected_variable not in df.columns:
+        print(f"skip {os.path.basename(file)}: no '{projected_variable}' column")
+        continue
+    n_nan = df[projected_variable].isna().sum()
+    print(f"{os.path.basename(file)}: {len(df)} rows, {n_nan} NaN in {projected_variable}")
+    dfs.append(df[["object_id", "year", projected_variable]])
 
-master_df = pd.concat(dfs)
-master_df = master_df.sort_values(by='year').reset_index(drop=True)
+master_df = pd.concat(dfs).sort_values(by="year").reset_index(drop=True)
 
-# Define a function to extrapolate population
+
 def extrapolate_variable(rc_data):
-    years = np.array(rc_data['year'].tolist())
-    values = np.array(rc_data[projected_variable].tolist())
-
-    years = years.reshape(-1, 1)
-    values = values.reshape(-1, 1)
+    rc_data = rc_data.dropna(subset=[projected_variable])
+    if len(rc_data) < 2:                      # can't fit a line
+        return [np.nan] * len(PROJECTION_YEARS)
 
     model = LinearRegression()
-    model.fit(years, values)
+    model.fit(rc_data[["year"]].values, rc_data[projected_variable].values)
+    return model.predict(np.array(PROJECTION_YEARS).reshape(-1, 1)).tolist()
 
-    projection_years = np.array([2021, 2022, 2023,2024, 2025,2026])
-    projection_years = projection_years.reshape(-1, 1)
 
-    projected_values = model.predict(projection_years)
-    return flatten(projected_values)
+extrapolated = master_df.groupby("object_id")[["year", projected_variable]].apply(extrapolate_variable)
 
-# Group the data by state and apply the extrapolation function to each group
-extrapolated_data = master_df.groupby('object_id').apply(extrapolate_variable)
+extrapolated_df = pd.DataFrame(
+    extrapolated.tolist(), columns=[str(y) for y in PROJECTION_YEARS], index=extrapolated.index
+).reset_index()
 
-# Create a new DataFrame from the extrapolated data
-extrapolated_df = pd.DataFrame(extrapolated_data.tolist(), columns=['2021', '2022', '2023','2024','2025','2026'])
-extrapolated_df.index = extrapolated_data.index
-extrapolated_df = extrapolated_df.reset_index()
+extrapolated_df = pd.melt(
+    extrapolated_df, id_vars=["object_id"], var_name="year", value_name=projected_variable
+)
 
-extrapolated_df = pd.melt(extrapolated_df, id_vars=['object_id'], var_name='year', value_name=projected_variable)
-# Add state and years columns to the extrapolated DataFrame
-#extrapolated_df['object_id'] = df['object_id'].unique()
-#extrapolated_df['year'] = [2021, 2022, 2023]
-
-# Reorder the columns
-#extrapolated_df = extrapolated_df[['year', 'object_id', 2021, 2022, 2023]]
-
-extrapolated_df.to_csv(path+'data/'+projected_variable+'_projections.csv', index=False)
+out = path + "data/" + projected_variable + "_projections.csv"
+extrapolated_df.to_csv(out, index=False)
+print(f"Saved {out}  shape={extrapolated_df.shape}  NaN={extrapolated_df[projected_variable].isna().sum()}")

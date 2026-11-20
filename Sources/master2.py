@@ -10,7 +10,7 @@ variables_data_path = os.getcwd() + '/Sources/master/'
 print(variables_data_path)
 assam_rc = gpd.read_file('Maps/Geojson/assam_rc_2024-11.geojson')
 
-date_range = pd.date_range(start="2021-04-01", end="2026-09-30", freq='MS')
+date_range = pd.date_range(start="2021-04-01", end="2026-10-31", freq='MS')
 
 # Format the date values as "YYYY_MM" strings
 formatted_dates = [date.strftime('%Y_%m') for date in date_range]
@@ -70,7 +70,7 @@ master_df['Human_Live_Lost'] = master_df['Human_Live_Lost'].fillna(0).astype(int
 
 # Annual variables
 master_df['year'] = master_df['timeperiod'].str[:4].astype(int)
-annual_variables = ['mean_sex_ratio', 'sum_aged_population', 'sum_young_population', 'sum_population',
+annual_variables = ['mean_sex_ratio', 'sum_aged_population', 'sum_young_population', 'sum_population','sum_female_population',
                     'final_lu']
 
 for variable in annual_variables:
